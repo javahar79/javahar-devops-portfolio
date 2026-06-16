@@ -2,6 +2,10 @@
 
 ## 2026-06-16
 
+- Added Kubernetes primer (kubernetes/notes/0000-primer-kubernetes.md)
+- Added Kubernetes cluster install script (kubernetes/scripts/install-local-cluster.sh)
+- Added kubectl CLI exploration notes (kubernetes/notes/2026-06-16-explore-kubectl.md)
+
 - Added Docker primer (docker/notes/0000-primer-docker.md)
 - Added Docker install script (docker/scripts/2026-06-16-install-docker.sh)
 - Added Docker CLI exploration notes (docker/notes/2026-06-16-explore-docker-cli.md)

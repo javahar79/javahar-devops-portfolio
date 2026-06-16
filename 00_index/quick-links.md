@@ -14,3 +14,8 @@
 - [GitHub Actions Primer](../github-actions/notes/0000-primer-github-actions.md) — What is GitHub Actions?
 - [CI Workflow Config](../github-actions/configs/ci-workflow.yaml) — Minimal CI workflow
 - [GitHub Actions UI Notes](../github-actions/notes/2026-06-16-explore-gha-ui.md) — Exploring the UI
+
+## Kubernetes
+- [Kubernetes Primer](../kubernetes/notes/0000-primer-kubernetes.md) — What is Kubernetes?
+- [Install Local Cluster Script](../kubernetes/scripts/install-local-cluster.sh) — Install kind and start a local cluster
+- [kubectl CLI Notes](../kubernetes/notes/2026-06-16-explore-kubectl.md) — Exploring kubectl
