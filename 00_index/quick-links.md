@@ -9,3 +9,8 @@
 - [Git Primer](../git/notes/0000-primer-git.md) — What is Git?
 - [Git Configure & First Commit Script](../git/scripts/configure-and-commit-first.sh) — Configure Git and make first commit
 - [Git CLI Notes](../git/notes/2026-06-16-explore-git-cli.md) — Exploring the CLI
+
+## GitHub Actions
+- [GitHub Actions Primer](../github-actions/notes/0000-primer-github-actions.md) — What is GitHub Actions?
+- [CI Workflow Config](../github-actions/configs/ci-workflow.yaml) — Minimal CI workflow
+- [GitHub Actions UI Notes](../github-actions/notes/2026-06-16-explore-gha-ui.md) — Exploring the UI
