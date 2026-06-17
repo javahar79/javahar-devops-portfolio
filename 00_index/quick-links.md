@@ -19,3 +19,8 @@
 - [Kubernetes Primer](../kubernetes/notes/0000-primer-kubernetes.md) — What is Kubernetes?
 - [Install Local Cluster Script](../kubernetes/scripts/install-local-cluster.sh) — Install kind and start a local cluster
 - [kubectl CLI Notes](../kubernetes/notes/2026-06-16-explore-kubectl.md) — Exploring kubectl
+
+## Terraform
+- [Terraform Primer](../terraform/notes/0000-primer-terraform.md) — What is Terraform?
+- [Install Terraform Script](../terraform/scripts/2026-06-17-install-terraform.sh) — Install Terraform and init first project
+- [Local Provider Config](../terraform/configs/local-provider.hcl) — Minimal Terraform config
