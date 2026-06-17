@@ -19,6 +19,7 @@
 
 ## 2026-06-17
 
+- Reworked Terraform install script to ≤15 lines (tf-002 rework: compressed install + project init)
 - Added Terraform primer (terraform/notes/0000-primer-terraform.md)
 - Added Terraform install script (terraform/scripts/2026-06-17-install-terraform.sh)
 - Added local provider HCL config (terraform/configs/local-provider.hcl)
