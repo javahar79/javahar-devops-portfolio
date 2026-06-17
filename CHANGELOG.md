@@ -16,3 +16,10 @@
 - Added CI workflow config (github-actions/configs/ci-workflow.yaml)
 - Added GitHub Actions UI exploration notes (github-actions/notes/2026-06-16-explore-gha-ui.md)
 - Updated README.md to document docker/ and 00_index/ folders
+
+## 2026-06-17
+
+- Added Terraform primer (terraform/notes/0000-primer-terraform.md)
+- Added Terraform install script (terraform/scripts/2026-06-17-install-terraform.sh)
+- Added local provider HCL config (terraform/configs/local-provider.hcl)
+- Updated README.md and quick-links.md with Terraform entries
