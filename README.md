@@ -19,6 +19,7 @@ My DevOps learning portfolio.
 - `terraform/notes/0000-primer-terraform.md` — What is Terraform?
 - `terraform/scripts/2026-06-17-install-terraform.sh` — Install script
 - `terraform/configs/local-provider.hcl` — Local provider config
+- `terraform/notes/2026-06-17-terraform-init-plan.md` — Terraform init and plan notes
 
 ### 00_index
 - `00_index/quick-links.md` — Quick links index 

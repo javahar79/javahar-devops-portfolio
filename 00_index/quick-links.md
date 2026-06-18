@@ -15,11 +15,6 @@
 - [CI Workflow Config](../github-actions/configs/ci-workflow.yaml) — Minimal CI workflow
 - [GitHub Actions UI Notes](../github-actions/notes/2026-06-16-explore-gha-ui.md) — Exploring the UI
 
-## Terraform
-- [Terraform Primer](../terraform/notes/0000-primer-terraform.md) — What is Terraform?
-- [Terraform Install Script](../terraform/scripts/2026-06-17-install-terraform.sh) — Install Terraform and init first project
-- [Local Provider Config](../terraform/configs/local-provider.hcl) — Minimal Terraform config with local provider
-
 ## Kubernetes
 - [Kubernetes Primer](../kubernetes/notes/0000-primer-kubernetes.md) — What is Kubernetes?
 - [Install Local Cluster Script](../kubernetes/scripts/install-local-cluster.sh) — Install kind and start a local cluster
@@ -27,5 +22,6 @@
 
 ## Terraform
 - [Terraform Primer](../terraform/notes/0000-primer-terraform.md) — What is Terraform?
-- [Install Terraform Script](../terraform/scripts/2026-06-17-install-terraform.sh) — Install Terraform and init first project
-- [Local Provider Config](../terraform/configs/local-provider.hcl) — Minimal Terraform config
+- [Terraform Install Script](../terraform/scripts/2026-06-17-install-terraform.sh) — Install Terraform and init first project
+- [Local Provider Config](../terraform/configs/local-provider.hcl) — Minimal Terraform config with local provider
+- [Terraform Init and Plan Notes](../terraform/notes/2026-06-17-terraform-init-plan.md) — First init and plan run
