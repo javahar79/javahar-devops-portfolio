@@ -17,6 +17,12 @@
 - Added GitHub Actions UI exploration notes (github-actions/notes/2026-06-16-explore-gha-ui.md)
 - Updated README.md to document docker/ and 00_index/ folders
 
+## 2026-06-18
+
+- Added minimal multi-stage Dockerfile (docker/dockerfiles/minimal-multi-stage.Dockerfile)
+- Added multi-service Docker Compose config (docker/configs/multi-service-compose.yaml)
+- Updated README.md and quick-links.md with Docker build and compose entries
+
 ## 2026-06-17
 
 - Reworked Terraform install script to ≤15 lines (tf-002 rework: compressed install + project init)
