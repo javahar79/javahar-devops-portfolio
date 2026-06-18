@@ -4,6 +4,8 @@
 - [Docker Primer](../docker/notes/0000-primer-docker.md) — What is Docker?
 - [Docker Install Script](../docker/scripts/2026-06-16-install-docker.sh) — Install Docker and run first container
 - [Docker CLI Notes](../docker/notes/2026-06-16-explore-docker-cli.md) — Exploring the CLI
+- [Minimal Multi-Stage Dockerfile](../docker/dockerfiles/minimal-multi-stage.Dockerfile) — Layer-optimized build example
+- [Multi-Service Compose Config](../docker/configs/multi-service-compose.yaml) — Web app plus PostgreSQL
 
 ## Git
 - [Git Primer](../git/notes/0000-primer-git.md) — What is Git?

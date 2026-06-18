@@ -4,7 +4,7 @@ My DevOps learning portfolio.
 
 ## Structure
 
-- **docker/** — Docker notes, scripts, and configs
+- **docker/** — Docker notes, scripts, configs, and Dockerfiles
 - **terraform/** — Terraform notes, scripts, and configs
 - **00_index/** — Quick links to all resources
 
@@ -14,6 +14,8 @@ My DevOps learning portfolio.
 - `docker/notes/0000-primer-docker.md` — What is Docker?
 - `docker/scripts/2026-06-16-install-docker.sh` — Install script
 - `docker/notes/2026-06-16-explore-docker-cli.md` — CLI exploration
+- `docker/dockerfiles/minimal-multi-stage.Dockerfile` — Minimal multi-stage Dockerfile
+- `docker/configs/multi-service-compose.yaml` — Multi-service compose app
 
 ### Terraform
 - `terraform/notes/0000-primer-terraform.md` — What is Terraform?
