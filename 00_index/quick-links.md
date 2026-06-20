@@ -4,8 +4,13 @@
 - [Docker Primer](../docker/notes/0000-primer-docker.md) — What is Docker?
 - [Docker Install Script](../docker/scripts/2026-06-16-install-docker.sh) — Install Docker and run first container
 - [Docker CLI Notes](../docker/notes/2026-06-16-explore-docker-cli.md) — Exploring the CLI
+- [Docker Quickstart Notes](../docker/notes/2026-06-20-docker-quickstart.md) — Following the official quickstart
 - [Minimal Multi-Stage Dockerfile](../docker/dockerfiles/minimal-multi-stage.Dockerfile) — Layer-optimized build example
+- [Minimal Tagged Non-Root Dockerfile](../docker/dockerfiles/minimal-tagged-nonroot.Dockerfile) — Tagged build with non-root runtime
 - [Multi-Service Compose Config](../docker/configs/multi-service-compose.yaml) — Web app plus PostgreSQL
+
+## General
+- [DevOps Automation Repo Exploration](../general/notes/2026-06-20-explore-devops-automation-repo.md) — First look at the automation pipeline
 
 ## Git
 - [Git Primer](../git/notes/0000-primer-git.md) — What is Git?
