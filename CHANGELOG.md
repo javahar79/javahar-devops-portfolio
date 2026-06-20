@@ -23,6 +23,13 @@
 - Added multi-service Docker Compose config (docker/configs/multi-service-compose.yaml)
 - Updated README.md and quick-links.md with Docker build and compose entries
 
+## 2026-06-20
+
+- Added DevOps Automation repo exploration notes (general/notes/2026-06-20-explore-devops-automation-repo.md)
+- Added Docker quickstart notes (docker/notes/2026-06-20-docker-quickstart.md)
+- Added minimal tagged non-root Dockerfile (docker/dockerfiles/minimal-tagged-nonroot.Dockerfile)
+- Updated README.md and quick-links.md with new entries
+
 ## 2026-06-17
 
 - Reworked Terraform install script to ≤15 lines (tf-002 rework: compressed install + project init)
