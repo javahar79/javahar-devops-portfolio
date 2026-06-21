@@ -6,6 +6,9 @@
 - [Docker CLI Notes](../docker/notes/2026-06-16-explore-docker-cli.md) — Exploring the CLI
 - [Minimal Multi-Stage Dockerfile](../docker/dockerfiles/minimal-multi-stage.Dockerfile) — Layer-optimized build example
 - [Multi-Service Compose Config](../docker/configs/multi-service-compose.yaml) — Web app plus PostgreSQL
+- [Docker Quickstart Notes](../docker/notes/2026-06-21-docker-quickstart-trials.md) — What tripped me up in the quickstart
+- [Tagged Build Non-Root Dockerfile](../docker/dockerfiles/minimal-tagged-nonroot.Dockerfile) — Multi-stage build with non-root user
+- [First Container Port Map Script](../docker/scripts/2026-06-21-first-container-port-map.sh) — Run nginx and verify port mapping
 
 ## Git
 - [Git Primer](../git/notes/0000-primer-git.md) — What is Git?
