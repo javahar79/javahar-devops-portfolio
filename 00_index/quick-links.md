@@ -11,6 +11,8 @@
 - [Git Primer](../git/notes/0000-primer-git.md) — What is Git?
 - [Git Configure & First Commit Script](../git/scripts/configure-and-commit-first.sh) — Configure Git and make first commit
 - [Git CLI Notes](../git/notes/2026-06-16-explore-git-cli.md) — Exploring the CLI
+- [Git Quickstart Trip-ups](../git/notes/2026-06-21-git-quickstart-trip-ups.md) — Following the official quickstart
+- [Stage, Commit, Push, Undo](../git/notes/2026-06-21-stage-commit-push-undo.md) — Undo, stage, commit, and push
 
 ## GitHub Actions
 - [GitHub Actions Primer](../github-actions/notes/0000-primer-github-actions.md) — What is GitHub Actions?

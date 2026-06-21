@@ -5,6 +5,8 @@ My DevOps learning portfolio.
 ## Structure
 
 - **docker/** — Docker notes, scripts, configs, and Dockerfiles
+- **git/** — Git notes and scripts
+- **general/** — General exploration notes
 - **terraform/** — Terraform notes, scripts, and configs
 - **00_index/** — Quick links to all resources
 
