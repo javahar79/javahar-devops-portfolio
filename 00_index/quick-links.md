@@ -11,6 +11,9 @@
 - [Docker Quickstart Notes](../docker/notes/2026-06-22-docker-quickstart.md) — Following the official quickstart
 - [Minimal Multi-Stage Dockerfile](../docker/dockerfiles/minimal-multi-stage.Dockerfile) — Layer-optimized build example
 - [Multi-Service Compose Config](../docker/configs/multi-service-compose.yaml) — Web app plus PostgreSQL
+- [Docker Quickstart Notes — Second Pass](../docker/notes/2026-06-23-docker-quickstart.md) — Following the quickstart again with compose
+- [Tagged Non-Root Multi-Stage Dockerfile](../docker/dockerfiles/2026-06-23-tagged-nonroot.Dockerfile) — Tagged build with non-root runtime
+- [Port Map Container Script](../docker/scripts/2026-06-23-run-container-port-map.sh) — Build, run, map port, test, clean up
 
 ## Git
 
