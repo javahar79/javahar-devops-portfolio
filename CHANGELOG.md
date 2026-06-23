@@ -17,6 +17,12 @@
 - Added GitHub Actions UI exploration notes (github-actions/notes/2026-06-16-explore-gha-ui.md)
 - Updated README.md to document docker/ and 00_index/ folders
 
+## 2026-06-21
+
+- Added Docker quickstart notes (docker/notes/2026-06-21-docker-quickstart-trials.md)
+- Added tagged build non-root Dockerfile (docker/dockerfiles/minimal-tagged-nonroot.Dockerfile)
+- Added first container port map script (docker/scripts/2026-06-21-first-container-port-map.sh)
+
 ## 2026-06-18
 
 - Added minimal multi-stage Dockerfile (docker/dockerfiles/minimal-multi-stage.Dockerfile)

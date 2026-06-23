@@ -1,15 +1,10 @@
-# using the AS build tag so I can copy artifacts across stages
-FROM alpine:3.20 AS build
-WORKDIR /src
-# kept the script simple — a multi-stage build without compiling anything
-RUN echo '#!/bin/sh' > run.sh && \
-    echo 'echo "Hello from non-root container!"' >> run.sh && \
-    chmod +x run.sh
+FROM alpine:3.19 AS build
+# using alpine because it's small; builder stage for any compilation
+RUN apk add --no-cache curl
 
-FROM alpine:3.20
-# alpine has adduser/addgroup, no useradd needed
-RUN addgroup -S appgroup && adduser -S appuser -G appgroup
-WORKDIR /app
-COPY --from=build /src/run.sh .
+FROM alpine:3.19
+# copy only what we need from build stage — keeps final image small
+COPY --from=build /usr/bin/curl /usr/bin/curl
+RUN adduser -D appuser
 USER appuser
-CMD ["./run.sh"]
+CMD ["curl", "--version"]
