@@ -23,6 +23,13 @@
 - Added multi-service Docker Compose config (docker/configs/multi-service-compose.yaml)
 - Updated README.md and quick-links.md with Docker build and compose entries
 
+## 2026-06-23
+
+- Added Docker quickstart notes — second pass (docker/notes/2026-06-23-docker-quickstart.md)
+- Added tagged multi-stage non-root Dockerfile (docker/dockerfiles/2026-06-23-tagged-nonroot.Dockerfile)
+- Added port-mapping container script (docker/scripts/2026-06-23-run-container-port-map.sh)
+- Updated quick-links.md with new Docker entries
+
 ## 2026-06-22
 
 - Added General section: DevOps Automation repo exploration notes (general/notes/2026-06-22-explore-devops-automation-repo.md)
