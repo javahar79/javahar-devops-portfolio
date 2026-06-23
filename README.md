@@ -1,26 +1,68 @@
 # javahar-devops-portfolio
+> A working-engineer's DevOps reference — Docker, Terraform, Kubernetes, Git, and GitHub Actions notes, scripts, and configs.
 
-My DevOps learning portfolio.
+![Last commit](https://img.shields.io/github/last-commit/javahar79/javahar-devops-portfolio)
+![Files](https://img.shields.io/badge/files-26-blue)
+![Markdown](https://img.shields.io/badge/Markdown-000?logo=markdown&logoColor=white)
+![Shell](https://img.shields.io/badge/Shell-4EAA25?logo=gnubash&logoColor=white)
 
-## Structure
+---
 
-- **docker/** — Docker notes, scripts, configs, and Dockerfiles
-- **terraform/** — Terraform notes, scripts, and configs
-- **00_index/** — Quick links to all resources
+## What's in here
 
-## Recent Work
+DevOps learning portfolio covering five tool families — Docker, Git, GitHub Actions, Kubernetes, and Terraform. Each tool has a primer, CLI walkthrough notes, and where applicable a ready-to-run script or config file.
 
-### Docker
-- `docker/notes/0000-primer-docker.md` — What is Docker?
-- `docker/scripts/2026-06-16-install-docker.sh` — Install script
-- `docker/notes/2026-06-16-explore-docker-cli.md` — CLI exploration
-- `docker/dockerfiles/minimal-multi-stage.Dockerfile` — Minimal multi-stage Dockerfile
-- `docker/configs/multi-service-compose.yaml` — Multi-service compose app
+---
 
-### Terraform
-- `terraform/notes/0000-primer-terraform.md` — What is Terraform?
-- `terraform/scripts/2026-06-17-install-terraform.sh` — Install script
-- `terraform/configs/local-provider.hcl` — Local provider config
+## Coverage
 
-### 00_index
-- `00_index/quick-links.md` — Quick links index 
+| Tool | Notes | Scripts | Configs | Dockerfiles |
+|------|-------|---------|---------|-------------|
+| Docker | 4 | 1 | 1 | 2 |
+| Git | 3 | 1 | — | — |
+| GitHub Actions | 2 | — | 1 | — |
+| Kubernetes | 2 | 1 | — | — |
+| Terraform | 1 | 1 | 1 | — |
+
+---
+
+## Quick links
+
+- [Non-Root Multi-Stage Dockerfile](docker/dockerfiles/minimal-tagged-nonroot.Dockerfile) — Non-root user multi-stage build
+- [Docker Quickstart - What Tripped Me Up](docker/notes/2026-06-22-docker-quickstart.md) — Docker quickstart notes
+- [Git Quickstart Notes](git/notes/2026-06-22-git-quickstart.md) — Git quickstart notes
+- [Multi-Service Compose Config](docker/configs/multi-service-compose.yaml) — Web app plus PostgreSQL
+- [Minimal Multi-Stage Dockerfile](docker/dockerfiles/minimal-multi-stage.Dockerfile) — Layer-optimised multi-stage build example
+
+<details>
+<summary>Full index</summary>
+
+- [Topics](00_index/topics.md) — Complete topic index
+- [Quick Links](00_index/quick-links.md) — Intent-based navigation
+- [Glossary](00_index/glossary.md) — Tool-specific terms
+- [Learning Path](00_index/learning-path.md) — Suggested progression
+- [Changelog](CHANGELOG.md) — Release history
+
+</details>
+
+---
+
+## Layout
+
+| Directory | Contents |
+|-----------|----------|
+| `docker/` | Docker primer, CLI notes, quickstart notes, install script, Dockerfiles, compose config |
+| `git/` | Git primer, CLI exploration, quickstart notes, first-commit script |
+| `github-actions/` | Actions primer, UI walkthrough, CI workflow |
+| `kubernetes/` | K8s primer, kubectl walkthrough, local cluster install script |
+| `terraform/` | Terraform primer, install script, local provider config |
+| `00_index/` | Topic index, quick links, glossary, learning path |
+
+---
+
+## Status
+
+Currently filling L1 primers and first-contact notes across all active tools. Recent additions include Docker quickstart notes, non-root user Dockerfile, and Git quickstart notes.
+
+---
+_Last updated: 2026-06-23_
