@@ -7,10 +7,8 @@
 - **Dockerfile** — A text file with instructions to build a Docker image.
 - **Multi-stage build** — A Dockerfile technique that uses multiple FROM statements to keep the final image small by separating build and runtime dependencies.
 - **Compose** — A tool for defining and running multi-container Docker applications using a YAML file.
-- **Volume mount** — Mapping a host directory or file into a container so the container can read or write to it.
-- **Bind mount** — A type of volume mount that links a specific path on the host to a path in the container.
-- **Port mapping** — Mapping a host port to a container port using the `-p host:container` syntax.
-- **Non-root user** — A user with limited privileges inside a container, improving security posture.
+- **Volume / bind mount** — A mechanism to mount a host directory into a container, enabling data persistence and live-reload during development.
+- **Port mapping** — The `-p host:container` syntax that maps a port on the host to a port inside the container.
 
 ## Git
 
@@ -18,8 +16,6 @@
 - **Commit** — A snapshot of changes in the repository at a given point in time.
 - **Branch** — A movable pointer to a commit, used to isolate work on different features or fixes.
 - **Remote** — A version of the repository hosted on a server (e.g. GitHub), used for collaboration.
-- **Tracking reference** — A Git reference that links a local branch to a remote branch, controlling where `git push` and `git pull` send and retrieve commits.
-- **Stash** — A Git mechanism for temporarily saving uncommitted changes so you can switch branches without committing.
 
 ## GitHub Actions
 

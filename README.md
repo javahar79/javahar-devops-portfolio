@@ -1,17 +1,16 @@
 # javahar-devops-portfolio
-> A working-engineer's DevOps reference — Docker, Git, GitHub Actions, Kubernetes, and Terraform notes, scripts, and configs.
+> A working-engineer's DevOps reference — Docker, Terraform, Kubernetes, Git, and GitHub Actions notes, scripts, and configs.
 
 ![Last commit](https://img.shields.io/github/last-commit/javahar79/javahar-devops-portfolio)
 ![Files](https://img.shields.io/badge/files-32-blue)
 ![Markdown](https://img.shields.io/badge/Markdown-000?logo=markdown&logoColor=white)
 ![Shell](https://img.shields.io/badge/Shell-4EAA25?logo=gnubash&logoColor=white)
-![YAML](https://img.shields.io/badge/YAML-CB171E?logo=yaml&logoColor=white)
 
 ---
 
 ## What's in here
 
-DevOps learning portfolio covering five tool families — Docker, Git, GitHub Actions, Kubernetes, and Terraform. Each tool has a primer, CLI walkthrough notes, and where applicable a ready-to-run script or config file.
+DevOps learning portfolio covering five tool families — Docker, Git, GitHub Actions, Kubernetes, and Terraform. Each tool has a primer, CLI walkthrough notes, and where applicable a ready-to-run script or config file. 32 files in total.
 
 ---
 
@@ -29,11 +28,11 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 ## Quick links
 
-- [Learning Path](00_index/learning-path.md) — Suggested progression from beginner to advanced
-- [Tagged Non-Root Multi-Stage Dockerfile](docker/dockerfiles/2026-06-23-tagged-nonroot.Dockerfile) — Multi-stage build with non-root runtime
-- [Port Map Container Script](docker/scripts/2026-06-23-run-container-port-map.sh) — Build, run, map port, and verify a container
-- [Docker Quickstart Notes — Second Pass](docker/notes/2026-06-23-docker-quickstart.md) — Following the quickstart again with Compose
-- [Git Quickstart Notes](git/notes/2026-06-22-git-quickstart.md) — Git quickstart notes
+- [Non-Root Multi-Stage Dockerfile](docker/dockerfiles/minimal-tagged-nonroot.Dockerfile) — Security-focused multi-stage build with non-root user
+- [Docker Quickstart Notes (2026-06-23)](docker/notes/2026-06-23-docker-quickstart.md) — Docker quickstart — what tripped me up
+- [Tagged Non-Root Dockerfile](docker/dockerfiles/2026-06-23-tagged-nonroot.Dockerfile) — Tagged build with non-root runtime
+- [Multi-Service Compose Config](docker/configs/multi-service-compose.yaml) — Web app plus PostgreSQL
+- [Port Map Script (2026-06-23)](docker/scripts/2026-06-23-run-container-port-map.sh) — Run nginx and verify port mapping
 
 <details>
 <summary>Full index</summary>
@@ -52,10 +51,10 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 | Directory | Contents |
 |-----------|----------|
-| `docker/` | Docker primers, CLI notes, quickstart notes, scripts, Dockerfiles, Compose config |
-| `git/` | Git primer, CLI notes, quickstart notes, first-commit script |
-| `github-actions/` | Actions primer, UI notes, CI workflow |
-| `kubernetes/` | K8s primer, kubectl notes, local cluster install script |
+| `docker/` | Docker primer, CLI notes, quickstart notes, install script, Dockerfiles, compose config |
+| `git/` | Git primer, CLI exploration, quickstart notes, first-commit script |
+| `github-actions/` | Actions primer, UI walkthrough, CI workflow |
+| `kubernetes/` | K8s primer, kubectl walkthrough, local cluster install script |
 | `terraform/` | Terraform primer, install script, local provider config |
 | `00_index/` | Topic index, quick links, glossary, learning path |
 
@@ -63,7 +62,7 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 ## Status
 
-Currently filling L1 primers and first-contact notes across all active tools. Recent additions include Docker quickstart notes, a non-root user Dockerfile, and a port-mapping container script.
+Currently filling L1 primers and first-contact notes across all active tools. Recent additions include tagged non-root Dockerfile, Docker quickstart notes (2026-06-23), and port map script.
 
 ---
 
