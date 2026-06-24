@@ -9,6 +9,13 @@
 - [Docker Quickstart Notes](../docker/notes/2026-06-21-docker-quickstart-trials.md) — What tripped me up in the quickstart
 - [Tagged Build Non-Root Dockerfile](../docker/dockerfiles/minimal-tagged-nonroot.Dockerfile) — Multi-stage build with non-root user
 - [First Container Port Map Script](../docker/scripts/2026-06-21-first-container-port-map.sh) — Run nginx and verify port mapping
+- [Port Map Script (2026-06-23)](../docker/scripts/2026-06-23-run-container-port-map.sh) — Run nginx with port mapping end to end
+- [Port Map Script (2026-06-24)](../docker/scripts/2026-06-24-run-container-port-map.sh) — Build and run container, verify port mapping
+- [Docker Quickstart — Day Two](../docker/notes/2026-06-23-docker-quickstart.md) — Compose networking, volume mounts, Docker Hub push
+- [Docker Quickstart — Day Three](../docker/notes/2026-06-24-docker-quickstart.md) — Official tutorial walkthrough with Compose gotchas
+- [Docker Quickstart Trials — Third Pass](../docker/notes/2026-06-24-docker-quickstart-trials.md) — Compose networking, layer caching, Docker Hub push
+- [Go Hello-World Non-Root Dockerfile](../docker/dockerfiles/2026-06-24-hello-go-nonroot.Dockerfile) — Multi-stage Go build with non-root user
+- [Nginx Non-Root Dockerfile](../docker/dockerfiles/2026-06-24-nginx-nonroot.Dockerfile) — Multi-stage nginx build running as non-root
 
 ## Git
 - [Git Primer](../git/notes/0000-primer-git.md) — What is Git?
