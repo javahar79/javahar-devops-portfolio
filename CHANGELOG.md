@@ -45,9 +45,9 @@
 
 ## 2026-06-24
 
-- Added Docker quickstart notes — third pass (docker/notes/2026-06-24-docker-quickstart.md)
-- Added non-root nginx multi-stage Dockerfile (docker/dockerfiles/2026-06-24-nginx-nonroot.Dockerfile)
-- Added end-to-end port mapping test script (docker/scripts/2026-06-24-run-container-port-map.sh)
+- Added Docker quickstart notes — third pass (docker/notes/2026-06-24-docker-quickstart-trials.md)
+- Added Go hello-world non-root Dockerfile (docker/dockerfiles/2026-06-24-hello-go-nonroot.Dockerfile)
+- Added port-mapping container script (docker/scripts/2026-06-24-run-container-port-map.sh)
 - Updated quick-links.md with new Docker entries
 
 ## 2026-06-17
