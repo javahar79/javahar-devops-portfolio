@@ -7,6 +7,8 @@
 - **Dockerfile** — A text file with instructions to build a Docker image.
 - **Multi-stage build** — A Dockerfile technique that uses multiple FROM statements to keep the final image small by separating build and runtime dependencies.
 - **Compose** — A tool for defining and running multi-container Docker applications using a YAML file.
+- **Volume / bind mount** — A mechanism to mount a host directory into a container, enabling data persistence and live-reload during development.
+- **Port mapping** — The `-p host:container` syntax that maps a port on the host to a port inside the container.
 
 ## Git
 

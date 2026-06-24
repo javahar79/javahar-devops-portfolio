@@ -2,7 +2,7 @@
 > A working-engineer's DevOps reference — Docker, Terraform, Kubernetes, Git, and GitHub Actions notes, scripts, and configs.
 
 ![Last commit](https://img.shields.io/github/last-commit/javahar79/javahar-devops-portfolio)
-![Files](https://img.shields.io/badge/files-26-blue)
+![Files](https://img.shields.io/badge/files-32-blue)
 ![Markdown](https://img.shields.io/badge/Markdown-000?logo=markdown&logoColor=white)
 ![Shell](https://img.shields.io/badge/Shell-4EAA25?logo=gnubash&logoColor=white)
 
@@ -10,7 +10,7 @@
 
 ## What's in here
 
-DevOps learning portfolio covering five tool families — Docker, Git, GitHub Actions, Kubernetes, and Terraform. Each tool has a primer, CLI walkthrough notes, and where applicable a ready-to-run script or config file.
+DevOps learning portfolio covering five tool families — Docker, Git, GitHub Actions, Kubernetes, and Terraform. Each tool has a primer, CLI walkthrough notes, and where applicable a ready-to-run script or config file. 32 files in total.
 
 ---
 
@@ -18,7 +18,7 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 | Tool | Notes | Scripts | Configs | Dockerfiles |
 |------|-------|---------|---------|-------------|
-| Docker | 4 | 1 | 1 | 2 |
+| Docker | 6 | 3 | 1 | 3 |
 | Git | 3 | 1 | — | — |
 | GitHub Actions | 2 | — | 1 | — |
 | Kubernetes | 2 | 1 | — | — |
@@ -28,11 +28,11 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 ## Quick links
 
-- [Non-Root Multi-Stage Dockerfile](docker/dockerfiles/minimal-tagged-nonroot.Dockerfile) — Non-root user multi-stage build
-- [Docker Quickstart - What Tripped Me Up](docker/notes/2026-06-22-docker-quickstart.md) — Docker quickstart notes
-- [Git Quickstart Notes](git/notes/2026-06-22-git-quickstart.md) — Git quickstart notes
+- [Non-Root Multi-Stage Dockerfile](docker/dockerfiles/minimal-tagged-nonroot.Dockerfile) — Security-focused multi-stage build with non-root user
+- [Docker Quickstart Notes (2026-06-23)](docker/notes/2026-06-23-docker-quickstart.md) — Docker quickstart — what tripped me up
+- [Tagged Non-Root Dockerfile](docker/dockerfiles/2026-06-23-tagged-nonroot.Dockerfile) — Tagged build with non-root runtime
 - [Multi-Service Compose Config](docker/configs/multi-service-compose.yaml) — Web app plus PostgreSQL
-- [Minimal Multi-Stage Dockerfile](docker/dockerfiles/minimal-multi-stage.Dockerfile) — Layer-optimised multi-stage build example
+- [Port Map Script (2026-06-23)](docker/scripts/2026-06-23-run-container-port-map.sh) — Run nginx and verify port mapping
 
 <details>
 <summary>Full index</summary>
@@ -62,7 +62,8 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 ## Status
 
-Currently filling L1 primers and first-contact notes across all active tools. Recent additions include Docker quickstart notes, non-root user Dockerfile, and Git quickstart notes.
+Currently filling L1 primers and first-contact notes across all active tools. Recent additions include tagged non-root Dockerfile, Docker quickstart notes (2026-06-23), and port map script.
 
 ---
+
 _Last updated: 2026-06-23_
