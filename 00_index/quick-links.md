@@ -14,6 +14,7 @@
 - [Git Primer](../git/notes/0000-primer-git.md) — What is Git?
 - [Git Configure & First Commit Script](../git/scripts/configure-and-commit-first.sh) — Configure Git and make first commit
 - [Git CLI Notes](../git/notes/2026-06-16-explore-git-cli.md) — Exploring the CLI
+- [Git Undo, Stage, Commit, Push Notes](../git/notes/2026-06-24-git-undo-stage-commit-push.md) — Working through the basic Git workflow
 
 ## GitHub Actions
 - [GitHub Actions Primer](../github-actions/notes/0000-primer-github-actions.md) — What is GitHub Actions?
@@ -30,7 +31,3 @@
 - [Install Local Cluster Script](../kubernetes/scripts/install-local-cluster.sh) — Install kind and start a local cluster
 - [kubectl CLI Notes](../kubernetes/notes/2026-06-16-explore-kubectl.md) — Exploring kubectl
 
-## Terraform
-- [Terraform Primer](../terraform/notes/0000-primer-terraform.md) — What is Terraform?
-- [Install Terraform Script](../terraform/scripts/2026-06-17-install-terraform.sh) — Install Terraform and init first project
-- [Local Provider Config](../terraform/configs/local-provider.hcl) — Minimal Terraform config

@@ -29,6 +29,12 @@
 - Added multi-service Docker Compose config (docker/configs/multi-service-compose.yaml)
 - Updated README.md and quick-links.md with Docker build and compose entries
 
+## 2026-06-24
+
+- Added Git undo, stage, commit, and push tutorial notes (git/notes/2026-06-24-git-undo-stage-commit-push.md)
+- Updated quick-links.md with new Git entry
+- Updated README.md Git coverage count
+
 ## 2026-06-23
 
 - Added Docker quickstart notes — second pass (docker/notes/2026-06-23-docker-quickstart.md)
