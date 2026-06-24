@@ -43,6 +43,13 @@
 - Added Git quickstart notes (git/notes/2026-06-22-git-quickstart.md)
 - Updated quick-links.md with General section and new Docker/Git entries
 
+## 2026-06-24
+
+- Added Docker quickstart notes — third pass (docker/notes/2026-06-24-docker-quickstart-trials.md)
+- Added Go hello-world non-root Dockerfile (docker/dockerfiles/2026-06-24-hello-go-nonroot.Dockerfile)
+- Added port-mapping container script (docker/scripts/2026-06-24-run-container-port-map.sh)
+- Updated quick-links.md with new Docker entries
+
 ## 2026-06-17
 
 - Reworked Terraform install script to init only without running apply (tf-002 rework: 11-line L1 script)
