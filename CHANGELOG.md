@@ -29,6 +29,12 @@
 - Added multi-service Docker Compose config (docker/configs/multi-service-compose.yaml)
 - Updated README.md and quick-links.md with Docker build and compose entries
 
+## 2026-06-24
+
+- Added Git undo, stage, commit, and push tutorial notes (git/notes/2026-06-24-git-undo-stage-commit-push.md)
+- Updated quick-links.md with new Git entry
+- Updated README.md Git coverage count
+
 ## 2026-06-23
 
 - Added Docker quickstart notes — second pass (docker/notes/2026-06-23-docker-quickstart.md)
@@ -48,6 +54,13 @@
 - Added Docker quickstart notes — third pass (docker/notes/2026-06-24-docker-quickstart-trials.md)
 - Added Go hello-world non-root Dockerfile (docker/dockerfiles/2026-06-24-hello-go-nonroot.Dockerfile)
 - Added port-mapping container script (docker/scripts/2026-06-24-run-container-port-map.sh)
+- Updated quick-links.md with new Docker entries
+
+## 2026-06-25
+
+- Added Docker quickstart notes (docker/notes/2026-06-25-docker-quickstart-trials.md)
+- Added minimal non-root Dockerfile (docker/dockerfiles/2026-06-25-minimal-nonroot.Dockerfile)
+- Added port-mapping container script (docker/scripts/2026-06-25-first-container-port-map.sh)
 - Updated quick-links.md with new Docker entries
 
 ## 2026-06-17
