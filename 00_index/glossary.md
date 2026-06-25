@@ -9,6 +9,8 @@
 - **Compose** — A tool for defining and running multi-container Docker applications using a YAML file.
 - **Volume / bind mount** — A mechanism to mount a host directory into a container, enabling data persistence and live-reload during development.
 - **Port mapping** — The `-p host:container` syntax that maps a port on the host to a port inside the container.
+- **docker init** — An interactive command that generates a Dockerfile and compose.yml by detecting your project's language and dependencies.
+- **Compose watch** — A Docker Compose feature that synchronises changed files into a running container without a full rebuild, available in Compose v2.23+.
 - **Layer caching** — Docker caches each build layer and only rebuilds layers whose instructions or context have changed; ordering `COPY` statements to put infrequently-changing files first improves build speed.
 
 ## Git

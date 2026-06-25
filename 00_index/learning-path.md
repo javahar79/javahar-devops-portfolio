@@ -22,29 +22,32 @@ These tools are the day-to-day workhorses. They're accessible right away and for
 Apply what you've learned with hands-on setup and early troubleshooting. This is where the lessons stick.
 
 - [Git Quickstart Notes](../git/notes/2026-06-22-git-quickstart.md) — First repository setup and the remote workflow.
+- [Git Undo, Stage, Commit, Push](../git/notes/2026-06-24-git-undo-stage-commit-push.md) — Working through the basic Git workflow, including undoing mistakes.
 - [Docker Quickstart Notes](../docker/notes/2026-06-20-docker-quickstart.md) — Building your first image and running a container.
 - [Docker Quickstart — What Tripped Me Up](../docker/notes/2026-06-21-docker-quickstart-trials.md) — First-run pitfalls and how to resolve them.
 - [Docker Quickstart — Day Two](../docker/notes/2026-06-22-docker-quickstart.md) — Common pitfalls and how to resolve them.
-- [Docker Quickstart — Official Tutorial](../docker/notes/2026-06-24-docker-quickstart.md) — Full walkthrough including Compose gotchas and layer caching.
-- [Docker Quickstart Trials — Third Pass](../docker/notes/2026-06-24-docker-quickstart-trials.md) — Compose networking, layer caching, Docker Hub push.
+- [Docker Quickstart — Third Pass](../docker/notes/2026-06-24-docker-quickstart.md) — Official tutorial walkthrough with Compose gotchas.
 - [Docker CLI Exploration](../docker/notes/2026-06-16-explore-docker-cli.md) — Build, run, and manage containers from the command line.
 - [Install Docker Script](../docker/scripts/2026-06-16-install-docker.sh) — Docker installation smoke test.
+- [First Container Port Map Script (2026-06-21)](../docker/scripts/2026-06-21-first-container-port-map.sh) — Port mapping walkthrough.
+- [Port Map Script (2026-06-23)](../docker/scripts/2026-06-23-run-container-port-map.sh) — Nginx port mapping end to end.
+- [Port Map Script (2026-06-24)](../docker/scripts/2026-06-24-run-container-port-map.sh) — Build and run container with port mapping.
+- [Port Map Script (2026-06-25)](../docker/scripts/2026-06-25-first-container-port-map.sh) — Build and run nginx with port mapping.
 - [Git Configure & First Commit Script](../git/scripts/configure-and-commit-first.sh) — Set up Git identity and push your first commit.
-- [Git Undo, Stage, Commit, Push Workflow](../git/notes/2026-06-24-git-undo-stage-commit-push.md) — Staging, committing, pushing, and undoing mistakes safely.
 
 ## Stage 4: Integration
 
 Combine tools to build real infrastructure and pipelines. This is where the separate pieces start to feel like a system.
 
 - [Docker Quickstart — Day Three (Multi-Service)](../docker/notes/2026-06-23-docker-quickstart.md) — Compose networking, volume mounts, Docker Hub push.
+- [Docker Quickstart Walkthrough](../docker/notes/2026-06-25-docker-quickstart-walkthrough.md) — Guided walkthrough covering build, run, tag, and push.
 - [Minimal Multi-Stage Dockerfile](../docker/dockerfiles/minimal-multi-stage.Dockerfile) — Optimised image builds for production.
 - [Non-Root Multi-Stage Dockerfile](../docker/dockerfiles/minimal-tagged-nonroot.Dockerfile) — Security-focused builds that avoid running as root.
-- [Tagged Non-Root Dockerfile (2026-06-23)](../docker/dockerfiles/2026-06-23-tagged-nonroot.Dockerfile) — Tagged multi-stage build with non-root runtime.
-- [Go Hello-World Non-Root Dockerfile](../docker/dockerfiles/2026-06-24-hello-go-nonroot.Dockerfile) — Multi-stage Go compilation with non-root runtime.
-- [Nginx Non-Root Dockerfile](../docker/dockerfiles/2026-06-24-nginx-nonroot.Dockerfile) — Multi-stage nginx build running as non-root user.
+- [Tagged Build Non-Root Dockerfile (2026-06-23)](../docker/dockerfiles/2026-06-23-tagged-nonroot.Dockerfile) — Tagged multi-stage build with non-root runtime.
+- [Go Hello-World Non-Root Dockerfile](../docker/dockerfiles/2026-06-24-hello-go-nonroot.Dockerfile) — Multi-stage Go build with non-root user.
+- [Nginx Non-Root Dockerfile](../docker/dockerfiles/2026-06-24-nginx-nonroot.Dockerfile) — Multi-stage nginx build with non-root user.
+- [Minimal Tagged Non-Root Dockerfile (2026-06-25)](../docker/dockerfiles/2026-06-25-minimal-tagged-nonroot.Dockerfile) — Tagged multi-stage build with non-root user.
 - [Multi-Service Compose Config](../docker/configs/multi-service-compose.yaml) — Multi-container applications with Compose.
-- [First Container Port Map (2026-06-21)](../docker/scripts/2026-06-21-first-container-port-map.sh) — Port mapping walkthrough.
-- [Port Map Script (2026-06-23)](../docker/scripts/2026-06-23-run-container-port-map.sh) — Nginx port mapping end to end.
 - [CI Workflow Config](../github-actions/configs/ci-workflow.yaml) — Automated testing and deployment with GitHub Actions.
 - [Local Provider Config](../terraform/configs/local-provider.hcl) — Infrastructure configuration with Terraform.
 - [Install Local Cluster Script](../kubernetes/scripts/install-local-cluster.sh) — Local K8s development environment with kind.
