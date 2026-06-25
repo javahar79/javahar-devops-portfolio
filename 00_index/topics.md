@@ -10,15 +10,21 @@
 - [script](docker/scripts/2026-06-16-install-docker.sh) — Install Docker and run first container
 - [script](docker/scripts/2026-06-21-first-container-port-map.sh) — Run nginx and verify port mapping
 - [script](docker/scripts/2026-06-23-run-container-port-map.sh) — Run nginx with port mapping end to end
+- [script](docker/scripts/2026-06-24-run-container-port-map.sh) — Build and run container with port mapping end to end
 - [dockerfile](docker/dockerfiles/minimal-multi-stage.Dockerfile) — Minimal multi-stage Dockerfile
 - [dockerfile](docker/dockerfiles/minimal-tagged-nonroot.Dockerfile) — Non-root user multi-stage build
 - [dockerfile](docker/dockerfiles/2026-06-23-tagged-nonroot.Dockerfile) — Tagged build with non-root runtime
+- [dockerfile](docker/dockerfiles/2026-06-24-hello-go-nonroot.Dockerfile) — Multi-stage Go build with non-root user
+- [dockerfile](docker/dockerfiles/2026-06-24-nginx-nonroot.Dockerfile) — Multi-stage nginx build with non-root user
 - [config](docker/configs/multi-service-compose.yaml) — Multi-service Docker Compose app
+- [notes](docker/notes/2026-06-24-docker-quickstart.md) — Following the official quickstart
+- [notes](docker/notes/2026-06-24-docker-quickstart-trials.md) — Quickstart third pass — Compose networking, layer caching
 
 ## Git
 - [primer](git/notes/0000-primer-git.md) — What is Git?
 - [notes](git/notes/2026-06-16-explore-git-cli.md) — Git CLI exploration
 - [notes](git/notes/2026-06-22-git-quickstart.md) — Git quickstart notes
+- [notes](git/notes/2026-06-24-git-undo-stage-commit-push.md) — Git undo, stage, commit, and push workflow
 - [script](git/scripts/configure-and-commit-first.sh) — Configure Git and make first commit
 
 ## GitHub Actions
