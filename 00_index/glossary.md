@@ -9,6 +9,7 @@
 - **Compose** — A tool for defining and running multi-container Docker applications using a YAML file.
 - **Volume / bind mount** — A mechanism to mount a host directory into a container, enabling data persistence and live-reload during development.
 - **Port mapping** — The `-p host:container` syntax that maps a port on the host to a port inside the container.
+- **Layer caching** — Docker caches each build layer and only rebuilds layers whose instructions or context have changed; ordering `COPY` statements to put infrequently-changing files first improves build speed.
 
 ## Git
 
@@ -16,6 +17,9 @@
 - **Commit** — A snapshot of changes in the repository at a given point in time.
 - **Branch** — A movable pointer to a commit, used to isolate work on different features or fixes.
 - **Remote** — A version of the repository hosted on a server (e.g. GitHub), used for collaboration.
+- **git revert** — Creates a new commit that reverses the changes from a previous commit; safe for shared branches.
+- **git restore --staged** — Unstages a file from the staging area without modifying the working copy.
+- **git commit --amend** — Modifies the most recent commit, either to update the commit message or to include additional staged changes.
 
 ## GitHub Actions
 
