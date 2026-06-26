@@ -2,7 +2,7 @@
 > A working-engineer's DevOps reference — Docker, Terraform, Kubernetes, Git, and GitHub Actions notes, scripts, and configs.
 
 ![Last commit](https://img.shields.io/github/last-commit/javahar79/javahar-devops-portfolio)
-![Files](https://img.shields.io/badge/files-41-blue)
+![Files](https://img.shields.io/badge/files-43-blue)
 ![Markdown](https://img.shields.io/badge/Markdown-000?logo=markdown&logoColor=white)
 ![Shell](https://img.shields.io/badge/Shell-4EAA25?logo=gnubash&logoColor=white)
 
@@ -18,7 +18,7 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 | Tool | Notes | Scripts | Configs | Dockerfiles |
 |------|-------|---------|---------|-------------|
-| Docker | 9 | 5 | 1 | 6 |
+| Docker | 11 | 7 | 1 | 8 |
 | Git | 4 | 1 | — | — |
 | GitHub Actions | 2 | — | 1 | — |
 | Kubernetes | 2 | 1 | — | — |
@@ -29,10 +29,10 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 ## Quick links
 
 - [Docker Quickstart Walkthrough](docker/notes/2026-06-25-docker-quickstart-walkthrough.md) — Guided walkthrough covering build, run, tag, and push
+- [Docker Quickstart — Trip-Ups](docker/notes/2026-06-26-docker-quickstart-trip-ups.md) — Official getting-started guide: what tripped me up and how I fixed it
 - [Minimal Tagged Non-Root Dockerfile](docker/dockerfiles/2026-06-25-minimal-tagged-nonroot.Dockerfile) — Tagged multi-stage build with non-root user
-- [Container Port Map Script](docker/scripts/2026-06-25-first-container-port-map.sh) — Build and run nginx with port mapping end to end
-- [Git Undo, Stage, Commit, Push](git/notes/2026-06-24-git-undo-stage-commit-push.md) — Basic Git workflow including undoing mistakes
-- [Go Hello-World Non-Root Dockerfile](docker/dockerfiles/2026-06-24-hello-go-nonroot.Dockerfile) — Multi-stage Go build with non-root user
+- [Trying Tagged Build Dockerfile](docker/dockerfiles/2026-06-26-trying-tagged-build.Dockerfile) — Python multi-stage build with non-root user
+- [Tagged Non-Root Dockerfile](docker/dockerfiles/2026-06-26-tagged-nonroot.Dockerfile) — Tagged build with non-root runtime
 
 <details>
 <summary>Full index</summary>
@@ -62,8 +62,8 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 ## Status
 
-Currently working through L1 notes across all active tools. Recent additions cover a Docker quickstart walkthrough (build, run, tag, push), a minimal tagged non-root Dockerfile, and a first-container port-map script.
+Currently working through L1 notes across all active tools. Recent additions cover Docker quickstart trip-ups, trying tagged builds, and updated port-map scripts.
 
 ---
 
-_Last updated: 2026-06-26_
+_Last updated: 2026-06-27_

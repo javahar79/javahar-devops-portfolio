@@ -22,6 +22,12 @@
 - [dockerfile](../docker/dockerfiles/2026-06-24-hello-go-nonroot.Dockerfile) — Multi-stage Go build with non-root user
 - [dockerfile](../docker/dockerfiles/2026-06-24-nginx-nonroot.Dockerfile) — Multi-stage nginx build with non-root user
 - [dockerfile](../docker/dockerfiles/2026-06-25-minimal-tagged-nonroot.Dockerfile) — Tagged multi-stage build with non-root user
+- [notes](../docker/notes/2026-06-26-docker-quickstart-trials.md) — What tripped me up in the quickstart
+- [notes](../docker/notes/2026-06-26-docker-quickstart-trip-ups.md) — Official getting-started guide: what tripped me up and how I fixed it
+- [script](../docker/scripts/2026-06-26-first-container-port-map.sh) — Run nginx and verify port mapping
+- [script](../docker/scripts/2026-06-26-port-map-container.sh) — Build and run container with port mapping
+- [dockerfile](../docker/dockerfiles/2026-06-26-tagged-nonroot.Dockerfile) — Tagged build with non-root runtime
+- [dockerfile](../docker/dockerfiles/2026-06-26-trying-tagged-build.Dockerfile) — Python multi-stage build with non-root user
 - [config](../docker/configs/multi-service-compose.yaml) — Multi-service Docker Compose app
 
 ## Git

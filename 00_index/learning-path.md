@@ -33,6 +33,12 @@ Apply what you've learned with hands-on setup and early troubleshooting. This is
 - [Port Map Script (2026-06-23)](../docker/scripts/2026-06-23-run-container-port-map.sh) — Nginx port mapping end to end.
 - [Port Map Script (2026-06-24)](../docker/scripts/2026-06-24-run-container-port-map.sh) — Build and run container with port mapping.
 - [Port Map Script (2026-06-25)](../docker/scripts/2026-06-25-first-container-port-map.sh) — Build and run nginx with port mapping.
+- [Port Map Script (2026-06-26)](../docker/scripts/2026-06-26-port-map-container.sh) — Build and run container with port mapping.
+- [Docker Quickstart Trip-Ups](../docker/notes/2026-06-26-docker-quickstart-trip-ups.md) — Official getting-started guide: what tripped me up and how I fixed it.
+- [Trying Tagged Build Dockerfile](../docker/dockerfiles/2026-06-26-trying-tagged-build.Dockerfile) — Python multi-stage build with non-root user.
+- [Tagged Non-Root Dockerfile (2026-06-26)](../docker/dockerfiles/2026-06-26-tagged-nonroot.Dockerfile) — Tagged build with non-root runtime.
+- [Docker Quickstart Trials (2026-06-26)](../docker/notes/2026-06-26-docker-quickstart-trials.md) — What tripped me up in the quickstart.
+- [First Container Port Map Script (nginx 2026-06-26)](../docker/scripts/2026-06-26-first-container-port-map.sh) — Run nginx and verify port mapping.
 - [Git Configure & First Commit Script](../git/scripts/configure-and-commit-first.sh) — Set up Git identity and push your first commit.
 
 ## Stage 4: Integration
