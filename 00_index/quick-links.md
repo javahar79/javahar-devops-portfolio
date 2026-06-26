@@ -12,6 +12,9 @@
 - [Docker Getting-Started Walkthrough](../docker/notes/2026-06-25-docker-quickstart-walkthrough.md) — Full multi-part guide with what tripped me up
 - [Minimal Tagged Non-Root Dockerfile](../docker/dockerfiles/2026-06-25-minimal-tagged-nonroot.Dockerfile) — Multi-stage Go build with non-root user
 - [First Container Port Map Script (Python)](../docker/scripts/2026-06-25-first-container-port-map.sh) — Run Python HTTP server and verify port mapping
+- [Docker Quickstart Notes (4th pass)](../docker/notes/2026-06-26-docker-quickstart-trials.md) — What tripped me following the official quickstart
+- [Tagged Non-Root Dockerfile](../docker/dockerfiles/2026-06-26-tagged-nonroot.Dockerfile) — Alpine multi-stage build with non-root user
+- [Port Map Container Script](../docker/scripts/2026-06-26-port-map-container.sh) — Run nginx and verify port mapping end to end
 
 ## Git
 - [Git Primer](../git/notes/0000-primer-git.md) — What is Git?
