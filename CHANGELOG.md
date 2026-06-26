@@ -65,6 +65,9 @@
 
 ## 2026-06-26
 
+- Added Docker quickstart trip-ups notes (docker/notes/2026-06-26-docker-quickstart-trip-ups.md)
+- Added trying tagged build Dockerfile — Python multi-stage with non-root (docker/dockerfiles/2026-06-26-trying-tagged-build.Dockerfile)
+- Added first container port map script — nginx (docker/scripts/2026-06-26-first-container-port-map.sh)
 - Added Docker quickstart notes — fourth pass (docker/notes/2026-06-26-docker-quickstart-trials.md)
 - Added tagged non-root Dockerfile with Go build (docker/dockerfiles/2026-06-26-tagged-nonroot.Dockerfile)
 - Added nginx port-mapping container script (docker/scripts/2026-06-26-port-map-container.sh)
