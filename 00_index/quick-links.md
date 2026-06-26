@@ -1,39 +1,50 @@
 # Quick Links
 
 ## Docker
+
 - [Docker Primer](../docker/notes/0000-primer-docker.md) — What is Docker?
 - [Docker Install Script](../docker/scripts/2026-06-16-install-docker.sh) — Install Docker and run first container
 - [Docker CLI Notes](../docker/notes/2026-06-16-explore-docker-cli.md) — Exploring the CLI
+- [Docker Quickstart — First Pass](../docker/notes/2026-06-20-docker-quickstart.md) — Following the official quickstart
+- [Docker Quickstart — What Tripped Me Up](../docker/notes/2026-06-21-docker-quickstart-trials.md) — First-run pitfalls
+- [Docker Quickstart — Day Two](../docker/notes/2026-06-22-docker-quickstart.md) — Common pitfalls and how to resolve them
+- [Docker Quickstart — Day Three](../docker/notes/2026-06-23-docker-quickstart.md) — Compose networking, volume mounts, Docker Hub push
+- [Docker Quickstart — Third Pass](../docker/notes/2026-06-24-docker-quickstart.md) — Official tutorial with Compose gotchas
+- [Docker Quickstart — Walkthrough](../docker/notes/2026-06-25-docker-quickstart-walkthrough.md) — Guided build, run, tag, and push
 - [Minimal Multi-Stage Dockerfile](../docker/dockerfiles/minimal-multi-stage.Dockerfile) — Layer-optimized build example
+- [Non-Root Multi-Stage Dockerfile](../docker/dockerfiles/minimal-tagged-nonroot.Dockerfile) — Multi-stage build with non-root user
+- [Tagged Build Non-Root Dockerfile (2026-06-23)](../docker/dockerfiles/2026-06-23-tagged-nonroot.Dockerfile) — Tagged build with non-root runtime
+- [Go Hello-World Non-Root Dockerfile](../docker/dockerfiles/2026-06-24-hello-go-nonroot.Dockerfile) — Multi-stage Go build with non-root user
+- [Nginx Non-Root Dockerfile](../docker/dockerfiles/2026-06-24-nginx-nonroot.Dockerfile) — Multi-stage nginx build with non-root user
+- [Minimal Tagged Non-Root Dockerfile (2026-06-25)](../docker/dockerfiles/2026-06-25-minimal-tagged-nonroot.Dockerfile) — Tagged multi-stage build with non-root user
 - [Multi-Service Compose Config](../docker/configs/multi-service-compose.yaml) — Web app plus PostgreSQL
-- [Docker Quickstart Notes](../docker/notes/2026-06-21-docker-quickstart-trials.md) — What tripped me up in the quickstart
-- [Tagged Build Non-Root Dockerfile](../docker/dockerfiles/minimal-tagged-nonroot.Dockerfile) — Multi-stage build with non-root user
 - [First Container Port Map Script](../docker/scripts/2026-06-21-first-container-port-map.sh) — Run nginx and verify port mapping
-- [Docker Getting-Started Walkthrough](../docker/notes/2026-06-25-docker-quickstart-walkthrough.md) — Full multi-part guide with what tripped me up
-- [Minimal Tagged Non-Root Dockerfile](../docker/dockerfiles/2026-06-25-minimal-tagged-nonroot.Dockerfile) — Multi-stage Go build with non-root user
-- [First Container Port Map Script (Python)](../docker/scripts/2026-06-25-first-container-port-map.sh) — Run Python HTTP server and verify port mapping
-- [Docker Quickstart Notes (4th pass)](../docker/notes/2026-06-26-docker-quickstart-trials.md) — What tripped me following the official quickstart
-- [Tagged Non-Root Dockerfile](../docker/dockerfiles/2026-06-26-tagged-nonroot.Dockerfile) — Alpine multi-stage build with non-root user
-- [Port Map Container Script](../docker/scripts/2026-06-26-port-map-container.sh) — Run nginx and verify port mapping end to end
+- [Port Map Script (2026-06-23)](../docker/scripts/2026-06-23-run-container-port-map.sh) — Nginx port mapping end to end
+- [Port Map Script (2026-06-24)](../docker/scripts/2026-06-24-run-container-port-map.sh) — Build and run container with port mapping
+- [Port Map Script (2026-06-25)](../docker/scripts/2026-06-25-first-container-port-map.sh) — Build and run nginx with port mapping
 
 ## Git
+
 - [Git Primer](../git/notes/0000-primer-git.md) — What is Git?
-- [Git Configure & First Commit Script](../git/scripts/configure-and-commit-first.sh) — Configure Git and make first commit
 - [Git CLI Notes](../git/notes/2026-06-16-explore-git-cli.md) — Exploring the CLI
-- [Git Undo, Stage, Commit, Push Notes](../git/notes/2026-06-24-git-undo-stage-commit-push.md) — Working through the basic Git workflow
+- [Git Quickstart Notes](../git/notes/2026-06-22-git-quickstart.md) — First repository setup and remote workflow
+- [Git Undo, Stage, Commit, Push](../git/notes/2026-06-24-git-undo-stage-commit-push.md) — Basic Git workflow including undoing mistakes
+- [Git Configure & First Commit Script](../git/scripts/configure-and-commit-first.sh) — Configure Git and make first commit
 
 ## GitHub Actions
+
 - [GitHub Actions Primer](../github-actions/notes/0000-primer-github-actions.md) — What is GitHub Actions?
-- [CI Workflow Config](../github-actions/configs/ci-workflow.yaml) — Minimal CI workflow
 - [GitHub Actions UI Notes](../github-actions/notes/2026-06-16-explore-gha-ui.md) — Exploring the UI
+- [CI Workflow Config](../github-actions/configs/ci-workflow.yaml) — Minimal CI workflow
 
 ## Terraform
+
 - [Terraform Primer](../terraform/notes/0000-primer-terraform.md) — What is Terraform?
 - [Terraform Install Script](../terraform/scripts/2026-06-17-install-terraform.sh) — Install Terraform and init first project
 - [Local Provider Config](../terraform/configs/local-provider.hcl) — Minimal Terraform config with local provider
 
 ## Kubernetes
-- [Kubernetes Primer](../kubernetes/notes/0000-primer-kubernetes.md) — What is Kubernetes?
-- [Install Local Cluster Script](../kubernetes/scripts/install-local-cluster.sh) — Install kind and start a local cluster
-- [kubectl CLI Notes](../kubernetes/notes/2026-06-16-explore-kubectl.md) — Exploring kubectl
 
+- [Kubernetes Primer](../kubernetes/notes/0000-primer-kubernetes.md) — What is Kubernetes?
+- [kubectl CLI Notes](../kubernetes/notes/2026-06-16-explore-kubectl.md) — Exploring kubectl
+- [Install Local Cluster Script](../kubernetes/scripts/install-local-cluster.sh) — Install kind and start a local cluster
