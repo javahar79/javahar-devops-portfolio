@@ -63,6 +63,13 @@
 - Added first container port map script with Python HTTP server (docker/scripts/2026-06-25-first-container-port-map.sh)
 - Updated quick-links.md with new Docker entries
 
+## 2026-06-26
+
+- Added Docker quickstart notes — fourth pass (docker/notes/2026-06-26-docker-quickstart-trials.md)
+- Added tagged non-root Dockerfile with Go build (docker/dockerfiles/2026-06-26-tagged-nonroot.Dockerfile)
+- Added nginx port-mapping container script (docker/scripts/2026-06-26-port-map-container.sh)
+- Updated quick-links.md with new Docker entries
+
 ## 2026-06-17
 
 - Reworked Terraform install script to init only without running apply (tf-002 rework: 11-line L1 script)
