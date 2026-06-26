@@ -33,6 +33,10 @@ Apply what you've learned with hands-on setup and early troubleshooting. This is
 - [Port Map Script (2026-06-23)](../docker/scripts/2026-06-23-run-container-port-map.sh) — Nginx port mapping end to end.
 - [Port Map Script (2026-06-24)](../docker/scripts/2026-06-24-run-container-port-map.sh) — Build and run container with port mapping.
 - [Port Map Script (2026-06-25)](../docker/scripts/2026-06-25-first-container-port-map.sh) — Build and run nginx with port mapping.
+- [Docker Quickstart — Fourth Pass](../docker/notes/2026-06-26-docker-quickstart-trials.md) — More quickstart trials including buildx caveats and volume mounts.
+- [Docker Quickstart Trip-Ups](../docker/notes/2026-06-26-docker-quickstart-trip-ups.md) — Official getting-started guide pitfalls: port conflicts, bind mounts, and Compose gotchas.
+- [First Container Port Map Script (nginx)](../docker/scripts/2026-06-26-first-container-port-map.sh) — Run nginx and verify port mapping.
+- [Port Map Container Script](../docker/scripts/2026-06-26-port-map-container.sh) — Run nginx and verify port mapping end to end.
 - [Git Configure & First Commit Script](../git/scripts/configure-and-commit-first.sh) — Set up Git identity and push your first commit.
 
 ## Stage 4: Integration
@@ -47,6 +51,8 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Go Hello-World Non-Root Dockerfile](../docker/dockerfiles/2026-06-24-hello-go-nonroot.Dockerfile) — Multi-stage Go build with non-root user.
 - [Nginx Non-Root Dockerfile](../docker/dockerfiles/2026-06-24-nginx-nonroot.Dockerfile) — Multi-stage nginx build with non-root user.
 - [Minimal Tagged Non-Root Dockerfile (2026-06-25)](../docker/dockerfiles/2026-06-25-minimal-tagged-nonroot.Dockerfile) — Tagged multi-stage build with non-root user.
+- [Tagged Non-Root Dockerfile](../docker/dockerfiles/2026-06-26-tagged-nonroot.Dockerfile) — Alpine multi-stage build with non-root user.
+- [Trying Tagged Build Dockerfile](../docker/dockerfiles/2026-06-26-trying-tagged-build.Dockerfile) — Python multi-stage build with non-root user.
 - [Multi-Service Compose Config](../docker/configs/multi-service-compose.yaml) — Multi-container applications with Compose.
 - [CI Workflow Config](../github-actions/configs/ci-workflow.yaml) — Automated testing and deployment with GitHub Actions.
 - [Local Provider Config](../terraform/configs/local-provider.hcl) — Infrastructure configuration with Terraform.

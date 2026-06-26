@@ -11,17 +11,23 @@
 - [notes](../docker/notes/2026-06-24-docker-quickstart.md) — Docker quickstart — third pass with Compose gotchas
 - [notes](../docker/notes/2026-06-24-docker-quickstart-trials.md) — More quickstart trials and gotchas
 - [notes](../docker/notes/2026-06-25-docker-quickstart-walkthrough.md) — Guided walkthrough covering build, run, tag, and push
+- [notes](../docker/notes/2026-06-26-docker-quickstart-trials.md) — Docker quickstart — fourth pass with Compose gotchas
+- [notes](../docker/notes/2026-06-26-docker-quickstart-trip-ups.md) — Official getting-started guide: what tripped me up
 - [script](../docker/scripts/2026-06-16-install-docker.sh) — Install Docker and run first container
 - [script](../docker/scripts/2026-06-21-first-container-port-map.sh) — Run nginx and verify port mapping
 - [script](../docker/scripts/2026-06-23-run-container-port-map.sh) — Run nginx with port mapping end to end
 - [script](../docker/scripts/2026-06-24-run-container-port-map.sh) — Build and run container with port mapping
 - [script](../docker/scripts/2026-06-25-first-container-port-map.sh) — Build and run nginx with port mapping
+- [script](../docker/scripts/2026-06-26-first-container-port-map.sh) — Run nginx and verify port mapping
+- [script](../docker/scripts/2026-06-26-port-map-container.sh) — Run nginx and verify port mapping end to end
 - [dockerfile](../docker/dockerfiles/minimal-multi-stage.Dockerfile) — Minimal multi-stage Dockerfile
 - [dockerfile](../docker/dockerfiles/minimal-tagged-nonroot.Dockerfile) — Non-root user multi-stage build
 - [dockerfile](../docker/dockerfiles/2026-06-23-tagged-nonroot.Dockerfile) — Tagged build with non-root runtime
 - [dockerfile](../docker/dockerfiles/2026-06-24-hello-go-nonroot.Dockerfile) — Multi-stage Go build with non-root user
 - [dockerfile](../docker/dockerfiles/2026-06-24-nginx-nonroot.Dockerfile) — Multi-stage nginx build with non-root user
 - [dockerfile](../docker/dockerfiles/2026-06-25-minimal-tagged-nonroot.Dockerfile) — Tagged multi-stage build with non-root user
+- [dockerfile](../docker/dockerfiles/2026-06-26-tagged-nonroot.Dockerfile) — Alpine multi-stage build with non-root user
+- [dockerfile](../docker/dockerfiles/2026-06-26-trying-tagged-build.Dockerfile) — Python multi-stage build with non-root user
 - [config](../docker/configs/multi-service-compose.yaml) — Multi-service Docker Compose app
 
 ## Git

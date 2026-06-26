@@ -2,15 +2,16 @@
 > A working-engineer's DevOps reference — Docker, Terraform, Kubernetes, Git, and GitHub Actions notes, scripts, and configs.
 
 ![Last commit](https://img.shields.io/github/last-commit/javahar79/javahar-devops-portfolio)
-![Files](https://img.shields.io/badge/files-41-blue)
+![Files](https://img.shields.io/badge/files-47-blue)
 ![Markdown](https://img.shields.io/badge/Markdown-000?logo=markdown&logoColor=white)
 ![Shell](https://img.shields.io/badge/Shell-4EAA25?logo=gnubash&logoColor=white)
+![Dockerfile](https://img.shields.io/badge/Dockerfile-2496ED?logo=docker&logoColor=white)
 
 ---
 
 ## What's in here
 
-DevOps learning portfolio covering five tool families — Docker, Git, GitHub Actions, Kubernetes, and Terraform. Each tool has a primer, CLI walkthrough notes, and where applicable a ready-to-run script, config file, or Dockerfile.
+DevOps learning portfolio covering five tool families — Docker, Git, GitHub Actions, Kubernetes, and Terraform. Each tool has a primer, CLI walkthrough notes, and where applicable a ready-to-run script, config file, or Dockerfile. Over 45 files split across notes, scripts, configs, Dockerfiles, and index pages.
 
 ---
 
@@ -18,7 +19,7 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 | Tool | Notes | Scripts | Configs | Dockerfiles |
 |------|-------|---------|---------|-------------|
-| Docker | 9 | 5 | 1 | 6 |
+| Docker | 11 | 7 | 1 | 8 |
 | Git | 4 | 1 | — | — |
 | GitHub Actions | 2 | — | 1 | — |
 | Kubernetes | 2 | 1 | — | — |
@@ -28,11 +29,11 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 ## Quick links
 
-- [Docker Quickstart Walkthrough](docker/notes/2026-06-25-docker-quickstart-walkthrough.md) — Guided walkthrough covering build, run, tag, and push
-- [Minimal Tagged Non-Root Dockerfile](docker/dockerfiles/2026-06-25-minimal-tagged-nonroot.Dockerfile) — Tagged multi-stage build with non-root user
-- [Container Port Map Script](docker/scripts/2026-06-25-first-container-port-map.sh) — Build and run nginx with port mapping end to end
-- [Git Undo, Stage, Commit, Push](git/notes/2026-06-24-git-undo-stage-commit-push.md) — Basic Git workflow including undoing mistakes
-- [Go Hello-World Non-Root Dockerfile](docker/dockerfiles/2026-06-24-hello-go-nonroot.Dockerfile) — Multi-stage Go build with non-root user
+- [Docker Quickstart Walkthrough](docker/notes/2026-06-25-docker-quickstart-walkthrough.md) — Guided build, run, tag, and push walkthrough
+- [Docker Quickstart Trip-Ups](docker/notes/2026-06-26-docker-quickstart-trip-ups.md) — What went wrong following the official getting-started guide
+- [Tagged Build Dockerfile (Python)](docker/dockerfiles/2026-06-26-trying-tagged-build.Dockerfile) — Python multi-stage build with non-root user
+- [First Container Port Map Script (nginx)](docker/scripts/2026-06-26-first-container-port-map.sh) — Run nginx and verify port mapping end to end
+- [Tagged Non-Root Dockerfile](docker/dockerfiles/2026-06-26-tagged-nonroot.Dockerfile) — Alpine multi-stage build with non-root user
 
 <details>
 <summary>Full index</summary>
@@ -62,7 +63,7 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 ## Status
 
-Currently working through L1 notes across all active tools. Recent additions cover a Docker quickstart walkthrough (build, run, tag, push), a minimal tagged non-root Dockerfile, and a first-container port-map script.
+Currently working through L1 notes across all active tools. Recent additions cover a Docker getting-started walkthrough (trying-tagged-build), trip-ups notes, a new port-map script for nginx, and a Go-based tagged non-root Dockerfile.
 
 ---
 

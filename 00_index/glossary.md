@@ -12,6 +12,8 @@
 - **docker init** — An interactive command that generates a Dockerfile and compose.yml by detecting your project's language and dependencies.
 - **Compose watch** — A Docker Compose feature that synchronises changed files into a running container without a full rebuild, available in Compose v2.23+.
 - **Layer caching** — Docker caches each build layer and only rebuilds layers whose instructions or context have changed; ordering `COPY` statements to put infrequently-changing files first improves build speed.
+- **buildx** — Docker's BuildKit-based builder that supports advanced features like multi-platform builds. Images built with `buildx` are not available locally unless `--load` is passed.
+- **Docker Scout** — A vulnerability scanning tool that analyses container images for known CVEs and provides remediation guidance.
 
 ## Git
 
