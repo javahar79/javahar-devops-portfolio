@@ -27,6 +27,7 @@
 - [Port Map Script (2026-06-24)](../docker/scripts/2026-06-24-run-container-port-map.sh) — Build and run container with port mapping
 - [Port Map Script (2026-06-25)](../docker/scripts/2026-06-25-first-container-port-map.sh) — Build and run nginx with port mapping
 - [Port Map Script (2026-06-26)](../docker/scripts/2026-06-26-first-container-port-map.sh) — Run nginx and verify port mapping
+- [Port Map Script (2026-06-26 alt)](../docker/scripts/2026-06-26-port-map-container.sh) — Build and run container with port mapping
 
 ## Git
 

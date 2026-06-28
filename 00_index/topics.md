@@ -19,6 +19,7 @@
 - [script](../docker/scripts/2026-06-24-run-container-port-map.sh) — Build and run container with port mapping
 - [script](../docker/scripts/2026-06-25-first-container-port-map.sh) — Build and run nginx with port mapping
 - [script](../docker/scripts/2026-06-26-first-container-port-map.sh) — Run nginx and verify port mapping
+- [script](../docker/scripts/2026-06-26-port-map-container.sh) — Build and run container with port mapping
 - [dockerfile](../docker/dockerfiles/minimal-multi-stage.Dockerfile) — Minimal multi-stage Dockerfile
 - [dockerfile](../docker/dockerfiles/minimal-tagged-nonroot.Dockerfile) — Non-root user multi-stage build
 - [dockerfile](../docker/dockerfiles/2026-06-23-tagged-nonroot.Dockerfile) — Tagged build with non-root runtime

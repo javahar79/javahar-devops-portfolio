@@ -1,16 +1,17 @@
 # javahar-devops-portfolio
-> A working-engineer's DevOps reference — Docker, Terraform, Kubernetes, Git, and GitHub Actions notes, scripts, and configs.
+> A working engineer's DevOps reference — Docker, Kubernetes, Git, GitHub Actions, and Terraform notes, scripts, and configs.
 
 ![Last commit](https://img.shields.io/github/last-commit/javahar79/javahar-devops-portfolio)
-![Files](https://img.shields.io/badge/files-44-blue)
+![Files](https://img.shields.io/badge/files-47-blue)
 ![Shell](https://img.shields.io/badge/Shell-4EAA25?logo=gnubash&logoColor=white)
 ![YAML](https://img.shields.io/badge/YAML-000?logo=yaml&logoColor=white)
+![Dockerfile](https://img.shields.io/badge/Dockerfile-2496ED?logo=docker&logoColor=white)
 
 ---
 
 ## What's in here
 
-DevOps learning portfolio covering five tool families — Docker, Git, GitHub Actions, Kubernetes, and Terraform. Each tool has a primer, CLI walkthrough notes, and where applicable a ready-to-run script, config file, or Dockerfile.
+DevOps learning portfolio covering five tool families — Docker, Git, GitHub Actions, Kubernetes, and Terraform. Each tool has a primer, CLI walkthrough notes, and where applicable ready-to-run scripts, config files, or Dockerfiles.
 
 ---
 
