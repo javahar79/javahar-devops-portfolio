@@ -27,6 +27,9 @@
 - [Port Map Script (2026-06-24)](../docker/scripts/2026-06-24-run-container-port-map.sh) — Build and run container with port mapping
 - [Port Map Script (2026-06-25)](../docker/scripts/2026-06-25-first-container-port-map.sh) — Build and run nginx with port mapping
 - [Port Map Script (2026-06-26)](../docker/scripts/2026-06-26-first-container-port-map.sh) — Run nginx and verify port mapping
+- [Docker Quickstart Walkthrough (2026-06-28)](../docker/notes/2026-06-28-docker-quickstart-walkthrough.md) — Following the official guide step by step
+- [Tagged Build Non-Root Dockerfile (2026-06-28)](../docker/dockerfiles/2026-06-28-minimal-tagged-nonroot.Dockerfile) — Minimal multi-stage Go build with scratch runtime and user label
+- [Port Map Script (2026-06-28)](../docker/scripts/2026-06-28-run-container-port-map.sh) — Run nginx and verify port mapping end to end
 
 ## Git
 

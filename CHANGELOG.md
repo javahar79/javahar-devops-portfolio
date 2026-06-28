@@ -73,6 +73,13 @@
 - Added nginx port-mapping container script (docker/scripts/2026-06-26-port-map-container.sh)
 - Updated quick-links.md with new Docker entries
 
+## 2026-06-28
+
+- Added Docker quickstart walkthrough notes (docker/notes/2026-06-28-docker-quickstart-walkthrough.md)
+- Added minimal tagged build non-root Dockerfile with scratch runtime (docker/dockerfiles/2026-06-28-minimal-tagged-nonroot.Dockerfile)
+- Added port-mapping container script (docker/scripts/2026-06-28-run-container-port-map.sh)
+- Updated quick-links.md with new Docker entries
+
 ## 2026-06-17
 
 - Reworked Terraform install script to init only without running apply (tf-002 rework: 11-line L1 script)
