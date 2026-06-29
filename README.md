@@ -18,7 +18,7 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 | Tool | Notes | Scripts | Configs | Dockerfiles |
 |------|-------|---------|---------|-------------|
-| Docker | 11 | 7 | 1 | 8 |
+| Docker | 12 | 8 | 1 | 9 |
 | Git | 4 | 1 | — | — |
 | GitHub Actions | 2 | — | 1 | — |
 | Kubernetes | 2 | 1 | — | — |
@@ -28,6 +28,9 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 ## Quick links
 
+- [Docker Quickstart Trip-Ups (2026-06-29)](docker/notes/2026-06-29-docker-quickstart-trip-ups.md) — Getting-started guide: what tripped me up this time
+- [Tagged Non-Root Dockerfile (2026-06-29)](docker/dockerfiles/2026-06-29-tagged-nonroot.Dockerfile) — Minimal multi-stage Alpine build with non-root user
+- [First Container Port Map Script (2026-06-29)](docker/scripts/2026-06-29-first-container-port-map.sh) — Run nginx and verify port mapping end to end
 - [Docker Quickstart Trip-Ups](docker/notes/2026-06-26-docker-quickstart-trip-ups.md) — Official getting-started guide: what tripped me up
 - [Trying Tagged Build Dockerfile](docker/dockerfiles/2026-06-26-trying-tagged-build.Dockerfile) — Python multi-stage build with non-root user
 - [First Container Port Map Script](docker/scripts/2026-06-26-first-container-port-map.sh) — Run nginx and verify port mapping
@@ -66,4 +69,4 @@ Currently working through L1 notes across all active tools. Recent additions cov
 
 ---
 
-_Last updated: 2026-06-27_
+_Last updated: 2026-06-29_

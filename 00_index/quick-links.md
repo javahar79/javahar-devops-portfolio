@@ -12,6 +12,7 @@
 - [Docker Quickstart — Third Pass](../docker/notes/2026-06-24-docker-quickstart.md) — Official tutorial with Compose gotchas
 - [Docker Quickstart — Walkthrough](../docker/notes/2026-06-25-docker-quickstart-walkthrough.md) — Guided build, run, tag, and push
 - [Docker Quickstart Trip-Ups](../docker/notes/2026-06-26-docker-quickstart-trip-ups.md) — Official getting-started guide: what tripped me up
+- [Docker Quickstart Trip-Ups (2026-06-29)](../docker/notes/2026-06-29-docker-quickstart-trip-ups.md) — Getting-started guide: what tripped me up this time
 - [Docker Quickstart Trials (2026-06-26)](../docker/notes/2026-06-26-docker-quickstart-trials.md) — More quickstart trials and gotchas
 - [Minimal Multi-Stage Dockerfile](../docker/dockerfiles/minimal-multi-stage.Dockerfile) — Layer-optimized build example
 - [Non-Root Multi-Stage Dockerfile](../docker/dockerfiles/minimal-tagged-nonroot.Dockerfile) — Multi-stage build with non-root user
@@ -21,12 +22,14 @@
 - [Minimal Tagged Non-Root Dockerfile (2026-06-25)](../docker/dockerfiles/2026-06-25-minimal-tagged-nonroot.Dockerfile) — Tagged multi-stage build with non-root user
 - [Trying Tagged Build Dockerfile (2026-06-26)](../docker/dockerfiles/2026-06-26-trying-tagged-build.Dockerfile) — Python multi-stage build with non-root user
 - [Tagged Build Non-Root Dockerfile (2026-06-26)](../docker/dockerfiles/2026-06-26-tagged-nonroot.Dockerfile) — Tagged multi-stage build with non-root user
+- [Tagged Build Non-Root Dockerfile (2026-06-29)](../docker/dockerfiles/2026-06-29-tagged-nonroot.Dockerfile) — Minimal multi-stage Alpine build with non-root user
 - [Multi-Service Compose Config](../docker/configs/multi-service-compose.yaml) — Web app plus PostgreSQL
 - [First Container Port Map Script](../docker/scripts/2026-06-21-first-container-port-map.sh) — Run nginx and verify port mapping
 - [Port Map Script (2026-06-23)](../docker/scripts/2026-06-23-run-container-port-map.sh) — Nginx port mapping end to end
 - [Port Map Script (2026-06-24)](../docker/scripts/2026-06-24-run-container-port-map.sh) — Build and run container with port mapping
 - [Port Map Script (2026-06-25)](../docker/scripts/2026-06-25-first-container-port-map.sh) — Build and run nginx with port mapping
 - [Port Map Script (2026-06-26)](../docker/scripts/2026-06-26-first-container-port-map.sh) — Run nginx and verify port mapping
+- [Port Map Script (2026-06-29)](../docker/scripts/2026-06-29-first-container-port-map.sh) — Run nginx and verify port mapping end to end
 
 ## Git
 
