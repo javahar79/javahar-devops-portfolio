@@ -2,7 +2,7 @@
 > A working-engineer's DevOps reference — Docker, Terraform, Kubernetes, Git, and GitHub Actions notes, scripts, and configs.
 
 ![Last commit](https://img.shields.io/github/last-commit/javahar79/javahar-devops-portfolio)
-![Files](https://img.shields.io/badge/files-44-blue)
+![Files](https://img.shields.io/badge/files-47-blue)
 ![Shell](https://img.shields.io/badge/Shell-4EAA25?logo=gnubash&logoColor=white)
 ![YAML](https://img.shields.io/badge/YAML-000?logo=yaml&logoColor=white)
 
