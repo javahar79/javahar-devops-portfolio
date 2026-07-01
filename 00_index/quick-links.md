@@ -27,6 +27,9 @@
 - [Port Map Script (2026-06-24)](../docker/scripts/2026-06-24-run-container-port-map.sh) — Build and run container with port mapping
 - [Port Map Script (2026-06-25)](../docker/scripts/2026-06-25-first-container-port-map.sh) — Build and run nginx with port mapping
 - [Port Map Script (2026-06-26)](../docker/scripts/2026-06-26-first-container-port-map.sh) — Run nginx and verify port mapping
+- [Docker Quickstart — Official Guide Trials (2026-07-01)](../docker/notes/2026-07-01-docker-quickstart-official-trials.md) — Python app adaptation, port 5000 gotcha, build cache lessons
+- [Try Busybox Non-Root Dockerfile (2026-07-01)](../docker/dockerfiles/2026-07-01-try-rust-nonroot.Dockerfile) — Minimal multi-stage build with busybox and scratch runtime
+- [Port Map Script (2026-07-01)](../docker/scripts/2026-07-01-first-container-port-map.sh) — Python HTTP server port mapping end to end
 
 ## Git
 
