@@ -2,9 +2,10 @@
 > A working-engineer's DevOps reference — Docker, Terraform, Kubernetes, Git, and GitHub Actions notes, scripts, and configs.
 
 ![Last commit](https://img.shields.io/github/last-commit/javahar79/javahar-devops-portfolio)
-![Files](https://img.shields.io/badge/files-47-blue)
+![Files](https://img.shields.io/badge/files-50-blue)
 ![Shell](https://img.shields.io/badge/Shell-4EAA25?logo=gnubash&logoColor=white)
-![YAML](https://img.shields.io/badge/YAML-000?logo=yaml&logoColor=white)
+![Dockerfile](https://img.shields.io/badge/Dockerfile-2496ED?logo=docker&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-000?logo=markdown&logoColor=white)
 
 ---
 
@@ -18,7 +19,7 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 | Tool | Notes | Scripts | Configs | Dockerfiles |
 |------|-------|---------|---------|-------------|
-| Docker | 11 | 7 | 1 | 8 |
+| Docker | 12 | 8 | 1 | 9 |
 | Git | 4 | 1 | — | — |
 | GitHub Actions | 2 | — | 1 | — |
 | Kubernetes | 2 | 1 | — | — |
@@ -28,11 +29,11 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 ## Quick links
 
-- [Docker Quickstart Trip-Ups](docker/notes/2026-06-26-docker-quickstart-trip-ups.md) — Official getting-started guide: what tripped me up
+- [Go Server Dockerfile](docker/dockerfiles/2026-06-28-trying-tagged-go-server.Dockerfile) — Go multi-stage build with non-root server binary
+- [Docker Quickstart Trials (2026-06-28)](docker/notes/2026-06-28-docker-quickstart-trials.md) — Go server quickstart trials with port mapping
+- [Run Container Port Map Script (2026-06-28)](docker/scripts/2026-06-28-run-container-port-map.sh) — Build and run Go server with port mapping
 - [Trying Tagged Build Dockerfile](docker/dockerfiles/2026-06-26-trying-tagged-build.Dockerfile) — Python multi-stage build with non-root user
-- [First Container Port Map Script](docker/scripts/2026-06-26-first-container-port-map.sh) — Run nginx and verify port mapping
-- [Tagged Non-Root Dockerfile](docker/dockerfiles/2026-06-26-tagged-nonroot.Dockerfile) — Tagged multi-stage build with non-root user
-- [Docker Quickstart Trials](docker/notes/2026-06-26-docker-quickstart-trials.md) — More quickstart trials and gotchas
+- [Docker Quickstart Trip-Ups](docker/notes/2026-06-26-docker-quickstart-trip-ups.md) — Official getting-started guide: what tripped me up
 
 <details>
 <summary>Full index</summary>
@@ -62,8 +63,8 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 ## Status
 
-Currently working through L1 notes across all active tools. Recent additions cover Docker quickstart trip-ups and trying tagged build patterns.
+Currently working through L1 notes across all active tools. Recent additions cover Go server quickstart trials and tagged multi-stage builds.
 
 ---
 
-_Last updated: 2026-06-27_
+_Last updated: 2026-07-01_

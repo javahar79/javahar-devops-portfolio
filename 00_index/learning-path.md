@@ -29,6 +29,7 @@ Apply what you've learned with hands-on setup and early troubleshooting. This is
 - [Docker Quickstart — Third Pass](../docker/notes/2026-06-24-docker-quickstart.md) — Official tutorial walkthrough with Compose gotchas.
 - [Docker Quickstart Trip-Ups](../docker/notes/2026-06-26-docker-quickstart-trip-ups.md) — Official getting-started guide: what tripped me up.
 - [Docker Quickstart Trials](../docker/notes/2026-06-26-docker-quickstart-trials.md) — More quickstart trials and gotchas.
+- [Docker Quickstart Trials (2026-06-28)](../docker/notes/2026-06-28-docker-quickstart-trials.md) — Go server quickstart trials with port mapping.
 - [Docker CLI Exploration](../docker/notes/2026-06-16-explore-docker-cli.md) — Build, run, and manage containers from the command line.
 - [Install Docker Script](../docker/scripts/2026-06-16-install-docker.sh) — Docker installation smoke test.
 - [First Container Port Map Script (2026-06-21)](../docker/scripts/2026-06-21-first-container-port-map.sh) — Port mapping walkthrough.
@@ -52,6 +53,8 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Minimal Tagged Non-Root Dockerfile (2026-06-25)](../docker/dockerfiles/2026-06-25-minimal-tagged-nonroot.Dockerfile) — Tagged multi-stage build with non-root user.
 - [Trying Tagged Build Dockerfile (2026-06-26)](../docker/dockerfiles/2026-06-26-trying-tagged-build.Dockerfile) — Python multi-stage build with non-root user.
 - [Tagged Build Non-Root Dockerfile (2026-06-26)](../docker/dockerfiles/2026-06-26-tagged-nonroot.Dockerfile) — Tagged multi-stage build with non-root user.
+- [Go Server Non-Root Dockerfile (2026-06-28)](../docker/dockerfiles/2026-06-28-trying-tagged-go-server.Dockerfile) — Go multi-stage build with server binary.
+- [Port Map Script (2026-06-28)](../docker/scripts/2026-06-28-run-container-port-map.sh) — Build and run Go server with port mapping.
 - [Multi-Service Compose Config](../docker/configs/multi-service-compose.yaml) — Multi-container applications with Compose.
 - [CI Workflow Config](../github-actions/configs/ci-workflow.yaml) — Automated testing and deployment with GitHub Actions.
 - [Local Provider Config](../terraform/configs/local-provider.hcl) — Infrastructure configuration with Terraform.
