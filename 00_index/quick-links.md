@@ -27,6 +27,9 @@
 - [Port Map Script (2026-06-24)](../docker/scripts/2026-06-24-run-container-port-map.sh) — Build and run container with port mapping
 - [Port Map Script (2026-06-25)](../docker/scripts/2026-06-25-first-container-port-map.sh) — Build and run nginx with port mapping
 - [Port Map Script (2026-06-26)](../docker/scripts/2026-06-26-first-container-port-map.sh) — Run nginx and verify port mapping
+- [Tagged Go Server Dockerfile (2026-06-28)](../docker/dockerfiles/2026-06-28-trying-tagged-go-server.Dockerfile) — Multi-stage Go build with non-root user
+- [Port Map Script (2026-06-28)](../docker/scripts/2026-06-28-run-container-port-map.sh) — Build and run Go server with port mapping
+- [Docker Quickstart Trials (2026-06-28)](../docker/notes/2026-06-28-docker-quickstart-trials.md) — Official getting-started guide: what tripped me up
 
 ## Git
 
