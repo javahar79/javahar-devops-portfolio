@@ -2,6 +2,9 @@
 
 ## Docker
 
+- [Docker Quickstart Trip-Ups (2026-07-02)](../docker/notes/2026-07-02-docker-quickstart-trip-ups.md) — Official getting-started guide: what tripped me up
+- [Tagged Non-Root Dockerfile (2026-07-02)](../docker/dockerfiles/2026-07-02-tagged-nonroot.Dockerfile) — Multi-stage Go build with non-root user
+- [First Container Port Map Script (2026-07-02)](../docker/scripts/2026-07-02-first-container-port-map.sh) — Run nginx and verify port mapping
 - [Docker Primer](../docker/notes/0000-primer-docker.md) — What is Docker?
 - [Docker Install Script](../docker/scripts/2026-06-16-install-docker.sh) — Install Docker and run first container
 - [Docker CLI Notes](../docker/notes/2026-06-16-explore-docker-cli.md) — Exploring the CLI
