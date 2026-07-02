@@ -80,6 +80,13 @@
 - Added Docker quickstart notes — what tripped me up (docker/notes/2026-06-28-docker-quickstart-trials.md)
 - Updated quick-links.md with new Docker entries
 
+## 2026-07-02
+
+- Added Docker quickstart notes — multi-service tutorial (docker/notes/2026-07-02-docker-quickstart-trials.md)
+- Added tagged non-root Dockerfile with Python HTTP server (docker/dockerfiles/2026-07-02-tagged-nonroot.Dockerfile)
+- Added port-mapping container script for Python server (docker/scripts/2026-07-02-first-container-port-map.sh)
+- Updated quick-links.md with new Docker entries
+
 ## 2026-06-17
 
 - Reworked Terraform install script to init only without running apply (tf-002 rework: 11-line L1 script)

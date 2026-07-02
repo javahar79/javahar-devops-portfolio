@@ -30,6 +30,9 @@
 - [Tagged Go Server Dockerfile (2026-06-28)](../docker/dockerfiles/2026-06-28-trying-tagged-go-server.Dockerfile) — Multi-stage Go build with non-root user
 - [Port Map Script (2026-06-28)](../docker/scripts/2026-06-28-run-container-port-map.sh) — Build and run Go server with port mapping
 - [Docker Quickstart Trials (2026-06-28)](../docker/notes/2026-06-28-docker-quickstart-trials.md) — Official getting-started guide: what tripped me up
+- [Docker Quickstart — Multi-Service Trials (2026-07-02)](../docker/notes/2026-07-02-docker-quickstart-trials.md) — Following the multi-service voting app tutorial
+- [Tagged Non-Root Dockerfile (2026-07-02)](../docker/dockerfiles/2026-07-02-tagged-nonroot.Dockerfile) — Minimal multi-stage Python build with non-root user
+- [Port Map Script (2026-07-02)](../docker/scripts/2026-07-02-first-container-port-map.sh) — Build and run Python server with port mapping
 
 ## Git
 

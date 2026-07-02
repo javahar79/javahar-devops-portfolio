@@ -18,7 +18,7 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 | Tool | Notes | Scripts | Configs | Dockerfiles |
 |------|-------|---------|---------|-------------|
-| Docker | 11 | 7 | 1 | 8 |
+| Docker | 12 | 8 | 1 | 9 |
 | Git | 4 | 1 | — | — |
 | GitHub Actions | 2 | — | 1 | — |
 | Kubernetes | 2 | 1 | — | — |
