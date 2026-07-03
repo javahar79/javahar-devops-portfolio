@@ -28,8 +28,11 @@
 - [Port Map Script (2026-06-25)](../docker/scripts/2026-06-25-first-container-port-map.sh) — Build and run nginx with port mapping
 - [Port Map Script (2026-06-26)](../docker/scripts/2026-06-26-first-container-port-map.sh) — Run nginx and verify port mapping
 - [Tagged Go Server Dockerfile (2026-06-28)](../docker/dockerfiles/2026-06-28-trying-tagged-go-server.Dockerfile) — Multi-stage Go build with non-root user
+- [Tagged Non-Root Dockerfile (2026-07-03)](../docker/dockerfiles/2026-07-03-minimal-tagged-nonroot.Dockerfile) — Tagged multi-stage Go build with non-root user
 - [Port Map Script (2026-06-28)](../docker/scripts/2026-06-28-run-container-port-map.sh) — Build and run Go server with port mapping
+- [Port Map Script (2026-07-03)](../docker/scripts/2026-07-03-first-container-port-map.sh) — Build and run Go server with port mapping end to end
 - [Docker Quickstart Trials (2026-06-28)](../docker/notes/2026-06-28-docker-quickstart-trials.md) — Official getting-started guide: what tripped me up
+- [Docker Quickstart Trip-ups (2026-07-03)](../docker/notes/2026-07-03-docker-quickstart-trip-ups.md) — Quickstart gotchas: rootless, layer cache, Alpine vs slim
 
 ## Git
 
