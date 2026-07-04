@@ -12,6 +12,9 @@
 - **docker init** — An interactive command that generates a Dockerfile and compose.yml by detecting your project's language and dependencies.
 - **Compose watch** — A Docker Compose feature that synchronises changed files into a running container without a full rebuild, available in Compose v2.23+.
 - **Layer caching** — Docker caches each build layer and only rebuilds layers whose instructions or context have changed; ordering `COPY` statements to put infrequently-changing files first improves build speed.
+- **Docker network** — A virtual network that allows containers to communicate. User-defined bridge networks enable service discovery by container name.
+- **dangling image** — An image with no tag (`<none>`) that remains on disk after a newer image replaces the same repository and tag.
+- **docker system prune** — Removes unused data (dangling images, stopped containers, unused networks, build cache) to reclaim disk space.
 
 ## Git
 
