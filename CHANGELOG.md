@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-01
+
+- Added Docker quickstart follow-up notes (docker/notes/2026-07-01-following-docker-quickstart.md)
+- Added Python self-contained tagged build Dockerfile (docker/dockerfiles/2026-07-01-trying-tagged-build.Dockerfile)
+- Added port-mapping container script (docker/scripts/2026-07-01-run-container-port-map.sh)
+- Updated quick-links.md with new Docker entries
+
 ## 2026-06-16
 
 - Added Kubernetes primer (kubernetes/notes/0000-primer-kubernetes.md)

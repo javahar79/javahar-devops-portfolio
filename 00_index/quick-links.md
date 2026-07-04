@@ -30,6 +30,9 @@
 - [Tagged Go Server Dockerfile (2026-06-28)](../docker/dockerfiles/2026-06-28-trying-tagged-go-server.Dockerfile) — Multi-stage Go build with non-root user
 - [Port Map Script (2026-06-28)](../docker/scripts/2026-06-28-run-container-port-map.sh) — Build and run Go server with port mapping
 - [Docker Quickstart Trials (2026-06-28)](../docker/notes/2026-06-28-docker-quickstart-trials.md) — Official getting-started guide: what tripped me up
+- [Docker Quickstart Follow-Up (2026-07-01)](../docker/notes/2026-07-01-following-docker-quickstart.md) — What tripped me up on the official quickstart
+- [Python Tagged Build Dockerfile (2026-07-01)](../docker/dockerfiles/2026-07-01-trying-tagged-build.Dockerfile) — Self-contained Python multi-stage build with non-root user
+- [Port Map Script (2026-07-01)](../docker/scripts/2026-07-01-run-container-port-map.sh) — Build and run Python server with port mapping
 
 ## Git
 
