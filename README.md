@@ -19,7 +19,7 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 | Tool | Notes | Scripts | Configs | Dockerfiles |
 |------|-------|---------|---------|-------------|
-| Docker | 12 | 8 | 1 | 9 |
+| Docker | 13 | 9 | 1 | 10 |
 | Git | 4 | 1 | — | — |
 | GitHub Actions | 2 | — | 1 | — |
 | Kubernetes | 2 | 1 | — | — |
@@ -63,8 +63,8 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 ## Status
 
-Currently working through L1 notes across all active tools. Recent additions cover Go server quickstart trials and tagged multi-stage builds.
+Currently working through L1 notes across all active tools. Recent additions cover Docker get-started tutorial multi-container modules, a Python tagged non-root build, and a port-mapping script.
 
 ---
 
-_Last updated: 2026-07-01_
+_Last updated: 2026-07-04_
