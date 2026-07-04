@@ -33,6 +33,9 @@
 - [Docker Quickstart Follow-Up (2026-07-01)](../docker/notes/2026-07-01-following-docker-quickstart.md) — What tripped me up on the official quickstart
 - [Python Tagged Build Dockerfile (2026-07-01)](../docker/dockerfiles/2026-07-01-trying-tagged-build.Dockerfile) — Self-contained Python multi-stage build with non-root user
 - [Port Map Script (2026-07-01)](../docker/scripts/2026-07-01-run-container-port-map.sh) — Build and run Python server with port mapping
+- [Docker Get-Started Notes (2026-07-04)](../docker/notes/2026-07-04-following-docker-get-started.md) — Multi-container and networking modules from the official tutorial
+- [Tagged Non-Root Dockerfile (2026-07-04)](../docker/dockerfiles/2026-07-04-tagged-nonroot.Dockerfile) — Python multi-stage build with non-root user
+- [First Container Port Map Script (2026-07-04)](../docker/scripts/2026-07-04-first-container-port-map.sh) — Build and run container with port mapping end to end
 
 ## Git
 

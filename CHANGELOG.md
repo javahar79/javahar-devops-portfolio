@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-04
+
+- Added Docker get-started notes covering multi-container and networking modules (docker/notes/2026-07-04-following-docker-get-started.md)
+- Added Python multi-stage tagged non-root Dockerfile (docker/dockerfiles/2026-07-04-tagged-nonroot.Dockerfile)
+- Added first container port-mapping script (docker/scripts/2026-07-04-first-container-port-map.sh)
+- Updated quick-links.md with new Docker entries
+
 ## 2026-07-01
 
 - Added Docker quickstart follow-up notes (docker/notes/2026-07-01-following-docker-quickstart.md)
