@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-05
+
+- Added Git quickstart trials notes (git/notes/2026-07-05-git-quickstart-trials.md)
+- Added Git undo/stage/commit/push learning notes (git/notes/2026-07-05-learning-undo-stage-push.md)
+- Updated quick-links.md with new Git entries
+
 ## 2026-07-01
 
 - Added Docker quickstart follow-up notes (docker/notes/2026-07-01-following-docker-quickstart.md)

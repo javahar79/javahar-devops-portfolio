@@ -40,7 +40,9 @@
 - [Git CLI Notes](../git/notes/2026-06-16-explore-git-cli.md) — Exploring the CLI
 - [Git Quickstart Notes](../git/notes/2026-06-22-git-quickstart.md) — First repository setup and remote workflow
 - [Git Undo, Stage, Commit, Push](../git/notes/2026-06-24-git-undo-stage-commit-push.md) — Basic Git workflow including undoing mistakes
-- [Git Configure & First Commit Script](../git/scripts/configure-and-commit-first.sh) — Configure Git and make first commit
+- [Git Configure & First Commit Script](../git/scripts/configure-and-commit-first.sh)
+- [Git Quickstart Trials (2026-07-05)](../git/notes/2026-07-05-git-quickstart-trials.md) — Following the official quickstart and what tripped me up
+- [Undo, Stage, Commit, Push Notes (2026-07-05)](../git/notes/2026-07-05-learning-undo-stage-push.md) — Learning undo at each stage of the workflow — Configure Git and make first commit
 
 ## GitHub Actions
 
