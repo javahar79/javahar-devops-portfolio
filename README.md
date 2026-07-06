@@ -36,6 +36,7 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 | `kubernetes/` | K8s primer, kubectl walkthrough, local cluster install script |
 | `terraform/` | Terraform primer, install script, local provider config |
 | `00_index/` | Topic index, quick links, glossary, learning path |
+| `.github/` | GitHub Actions CI workflow configuration, lint checks |
 
 ---
 
@@ -43,7 +44,7 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 | Tool | Notes | Scripts | Configs | Dockerfiles |
 |------|-------|---------|---------|-------------|
-| Docker | 13 | 8 | 1 | 9 |
+| Docker | 14 | 9 | 1 | 10 |
 | Git | 4 | 1 | — | — |
 | GitHub Actions | 2 | — | 1 | — |
 | Kubernetes | 2 | 1 | — | — |
