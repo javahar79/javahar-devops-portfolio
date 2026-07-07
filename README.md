@@ -14,17 +14,17 @@ A working DevOps engineer's quick-reference: first-contact notes, runnable snipp
 
 ## What's in here
 
-DevOps learning portfolio covering five tool families — Docker, Git, GitHub Actions, Kubernetes, and Terraform. Each tool has a primer, CLI walkthrough notes, and where applicable a ready-to-run script, config file, or Dockerfile.
+DevOps learning portfolio covering five tool families — Docker (36 entries), Git (5), GitHub Actions (3), Kubernetes (3), and Terraform (3). Each tool has a primer, CLI walkthrough notes, and where applicable a ready-to-run script, config file, or Dockerfile.
 
 ---
 
 ## Quick links
 
-- [Following the official Docker quickstart](docker/notes/2026-07-01-following-docker-quickstart.md) — What tripped me up on the official getting-started guide
+- [Tagged Non-Root Dockerfile (2026-07-04)](docker/dockerfiles/2026-07-04-tagged-nonroot.Dockerfile) — Multi-stage Python build with non-root runtime
+- [Docker Quickstart — What Tripped Me Up (2026-07-04)](docker/notes/2026-07-04-docker-quickstart-trials.md) — Step-by-step quickstart with volume, compose, and layer caching gotchas
+- [Port Map Script (2026-07-04)](docker/scripts/2026-07-04-first-container-port-map.sh) — Build and run Python container with port 8080 mapping
+- [CI Lint Workflow](.github/workflows/lint.yml) — GitHub Actions linting workflow for the repo
 - [Tagged Build Dockerfile (2026-07-01)](docker/dockerfiles/2026-07-01-trying-tagged-build.Dockerfile) — Self-contained Python multi-stage build with non-root user
-- [Port Map Script (2026-07-01)](docker/scripts/2026-07-01-run-container-port-map.sh) — Build and run Python server with port mapping
-- [Go Server Dockerfile (2026-06-28)](docker/dockerfiles/2026-06-28-trying-tagged-go-server.Dockerfile) — Multi-stage Go build with non-root server binary
-- [Docker Quickstart Trials (2026-06-28)](docker/notes/2026-06-28-docker-quickstart-trials.md) — Go server quickstart trials with port mapping
 
 ## Layout
 
@@ -36,6 +36,8 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 | `kubernetes/` | K8s primer, kubectl walkthrough, local cluster install script |
 | `terraform/` | Terraform primer, install script, local provider config |
 | `00_index/` | Topic index, quick links, glossary, learning path |
+| `.github/workflows/` | CI/CD workflow configs (lint) |
+| `CHANGELOG.md` | Project changelog and release history |
 
 ---
 
@@ -43,7 +45,7 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 | Tool | Notes | Scripts | Configs | Dockerfiles |
 |------|-------|---------|---------|-------------|
-| Docker | 13 | 8 | 1 | 9 |
+| Docker | 14 | 10 | 1 | 11 |
 | Git | 4 | 1 | — | — |
 | GitHub Actions | 2 | — | 1 | — |
 | Kubernetes | 2 | 1 | — | — |
@@ -53,8 +55,8 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 ## Status
 
-Currently working through L1 notes across all active tools. Recent additions cover Docker quickstart follow-up and trying tagged multi-stage build patterns.
+Currently working through L1 notes across all active tools. Recent additions cover Docker quickstart follow-up and non-root multi-stage build patterns.
 
 ---
 
-_Last updated: 2026-07-04_
+_Last updated: 2026-07-05_

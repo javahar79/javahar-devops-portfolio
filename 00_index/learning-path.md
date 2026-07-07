@@ -34,10 +34,14 @@ Apply what you've learned with hands-on setup and early troubleshooting. This is
 
 Combine tools to build real infrastructure and pipelines. This is where the separate pieces start to feel like a system.
 
+- [Docker Quickstart — What Tripped Me Up (2026-07-04)](../docker/notes/2026-07-04-docker-quickstart-trials.md) — Step-by-step quickstart with volume, compose, and layer caching gotchas.
+- [Tagged Non-Root Dockerfile (2026-07-04)](../docker/dockerfiles/2026-07-04-tagged-nonroot.Dockerfile) — Multi-stage Python build with non-root runtime.
+- [Port Map Script (2026-07-04)](../docker/scripts/2026-07-04-first-container-port-map.sh) — Build and run Python container with port 8080 mapping.
 - [Docker Quickstart — Following the Official Guide](../docker/notes/2026-07-01-following-docker-quickstart.md) — What tripped me up on the official getting-started guide.
 - [Docker Quickstart Trials (2026-06-28)](../docker/notes/2026-06-28-docker-quickstart-trials.md) — Go server quickstart trials with port mapping.
 - [Multi-Service Compose Config](../docker/configs/multi-service-compose.yaml) — Multi-container applications with Compose.
 - [CI Workflow Config](../github-actions/configs/ci-workflow.yaml) — Automated testing and deployment with GitHub Actions.
+- [Repo Lint Workflow](../.github/workflows/lint.yml) — Automated linting (shellcheck, yamllint) on push and PR.
 - [Local Provider Config](../terraform/configs/local-provider.hcl) — Infrastructure configuration with Terraform.
 - [Install Local Cluster Script](../kubernetes/scripts/install-local-cluster.sh) — Local K8s development environment with kind.
 - [Port Map Script (2026-07-01)](../docker/scripts/2026-07-01-run-container-port-map.sh) — Build and run Python server with port mapping.

@@ -26,6 +26,7 @@
 
 ### Automate with CI/CD
 - [CI Workflow Config](../github-actions/configs/ci-workflow.yaml) — Minimal GitHub Actions CI workflow
+- [Repo Lint Workflow](../.github/workflows/lint.yml) — GitHub Actions linting workflow for the repo
 - [GitHub Actions UI Walkthrough](../github-actions/notes/2026-06-16-explore-gha-ui.md) — Exploring the GitHub Actions interface
 
 ### Provision infrastructure
