@@ -23,6 +23,9 @@
 - [Docker Quickstart — What Tripped Me Up (2026-07-04)](../docker/notes/2026-07-04-docker-quickstart-trials.md) — Step-by-step quickstart with volume, compose, and layer caching gotchas
 - [Tagged Build Non-Root Dockerfile (2026-07-04)](../docker/dockerfiles/2026-07-04-tagged-nonroot.Dockerfile) — Multi-stage Python build with non-root runtime
 - [Port Map Script (2026-07-04)](../docker/scripts/2026-07-04-first-container-port-map.sh) — Build and run Python container with port 8080 mapping
+- [Docker Quickstart — What Tripped Me Up (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-trials.md) — Node.js quickstart with .dockerignore and layer ordering gotchas
+- [Tagged Non-Root Dockerfile (2026-07-07)](../docker/dockerfiles/2026-07-07-tagged-nonroot.Dockerfile) — Node.js multi-stage build with non-root runtime
+- [Port Map Script (2026-07-07)](../docker/scripts/2026-07-07-run-container-port-map.sh) — Build and run Node.js container with port 8080 mapping
 
 ### Automate with CI/CD
 - [CI Workflow Config](../github-actions/configs/ci-workflow.yaml) — Minimal GitHub Actions CI workflow
