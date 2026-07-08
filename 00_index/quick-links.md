@@ -17,23 +17,15 @@
 
 ### Build and run a container
 - [Multi-Service Compose](../docker/configs/multi-service-compose.yaml) — Web app with PostgreSQL setup
-- [Python Tagged Build Dockerfile (2026-07-01)](../docker/dockerfiles/2026-07-01-trying-tagged-build.Dockerfile) — Self-contained Python multi-stage build with non-root user
-- [Tagged Non-Root Dockerfile (2026-07-04)](../docker/dockerfiles/2026-07-04-tagged-nonroot.Dockerfile) — Multi-stage Python build with non-root runtime
-- [Go Server Dockerfile (2026-06-28)](../docker/dockerfiles/2026-06-28-trying-tagged-go-server.Dockerfile) — Multi-stage Go build with non-root server binary
-- [Port Map Script (2026-07-04)](../docker/scripts/2026-07-04-first-container-port-map.sh) — Build and run Python container with port mapping
+- [Minimal Multi-Stage Dockerfile](../docker/dockerfiles/minimal-multi-stage.Dockerfile) — Optimised image builds
+- [Tagged Build Dockerfile (2026-07-01)](../docker/dockerfiles/2026-07-01-trying-tagged-build.Dockerfile) — Self-contained Python multi-stage build with non-root user
 - [Port Map Script (2026-07-01)](../docker/scripts/2026-07-01-run-container-port-map.sh) — Build and run Python server with port mapping
 - [Docker Quickstart — What Tripped Me Up (2026-07-04)](../docker/notes/2026-07-04-docker-quickstart-trials.md) — Step-by-step quickstart with volume, compose, and layer caching gotchas
 - [Tagged Build Non-Root Dockerfile (2026-07-04)](../docker/dockerfiles/2026-07-04-tagged-nonroot.Dockerfile) — Multi-stage Python build with non-root runtime
 - [Port Map Script (2026-07-04)](../docker/scripts/2026-07-04-first-container-port-map.sh) — Build and run Python container with port 8080 mapping
-- [Docker Quickstart — Official Guide Walkthrough (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-tripped-me.md) — Official getting-started step-by-step with compose, bind mounts, and layer caching gotchas
-- [Tagged Multi-Stage Go Dockerfile (2026-07-07)](../docker/dockerfiles/2026-07-07-tagged-nonroot.Dockerfile) — Multi-stage Go build producing a small non-root runtime image
-- [Port Map Script with Go Server (2026-07-07)](../docker/scripts/2026-07-07-port-map-container.sh) — Build and run Go server with port 9090 mapping and --rm cleanup
-- [Docker Quickstart — What Tripped Me Up (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-trials.md) — Node.js quickstart with .dockerignore and layer ordering gotchas
-- [Tagged Non-Root Dockerfile (2026-07-07)](../docker/dockerfiles/2026-07-07-tagged-nonroot.Dockerfile) — Node.js multi-stage build with non-root runtime
-- [Port Map Script (2026-07-07)](../docker/scripts/2026-07-07-run-container-port-map.sh) — Build and run Node.js container with port 8080 mapping
-- [Docker Quickstart Trip-Ups (2026-07-06)](../docker/notes/2026-07-06-docker-quickstart-trip-ups.md) — What tripped me on latest tags, .dockerignore, root user, and layer caching
-- [Tagged Non-Root Dockerfile (2026-07-06)](../docker/dockerfiles/2026-07-06-minimal-tagged-nonroot.Dockerfile) — Multi-stage Python build with pinned tag and non-root runtime
-- [Port Map Script (2026-07-06)](../docker/scripts/2026-07-06-first-container-port-map.sh) — Build and run container with port 8080 mapping
+- [Docker Quickstart Notes (2026-07-08)](../docker/notes/2026-07-08-docker-quickstart-trials.md) — localhost vs service name, port conflicts, .dockerignore, and latest tag gotchas
+- [Tagged Build Non-Root Dockerfile (2026-07-08)](../docker/dockerfiles/2026-07-08-tagged-nonroot.Dockerfile) — Multi-stage Python build with pinned tag and non-root runtime
+- [Port Map Script (2026-07-08)](../docker/scripts/2026-07-08-first-container-port-map.sh) — Build and run Python container with port 8081 mapping
 
 ### Automate with CI/CD
 - [CI Workflow Config](../github-actions/configs/ci-workflow.yaml) — Minimal GitHub Actions CI workflow
