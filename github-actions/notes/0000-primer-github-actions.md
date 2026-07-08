@@ -18,7 +18,7 @@ Before Actions, you either used a separate CI tool (Jenkins, Travis CI, CircleCI
 
 ## Key terminology
 
-- **Workflow** — The top-level automation unit. A YAML file in `.github/workflows/` that defines what event triggers it and what jobs to run. Example: `.github/workflows/ci.yml` runs tests on every push.
+- **Workflow** — The top-level automation unit. A YAML file in `.github/workflows/` that defines what event triggers it and what jobs to run. Example: `.github/workflows/lint.yml` runs lint on every push.
 - **Job** — A set of steps that execute on the same runner. Jobs in a workflow run in parallel by default. Example: a "test" job and a "lint" job run at the same time.
 - **Step** — A single task within a job (run a command or use an action). Example: `- run: npm test`.
 - **Action** — A reusable unit of automation, like a plugin. You can use community actions from the Marketplace or write your own. Example: `actions/checkout@v4` checks out your repo so the workflow can access it.
@@ -29,7 +29,7 @@ Before Actions, you either used a separate CI tool (Jenkins, Travis CI, CircleCI
 ## A tiny example
 
 ```yaml
-# .github/workflows/ci.yml
+# .github/workflows/lint.yml
 name: CI
 on: [push]
 jobs:
