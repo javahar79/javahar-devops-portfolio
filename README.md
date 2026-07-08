@@ -45,7 +45,7 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 
 | Tool | Notes | Scripts | Configs | Dockerfiles | Last verified |
 |------|-------|---------|---------|-------------|---------------|
-| Docker | 14 | 10 | 1 | 11 | 2026-07-04 |
+| Docker | 17 | 13 | 1 | 13 | 2026-07-07 |
 | Git | 4 | 1 | — | — | 2026-06-24 |
 | GitHub Actions | 2 | — | 1 | — | 2026-06-17 |
 | Kubernetes | 2 | 1 | — | — | 2026-06-17 |
@@ -59,4 +59,4 @@ Currently working through L1 first-contact notes for Docker, Git, GitHub Actions
 
 ---
 
-_Last updated: 2026-07-05_
+_Last updated: 2026-07-07_

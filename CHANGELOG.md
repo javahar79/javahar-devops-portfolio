@@ -2,6 +2,11 @@
 
 ## 2026-07-07
 
+- Added Docker quickstart notes — following the official getting-started guide (docker/notes/2026-07-07-docker-quickstart-tripped-me.md)
+- Added tagged multi-stage Go build with non-root runtime Dockerfile (docker/dockerfiles/2026-07-07-tagged-nonroot.Dockerfile)
+- Added first container port-map script with Go server (docker/scripts/2026-07-07-port-map-container.sh)
+- Updated 00_index/quick-links.md with new Docker entries
+
 - Added Docker quickstart notes — what tripped me up (docker/notes/2026-07-07-docker-quickstart-trials.md)
 - Added tagged non-root multi-stage Dockerfile for Node.js (docker/dockerfiles/2026-07-07-tagged-nonroot.Dockerfile)
 - Added first container port-map script for Node.js (docker/scripts/2026-07-07-run-container-port-map.sh)
@@ -13,6 +18,7 @@
 - Added minimal tagged non-root Dockerfile (docker/dockerfiles/2026-07-06-minimal-tagged-nonroot.Dockerfile)
 - Added first container port-map script (docker/scripts/2026-07-06-first-container-port-map.sh)
 - Updated quick-links.md with new Docker entries
+
 
 ## 2026-07-04
 
