@@ -7,6 +7,13 @@
 - Added first container port-map script for Node.js (docker/scripts/2026-07-07-run-container-port-map.sh)
 - Updated 00_index/quick-links.md with new Docker entries
 
+## 2026-07-06
+
+- Added Docker quickstart trip-ups notes (docker/notes/2026-07-06-docker-quickstart-trip-ups.md)
+- Added minimal tagged non-root Dockerfile (docker/dockerfiles/2026-07-06-minimal-tagged-nonroot.Dockerfile)
+- Added first container port-map script (docker/scripts/2026-07-06-first-container-port-map.sh)
+- Updated quick-links.md with new Docker entries
+
 ## 2026-07-04
 
 - Added Docker quickstart notes — what tripped me up (docker/notes/2026-07-04-docker-quickstart-trials.md)
@@ -65,10 +72,9 @@
 
 ## 2026-06-22
 
-- Added General section: DevOps Automation repo exploration notes (general/notes/2026-06-22-explore-devops-automation-repo.md)
 - Added Docker quickstart notes (docker/notes/2026-06-22-docker-quickstart.md)
 - Added Git quickstart notes (git/notes/2026-06-22-git-quickstart.md)
-- Updated 00_index/quick-links.md with General section and new Docker/Git entries
+- Updated quick-links.md with new Docker/Git entries
 
 ## 2026-06-24
 
