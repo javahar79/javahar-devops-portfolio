@@ -1,22 +1,23 @@
 # last_verified: 2026-07-07 · Docker 4.25
 
-# Build stage — uses the full Go image, which is ~800 MB
-FROM golang:1.22-alpine AS builder
-
-WORKDIR /src
-COPY go.mod go.sum main.go ./
-RUN go build -o /app/server .
-
-# Runtime stage — fresh alpine, just the binary + non-root user
-FROM alpine:3.20
-
-RUN addgroup -S app && adduser -S -G app app
+# Build stage
+FROM node:22-alpine AS builder
 
 WORKDIR /app
-COPY --from=builder /app/server .
+COPY package*.json ./
+RUN npm ci --only=production
+
+# Runtime stage
+FROM node:22-alpine
+
+RUN addgroup --system app && adduser --system --ingroup app app
+
+WORKDIR /app
+COPY --from=builder /app/node_modules ./node_modules
+COPY server.js .
 
 USER app
 
-EXPOSE 8080
+EXPOSE 3000
 
-CMD ["./server"]
+CMD ["node", "server.js"]
