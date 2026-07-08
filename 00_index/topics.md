@@ -2,14 +2,14 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Docker  ·  36 files
+## Docker  ·  47 files
 
 - **primer:** [primer-docker](../docker/notes/0000-primer-docker.md)
-- **notes** (14): most recent → [Docker Quickstart — What Tripped Me Up (2026-07-04)](../docker/notes/2026-07-04-docker-quickstart-trials.md), [Following the official Docker quickstart (2026-07-01)](../docker/notes/2026-07-01-following-docker-quickstart.md), [Docker Quickstart Trials (2026-06-28)](../docker/notes/2026-06-28-docker-quickstart-trials.md), [Docker Quickstart Trip-Ups (2026-06-26)](../docker/notes/2026-06-26-docker-quickstart-trip-ups.md)
-- **scripts** (10): [Install Docker](../docker/scripts/2026-06-16-install-docker.sh), [Port Map Script (2026-07-04)](../docker/scripts/2026-07-04-first-container-port-map.sh), [Port Map Script (2026-07-01)](../docker/scripts/2026-07-01-run-container-port-map.sh), [First Container Port Map (2026-06-21)](../docker/scripts/2026-06-21-first-container-port-map.sh)
-- **dockerfiles** (11): [Minimal Multi-Stage](../docker/dockerfiles/minimal-multi-stage.Dockerfile), [Tagged Non-Root (2026-07-04)](../docker/dockerfiles/2026-07-04-tagged-nonroot.Dockerfile), [Tagged Build (2026-07-01)](../docker/dockerfiles/2026-07-01-trying-tagged-build.Dockerfile), [Go Server (2026-06-28)](../docker/dockerfiles/2026-06-28-trying-tagged-go-server.Dockerfile)
+- **notes** (18): most recent → [Docker Quickstart — What Tripped Me Up (2026-07-08)](../docker/notes/2026-07-08-docker-quickstart-trials.md), [Docker Quickstart — What Tripped Me Up (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-tripped-me.md), [Docker Quickstart Trials (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-trials.md)
+- **scripts** (14): [Port Map Script (2026-07-08)](../docker/scripts/2026-07-08-first-container-port-map.sh), [Port Map Container (2026-07-07)](../docker/scripts/2026-07-07-port-map-container.sh), [Run Container Port Map (2026-07-07)](../docker/scripts/2026-07-07-run-container-port-map.sh), [First Container Port Map (2026-07-01)](../docker/scripts/2026-07-01-run-container-port-map.sh)
+- **dockerfiles** (14): [Tagged Non-Root (2026-07-08)](../docker/dockerfiles/2026-07-08-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-07)](../docker/dockerfiles/2026-07-07-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-04)](../docker/dockerfiles/2026-07-04-tagged-nonroot.Dockerfile), [Minimal Multi-Stage](../docker/dockerfiles/minimal-multi-stage.Dockerfile)
 - **configs** (1): [Multi-Service Compose](../docker/configs/multi-service-compose.yaml)
-- _…and 21 more under `docker/` — browse the folder._
+- _…and 34 more under `docker/` — browse the folder._
 
 ## Git  ·  5 files
 
