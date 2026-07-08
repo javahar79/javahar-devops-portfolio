@@ -34,6 +34,8 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 | `github-actions/` | Actions primer, UI walkthrough, CI workflow |
 | `kubernetes/` | K8s primer, kubectl walkthrough, local cluster install script |
 | `terraform/` | Terraform primer, install script, local provider config |
+| `.github/workflows/` | GitHub Actions CI workflow definitions |
+| `CHANGELOG.md` | Change log for portfolio additions and updates |
 | `00_index/` | Topic index, quick links, glossary, learning path |
 
 ---
