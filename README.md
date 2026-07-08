@@ -37,6 +37,7 @@ DevOps learning portfolio covering five tool families — Docker, Git, GitHub Ac
 | `.github/workflows/` | GitHub Actions CI workflow definitions |
 | `CHANGELOG.md` | Change log for portfolio additions and updates |
 | `00_index/` | Topic index, quick links, glossary, learning path |
+| `.github/` | GitHub Actions CI workflow configuration, lint checks |
 
 ---
 
