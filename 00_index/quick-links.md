@@ -28,6 +28,7 @@
 - [Port Map Script (2026-07-08)](../docker/scripts/2026-07-08-first-container-port-map.sh) — Build and run Python container with port 8081 mapping
 
 ### Automate with CI/CD
+- [Minimal CI Workflow (2026-07-09)](../github-actions/configs/2026-07-09-minimal-ci-workflow.yaml) — CI workflow for pushes and PRs to main
 - [CI Workflow Config](../github-actions/configs/ci-workflow.yaml) — Minimal GitHub Actions CI workflow
 - [GitHub Actions UI Walkthrough](../github-actions/notes/2026-06-16-explore-gha-ui.md) — Exploring the GitHub Actions interface
 
@@ -38,4 +39,6 @@
 ### Troubleshoot
 - [Docker Quickstart Trip-Ups](../docker/notes/2026-06-26-docker-quickstart-trip-ups.md) — Common pitfalls and gotchas
 - [Git Undo/Stage/Commit/Push](../git/notes/2026-06-24-git-undo-stage-commit-push.md) — Fixing mistakes in Git workflow
+- [Git Branch/Merge/Revert Workflow](../git/scripts/2026-07-09-branch-merge-revert-workflow.sh) — Practice branch, merge, and revert
 - [Docker CLI Exploration](../docker/notes/2026-06-16-explore-docker-cli.md) — Command reference and examples
+- [GHA Quickstart — What Tripped Me Up](../github-actions/notes/2026-07-09-gha-quickstart-trials.md) — GitHub Actions first-run gotchas
