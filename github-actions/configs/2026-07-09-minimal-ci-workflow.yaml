@@ -1,0 +1,19 @@
+# last_verified: 2026-07-09 · GitHub Actions n/a
+# Minimal CI workflow — runs on every push and PR to main so I can
+# see what breaks before merging
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Print structure
+        run: ls -R
