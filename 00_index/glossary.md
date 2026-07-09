@@ -15,6 +15,8 @@
 - **Docker network** — A virtual network that allows containers to communicate. User-defined bridge networks enable service discovery by container name.
 - **dangling image** — An image with no tag (`<none>`) that remains on disk after a newer image replaces the same repository and tag.
 - **docker system prune** — Removes unused data (dangling images, stopped containers, unused networks, build cache) to reclaim disk space.
+- **`.dockerignore`** — A file that excludes paths from the Docker build context, keeping images small and builds fast by leaving out `.git`, `node_modules`, and other irrelevant files.
+- **Pinned tag** — An explicit image tag (e.g. `python:3.11-slim`) rather than `latest`, so the base image doesn't change unexpectedly between builds.
 
 ## Git
 
