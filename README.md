@@ -46,8 +46,8 @@ A DevOps learning portfolio across five tool families — Docker, Git, GitHub Ac
 | Tool | Notes | Scripts | Configs | Dockerfiles | Last verified |
 |------|-------|---------|---------|-------------|---------------|
 | Docker | 18 | 14 | 1 | 14 | 2026-07-08 |
-| Git | 4 | 1 | — | — | — |
-| GitHub Actions | 2 | — | 1 | — | — |
+| Git | 4 | 2 | — | — | — |
+| GitHub Actions | 3 | — | 2 | — | — |
 | Kubernetes | 2 | 1 | — | — | — |
 | Terraform | 1 | 1 | 1 | — | — |
 
@@ -57,4 +57,4 @@ Actively building out first-contact notes and runnable configs. Recent additions
 
 ---
 
-_Last updated: 2026-07-08_
+_Last updated: 2026-07-09_
