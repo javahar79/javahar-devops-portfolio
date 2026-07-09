@@ -2,10 +2,13 @@
 
 ## 2026-07-09
 
+- Added Docker quickstart — what tripped me up notes (docker/notes/2026-07-09-docker-quickstart-trials.md)
+- Added tagged non-root Dockerfile with pinned Python tag (docker/dockerfiles/2026-07-09-tagged-nonroot.Dockerfile)
+- Added port-mapping container script (docker/scripts/2026-07-09-run-container-port-map.sh)
 - Added Git branch/merge/revert workflow practice script (git/scripts/2026-07-09-branch-merge-revert-workflow.sh)
 - Added minimal CI workflow config for GHA pushes and PRs (github-actions/configs/2026-07-09-minimal-ci-workflow.yaml)
 - Added GitHub Actions quickstart — what tripped me up notes (github-actions/notes/2026-07-09-gha-quickstart-trials.md)
-- Updated 00_index/quick-links.md with new Git and GHA entries
+- Updated 00_index/quick-links.md with new Docker, Git, and GHA entries
 
 ## 2026-07-04
 
