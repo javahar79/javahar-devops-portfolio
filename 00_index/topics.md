@@ -11,16 +11,16 @@
 - **configs** (1): [Multi-Service Compose](../docker/configs/multi-service-compose.yaml)
 - _…and 26 more under `docker/` — browse the folder._
 
-## Git  ·  6 files
+## Git  ·  7 files
 
 - **primer:** [primer-git](../git/notes/0000-primer-git.md)
 - **notes** (4): most recent → [Git Undo/Stage/Commit/Push (2026-06-24)](../git/notes/2026-06-24-git-undo-stage-commit-push.md), [Git Quickstart Notes (2026-06-22)](../git/notes/2026-06-22-git-quickstart.md), [Git CLI Exploration (2026-06-16)](../git/notes/2026-06-16-explore-git-cli.md)
 - **scripts** (2): [Branch, Merge, and Revert Workflow (2026-07-09)](../git/scripts/2026-07-09-branch-merge-revert-workflow.sh), [Configure and Commit First](../git/scripts/configure-and-commit-first.sh)
 
-## GitHub Actions  ·  5 files
+## GitHub Actions  ·  6 files
 
 - **primer:** [primer-github-actions](../github-actions/notes/0000-primer-github-actions.md)
-- **notes** (3): most recent → [GitHub Actions Quickstart — What Tripped Me Up (2026-07-09)](../github-actions/notes/2026-07-09-gha-quickstart-trials.md), [GitHub Actions UI Walkthrough (2026-06-16)](../github-actions/notes/2026-06-16-explore-gha-ui.md)
+- **notes** (3): [GHA Quickstart — What Tripped Me Up (2026-07-09)](../github-actions/notes/2026-07-09-gha-quickstart-trials.md), [GitHub Actions UI Walkthrough (2026-06-16)](../github-actions/notes/2026-06-16-explore-gha-ui.md)
 - **configs** (2): [Minimal CI Workflow (2026-07-09)](../github-actions/configs/2026-07-09-minimal-ci-workflow.yaml), [CI Workflow](../github-actions/configs/ci-workflow.yaml)
 
 ## Kubernetes  ·  3 files
