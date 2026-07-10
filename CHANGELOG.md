@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-10
+
+- Added Git branch/merge/revert workflow script — fast-forward, three-way, conflict, and revert (git/scripts/2026-07-10-branch-merge-revert-workflow.sh)
+- Added minimal CI workflow with job dependencies and trigger filtering (github-actions/configs/2026-07-10-minimal-ci-workflow.yaml)
+- Added GitHub Actions quickstart notes — round two: triggers, env vars, secrets, path filtering (github-actions/notes/2026-07-10-gha-quickstart-trials.md)
+- Updated 00_index/quick-links.md with new Git and GHA entries
+
 ## 2026-07-09
 
 - Added Git branch/merge/revert workflow practice script (git/scripts/2026-07-09-branch-merge-revert-workflow.sh)

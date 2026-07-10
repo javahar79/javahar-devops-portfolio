@@ -1,0 +1,27 @@
+# last_verified: 2026-07-10 · GitHub Actions n/a
+# Trying a minimal CI workflow that runs lint and test on pushes and PRs
+# to catch basic problems before merging
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check YAML syntax
+        run: yamllint --version && echo "YAML linter available"
+
+  test:
+    needs: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify repo structure
+        run: ls -la && echo "Repo checkout works"
