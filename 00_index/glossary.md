@@ -15,8 +15,6 @@
 - **Docker network** — A virtual network that allows containers to communicate. User-defined bridge networks enable service discovery by container name.
 - **dangling image** — An image with no tag (`<none>`) that remains on disk after a newer image replaces the same repository and tag.
 - **docker system prune** — Removes unused data (dangling images, stopped containers, unused networks, build cache) to reclaim disk space.
-- **`.dockerignore`** — A file that excludes paths from the Docker build context, keeping images small and builds fast by leaving out `.git`, `node_modules`, and other irrelevant files.
-- **Pinned tag** — An explicit image tag (e.g. `python:3.11-slim`) rather than `latest`, so the base image doesn't change unexpectedly between builds.
 
 ## Git
 
@@ -27,6 +25,8 @@
 - **git revert** — Creates a new commit that reverses the changes from a previous commit; safe for shared branches.
 - **git restore --staged** — Unstages a file from the staging area without modifying the working copy.
 - **git commit --amend** — Modifies the most recent commit, either to update the commit message or to include additional staged changes.
+- **merge commit** — A commit created by `git merge` that combines two branches; it has two parent commits.
+- **sandbox** — An isolated directory used for safe experimentation without affecting real repositories.
 
 ## GitHub Actions
 
@@ -34,6 +34,10 @@
 - **Job** — A set of steps that execute on the same runner.
 - **Runner** — A server that runs workflows when they are triggered.
 - **CI/CD** — Continuous Integration and Continuous Delivery, practices that automate building, testing, and deploying code.
+- **checkout action** — The `uses: actions/checkout@v4` step that copies the repository code into the runner so subsequent steps can access it.
+- **workflow_dispatch** — An event trigger that allows manual workflow runs from the GitHub Actions UI.
+- **matrix build** — A strategy that runs the same job across multiple OS/runtime combinations in a single workflow.
+- **needs** — The `needs:` keyword that declares job dependencies, making one job wait for another to complete.
 
 ## Kubernetes
 

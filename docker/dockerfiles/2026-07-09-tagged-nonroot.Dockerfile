@@ -1,15 +1,18 @@
-# last_verified: 2026-07-09 · Docker n/a
+# last_verified: 2026-07-09 · Docker 4.25
 
-# Tagged build — pinned Python version, not :latest
-FROM python:3.12-alpine3.20
+# Trying a minimal tagged multi-stage build — pinning alpine:3.20
+# instead of latest so I know exactly what base I'm getting
+FROM alpine:3.20 AS builder
+
+RUN apk add --no-cache curl
+
+# Runtime stage — same base, no build tools
+FROM alpine:3.20
 
 RUN addgroup -S app && adduser -S app -G app
 
-WORKDIR /app
+COPY --from=builder /usr/bin/curl /usr/bin/curl
 
-# Python's built-in HTTP server — no extra files needed
 USER app
 
-EXPOSE 8000
-
-CMD ["python", "-m", "http.server", "8000", "--bind", "0.0.0.0"]
+CMD ["sh", "-c", "echo 'hello from tagged non-root image'"]
