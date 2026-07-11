@@ -12,7 +12,9 @@
 - Added Git branch/merge/revert workflow practice script (git/scripts/2026-07-09-branch-merge-revert-workflow.sh)
 - Added minimal CI workflow config for GHA pushes and PRs (github-actions/configs/2026-07-09-minimal-ci-workflow.yaml)
 - Added GitHub Actions quickstart — what tripped me up notes (github-actions/notes/2026-07-09-gha-quickstart-trials.md)
-- Updated 00_index/quick-links.md with new Git and GHA entries
+- Added minimal Alpine tagged multi-stage non-root Dockerfile (docker/dockerfiles/2026-07-09-tagged-nonroot.Dockerfile)
+- Added first container port map script (docker/scripts/2026-07-09-first-container-port-map.sh)
+- Updated 00_index/quick-links.md with new Git, GHA, and Docker entries
 
 ## 2026-07-04
 
