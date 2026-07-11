@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-10
+
+- Added docs on reading GitHub Actions workflow logs and debugging failures (github-actions/docs/2026-07-10-reading-workflow-logs-and-debugging.md)
+- Added Kubernetes quickstart — what tripped me up notes (kubernetes/notes/2026-07-10-k8s-quickstart-trials.md)
+- Added minimal Kubernetes Deployment + Service manifest (kubernetes/manifests/2026-07-10-minimal-deployment-service.yaml)
+- Updated 00_index/quick-links.md with new GHA, Kubernetes entries
+
 ## 2026-07-09
 
 - Added Git branch/merge/revert workflow practice script (git/scripts/2026-07-09-branch-merge-revert-workflow.sh)

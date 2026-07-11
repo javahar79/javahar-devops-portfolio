@@ -1,0 +1,38 @@
+# last_verified: 2026-07-10 · n/a
+# Minimal Deployment + Service manifest
+# Applying this: kubectl apply -f this-file.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-app
+  labels:
+    app: web
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:1.27-alpine
+          ports:
+            - containerPort: 80
+          # keeping it simple for now — no probes yet
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-app-service
+spec:
+  type: ClusterIP
+  selector:
+    app: web
+  ports:
+    - port: 80
+      targetPort: 80

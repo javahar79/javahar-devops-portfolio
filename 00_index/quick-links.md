@@ -14,6 +14,7 @@
 - [GitHub Actions Primer](../github-actions/notes/0000-primer-github-actions.md) — Automation with GitHub workflows
 - [Kubernetes Primer](../kubernetes/notes/0000-primer-kubernetes.md) — Container orchestration basics
 - [Terraform Primer](../terraform/notes/0000-primer-terraform.md) — Infrastructure as Code introduction
+- [Kubernetes Quickstart — What Tripped Me Up (2026-07-10)](../kubernetes/notes/2026-07-10-k8s-quickstart-trials.md) — kind vs minikube gotchas, pod creation, and probes
 - [Branch, Merge, and Revert Workflow (2026-07-09)](../git/scripts/2026-07-09-branch-merge-revert-workflow.sh) — Git branch, merge, and revert practice script
 
 ### Build and run a container
@@ -28,6 +29,7 @@
 - [Port Map Script (2026-07-07)](../docker/scripts/2026-07-07-port-map-container.sh) — Build and run Python container with port mapping
 
 ### Automate with CI/CD
+- [Reading Workflow Logs and Debugging Failures (2026-07-10)](../github-actions/docs/2026-07-10-reading-workflow-logs-and-debugging.md) — How I learned to read logs and debug GHA failures
 - [Minimal CI Workflow (2026-07-09)](../github-actions/configs/2026-07-09-minimal-ci-workflow.yaml) — Minimal GitHub Actions CI workflow config
 - [CI Workflow Config](../github-actions/configs/ci-workflow.yaml) — Minimal GitHub Actions CI workflow
 - [GitHub Actions Quickstart — What Tripped Me Up (2026-07-09)](../github-actions/notes/2026-07-09-gha-quickstart-trials.md) — Workflow syntax, checkout action, and trigger gotchas
@@ -37,7 +39,11 @@
 - [Local Provider Config](../terraform/configs/local-provider.hcl) — Minimal Terraform config with local provider
 - [Install Terraform](../terraform/scripts/2026-06-17-install-terraform.sh) — Install Terraform and init first project
 
+### Deploy on Kubernetes
+- [Minimal Deployment + Service (2026-07-10)](../kubernetes/manifests/2026-07-10-minimal-deployment-service.yaml) — Basic nginx Deployment with ClusterIP Service
+
 ### Troubleshoot
+- [Reading Workflow Logs and Debugging Failures (2026-07-10)](../github-actions/docs/2026-07-10-reading-workflow-logs-and-debugging.md) — How I learned to read logs and debug GHA failures
 - [Docker Quickstart Trip-Ups](../docker/notes/2026-06-26-docker-quickstart-trip-ups.md) — Common pitfalls and gotchas
 - [Git Undo/Stage/Commit/Push](../git/notes/2026-06-24-git-undo-stage-commit-push.md) — Fixing mistakes in Git workflow
 - [Docker CLI Exploration](../docker/notes/2026-06-16-explore-docker-cli.md) — Command reference and examples
