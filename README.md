@@ -33,8 +33,8 @@ A DevOps learning portfolio across five tool families — Docker, Git, GitHub Ac
 |-----------|----------|
 | `docker/` | Docker primer, CLI notes, quickstart notes, install scripts, Dockerfiles, compose config |
 | `git/` | Git primer, CLI exploration, quickstart notes, undo/stage/commit workflow, branch/merge/revert script |
-| `github-actions/` | Actions primer, UI walkthrough, CI workflow config, quickstart trials |
-| `kubernetes/` | K8s primer, kubectl walkthrough, local cluster install script |
+| `github-actions/` | Actions primer, UI walkthrough, CI workflow config, quickstart trials, workflow debugging docs |
+| `kubernetes/` | K8s primer, kubectl walkthrough, local cluster install script, K8s manifests |
 | `terraform/` | Terraform primer, install script, local provider config |
 | `00_index/` | Topic index, quick links, glossary, learning path |
 | `CHANGELOG.md` | Project changelog and release history |
@@ -43,13 +43,13 @@ A DevOps learning portfolio across five tool families — Docker, Git, GitHub Ac
 
 ## Coverage
 
-| Tool | Notes | Scripts | Configs | Dockerfiles | Last verified |
-|------|-------|---------|---------|-------------|---------------|
-| Docker | 18 | 15 | 1 | 15 | 2026-07-09 |
-| Git | 4 | 2 | — | — | 2026-07-09 |
-| GitHub Actions | 3 | — | 2 | — | 2026-07-09 |
-| Kubernetes | 2 | 1 | — | — | 2026-06-16 |
-| Terraform | 1 | 1 | 1 | — | 2026-06-17 |
+| Tool | Notes | Scripts | Configs | Dockerfiles | Manifests | Docs | Last verified |
+|------|-------|---------|---------|-------------|-----------|------|---------------|
+| Docker | 18 | 15 | 1 | 15 | — | — | 2026-07-09 |
+| Git | 4 | 2 | — | — | — | — | 2026-07-09 |
+| GitHub Actions | 3 | — | 2 | — | — | 1 | 2026-07-09 |
+| Kubernetes | 3 | 1 | — | — | 1 | — | 2026-07-10 |
+| Terraform | 1 | 1 | 1 | — | — | — | 2026-06-17 |
 
 ---
 
@@ -59,4 +59,4 @@ Actively building out first-contact notes and runnable configs. Recent additions
 
 ---
 
-_Last updated: 2026-07-10_
+_Last updated: 2026-07-12_

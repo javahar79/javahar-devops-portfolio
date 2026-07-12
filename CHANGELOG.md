@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-12
+
+- Added Kubernetes Pod/Service/events inspection docs (kubernetes/docs/2026-07-12-inspecting-pods-services-events.md)
+- Added Terraform install and version notes (terraform/notes/2026-07-12-install-terraform-and-run-version.md)
+- Added Terraform local file resource config (terraform/configs/2026-07-12-first-local-file-resource.hcl)
+
 ## 2026-07-10
 
 - Added docs on reading GitHub Actions workflow logs and debugging failures (github-actions/docs/2026-07-10-reading-workflow-logs-and-debugging.md)
