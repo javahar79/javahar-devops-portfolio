@@ -15,17 +15,17 @@ A working DevOps engineer's quick-reference: first-contact notes, runnable snipp
 
 ## What's in here
 
-A DevOps learning portfolio across five tool families — Docker, Git, GitHub Actions, Kubernetes, and Terraform. Each tool has a primer, CLI walkthrough notes, and where applicable a ready-to-run script, config file, or Dockerfile.
+A DevOps learning portfolio across five tool families — Docker, Git, GitHub Actions, Kubernetes, and Terraform. Each tool has a primer, CLI walkthrough notes, and where applicable a ready-to-run script, config file, Dockerfile, or deployment manifest.
 
 ---
 
 ## Quick links
 
+- [Reading Workflow Logs and Debugging (2026-07-10)](github-actions/docs/2026-07-10-reading-workflow-logs-and-debugging.md) — Step-by-step log reading and debugging for failed workflow runs
+- [Minimal Deployment + Service Manifest (2026-07-10)](kubernetes/manifests/2026-07-10-minimal-deployment-service.yaml) — Basic Kubernetes Deployment and Service manifest
+- [Kubernetes Quickstart — What Tripped Me Up (2026-07-10)](kubernetes/notes/2026-07-10-k8s-quickstart-trials.md) — Official K8s quickstart gotchas and lessons learned
 - [Tagged Non-Root Dockerfile (2026-07-09)](docker/dockerfiles/2026-07-09-tagged-nonroot.Dockerfile) — Minimal Alpine multi-stage build with pinned tag and non-root runtime
 - [First Container Port Map Script (2026-07-09)](docker/scripts/2026-07-09-first-container-port-map.sh) — Build and run Alpine container with port 8082 mapping
-- [Branch, Merge, and Revert Workflow (2026-07-09)](git/scripts/2026-07-09-branch-merge-revert-workflow.sh) — Git branch, merge, and revert practice script
-- [Minimal CI Workflow (2026-07-09)](github-actions/configs/2026-07-09-minimal-ci-workflow.yaml) — Minimal GitHub Actions CI workflow config
-- [GitHub Actions Quickstart — What Tripped Me Up (2026-07-09)](github-actions/notes/2026-07-09-gha-quickstart-trials.md) — Workflow syntax, checkout action, and trigger gotchas
 
 ## Layout
 
@@ -33,8 +33,8 @@ A DevOps learning portfolio across five tool families — Docker, Git, GitHub Ac
 |-----------|----------|
 | `docker/` | Docker primer, CLI notes, quickstart notes, install scripts, Dockerfiles, compose config |
 | `git/` | Git primer, CLI exploration, quickstart notes, undo/stage/commit workflow, branch/merge/revert script |
-| `github-actions/` | Actions primer, UI walkthrough, CI workflow config, quickstart trials, workflow debugging docs |
-| `kubernetes/` | K8s primer, kubectl walkthrough, local cluster install script, K8s manifests |
+| `github-actions/` | Actions primer, UI walkthrough, CI workflow configs, quickstart trials, debugging docs |
+| `kubernetes/` | K8s primer, kubectl walkthrough, local cluster install script, deployment manifests |
 | `terraform/` | Terraform primer, install script, local provider config |
 | `00_index/` | Topic index, quick links, glossary, learning path |
 | `CHANGELOG.md` | Project changelog and release history |
@@ -43,19 +43,19 @@ A DevOps learning portfolio across five tool families — Docker, Git, GitHub Ac
 
 ## Coverage
 
-| Tool | Notes | Scripts | Configs | Dockerfiles | Manifests | Docs | Last verified |
-|------|-------|---------|---------|-------------|-----------|------|---------------|
+| Tool | Notes | Scripts | Configs | Dockerfiles | Docs | Manifests | Last verified |
+|------|-------|---------|---------|-------------|------|-----------|---------------|
 | Docker | 18 | 15 | 1 | 15 | — | — | 2026-07-09 |
 | Git | 4 | 2 | — | — | — | — | 2026-07-09 |
-| GitHub Actions | 3 | — | 2 | — | — | 1 | 2026-07-09 |
-| Kubernetes | 3 | 1 | — | — | 1 | — | 2026-07-10 |
-| Terraform | 1 | 1 | 1 | — | — | — | 2026-06-17 |
+| GitHub Actions | 3 | — | 2 | — | 1 | — | 2026-07-10 |
+| Kubernetes | 3 | 1 | — | — | — | 1 | 2026-07-10 |
+| Terraform | 1 | 1 | 1 | — | — | — | — |
 
 ---
 
 ## Status
 
-Actively building out first-contact notes and runnable configs. Recent additions cover Git branch/merge/revert workflows, GitHub Actions quickstart trials, and updated Docker non-root work.
+Actively building out first-contact notes and runnable configs. Recent additions cover GitHub Actions debugging, Kubernetes quickstart trials and deployment manifests, and Docker non-root tagged builds.
 
 ---
 

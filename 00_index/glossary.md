@@ -38,6 +38,8 @@
 - **workflow_dispatch** — An event trigger that allows manual workflow runs from the GitHub Actions UI.
 - **matrix build** — A strategy that runs the same job across multiple OS/runtime combinations in a single workflow.
 - **needs** — The `needs:` keyword that declares job dependencies, making one job wait for another to complete.
+- **runner image** — The operating system and toolchain image used by a GitHub Actions runner (e.g. `ubuntu-latest`, `windows-latest`).
+- **exit code** — A numeric code returned by a process to indicate success (0) or failure (non-zero); used in workflow logs to identify which step failed.
 
 ## Kubernetes
 
@@ -47,6 +49,10 @@
 - **Cluster** — A set of nodes (machines) that run containerized applications managed by Kubernetes.
 - **kubectl** — The command-line tool for interacting with a Kubernetes cluster.
 - **kind** — A tool for running local Kubernetes clusters using Docker containers as nodes.
+- **ReplicaSet** — A Kubernetes resource that ensures a specified number of pod replicas are running at all times; managed by a Deployment.
+- **NodePort** — A Service type that exposes a port on each node's IP address, making the service accessible from outside the cluster.
+- **port-forward** — A `kubectl` command that forwards a local port to a port on a pod or service, used for debugging and direct access.
+- **ContainerCreating** — A pod status indicating the container image is being pulled and the container is being started.
 
 ## Terraform
 
