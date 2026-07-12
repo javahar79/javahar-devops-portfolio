@@ -21,18 +21,23 @@
 ### Build and run a container
 - [Multi-Service Compose](../docker/configs/multi-service-compose.yaml) — Web app with PostgreSQL setup
 - [Minimal Multi-Stage Dockerfile](../docker/dockerfiles/minimal-multi-stage.Dockerfile) — Optimised image builds
-- [Tagged Python Dockerfile (2026-07-08)](../docker/dockerfiles/2026-07-08-tagged-nonroot.Dockerfile) — Multi-stage Python build with pinned tag and non-root runtime
-- [Port Map Script (2026-07-08)](../docker/scripts/2026-07-08-first-container-port-map.sh) — Build and run Python container with port 8081 mapping
+- [Tagged Go Dockerfile with Source (2026-07-12)](../docker/dockerfiles/2026-07-12-tagged-nonroot.Dockerfile) — Minimal Alpine multi-stage build for a Go HTTP server with pinned tag and non-root runtime
+- [Hello Server Go Source (2026-07-12)](../docker/dockerfiles/main.go) — Minimal Go HTTP server used by the tagged-nonroot Dockerfile
+- [Go Module (2026-07-12)](../docker/dockerfiles/go.mod) — Go module definition for the hello-server source
+- [Port Map Script (2026-07-12)](../docker/scripts/2026-07-12-run-container-port-map.sh) — Build and run the Go server container with port 8083 mapping
 - [Tagged Alpine Dockerfile (2026-07-09)](../docker/dockerfiles/2026-07-09-tagged-nonroot.Dockerfile) — Minimal Alpine multi-stage build with pinned tag and non-root runtime
 - [Port Map Script (2026-07-09)](../docker/scripts/2026-07-09-first-container-port-map.sh) — Build and run Alpine container with port 8082 mapping
+- [Tagged Python Dockerfile (2026-07-08)](../docker/dockerfiles/2026-07-08-tagged-nonroot.Dockerfile) — Multi-stage Python build with pinned tag and non-root runtime
+- [Port Map Script (2026-07-08)](../docker/scripts/2026-07-08-first-container-port-map.sh) — Build and run Python container with port 8081 mapping
+- [Port Map Script (2026-07-07)](../docker/scripts/2026-07-07-port-map-container.sh) — Build and run Python container with port mapping
 - [Docker Quickstart — What Tripped Me Up (2026-07-08)](../docker/notes/2026-07-08-docker-quickstart-trials.md) — localhost vs service name, port conflicts, `.dockerignore`, and `latest`-tag gotchas
 - [Docker Quickstart — What Tripped Me Up (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-tripped-me.md) — First-contact quickstart follow-up notes
-- [Port Map Script (2026-07-07)](../docker/scripts/2026-07-07-port-map-container.sh) — Build and run Python container with port mapping
 
 ### Automate with CI/CD
-- [Reading Workflow Logs and Debugging Failures (2026-07-10)](../github-actions/docs/2026-07-10-reading-workflow-logs-and-debugging.md) — How I learned to read logs and debug GHA failures
+- [Minimal CI Workflow (2026-07-12)](../github-actions/configs/2026-07-12-minimal-ci-workflow.yaml) — GitHub Actions CI workflow config with matrix build
 - [Minimal CI Workflow (2026-07-09)](../github-actions/configs/2026-07-09-minimal-ci-workflow.yaml) — Minimal GitHub Actions CI workflow config
 - [CI Workflow Config](../github-actions/configs/ci-workflow.yaml) — Minimal GitHub Actions CI workflow
+- [Reading Workflow Logs and Debugging Failures (2026-07-10)](../github-actions/docs/2026-07-10-reading-workflow-logs-and-debugging.md) — How I learned to read logs and debug GHA failures
 - [GitHub Actions Quickstart — What Tripped Me Up (2026-07-09)](../github-actions/notes/2026-07-09-gha-quickstart-trials.md) — Workflow syntax, checkout action, and trigger gotchas
 - [GitHub Actions UI Walkthrough](../github-actions/notes/2026-06-16-explore-gha-ui.md) — Exploring the GitHub Actions interface
 
