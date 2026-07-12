@@ -15,17 +15,17 @@ A working DevOps engineer's quick-reference: first-contact notes, runnable snipp
 
 ## What's in here
 
-A DevOps learning portfolio across five tool families — Docker, Git, GitHub Actions, Kubernetes, and Terraform. Each tool has a primer, CLI walkthrough notes, and where applicable a ready-to-run script, config file, Dockerfile, or deployment manifest.
+A DevOps learning portfolio across five tool families — Docker, Git, GitHub Actions, Kubernetes, and Terraform. Each tool has a primer, CLI walkthrough notes, and where applicable a ready-to-run script, config file, or Dockerfile.
 
 ---
 
 ## Quick links
 
-- [Reading Workflow Logs and Debugging (2026-07-10)](github-actions/docs/2026-07-10-reading-workflow-logs-and-debugging.md) — Step-by-step log reading and debugging for failed workflow runs
-- [Minimal Deployment + Service Manifest (2026-07-10)](kubernetes/manifests/2026-07-10-minimal-deployment-service.yaml) — Basic Kubernetes Deployment and Service manifest
-- [Kubernetes Quickstart — What Tripped Me Up (2026-07-10)](kubernetes/notes/2026-07-10-k8s-quickstart-trials.md) — Official K8s quickstart gotchas and lessons learned
-- [Tagged Non-Root Dockerfile (2026-07-09)](docker/dockerfiles/2026-07-09-tagged-nonroot.Dockerfile) — Minimal Alpine multi-stage build with pinned tag and non-root runtime
-- [First Container Port Map Script (2026-07-09)](docker/scripts/2026-07-09-first-container-port-map.sh) — Build and run Alpine container with port 8082 mapping
+- [Inspecting Pods, Services, and Events (2026-07-12)](kubernetes/docs/2026-07-12-inspecting-pods-services-events.md) — `kubectl get`, `describe`, and `logs` patterns for real-world debugging
+- [First Local File Resource (2026-07-12)](terraform/configs/2026-07-12-first-local-file-resource.hcl) — Minimal Terraform config with `local_file` resource
+- [Install Terraform and Run Version (2026-07-12)](terraform/notes/2026-07-12-install-terraform-and-run-version.md) — Terraform CLI install, init, and version verification
+- [Reading Workflow Logs and Debugging Failures (2026-07-10)](github-actions/docs/2026-07-10-reading-workflow-logs-and-debugging.md) — How I learned to read logs and debug GHA failures
+- [Minimal Deployment + Service (2026-07-10)](kubernetes/manifests/2026-07-10-minimal-deployment-service.yaml) — Basic nginx Deployment with ClusterIP Service
 
 ## Layout
 
@@ -33,9 +33,9 @@ A DevOps learning portfolio across five tool families — Docker, Git, GitHub Ac
 |-----------|----------|
 | `docker/` | Docker primer, CLI notes, quickstart notes, install scripts, Dockerfiles, compose config |
 | `git/` | Git primer, CLI exploration, quickstart notes, undo/stage/commit workflow, branch/merge/revert script |
-| `github-actions/` | Actions primer, UI walkthrough, CI workflow configs, quickstart trials, debugging docs |
-| `kubernetes/` | K8s primer, kubectl walkthrough, local cluster install script, deployment manifests |
-| `terraform/` | Terraform primer, install script, local provider config |
+| `github-actions/` | Actions primer, UI walkthrough, CI workflow configs, quickstart trials, workflow debugging docs |
+| `kubernetes/` | K8s primer, kubectl walkthrough, local cluster install script, K8s manifests, pod/service/event docs |
+| `terraform/` | Terraform primer, install script, local provider config, local file resource config |
 | `00_index/` | Topic index, quick links, glossary, learning path |
 | `CHANGELOG.md` | Project changelog and release history |
 
@@ -43,19 +43,19 @@ A DevOps learning portfolio across five tool families — Docker, Git, GitHub Ac
 
 ## Coverage
 
-| Tool | Notes | Scripts | Configs | Dockerfiles | Docs | Manifests | Last verified |
-|------|-------|---------|---------|-------------|------|-----------|---------------|
+| Tool | Notes | Scripts | Configs | Dockerfiles | Manifests | Docs | Last verified |
+|------|-------|---------|---------|-------------|-----------|------|---------------|
 | Docker | 18 | 15 | 1 | 15 | — | — | 2026-07-09 |
 | Git | 4 | 2 | — | — | — | — | 2026-07-09 |
-| GitHub Actions | 3 | — | 2 | — | 1 | — | 2026-07-10 |
-| Kubernetes | 3 | 1 | — | — | — | 1 | 2026-07-10 |
-| Terraform | 1 | 1 | 1 | — | — | — | — |
+| GitHub Actions | 3 | — | 2 | — | — | 1 | 2026-07-10 |
+| Kubernetes | 3 | 1 | — | — | 1 | 1 | 2026-07-12 |
+| Terraform | 2 | 1 | 2 | — | — | — | 2026-07-12 |
 
 ---
 
 ## Status
 
-Actively building out first-contact notes and runnable configs. Recent additions cover GitHub Actions debugging, Kubernetes quickstart trials and deployment manifests, and Docker non-root tagged builds.
+Actively building out first-contact notes and runnable configs. Recent additions cover Kubernetes pod/service/event inspection, Terraform install notes and local file config, and workflow debugging docs.
 
 ---
 

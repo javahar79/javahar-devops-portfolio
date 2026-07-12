@@ -48,6 +48,9 @@
 - **Service** — An abstraction that exposes a set of pods as a network endpoint.
 - **Cluster** — A set of nodes (machines) that run containerized applications managed by Kubernetes.
 - **kubectl** — The command-line tool for interacting with a Kubernetes cluster.
+- **kubectl describe** — Shows detailed information about a Kubernetes resource, including events at the bottom.
+- **kubectl logs** — Dumps container stdout; `--previous` shows logs from the terminated container before restart.
+- **kubectl get events** — Shows cluster events in the namespace, useful for debugging scheduling failures.
 - **kind** — A tool for running local Kubernetes clusters using Docker containers as nodes.
 - **ReplicaSet** — A Kubernetes resource that ensures a specified number of pod replicas are running at all times; managed by a Deployment.
 - **NodePort** — A Service type that exposes a port on each node's IP address, making the service accessible from outside the cluster.

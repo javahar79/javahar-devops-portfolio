@@ -5,11 +5,11 @@
 ## Docker  ·  49 files
 
 - **primer:** [primer-docker](../docker/notes/0000-primer-docker.md)
-- **notes** (18): most recent → [Docker Quickstart — What Tripped Me Up (2026-07-08)](../docker/notes/2026-07-08-docker-quickstart-trials.md), [Docker Quickstart — What Tripped Me Up (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-tripped-me.md), [Docker Quickstart Trials (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-trials.md)
-- **scripts** (15): [First Container Port Map (2026-07-09)](../docker/scripts/2026-07-09-first-container-port-map.sh), [Port Map Script (2026-07-08)](../docker/scripts/2026-07-08-first-container-port-map.sh), [Port Map Container (2026-07-07)](../docker/scripts/2026-07-07-port-map-container.sh)
+- **notes** (18): most recent → [Docker Quickstart Trials (2026-07-08)](../docker/notes/2026-07-08-docker-quickstart-trials.md), [Docker Quickstart — What Tripped Me Up (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-tripped-me.md), [Docker Quickstart Trials (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-trials.md)
+- **scripts** (15): [Port Map Script (2026-07-08)](../docker/scripts/2026-07-08-first-container-port-map.sh), [Port Map Container (2026-07-07)](../docker/scripts/2026-07-07-port-map-container.sh), [Run Container Port Map (2026-07-07)](../docker/scripts/2026-07-07-run-container-port-map.sh)
 - **dockerfiles** (15): [Tagged Non-Root (2026-07-09)](../docker/dockerfiles/2026-07-09-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-08)](../docker/dockerfiles/2026-07-08-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-07)](../docker/dockerfiles/2026-07-07-tagged-nonroot.Dockerfile)
 - **configs** (1): [Multi-Service Compose](../docker/configs/multi-service-compose.yaml)
-- _…and 27 more under `docker/` — browse the folder._
+- _…and 15 more under `docker/` — browse the folder._
 
 ## Git  ·  6 files
 
@@ -21,18 +21,20 @@
 
 - **primer:** [primer-github-actions](../github-actions/notes/0000-primer-github-actions.md)
 - **notes** (3): [GHA Quickstart — What Tripped Me Up (2026-07-09)](../github-actions/notes/2026-07-09-gha-quickstart-trials.md), [GitHub Actions UI Walkthrough (2026-06-16)](../github-actions/notes/2026-06-16-explore-gha-ui.md)
-- **docs** (1): [Reading Workflow Logs and Debugging (2026-07-10)](../github-actions/docs/2026-07-10-reading-workflow-logs-and-debugging.md)
 - **configs** (2): [Minimal CI Workflow (2026-07-09)](../github-actions/configs/2026-07-09-minimal-ci-workflow.yaml), [CI Workflow](../github-actions/configs/ci-workflow.yaml)
+- **docs** (1): [Reading Workflow Logs and Debugging Failures (2026-07-10)](../github-actions/docs/2026-07-10-reading-workflow-logs-and-debugging.md)
 
-## Kubernetes  ·  5 files
+## Kubernetes  ·  6 files
 
 - **primer:** [primer-kubernetes](../kubernetes/notes/0000-primer-kubernetes.md)
-- **notes** (3): [K8s Quickstart Trials (2026-07-10)](../kubernetes/notes/2026-07-10-k8s-quickstart-trials.md), [kubectl CLI Exploration (2026-06-16)](../kubernetes/notes/2026-06-16-explore-kubectl.md)
-- **scripts** (1): [Install Local Cluster](../kubernetes/scripts/install-local-cluster.sh)
+- **notes** (3): [K8s Quickstart — What Tripped Me Up (2026-07-10)](../kubernetes/notes/2026-07-10-k8s-quickstart-trials.md), [kubectl CLI Exploration (2026-06-16)](../kubernetes/notes/2026-06-16-explore-kubectl.md)
+- **docs** (1): [Inspecting Pods, Services, and Events (2026-07-12)](../kubernetes/docs/2026-07-12-inspecting-pods-services-events.md)
 - **manifests** (1): [Minimal Deployment + Service (2026-07-10)](../kubernetes/manifests/2026-07-10-minimal-deployment-service.yaml)
+- **scripts** (1): [Install Local Cluster](../kubernetes/scripts/install-local-cluster.sh)
 
-## Terraform  ·  3 files
+## Terraform  ·  5 files
 
 - **primer:** [primer-terraform](../terraform/notes/0000-primer-terraform.md)
+- **notes** (2): [Install Terraform and Run Version (2026-07-12)](../terraform/notes/2026-07-12-install-terraform-and-run-version.md)
 - **scripts** (1): [Install Terraform](../terraform/scripts/2026-06-17-install-terraform.sh)
-- **configs** (1): [Local Provider Config](../terraform/configs/local-provider.hcl)
+- **configs** (2): [First Local File Resource (2026-07-12)](../terraform/configs/2026-07-12-first-local-file-resource.hcl), [Local Provider Config](../terraform/configs/local-provider.hcl)
