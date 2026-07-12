@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-12
+
+- Added tagged multi-stage Go Dockerfile with non-root runtime (docker/dockerfiles/2026-07-12-tagged-nonroot.Dockerfile)
+- Added companion Go source and go.mod for Dockerfile build (docker/dockerfiles/main.go, docker/dockerfiles/go.mod)
+- Added container port map script with nginx (docker/scripts/2026-07-12-run-container-port-map.sh)
+- Added minimal CI workflow config with setup-node caching (github-actions/configs/2026-07-12-minimal-ci-workflow.yaml)
+
 ## 2026-07-10
 
 - Added docs on reading GitHub Actions workflow logs and debugging failures (github-actions/docs/2026-07-10-reading-workflow-logs-and-debugging.md)
