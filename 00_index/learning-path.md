@@ -30,6 +30,8 @@ Apply the mental models with hands-on practice. Work through these in order — 
 - [Install Docker Script](../docker/scripts/2026-06-16-install-docker.sh) — Docker installation smoke test.
 - [First Container Port Map Script](../docker/scripts/2026-06-21-first-container-port-map.sh) — Run nginx and verify port mapping.
 - [Configure Git Script](../git/scripts/configure-and-commit-first.sh) — Set up Git identity and push your first commit.
+- [Install Terraform and Run Version (2026-07-12)](../terraform/notes/2026-07-12-install-terraform-and-run-version.md) — Terraform CLI install and version verification.
+- [Kubernetes Quickstart Trials (2026-07-10)](../kubernetes/notes/2026-07-10-k8s-quickstart-trials.md) — First-contact gotchas: `run` vs `create deployment`, `ContainerCreating` delays, and `port-forward`.
 
 ## Stage 4: Integration
 
@@ -41,12 +43,12 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Tagged Non-Root Dockerfile (2026-07-08)](../docker/dockerfiles/2026-07-08-tagged-nonroot.Dockerfile) — Multi-stage Python build with pinned tag and non-root runtime.
 - [Port Map Script (2026-07-08)](../docker/scripts/2026-07-08-first-container-port-map.sh) — Build and run Python container with port 8081 mapping.
 - [Multi-Service Compose Config](../docker/configs/multi-service-compose.yaml) — Multi-container applications with Compose.
+- [Tagged Go Dockerfile with Source (2026-07-12)](../docker/dockerfiles/2026-07-12-tagged-nonroot.Dockerfile) — Multi-stage Go build with pinned tag, non-root runtime, and Go source files.
+- [Port Map Script (2026-07-12)](../docker/scripts/2026-07-12-run-container-port-map.sh) — Build and run Go server container with port 8083 mapping.
 - [GitHub Actions Quickstart — What Tripped Me Up (2026-07-09)](../github-actions/notes/2026-07-09-gha-quickstart-trials.md) — Workflow syntax, checkout action, and trigger gotchas.
-- [Minimal CI Workflow (2026-07-09)](../github-actions/configs/2026-07-09-minimal-ci-workflow.yaml) — Minimal GitHub Actions CI workflow config.
-- [CI Workflow Config](../github-actions/configs/ci-workflow.yaml) — Automated testing and deployment with GitHub Actions.
-- [Reading Workflow Logs and Debugging Failures (2026-07-10)](../github-actions/docs/2026-07-10-reading-workflow-logs-and-debugging.md) — How I learned to read logs and debug GHA failures.
-- [Install Terraform and Run Version (2026-07-12)](../terraform/notes/2026-07-12-install-terraform-and-run-version.md) — Terraform CLI install, init, and version verification.
-- [First Local File Resource (2026-07-12)](../terraform/configs/2026-07-12-first-local-file-resource.hcl) — Minimal Terraform config with `local_file` resource.
+- [Minimal CI Workflow (2026-07-12)](../github-actions/configs/2026-07-12-minimal-ci-workflow.yaml) — CI workflow with matrix build, lint, and test stages.
+- [Reading Workflow Logs and Debugging (2026-07-10)](../github-actions/docs/2026-07-10-reading-workflow-logs-and-debugging.md) — How I learned to read logs and debug GHA failures.
+- [First Local File Resource (2026-07-12)](../terraform/configs/2026-07-12-first-local-file-resource.hcl) — My first Terraform resource: create a local file.
 - [Local Provider Config](../terraform/configs/local-provider.hcl) — Infrastructure configuration with Terraform.
 - [Install Local Cluster Script](../kubernetes/scripts/install-local-cluster.sh) — Local K8s development environment with kind.
 - [Minimal Deployment + Service (2026-07-10)](../kubernetes/manifests/2026-07-10-minimal-deployment-service.yaml) — Basic nginx Deployment with ClusterIP Service.

@@ -63,3 +63,8 @@
 - **Provider** — A plugin that Terraform uses to interact with a cloud or service API.
 - **Resource** — A block in a Terraform config that describes a piece of infrastructure.
 - **HCL** — HashiCorp Configuration Language, the language used to write Terraform configurations.
+- **init** — `terraform init` initializes a working directory by downloading required providers and modules and setting up the backend.
+- **terraform version** — Displays the installed Terraform version and platform; a useful smoke test after installation.
+- **plan** — `terraform plan` shows what changes Terraform will make without applying them, used to review before deployment.
+- **apply** — `terraform apply` executes the changes described in the plan to create, update, or destroy resources.
+- **state file** — `terraform.tfstate` records the current state of managed infrastructure; Terraform uses it to determine what to create, update, or delete.
