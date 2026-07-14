@@ -1,4 +1,5 @@
 # javahar-devops-portfolio
+
 > A working DevOps engineer's quick-reference for Docker, Git, GitHub Actions, Kubernetes, and Terraform.
 
 ![Last commit](https://img.shields.io/github/last-commit/javahar79/javahar-devops-portfolio)
@@ -14,27 +15,27 @@ A working DevOps engineer's quick-reference: first-contact notes, runnable snipp
 
 ## What's in here
 
-A DevOps learning portfolio across five tool families — Docker, Git, GitHub Actions, Kubernetes, and Terraform. Each tool has a primer, CLI walkthrough notes, and where applicable a ready-to-run script, config file, Dockerfile, or deployment manifest.
+A DevOps learning portfolio across five tool families — Docker, Git, GitHub Actions, Kubernetes, and Terraform. Each tool has a primer, CLI walkthrough notes, Dockerfiles, scripts, and config files for hands-on practice.
 
 ---
 
 ## Quick links
 
-- [Multi-Stage Go Dockerfile with Source (2026-07-12)](docker/dockerfiles/2026-07-12-tagged-nonroot.Dockerfile) — Minimal Alpine multi-stage build for a Go HTTP server with pinned tag and non-root runtime
-- [Hello Server Go Source (2026-07-12)](docker/dockerfiles/main.go) — Minimal Go HTTP server used by the tagged-nonroot Dockerfile
-- [Go Module File (2026-07-12)](docker/dockerfiles/go.mod) — Go module definition for the hello-server source
-- [Port Map Script (2026-07-12)](docker/scripts/2026-07-12-run-container-port-map.sh) — Build and run the Go server container with port 8083 mapping
-- [Minimal CI Workflow (2026-07-12)](github-actions/configs/2026-07-12-minimal-ci-workflow.yaml) — GitHub Actions CI workflow config with matrix build
+- [Tagged Non-Root Dockerfile (2026-07-12)](docker/dockerfiles/2026-07-12-tagged-nonroot.Dockerfile) — Multi-stage Dockerfile with pinned tag and non-root runtime user
+- [Minimal CI Workflow (2026-07-12)](github-actions/configs/2026-07-12-minimal-ci-workflow.yaml) — GitHub Actions CI workflow with trigger and job setup
+- [Run Container Port Map Script (2026-07-12)](docker/scripts/2026-07-12-run-container-port-map.sh) — Build and run Go container with port 8084 mapping
+- [Install Terraform and Run Version (2026-07-12)](terraform/notes/2026-07-12-install-terraform-and-run-version.md) — Terraform CLI install, init, and version verification
+- [Inspecting Pods, Services, and Events (2026-07-12)](kubernetes/docs/2026-07-12-inspecting-pods-services-events.md) — `kubectl get`, `describe`, and `logs` patterns for real-world debugging
 
 ## Layout
 
 | Directory | Contents |
 |-----------|----------|
-| `docker/` | Docker primer, CLI notes, quickstart notes, install scripts, Dockerfiles, Go source, compose config |
+| `docker/` | Docker primer, CLI notes, quickstart notes, install/port-map scripts, Dockerfiles, compose config |
 | `git/` | Git primer, CLI exploration, quickstart notes, undo/stage/commit workflow, branch/merge/revert script |
-| `github-actions/` | Actions primer, UI walkthrough, CI workflow configs, quickstart trials, debugging docs |
-| `kubernetes/` | K8s primer, kubectl walkthrough, local cluster install script, deployment manifests, debugging docs |
-| `terraform/` | Terraform primer, install script, local provider config, first resource config |
+| `github-actions/` | Actions primer, UI walkthrough, CI workflow configs, quickstart trials, workflow debugging docs |
+| `kubernetes/` | K8s primer, kubectl walkthrough, local cluster install script, K8s manifests, pod/service/event docs |
+| `terraform/` | Terraform primer, install script, local provider config, local file resource config |
 | `00_index/` | Topic index, quick links, glossary, learning path |
 | `CHANGELOG.md` | Project changelog and release history |
 
@@ -42,11 +43,11 @@ A DevOps learning portfolio across five tool families — Docker, Git, GitHub Ac
 
 ## Coverage
 
-| Tool | Notes | Scripts | Configs | Dockerfiles | Docs | Manifests | Last verified |
-|------|-------|---------|---------|-------------|------|-----------|---------------|
+| Tool | Notes | Scripts | Configs | Dockerfiles | Manifests | Docs | Last verified |
+|------|-------|---------|---------|-------------|-----------|------|---------------|
 | Docker | 18 | 16 | 1 | 18 | — | — | 2026-07-12 |
 | Git | 4 | 2 | — | — | — | — | 2026-07-09 |
-| GitHub Actions | 3 | — | 3 | — | 1 | — | 2026-07-12 |
+| GitHub Actions | 3 | — | 3 | — | — | 1 | 2026-07-12 |
 | Kubernetes | 3 | 1 | — | — | 1 | 1 | 2026-07-12 |
 | Terraform | 2 | 1 | 2 | — | — | — | 2026-07-12 |
 
@@ -54,8 +55,8 @@ A DevOps learning portfolio across five tool families — Docker, Git, GitHub Ac
 
 ## Status
 
-Actively building out first-contact notes and runnable configs. Recent additions cover a Go-based Docker multi-stage build with source, a new GitHub Actions CI workflow, and expanded Terraform and Kubernetes docs.
+Actively building out first-contact notes and runnable configs. Recent additions cover a tagged non-root Dockerfile, a new CI workflow config, and a Go port-map script (2026-07-12).
 
 ---
 
-_Last updated: 2026-07-13_
+_Last updated: 2026-07-14_

@@ -6,10 +6,10 @@
 
 - **primer:** [primer-docker](../docker/notes/0000-primer-docker.md)
 - **notes** (18): most recent → [Docker Quickstart Trials (2026-07-08)](../docker/notes/2026-07-08-docker-quickstart-trials.md), [Docker Quickstart — What Tripped Me Up (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-tripped-me.md), [Docker Quickstart Trials (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-trials.md)
-- **scripts** (16): [Run Container Port Map (2026-07-12)](../docker/scripts/2026-07-12-run-container-port-map.sh), [Port Map Script (2026-07-09)](../docker/scripts/2026-07-09-first-container-port-map.sh), [Port Map Script (2026-07-08)](../docker/scripts/2026-07-08-first-container-port-map.sh)
+- **scripts** (16): [Run Container Port Map (2026-07-12)](../docker/scripts/2026-07-12-run-container-port-map.sh), [First Container Port Map (2026-07-09)](../docker/scripts/2026-07-09-first-container-port-map.sh), [First Container Port Map (2026-07-08)](../docker/scripts/2026-07-08-first-container-port-map.sh)
 - **dockerfiles** (18): [Tagged Non-Root (2026-07-12)](../docker/dockerfiles/2026-07-12-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-09)](../docker/dockerfiles/2026-07-09-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-08)](../docker/dockerfiles/2026-07-08-tagged-nonroot.Dockerfile)
 - **configs** (1): [Multi-Service Compose](../docker/configs/multi-service-compose.yaml)
-- _…and 42 more under `docker/` — browse the folder._
+- _…and 0 more under `docker/` — browse the folder._
 
 ## Git  ·  6 files
 
