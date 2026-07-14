@@ -56,6 +56,8 @@
 - **NodePort** — A Service type that exposes a port on each node's IP address, making the service accessible from outside the cluster.
 - **port-forward** — A `kubectl` command that forwards a local port to a port on a pod or service, used for debugging and direct access.
 - **ContainerCreating** — A pod status indicating the container image is being pulled and the container is being started.
+- **CrashLoopBackOff** — A pod status indicating the container is repeatedly crashing after start; Kubernetes waits between restarts with an increasing back-off delay.
+- **ImagePullBackOff** — A pod status indicating Kubernetes cannot pull the container image from the registry, usually due to a missing tag, auth failure, or network issue.
 
 ## Terraform
 
