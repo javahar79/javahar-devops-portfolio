@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-14
+
+- Added Terraform version + init first-run notes (terraform/notes/2026-07-14-terraform-init-first-run.md)
+
 ## 2026-07-12
 
 - Added tagged multi-stage Go Dockerfile with non-root runtime (docker/dockerfiles/2026-07-12-tagged-nonroot.Dockerfile)
