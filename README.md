@@ -21,10 +21,10 @@ A DevOps learning portfolio across five tool families — Docker, Git, GitHub Ac
 
 ## Quick links
 
+- [Terraform Init First-Run Notes (2026-07-14)](terraform/notes/2026-07-14-terraform-init-first-run.md) — First-run `terraform init` behaviour, provider download, and `.terraform.lock.hcl`
 - [Tagged Non-Root Dockerfile (2026-07-12)](docker/dockerfiles/2026-07-12-tagged-nonroot.Dockerfile) — Multi-stage Dockerfile with pinned tag and non-root runtime user
-- [Minimal CI Workflow (2026-07-12)](github-actions/configs/2026-07-12-minimal-ci-workflow.yaml) — GitHub Actions CI workflow with trigger and job setup
 - [Run Container Port Map Script (2026-07-12)](docker/scripts/2026-07-12-run-container-port-map.sh) — Build and run Go container with port 8084 mapping
-- [Install Terraform and Run Version (2026-07-12)](terraform/notes/2026-07-12-install-terraform-and-run-version.md) — Terraform CLI install, init, and version verification
+- [Minimal CI Workflow (2026-07-12)](github-actions/configs/2026-07-12-minimal-ci-workflow.yaml) — GitHub Actions CI workflow with trigger and job setup
 - [Inspecting Pods, Services, and Events (2026-07-12)](kubernetes/docs/2026-07-12-inspecting-pods-services-events.md) — `kubectl get`, `describe`, and `logs` patterns for real-world debugging
 
 ## Layout
@@ -35,7 +35,7 @@ A DevOps learning portfolio across five tool families — Docker, Git, GitHub Ac
 | `git/` | Git primer, CLI exploration, quickstart notes, undo/stage/commit workflow, branch/merge/revert script |
 | `github-actions/` | Actions primer, UI walkthrough, CI workflow configs, quickstart trials, workflow debugging docs |
 | `kubernetes/` | K8s primer, kubectl walkthrough, local cluster install script, K8s manifests, pod/service/event docs |
-| `terraform/` | Terraform primer, install script, local provider config, local file resource config |
+| `terraform/` | Terraform primer, install script, local provider config, local file resource config, init first-run notes |
 | `00_index/` | Topic index, quick links, glossary, learning path |
 | `CHANGELOG.md` | Project changelog and release history |
 
@@ -49,13 +49,13 @@ A DevOps learning portfolio across five tool families — Docker, Git, GitHub Ac
 | Git | 4 | 2 | — | — | — | — | 2026-07-09 |
 | GitHub Actions | 3 | — | 3 | — | — | 1 | 2026-07-12 |
 | Kubernetes | 3 | 1 | — | — | 1 | 1 | 2026-07-12 |
-| Terraform | 2 | 1 | 2 | — | — | — | 2026-07-12 |
+| Terraform | 3 | 1 | 2 | — | — | — | 2026-07-14 |
 
 ---
 
 ## Status
 
-Actively building out first-contact notes and runnable configs. Recent additions cover a tagged non-root Dockerfile, a new CI workflow config, and a Go port-map script (2026-07-12).
+Actively building out first-contact notes and runnable configs. Recent additions cover Terraform init first-run behaviour, a tagged non-root Dockerfile, a new CI workflow config, and a Go port-map script.
 
 ---
 

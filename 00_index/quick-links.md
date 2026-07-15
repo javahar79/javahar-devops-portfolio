@@ -40,6 +40,7 @@
 - [GitHub Actions UI Walkthrough](../github-actions/notes/2026-06-16-explore-gha-ui.md) — Exploring the GitHub Actions interface
 
 ### Provision infrastructure
+- [Terraform Init First-Run Notes (2026-07-14)](../terraform/notes/2026-07-14-terraform-init-first-run.md) — First-run `terraform init` behaviour, provider download, and `.terraform.lock.hcl`
 - [First Local File Resource (2026-07-12)](../terraform/configs/2026-07-12-first-local-file-resource.hcl) — Minimal Terraform config with `local_file` resource
 - [Local Provider Config](../terraform/configs/local-provider.hcl) — Minimal Terraform config with local provider
 - [Install Terraform](../terraform/scripts/2026-06-17-install-terraform.sh) — Install Terraform and init first project

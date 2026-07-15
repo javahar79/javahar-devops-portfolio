@@ -69,4 +69,5 @@
 - **terraform version** — Displays the installed Terraform version and platform; a useful smoke test after installation.
 - **plan** — `terraform plan` shows what changes Terraform will make without applying them, used to review before deployment.
 - **apply** — `terraform apply` executes the changes described in the plan to create, update, or destroy resources.
-- **state file** — `terraform.tfstate` records the current state of managed infrastructure; Terraform uses it to determine what to create, update, or delete.
+- **state file** — `terraform.tfstate` records the current state of managed infrastructure; Terraform uses it to determine what to create, update, or delete
+- **.terraform.lock.hcl** — A lock file created by `terraform init` that pins provider versions so all team members and CI use the same versions..
