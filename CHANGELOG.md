@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-16
+
+- Added Docker quickstart notes — what tripped me up (docker/notes/2026-07-16-docker-quickstart-tripped-me.md)
+- Added tagged multi-stage non-root Dockerfile with Go build (docker/dockerfiles/2026-07-16-tagged-nonroot.Dockerfile)
+- Added container port map script with nginx (docker/scripts/2026-07-16-run-container-port-map.sh)
+
 ## 2026-07-14
 
 - Added Terraform version + init first-run notes (terraform/notes/2026-07-14-terraform-init-first-run.md)
