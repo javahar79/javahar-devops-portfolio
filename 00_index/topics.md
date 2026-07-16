@@ -2,14 +2,14 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Docker  ·  53 files
+## Docker  ·  56 files
 
 - **primer:** [primer-docker](../docker/notes/0000-primer-docker.md)
-- **notes** (18): most recent → [Docker Quickstart Trials (2026-07-08)](../docker/notes/2026-07-08-docker-quickstart-trials.md), [Docker Quickstart — What Tripped Me Up (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-tripped-me.md), [Docker Quickstart Trials (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-trials.md)
-- **scripts** (16): [Run Container Port Map (2026-07-12)](../docker/scripts/2026-07-12-run-container-port-map.sh), [First Container Port Map (2026-07-09)](../docker/scripts/2026-07-09-first-container-port-map.sh), [First Container Port Map (2026-07-08)](../docker/scripts/2026-07-08-first-container-port-map.sh)
-- **dockerfiles** (18): [Tagged Non-Root (2026-07-12)](../docker/dockerfiles/2026-07-12-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-09)](../docker/dockerfiles/2026-07-09-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-08)](../docker/dockerfiles/2026-07-08-tagged-nonroot.Dockerfile)
+- **notes** (19): most recent → [Docker Quickstart — What Tripped Me Up (2026-07-16)](../docker/notes/2026-07-16-docker-quickstart-tripped-me.md), [Docker Quickstart Trials (2026-07-08)](../docker/notes/2026-07-08-docker-quickstart-trials.md), [Docker Quickstart — What Tripped Me Up (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-tripped-me.md)
+- **scripts** (17): [Run Container Port Map (2026-07-16)](../docker/scripts/2026-07-16-run-container-port-map.sh), [Run Container Port Map (2026-07-12)](../docker/scripts/2026-07-12-run-container-port-map.sh), [First Container Port Map (2026-07-09)](../docker/scripts/2026-07-09-first-container-port-map.sh)
+- **dockerfiles** (17): [Tagged Non-Root (2026-07-16)](../docker/dockerfiles/2026-07-16-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-12)](../docker/dockerfiles/2026-07-12-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-09)](../docker/dockerfiles/2026-07-09-tagged-nonroot.Dockerfile)
 - **configs** (1): [Multi-Service Compose](../docker/configs/multi-service-compose.yaml)
-- _…and 0 more under `docker/` — browse the folder._
+- _…and many more under `docker/` — browse the folder._
 
 ## Git  ·  6 files
 
@@ -35,6 +35,6 @@
 ## Terraform  ·  6 files
 
 - **primer:** [primer-terraform](../terraform/notes/0000-primer-terraform.md)
-- **notes** (3): most recent → [Terraform Init First-Run Notes (2026-07-14)](../terraform/notes/2026-07-14-terraform-init-first-run.md), [Install Terraform and Run Version (2026-07-12)](../terraform/notes/2026-07-12-install-terraform-and-run-version.md)
+- **notes** (3): [Terraform Init First Run (2026-07-14)](../terraform/notes/2026-07-14-terraform-init-first-run.md), [Install Terraform and Run Version (2026-07-12)](../terraform/notes/2026-07-12-install-terraform-and-run-version.md)
 - **scripts** (1): [Install Terraform](../terraform/scripts/2026-06-17-install-terraform.sh)
 - **configs** (2): [First Local File Resource (2026-07-12)](../terraform/configs/2026-07-12-first-local-file-resource.hcl), [Local Provider Config](../terraform/configs/local-provider.hcl)
