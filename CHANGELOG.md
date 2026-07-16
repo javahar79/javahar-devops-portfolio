@@ -2,6 +2,9 @@
 
 ## 2026-07-16
 
+- Added Terraform install + version notes (terraform/notes/2026-07-16-install-terraform-and-run-version.md)
+- Added version + init run notes (terraform/notes/2026-07-16-terraform-version-init.md)
+- Added minimal local file resource config (terraform/configs/2026-07-16-local-file-resource.hcl)
 - Added Docker quickstart notes — what tripped me up (docker/notes/2026-07-16-docker-quickstart-tripped-me.md)
 - Added tagged multi-stage non-root Dockerfile with Go build (docker/dockerfiles/2026-07-16-tagged-nonroot.Dockerfile)
 - Added container port map script with nginx (docker/scripts/2026-07-16-run-container-port-map.sh)
