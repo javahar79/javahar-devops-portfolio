@@ -9,7 +9,8 @@
 - **scripts** (17): [Run Container Port Map (2026-07-16)](../docker/scripts/2026-07-16-run-container-port-map.sh), [Run Container Port Map (2026-07-12)](../docker/scripts/2026-07-12-run-container-port-map.sh), [First Container Port Map (2026-07-09)](../docker/scripts/2026-07-09-first-container-port-map.sh)
 - **dockerfiles** (17): [Tagged Non-Root (2026-07-16)](../docker/dockerfiles/2026-07-16-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-12)](../docker/dockerfiles/2026-07-12-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-09)](../docker/dockerfiles/2026-07-09-tagged-nonroot.Dockerfile)
 - **configs** (1): [Multi-Service Compose](../docker/configs/multi-service-compose.yaml)
-- _…and many more under `docker/` — browse the folder._
+- **source** (2): [Go module](../docker/dockerfiles/go.mod), [Go server](../docker/dockerfiles/main.go)
+- _…and 0 more under `docker/` — browse the folder._
 
 ## Git  ·  6 files
 
@@ -32,9 +33,9 @@
 - **manifests** (1): [Minimal Deployment + Service (2026-07-10)](../kubernetes/manifests/2026-07-10-minimal-deployment-service.yaml)
 - **scripts** (1): [Install Local Cluster](../kubernetes/scripts/install-local-cluster.sh)
 
-## Terraform  ·  6 files
+## Terraform  ·  9 files
 
 - **primer:** [primer-terraform](../terraform/notes/0000-primer-terraform.md)
-- **notes** (3): [Terraform Init First Run (2026-07-14)](../terraform/notes/2026-07-14-terraform-init-first-run.md), [Install Terraform and Run Version (2026-07-12)](../terraform/notes/2026-07-12-install-terraform-and-run-version.md)
+- **notes** (5): most recent → [Terraform Version & Init (2026-07-16)](../terraform/notes/2026-07-16-terraform-version-init.md), [Install Terraform and Run Version (2026-07-16)](../terraform/notes/2026-07-16-install-terraform-and-run-version.md), [Terraform Init First-Run Notes (2026-07-14)](../terraform/notes/2026-07-14-terraform-init-first-run.md)
+- **configs** (3): [Local File Resource (2026-07-16)](../terraform/configs/2026-07-16-local-file-resource.hcl), [First Local File Resource (2026-07-12)](../terraform/configs/2026-07-12-first-local-file-resource.hcl), [Local Provider Config](../terraform/configs/local-provider.hcl)
 - **scripts** (1): [Install Terraform](../terraform/scripts/2026-06-17-install-terraform.sh)
-- **configs** (2): [First Local File Resource (2026-07-12)](../terraform/configs/2026-07-12-first-local-file-resource.hcl), [Local Provider Config](../terraform/configs/local-provider.hcl)
