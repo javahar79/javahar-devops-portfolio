@@ -15,6 +15,10 @@
 - **Docker network** — A virtual network that allows containers to communicate. User-defined bridge networks enable service discovery by container name.
 - **dangling image** — An image with no tag (`<none>`) that remains on disk after a newer image replaces the same repository and tag.
 - **docker system prune** — Removes unused data (dangling images, stopped containers, unused networks, build cache) to reclaim disk space.
+- **docker compose** — The modern CLI syntax (space, not hyphen) for running Docker Compose; replaces the legacy `docker-compose` command.
+- **health check** — A Docker Compose or Dockerfile instruction (`HEALTHCHECK`) that defines how to test if a container is still working; used with `depends_on: condition: service_healthy` to control startup order.
+- **depends_on** — A Docker Compose key that expresses service startup and shutdown dependencies; can be configured with `condition: service_healthy` or `condition: service_started`.
+- **docker scout** — A Docker CLI command that analyzes container images for CVEs and generates SBOMs; available in recent Docker Desktop and Docker Engine versions.
 
 ## Git
 
@@ -69,5 +73,7 @@
 - **terraform version** — Displays the installed Terraform version and platform; a useful smoke test after installation.
 - **plan** — `terraform plan` shows what changes Terraform will make without applying them, used to review before deployment.
 - **apply** — `terraform apply` executes the changes described in the plan to create, update, or destroy resources.
-- **state file** — `terraform.tfstate` records the current state of managed infrastructure; Terraform uses it to determine what to create, update, or delete
-- **.terraform.lock.hcl** — A lock file created by `terraform init` that pins provider versions so all team members and CI use the same versions..
+- **state file** — `terraform.tfstate` records the current state of managed infrastructure; Terraform uses it to determine what to create, update, or delete.
+- **.terraform.lock.hcl** — A lock file created by `terraform init` that pins provider versions so all team members and CI use the same versions.
+- **backend** — The storage backend (local or remote) that Terraform uses to persist its state data; configured in the `terraform {}` block and initialized during `terraform init`.
+- **required_providers** — A block within `terraform {}` that declares which provider plugins and version constraints a configuration needs before it can be initialized.
