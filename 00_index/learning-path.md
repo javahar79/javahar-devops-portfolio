@@ -36,21 +36,21 @@ Apply the mental models with hands-on practice. Work through these in order — 
 Combine tools to build real infrastructure and pipelines. This is where the separate pieces start to feel like a system.
 
 - [Docker Quickstart Walkthroughs](../docker/notes/2026-06-25-docker-quickstart-walkthrough.md) — Multi-stage builds and practical Dockerfile walkthroughs.
-- [Docker Quickstart — What Tripped Me Up (2026-07-16)](../docker/notes/2026-07-16-docker-quickstart-tripped-me.md) — Bind mounts, layer caching, Compose health checks, and Alpine gotchas.
+- [Docker Quickstart — What Tripped Me Up (2026-07-16)](../docker/notes/2026-07-16-docker-quickstart-tripped-me.md) — Latest quickstart notes with port mapping, volume mount, and debugging gotchas.
 - [Docker Quickstart — What Tripped Me Up (2026-07-08)](../docker/notes/2026-07-08-docker-quickstart-trials.md) — Step-by-step quickstart with volume, compose, and layer caching gotchas.
 - [Docker Quickstart — What Tripped Me Up (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-tripped-me.md) — First-contact quickstart follow-up notes.
-- [Tagged Non-Root Dockerfile (2026-07-16)](../docker/dockerfiles/2026-07-16-tagged-nonroot.Dockerfile) — Latest tagged non-root multi-stage Dockerfile.
-- [Tagged Non-Root Dockerfile (2026-07-12)](../docker/dockerfiles/2026-07-12-tagged-nonroot.Dockerfile) — Multi-stage Dockerfile with pinned tag and non-root runtime user.
-- [Run Container Port Map Script (2026-07-16)](../docker/scripts/2026-07-16-run-container-port-map.sh) — Build and run Go container with port 8085 mapping.
-- [Run Container Port Map Script (2026-07-12)](../docker/scripts/2026-07-12-run-container-port-map.sh) — Build and run Go container with port 8084 mapping.
+- [Tagged Non-Root Dockerfile (2026-07-16)](../docker/dockerfiles/2026-07-16-tagged-nonroot.Dockerfile) — Latest multi-stage Dockerfile with pinned tag and non-root runtime user.
+- [Run Container Port Map Script (2026-07-16)](../docker/scripts/2026-07-16-run-container-port-map.sh) — Latest build-and-run script for Go container with port mapping.
 - [Multi-Service Compose Config](../docker/configs/multi-service-compose.yaml) — Multi-container applications with Compose.
 - [GitHub Actions Quickstart — What Tripped Me Up (2026-07-09)](../github-actions/notes/2026-07-09-gha-quickstart-trials.md) — Workflow syntax, checkout action, and trigger gotchas.
 - [Minimal CI Workflow (2026-07-12)](../github-actions/configs/2026-07-12-minimal-ci-workflow.yaml) — GitHub Actions CI workflow with trigger and job setup.
 - [Minimal CI Workflow (2026-07-09)](../github-actions/configs/2026-07-09-minimal-ci-workflow.yaml) — Minimal GitHub Actions CI workflow config.
 - [CI Workflow Config](../github-actions/configs/ci-workflow.yaml) — Automated testing and deployment with GitHub Actions.
 - [Reading Workflow Logs and Debugging Failures (2026-07-10)](../github-actions/docs/2026-07-10-reading-workflow-logs-and-debugging.md) — How I learned to read logs and debug GHA failures.
-- [Install Terraform and Run Version (2026-07-12)](../terraform/notes/2026-07-12-install-terraform-and-run-version.md) — Terraform CLI install, init, and version verification.
-- [Terraform Init First Run (2026-07-14)](../terraform/notes/2026-07-14-terraform-init-first-run.md) — Terraform init, provider setup, and first apply walkthrough.
+- [Terraform Version & Init (2026-07-16)](../terraform/notes/2026-07-16-terraform-version-init.md) — Terraform version check, init, and first-run walkthrough.
+- [Install Terraform and Run Version (2026-07-16)](../terraform/notes/2026-07-16-install-terraform-and-run-version.md) — Terraform CLI install, init, and version verification.
+- [Terraform Init First-Run Notes (2026-07-14)](../terraform/notes/2026-07-14-terraform-init-first-run.md) — First-run `terraform init` behaviour, provider download, and `.terraform.lock.hcl`.
+- [Local File Resource (2026-07-16)](../terraform/configs/2026-07-16-local-file-resource.hcl) — Terraform local_file resource with content and filename attributes.
 - [First Local File Resource (2026-07-12)](../terraform/configs/2026-07-12-first-local-file-resource.hcl) — Minimal Terraform config with `local_file` resource.
 - [Local Provider Config](../terraform/configs/local-provider.hcl) — Infrastructure configuration with Terraform.
 - [Install Local Cluster Script](../kubernetes/scripts/install-local-cluster.sh) — Local K8s development environment with kind.
@@ -68,12 +68,15 @@ Advanced patterns and production-ready configurations across the full stack.
 ## Progression Map
 
 ```
-Foundations  →  Core Tools  →  Building Skills  →  Integration  →  Mastery
-     │               │                │                  │              │
-   Git Primer     K8s Primer      CLI Notes          Compose        ⏳ Advanced
-   Docker Primer  Terraform Prim  Quickstarts        Dockerfiles    ⏳ GitOps
-                  GitHub Act Prim  First Scripts      Port Maps
-                                                      GHA Workflows
-                                                      Terraform Init
-                                                      K8s Manifests
+Stage 1 → Stage 2 → Stage 3 → Stage 4 → Stage 5
+        ↓         ↓         ↓         ↓         ↓
+      Git    →  Docker   → Quickstart → Compose  → Advanced
+        ↓         ↓         ↓         ↓         ↓
+    GitHub   →  Images   → CLI Notes  → K8s     → Terraform
+    Actions      Builds               Install
+                                       ↓
+                                   K8s Debug
+                                   (describe,
+                                    logs,
+                                    events)
 ```
