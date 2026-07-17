@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-17
+
+- Added Linux & OS Fundamentals concept primer (docs/concepts/linux-os-fundamentals/0000-primer-linux-os-fundamentals.md)
+- Added Networking Basics concept primer (docs/concepts/networking-basics/0000-primer-networking-basics.md)
+- Added CI/CD Concepts concept primer (docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md)
+
 ## 2026-07-16
 
 - Added Terraform install + version notes (terraform/notes/2026-07-16-install-terraform-and-run-version.md)
