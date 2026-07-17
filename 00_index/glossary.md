@@ -77,3 +77,35 @@
 - **.terraform.lock.hcl** — A lock file created by `terraform init` that pins provider versions so all team members and CI use the same versions.
 - **backend** — The storage backend (local or remote) that Terraform uses to persist its state data; configured in the `terraform {}` block and initialized during `terraform init`.
 - **required_providers** — A block within `terraform {}` that declares which provider plugins and version constraints a configuration needs before it can be initialized.
+
+## Linux & OS Fundamentals
+
+- **Filesystem hierarchy** — The standard directory layout (/, /home, /etc, /var) that organises system files, configs, logs, and user data.
+- **Permissions (chmod/chown)** — Controls who can read, write, or execute a file; `chmod` changes mode bits, `chown` changes ownership.
+- **Process** — A running instance of a program, identified by a PID and managed by the kernel.
+- **Service** — A long-running background process managed by systemd, started and stopped with `systemctl`.
+- **Package manager** — Tool to install and update software (e.g. `apt` on Debian, `yum` on RHEL, `brew` on macOS).
+- **Environment variable** — A dynamic key-value pair that configures program behaviour; set with `export` and read as `$VAR`.
+- **Shell** — The command-line interpreter that reads and runs commands (e.g. `bash`, `zsh`, `fish`).
+- **Root vs regular user** — Root has unrestricted access (`uid 0`); regular users have limits. `sudo` temporarily elevates privileges.
+
+## Networking Basics
+
+- **IP address** — A device's unique identifier on a network, used to route packets to the correct destination.
+- **Port** — A number identifying a specific service on a device (e.g. 80 for HTTP, 443 for HTTPS, 22 for SSH).
+- **DNS** — Translates human-readable domain names to IP addresses so devices can find each other.
+- **Firewall** — Controls which traffic is allowed or blocked, typically via rules on ports, protocols, or source/destination addresses.
+- **Load balancer** — Distributes incoming traffic across multiple servers to improve availability and throughput.
+- **Subnet** — A segmented portion of a larger network, identified by a CIDR prefix (e.g. `10.0.1.0/24`).
+- **NAT** — Maps private IP addresses to a public one, allowing many devices to share a single public address.
+- **TCP vs UDP** — TCP guarantees ordered, lossless delivery; UDP is faster but can drop packets. TCP suits SSH and HTTP; UDP suits DNS queries and streaming.
+
+## CI/CD Concepts
+
+- **Pipeline** — An automated sequence from commit to deploy, typically defined in a CI tool's YAML config.
+- **Stage** — A grouping of related jobs (build, test, deploy) that run in sequence or parallel.
+- **Job** — A single unit of work that executes on a runner; contains one or more steps.
+- **Runner/Agent** — The machine or environment that executes a CI/CD job (e.g. `ubuntu-latest`).
+- **Artifact** — A file produced by one step and passed downstream, such as a compiled binary or test report.
+- **Trigger** — The event that starts a pipeline run, such as a `push`, `pull_request`, or scheduled cron.
+- **CI vs CD** — CI (Continuous Integration) verifies code before merge with automated builds and tests; CD (Continuous Delivery/Deployment) handles releasing code to users, either manually or automatically.
