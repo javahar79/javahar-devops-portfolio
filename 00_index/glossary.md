@@ -77,3 +77,26 @@
 - **.terraform.lock.hcl** — A lock file created by `terraform init` that pins provider versions so all team members and CI use the same versions.
 - **backend** — The storage backend (local or remote) that Terraform uses to persist its state data; configured in the `terraform {}` block and initialized during `terraform init`.
 - **required_providers** — A block within `terraform {}` that declares which provider plugins and version constraints a configuration needs before it can be initialized.
+
+## CI/CD
+
+- **Pipeline** — An automated sequence of stages from commit to deploy. Example: a GitHub Actions workflow triggered on every push.
+- **Trigger** — The event that starts a pipeline: a `push` to a branch, a `pull_request`, or a scheduled cron.
+- **Runner/Agent** — The machine that executes a pipeline's jobs. Example: the `ubuntu-latest` hosted runner on GitHub Actions.
+- **DORA metrics** — Deployment frequency, lead time for changes, change failure rate, and MTTR; used to gauge how healthy a team's CI/CD practice is.
+- **Blue-green / canary** — Deployment strategies that reduce risk by shifting traffic gradually (canary) or switching between two identical environments (blue-green).
+
+## Linux OS Fundamentals
+
+- **Filesystem hierarchy** — The standard `/` tree layout (e.g. `/etc`, `/var`, `/home`) that organises files and configuration on a Linux system.
+- **Process** — A running instance of a program, identified by a PID, that the kernel schedules and tracks.
+- **Permissions** — The read/write/execute bits (and owner/group) that control who can access a file or directory.
+- **Package manager** — A tool (`apt`, `dnf`, `apk`) that installs, upgrades, and removes software and its dependencies.
+
+## Networking Basics
+
+- **IP address** — A numeric label that identifies a host on a network (IPv4 or IPv6).
+- **Port** — A numbered endpoint (0–65535) on a host that a service listens on, used alongside an IP to route traffic to the right process.
+- **DNS** — The Domain Name System that maps human-readable hostnames to IP addresses.
+- **CIDR** — Classless Inter-Domain Routing notation (e.g. `10.0.0.0/24`) that expresses an IP range and its subnet mask.
+- **NAT** — Network Address Translation, which maps private internal addresses to a public one so hosts can share an outbound connection.

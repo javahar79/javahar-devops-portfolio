@@ -4,10 +4,13 @@
 
 ## Stage 1: Foundations
 
-Start where everything else begins — the tools that underpin every other skill in this portfolio.
+Start where everything else begins — the tools and concepts that underpin every other skill in this portfolio.
 
 - [Git Primer](../git/notes/0000-primer-git.md) — Version control is the bedrock of modern DevOps. Understand commits, branches, and remotes before you touch any other tool.
 - [Docker Primer](../docker/notes/0000-primer-docker.md) — Containers package software with its environment. This primer explains images, containers, and why Docker exists in the first place.
+- [CI/CD Concepts Primer](../docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md) — Pipelines, triggers, and runners. The mental model that makes GitHub Actions (and any CI tool) make sense.
+- [Linux OS Fundamentals Primer](../docs/concepts/linux-os-fundamentals/0000-primer-linux-os-fundamentals.md) — Filesystems, processes, and permissions — the ground every container and server stands on.
+- [Networking Basics Primer](../docs/concepts/networking-basics/0000-primer-networking-basics.md) — IPs, ports, DNS, and how traffic actually flows between services.
 
 ## Stage 2: Core Tools
 
@@ -37,6 +40,9 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 
 - [Docker Quickstart Walkthroughs](../docker/notes/2026-06-25-docker-quickstart-walkthrough.md) — Multi-stage builds and practical Dockerfile walkthroughs.
 - [Docker Quickstart — What Tripped Me Up (2026-07-16)](../docker/notes/2026-07-16-docker-quickstart-tripped-me.md) — Latest quickstart notes with port mapping, volume mount, and debugging gotchas.
+- [Docker Quickstart — What Tripped Me Up (2026-07-18)](../docker/notes/2026-07-18-docker-quickstart-tripped-me.md) — Newest quickstart notes with port mapping, volume mount, and debugging gotchas.
+- [Tagged Non-Root Dockerfile (2026-07-18)](../docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile) — Newest multi-stage Dockerfile with pinned tag and non-root runtime user.
+- [Run Container Port Map Script (2026-07-18)](../docker/scripts/2026-07-18-run-container-port-map.sh) — Newest build-and-run script for Go container with port mapping.
 - [Docker Quickstart — What Tripped Me Up (2026-07-08)](../docker/notes/2026-07-08-docker-quickstart-trials.md) — Step-by-step quickstart with volume, compose, and layer caching gotchas.
 - [Docker Quickstart — What Tripped Me Up (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-tripped-me.md) — First-contact quickstart follow-up notes.
 - [Tagged Non-Root Dockerfile (2026-07-16)](../docker/dockerfiles/2026-07-16-tagged-nonroot.Dockerfile) — Latest multi-stage Dockerfile with pinned tag and non-root runtime user.
@@ -70,13 +76,12 @@ Advanced patterns and production-ready configurations across the full stack.
 ```
 Stage 1 → Stage 2 → Stage 3 → Stage 4 → Stage 5
         ↓         ↓         ↓         ↓         ↓
-      Git    →  Docker   → Quickstart → Compose  → Advanced
-        ↓         ↓         ↓         ↓         ↓
-    GitHub   →  Images   → CLI Notes  → K8s     → Terraform
-    Actions      Builds               Install
-                                       ↓
-                                   K8s Debug
-                                   (describe,
-                                    logs,
-                                    events)
+   Concepts  →  Core     → Quickstart → Compose  → Advanced
+  (CI/CD,    →  Tools    → CLI Notes  → K8s     → Terraform
+   Linux,    → (K8s,     → Port Map   → Install
+   Network)    Terraform,                ↓
+        ↓      GitHub     → K8s Debug
+   Git/Docker  Actions)    (describe,
+        ↓                   logs,
+   Primes               events)
 ```
