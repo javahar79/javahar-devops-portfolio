@@ -2,6 +2,7 @@
 
 ## 2026-07-17
 
+- Reworked CI/CD Concepts concept primer with verified sources in front-matter (con-005 rework, Pass 4 fix)
 - Added Linux & OS Fundamentals concept primer (docs/concepts/linux-os-fundamentals/0000-primer-linux-os-fundamentals.md)
 - Added Networking Basics concept primer (docs/concepts/networking-basics/0000-primer-networking-basics.md)
 - Added CI/CD Concepts concept primer (docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md)
