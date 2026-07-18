@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-18
+
+- Added Docker quickstart notes — what tripped me up (docker/notes/2026-07-18-docker-quickstart-tripped-me.md)
+- Added tagged multi-stage non-root Python Dockerfile (docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile)
+- Added container port map script with Python HTTP server (docker/scripts/2026-07-18-run-container-port-map.sh)
+
 ## 2026-07-17
 
 - Reworked CI/CD Concepts concept primer with verified sources in front-matter (con-005 rework, Pass 4 fix)
