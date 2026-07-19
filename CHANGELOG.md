@@ -2,6 +2,10 @@
 
 ## 2026-07-19
 
+- Added Kubernetes inspecting pods, services, events docs (kubernetes/docs/2026-07-19-inspecting-pods-services-events.md)
+- Added GitHub Actions reading workflow logs & debugging docs (github-actions/docs/2026-07-19-reading-workflow-logs-and-debugging.md)
+- Added Kubernetes quickstart — what tripped me up notes (kubernetes/notes/2026-07-19-k8s-quickstart-trials.md)
+
 - Added Terraform version + init first-run notes (terraform/notes/2026-07-19-terraform-version-init.md)
 - Added minimal CI workflow config with setup-python caching (github-actions/configs/2026-07-19-minimal-ci-workflow.yaml)
 - Added Git quickstart — what tripped me up notes (git/notes/2026-07-19-git-quickstart-trials.md)
