@@ -15,17 +15,19 @@ A working DevOps engineer's quick-reference: first-contact notes, runnable snipp
 
 ## What's in here
 
-A DevOps learning portfolio across five tool families — Docker, Git, GitHub Actions, Kubernetes, and Terraform. Each tool has a primer, CLI walkthrough notes, Dockerfiles, scripts, and config files for hands-on practice, plus a small set of cross-cutting concept primers under `docs/`.
+A DevOps learning portfolio across five tool families — Docker, Git, GitHub Actions, Kubernetes, and Terraform — plus cross-cutting concept primers on CI/CD, Linux & OS fundamentals, and networking basics. Each tool has a primer, CLI walkthrough notes, Dockerfiles, scripts, and config files for hands-on practice.
 
 ---
 
 ## Quick links
 
-- [Docker Quickstart — What Tripped Me Up (2026-07-18)](docker/notes/2026-07-18-docker-quickstart-tripped-me.md) — Latest port-mapping, volume, and debugging gotchas
 - [Tagged Non-Root Dockerfile (2026-07-18)](docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile) — Multi-stage Dockerfile with pinned tag and non-root runtime user
+- [Docker Quickstart — What Tripped Me Up (2026-07-18)](docker/notes/2026-07-18-docker-quickstart-tripped-me.md) — Docker init, volume mounts, and port mapping gotchas
 - [Run Container Port Map Script (2026-07-18)](docker/scripts/2026-07-18-run-container-port-map.sh) — Build and run a Go container with port mapping
-- [Terraform Version & Init Notes (2026-07-16)](terraform/notes/2026-07-16-terraform-version-init.md) — Terraform CLI version check, init, and first-run notes
-- [Local File Resource Config (2026-07-16)](terraform/configs/2026-07-16-local-file-resource.hcl) — Terraform local_file resource with content and filename attributes
+- [CI/CD Concepts Primer](docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md) — CI/CD pipeline fundamentals and terminology
+- [Linux & OS Fundamentals Primer](docs/concepts/linux-os-fundamentals/0000-primer-linux-os-fundamentals.md) — Essential Linux concepts for DevOps
+
+---
 
 ## Layout
 
@@ -36,9 +38,8 @@ A DevOps learning portfolio across five tool families — Docker, Git, GitHub Ac
 | `github-actions/` | Actions primer, UI walkthrough, CI workflow configs, quickstart trials, workflow debugging docs |
 | `kubernetes/` | K8s primer, kubectl walkthrough, local cluster install script, K8s manifests, pod/service/event docs |
 | `terraform/` | Terraform primer, install script, local provider config, local file resource configs, init & version notes |
-| `docs/` | Cross-cutting concept primers (CI/CD, Linux fundamentals, networking basics) |
 | `00_index/` | Topic index, quick links, glossary, learning path |
-| `CHANGELOG.md` | Project changelog and release history |
+| `docs/` | Cross-cutting concept primers (CI/CD, Linux, Networking) |
 
 ---
 
@@ -46,17 +47,18 @@ A DevOps learning portfolio across five tool families — Docker, Git, GitHub Ac
 
 | Tool | Notes | Scripts | Configs | Dockerfiles | Manifests | Docs | Last verified |
 |------|-------|---------|---------|-------------|-----------|------|---------------|
-| Docker | 21 | 18 | 1 | 17 | — | — | 2026-07-18 |
+| Docker | 20 | 18 | 1 | 20 | — | — | 2026-07-18 |
 | Git | 4 | 2 | — | — | — | — | 2026-07-09 |
-| GitHub Actions | 3 | — | 3 | — | — | 1 | 2026-07-12 |
+| GitHub Actions | 3 | — | 3 | — | — | 1 | 2026-07-10 |
 | Kubernetes | 3 | 1 | — | — | 1 | 1 | 2026-07-12 |
-| Terraform | 5 | 1 | 3 | — | — | — | 2026-07-16 |
+| Terraform | 6 | 1 | 3 | — | — | — | 2026-07-19 |
 
 ---
 
 ## Status
 
-Actively building out first-contact notes and runnable configs. Current focus is Docker quickstart notes and tagged non-root Dockerfiles, with Terraform L1 (install, config, and init) notes recently rounded out.
+Actively building out first-contact notes and runnable configs. Current focus is Terraform L1 (install, config, directory structure) and Docker quickstart notes. Recently added Dockerfiles (July 18), Terraform directory structure notes, CI/CD workflow overview, and concept primers for CI/CD, Linux, and Networking.
 
 ---
-_Last updated: 2026-07-18_
+
+_Last updated: 2026-07-19_

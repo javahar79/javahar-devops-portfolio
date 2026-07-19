@@ -38,6 +38,7 @@
 - [Docker Quickstart — What Tripped Me Up (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-tripped-me.md) — First-contact quickstart follow-up notes
 
 ### Automate with CI/CD
+- [CI/CD Workflow Overview (2026-07-19)](../docs/concepts/2026-07-19-ci-cd-workflow-overview.md) — How CI/CD pipelines connect GitHub Actions, testing, and deployment
 - [Minimal CI Workflow (2026-07-12)](../github-actions/configs/2026-07-12-minimal-ci-workflow.yaml) — GitHub Actions CI workflow with trigger and job setup
 - [Minimal CI Workflow (2026-07-09)](../github-actions/configs/2026-07-09-minimal-ci-workflow.yaml) — Minimal GitHub Actions CI workflow config
 - [CI Workflow Config](../github-actions/configs/ci-workflow.yaml) — Minimal GitHub Actions CI workflow
@@ -46,6 +47,7 @@
 - [GitHub Actions UI Walkthrough](../github-actions/notes/2026-06-16-explore-gha-ui.md) — Exploring the GitHub Actions interface
 
 ### Provision infrastructure
+- [Terraform Directory Structure (2026-07-19)](../terraform/notes/2026-07-19-terraform-directory-structure.md) — Terraform project layout, directory purposes, and WIP modules
 - [Terraform Init First-Run Notes (2026-07-14)](../terraform/notes/2026-07-14-terraform-init-first-run.md) — First-run `terraform init` behaviour, provider download, and `.terraform.lock.hcl`
 - [Terraform Version & Init (2026-07-16)](../terraform/notes/2026-07-16-terraform-version-init.md) — Terraform version check, init, and first-run walkthrough
 - [Local File Resource (2026-07-16)](../terraform/configs/2026-07-16-local-file-resource.hcl) — Terraform local_file resource with content and filename attributes
