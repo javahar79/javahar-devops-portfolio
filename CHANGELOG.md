@@ -4,6 +4,9 @@
 
 - Documented Terraform directory structure, purpose, and WIP modules (terraform/notes/2026-07-19-terraform-directory-structure.md)
 - Documented CI/CD workflow linking GitHub Actions and Jenkins directories (docs/concepts/2026-07-19-ci-cd-workflow-overview.md)
+- Added Terraform install + version notes (terraform/notes/2026-07-19-install-terraform-and-run-version.md)
+- Added first local file resource Terraform config (terraform/configs/2026-07-19-first-local-file-resource.hcl)
+- Added Git undo, stage, commit, and push tutorial notes (git/notes/2026-07-19-git-undo-stage-commit-push.md)
 
 ## 2026-07-18
 
