@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-19
+
+- Documented Terraform directory structure, purpose, and WIP modules (devops-pf/docs/2026-07-19-terraform-directory-structure.md)
+- Documented CI/CD workflow linking GitHub Actions and Jenkins directories (devops-pf/docs/2026-07-19-ci-cd-workflow-overview.md)
+
 ## 2026-07-18
 
 - Added Docker quickstart notes — what tripped me up (docker/notes/2026-07-18-docker-quickstart-tripped-me.md)
