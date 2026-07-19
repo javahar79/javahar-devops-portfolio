@@ -2,6 +2,9 @@
 
 ## 2026-07-19
 
+- Added Terraform version + init first-run notes (terraform/notes/2026-07-19-terraform-version-init.md)
+- Added minimal CI workflow config with setup-python caching (github-actions/configs/2026-07-19-minimal-ci-workflow.yaml)
+- Added Git quickstart — what tripped me up notes (git/notes/2026-07-19-git-quickstart-trials.md)
 - Documented Terraform directory structure, purpose, and WIP modules (terraform/notes/2026-07-19-terraform-directory-structure.md)
 - Documented CI/CD workflow linking GitHub Actions and Jenkins directories (docs/concepts/2026-07-19-ci-cd-workflow-overview.md)
 

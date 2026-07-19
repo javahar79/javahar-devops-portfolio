@@ -1,0 +1,32 @@
+# last_verified: 2026-07-19 · GitHub Actions n/a
+# Minimal CI — runs on push/PR to main, installs deps and runs tests.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # checkout the repo so the runner has the code
+      - uses: actions/checkout@v4
+
+      # set up the runtime — using v4 here
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          # cache pip across runs so installs are faster
+          cache: pip
+
+      # install deps from requirements file
+      - run: pip install -r requirements.txt
+
+      # run lint first — fast feedback before the heavier test step
+      - run: ruff check .
+
+      # run tests; pytest exits non-zero on failure, which fails the job
+      - run: pytest
