@@ -2,12 +2,12 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Docker  ·  56 files
+## Docker  ·  59 files
 
 - **primer:** [primer-docker](../docker/notes/0000-primer-docker.md)
-- **notes** (19): most recent → [Docker Quickstart — What Tripped Me Up (2026-07-16)](../docker/notes/2026-07-16-docker-quickstart-tripped-me.md), [Docker Quickstart Trials (2026-07-08)](../docker/notes/2026-07-08-docker-quickstart-trials.md), [Docker Quickstart — What Tripped Me Up (2026-07-07)](../docker/notes/2026-07-07-docker-quickstart-tripped-me.md)
-- **scripts** (17): [Run Container Port Map (2026-07-16)](../docker/scripts/2026-07-16-run-container-port-map.sh), [Run Container Port Map (2026-07-12)](../docker/scripts/2026-07-12-run-container-port-map.sh), [First Container Port Map (2026-07-09)](../docker/scripts/2026-07-09-first-container-port-map.sh)
-- **dockerfiles** (17): [Tagged Non-Root (2026-07-16)](../docker/dockerfiles/2026-07-16-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-12)](../docker/dockerfiles/2026-07-12-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-09)](../docker/dockerfiles/2026-07-09-tagged-nonroot.Dockerfile)
+- **notes** (21): most recent → [Docker Quickstart — What Tripped Me Up (2026-07-18)](../docker/notes/2026-07-18-docker-quickstart-tripped-me.md), [Docker Quickstart — What Tripped Me Up (2026-07-16)](../docker/notes/2026-07-16-docker-quickstart-tripped-me.md), [Docker Quickstart Trials (2026-07-08)](../docker/notes/2026-07-08-docker-quickstart-trials.md)
+- **scripts** (18): [Run Container Port Map (2026-07-18)](../docker/scripts/2026-07-18-run-container-port-map.sh), [Run Container Port Map (2026-07-16)](../docker/scripts/2026-07-16-run-container-port-map.sh), [Run Container Port Map (2026-07-12)](../docker/scripts/2026-07-12-run-container-port-map.sh)
+- **dockerfiles** (17): [Tagged Non-Root (2026-07-18)](../docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-16)](../docker/dockerfiles/2026-07-16-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-12)](../docker/dockerfiles/2026-07-12-tagged-nonroot.Dockerfile)
 - **configs** (1): [Multi-Service Compose](../docker/configs/multi-service-compose.yaml)
 - **source** (2): [Go module](../docker/dockerfiles/go.mod), [Go server](../docker/dockerfiles/main.go)
 - _…and 0 more under `docker/` — browse the folder._
@@ -39,3 +39,9 @@
 - **notes** (5): most recent → [Terraform Version & Init (2026-07-16)](../terraform/notes/2026-07-16-terraform-version-init.md), [Install Terraform and Run Version (2026-07-16)](../terraform/notes/2026-07-16-install-terraform-and-run-version.md), [Terraform Init First-Run Notes (2026-07-14)](../terraform/notes/2026-07-14-terraform-init-first-run.md)
 - **configs** (3): [Local File Resource (2026-07-16)](../terraform/configs/2026-07-16-local-file-resource.hcl), [First Local File Resource (2026-07-12)](../terraform/configs/2026-07-12-first-local-file-resource.hcl), [Local Provider Config](../terraform/configs/local-provider.hcl)
 - **scripts** (1): [Install Terraform](../terraform/scripts/2026-06-17-install-terraform.sh)
+
+## Cross-cutting concepts  ·  3 files
+
+- **CI/CD concepts** (1): [CI/CD Primer](../docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md)
+- **Linux OS fundamentals** (1): [Linux Primer](../docs/concepts/linux-os-fundamentals/0000-primer-linux-os-fundamentals.md)
+- **Networking basics** (1): [Networking Primer](../docs/concepts/networking-basics/0000-primer-networking-basics.md)
