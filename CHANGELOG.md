@@ -1,7 +1,14 @@
 # Changelog
 
+## 2026-07-20
+
+- Added Git branch, merge, and revert workflow script (git/scripts/2026-07-20-branch-merge-revert-workflow.sh)
+- Added Git minimal config for user.name, user.email, and init script (git/scripts/2026-07-20-minimal-git-config-init.sh)
+
 ## 2026-07-19
 
+- Added GitHub Actions debug snippet with run-name and conditional steps (github-actions/snippets/2026-07-19-debug-run-name-conditions.yaml)
+- Added Kubernetes troubleshoot-pods script using kubectl logs and describe (kubernetes/scripts/2026-07-19-troubleshoot-pods.sh)
 - Added Kubernetes inspecting pods, services, events docs (kubernetes/docs/2026-07-19-inspecting-pods-services-events.md)
 - Added GitHub Actions reading workflow logs & debugging docs (github-actions/docs/2026-07-19-reading-workflow-logs-and-debugging.md)
 - Added Kubernetes quickstart — what tripped me up notes (kubernetes/notes/2026-07-19-k8s-quickstart-trials.md)

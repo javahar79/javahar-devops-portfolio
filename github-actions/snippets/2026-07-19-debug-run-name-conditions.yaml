@@ -1,0 +1,39 @@
+# last_verified: 2026-07-19 · GitHub Actions n/a
+# Debugging a workflow by giving it a readable run name and toggling
+# steps with conditions. Following the quickstart, these two tricks are
+# what finally made a flaky job make sense to me.
+name: Debug demo
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# run-name shows up in the Actions list so I can tell runs apart at a glance
+# instead of staring at "Debug demo / push" a dozen times
+run-name: "debug ${{ github.actor }} on ${{ github.ref_name }}"
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # only run the heavy step on main; on feature branches I skip it
+      # to keep the feedback loop fast while I'm poking at the pipeline
+      - name: Heavy check (main only)
+        if: github.ref == 'refs/heads/main'
+        run: echo "running the expensive main-only verification"
+
+      # a manual escape hatch: set the input to true to dump context
+      # when a run misbehaves and I can't tell why a step was skipped
+      - name: Dump context when asked
+        if: ${{ inputs.debug == true }}
+        run: |
+          echo "event: ${{ github.event_name }}"
+          echo "ref: ${{ github.ref }}"
+          echo "actor: ${{ github.actor }}"
+
+      - name: Always report
+        if: always()
+        run: echo "job finished with conclusion ${{ job.status }}"
