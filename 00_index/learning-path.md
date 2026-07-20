@@ -4,18 +4,21 @@
 
 ## Stage 1: Foundations
 
-Start where everything else begins — the tools and concepts that underpin every other skill in this portfolio.
+Start where everything else begins — the concepts that underpin every other skill in this portfolio.
 
-- [Git Primer](../git/notes/0000-primer-git.md) — Version control is the bedrock of modern DevOps. Understand commits, branches, and remotes before you touch any other tool.
-- [Docker Primer](../docker/notes/0000-primer-docker.md) — Containers package software with its environment. This primer explains images, containers, and why Docker exists in the first place.
-- [CI/CD Concepts Primer](../docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md) — Pipelines, triggers, and runners. The mental model that makes GitHub Actions (and any CI tool) make sense.
 - [Linux OS Fundamentals Primer](../docs/concepts/linux-os-fundamentals/0000-primer-linux-os-fundamentals.md) — Filesystems, processes, and permissions — the ground every container and server stands on.
 - [Networking Basics Primer](../docs/concepts/networking-basics/0000-primer-networking-basics.md) — IPs, ports, DNS, and how traffic actually flows between services.
+- [CI/CD Concepts Primer](../docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md) — Pipelines, triggers, and runners. The mental model that makes GitHub Actions (and any CI tool) make sense.
+- ⏳ Git & Version Control — Version control is the bedrock of modern DevOps. Commits, branches, remotes, and how to collaborate without stepping on toes.
+- ⏳ Container Fundamentals — What containers are, how they differ from VMs, and why they became the default packaging format.
+- ⏳ Infrastructure as Code — Managing infrastructure through configuration files rather than manual processes.
 
 ## Stage 2: Core Tools
 
-Once Git and Docker make sense, pick up the three tools that sit at the centre of most DevOps workflows.
+Once the foundations make sense, pick up the tools that sit at the centre of most DevOps workflows.
 
+- [Git Primer](../git/notes/0000-primer-git.md) — Version control fundamentals. Understand commits, branches, and remotes before you touch any other tool.
+- [Docker Primer](../docker/notes/0000-primer-docker.md) — Containers package software with its environment. This primer explains images, containers, and why Docker exists in the first place.
 - [Kubernetes Primer](../kubernetes/notes/0000-primer-kubernetes.md) — Container orchestration at scale. Learn what pods, deployments, and services actually mean.
 - [Terraform Primer](../terraform/notes/0000-primer-terraform.md) — Declarative infrastructure as code. Understand providers, resources, and why this approach replaces manual provisioning.
 - [GitHub Actions Primer](../github-actions/notes/0000-primer-github-actions.md) — Automation built into GitHub. Learn workflows, jobs, runners, and triggers.
@@ -26,8 +29,9 @@ Apply the mental models with hands-on practice. Work through these in order — 
 
 - [Git CLI Exploration](../git/notes/2026-06-16-explore-git-cli.md) — Branching, merging, remotes, and the commands you will use daily.
 - [Git Quickstart Notes](../git/notes/2026-06-22-git-quickstart.md) — Set up your first remote repository and push a commit.
-- [Git Undo, Stage, Commit, Push](../git/notes/2026-06-24-git-undo-stage-commit-push.md) — Fixing the mistakes everyone makes while learning Git.
-- [Branch, Merge, and Revert Workflow (2026-07-09)](../git/scripts/2026-07-09-branch-merge-revert-workflow.sh) — Hands-on practice with feature branches, merge commits, and reverts.
+- [Git Common Mistakes (2026-07-20)](../git/notes/2026-07-20-common-git-mistakes.md) — Mistakes to avoid in Git workflow.
+- [Git Clean History Script (2026-07-20)](../git/scripts/2026-07-20-clean-git-history.sh) — .gitignore audit and merge conflict recovery.
+- [Git Reflog & Rebase Cleanup (2026-07-20)](../git/snippets/2026-07-20-git-reflog-rebase.sh) — Interactive rebase and history cleanup.
 - [Docker CLI Notes](../docker/notes/2026-06-16-explore-docker-cli.md) — Build, run, and manage containers from the command line.
 - [Docker Quickstart Notes](../docker/notes/2026-06-20-docker-quickstart.md) — Building your first image and running a container.
 - [Install Docker Script](../docker/scripts/2026-06-16-install-docker.sh) — Docker installation smoke test.
@@ -72,18 +76,22 @@ Advanced patterns and production-ready configurations across the full stack.
 ⏳ Advanced networking and service meshes
 ⏳ Secret management and CI/CD security hardening
 ⏳ GitOps workflows with full Kubernetes deployments
+⏳ Scripting & Automation — Ansible, Jenkins, and Pulumi
+⏳ Cloud Computing Fundamentals — AWS, Azure, and GCP basics
+⏳ Observability — Prometheus, Grafana, and Loki
+⏳ Policy as Code — OPA/Gatekeeper, Kyverno, and Falco
 
 ## Progression Map
 
 ```
 Stage 1 → Stage 2 → Stage 3 → Stage 4 → Stage 5
-        ↓         ↓         ↓         ↓         ↓
-   Concepts  →  Core     → Quickstart → Compose  → Advanced
-  (CI/CD,    →  Tools    → CLI Notes  → K8s     → Terraform
-   Linux,    → (K8s,     → Port Map   → Install
-   Network)    Terraform,                ↓
-        ↓      GitHub     → K8s Debug
-   Git/Docker  Actions)    (describe,
-        ↓                   logs,
-   Primes               events)
+         ↓         ↓         ↓         ↓         ↓
+    Concepts  →  Core     → Quickstart → Compose  → Advanced
+   (CI/CD,    →  Tools    → CLI Notes  → K8s     → Terraform
+    Linux,    → (K8s,     → Port Map   → Install
+    Network)    Terraform,                ↓
+         ↓      GitHub     → K8s Debug
+    Git/Docker  Actions)    (describe,
+         ↓                   logs,
+    Primes               events)
 ```

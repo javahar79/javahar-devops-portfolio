@@ -31,6 +31,14 @@
 - **git commit --amend** — Modifies the most recent commit, either to update the commit message or to include additional staged changes.
 - **merge commit** — A commit created by `git merge` that combines two branches; it has two parent commits.
 - **sandbox** — An isolated directory used for safe experimentation without affecting real repositories.
+- **git switch** — A modern Git command for switching branches and creating new ones; replaces most everyday uses of `git checkout`.
+- **detached HEAD** — A state where HEAD points directly to a commit rather than a branch tip; commits made in this state are orphaned unless captured in a new branch.
+- **git push --force-with-lease** — A safer variant of `git push --force` that refuses to overwrite the remote if someone else has pushed since you last fetched.
+- **git pull --rebase** — Fetches the remote branch and replays local commits on top, producing a linear history instead of a merge commit.
+- **git reflog** — A log of where HEAD and branch references have pointed; the primary tool for recovering from accidental resets, rebases, or branch deletions.
+- **git rebase -i** — Interactive rebase that lets you reorder, squash, edit, or drop recent commits before sharing them.
+- **BFG Repo-Cleaner** — A fast alternative to `git filter-repo` for stripping large files or sensitive data from repository history.
+- **git mergetool** — Launches an external merge tool to help resolve conflicts graphically.
 
 ## GitHub Actions
 
