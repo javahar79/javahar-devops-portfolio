@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-20
+
+- Added Git branch, merge, and revert workflow script (git/scripts/2026-07-20-branch-merge-revert-workflow.sh)
+- Added Git minimal config for user.name, user.email, and init script (git/scripts/2026-07-20-minimal-git-config-init.sh)
+
 ## 2026-07-19
 
 - Added Kubernetes inspecting pods, services, events docs (kubernetes/docs/2026-07-19-inspecting-pods-services-events.md)
