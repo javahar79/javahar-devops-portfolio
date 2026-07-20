@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-20
+
+- Added Git common mistakes notes (git/notes/2026-07-20-common-git-mistakes.md)
+- Added Git clean history, .gitignore audit, and merge conflict recovery script (git/scripts/2026-07-20-clean-git-history.sh)
+- Added Git reflog and interactive rebase cleanup snippet (git/snippets/2026-07-20-git-reflog-rebase.sh)
+
 ## 2026-07-19
 
 - Added GitHub Actions debug snippet with run-name and conditional steps (github-actions/snippets/2026-07-19-debug-run-name-conditions.yaml)
