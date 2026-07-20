@@ -2,9 +2,8 @@
 
 ## 2026-07-20
 
-- Added Git common mistakes notes (git/notes/2026-07-20-common-git-mistakes.md)
-- Added Git clean history, .gitignore audit, and merge conflict recovery script (git/scripts/2026-07-20-clean-git-history.sh)
-- Added Git reflog and interactive rebase cleanup snippet (git/snippets/2026-07-20-git-reflog-rebase.sh)
+- Added Git branch, merge, and revert workflow script (git/scripts/2026-07-20-branch-merge-revert-workflow.sh)
+- Added Git minimal config for user.name, user.email, and init script (git/scripts/2026-07-20-minimal-git-config-init.sh)
 
 ## 2026-07-19
 
