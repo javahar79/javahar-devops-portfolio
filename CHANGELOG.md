@@ -4,6 +4,7 @@
 
 - Added minimal Kubernetes Deployment + Service manifest (kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml)
 - Added GitHub Actions quickstart notes — what tripped me up (github-actions/notes/2026-07-21-gha-quickstart-tripped-me.md)
+- Added Git & Version Control concept primer (docs/concepts/git-version-control/0000-primer-git-version-control.md)
 
 ## 2026-07-20
 
