@@ -31,14 +31,9 @@
 - **git commit --amend** — Modifies the most recent commit, either to update the commit message or to include additional staged changes.
 - **merge commit** — A commit created by `git merge` that combines two branches; it has two parent commits.
 - **sandbox** — An isolated directory used for safe experimentation without affecting real repositories.
-- **git switch** — A modern Git command for switching branches and creating new ones; replaces most everyday uses of `git checkout`.
-- **detached HEAD** — A state where HEAD points directly to a commit rather than a branch tip; commits made in this state are orphaned unless captured in a new branch.
-- **git push --force-with-lease** — A safer variant of `git push --force` that refuses to overwrite the remote if someone else has pushed since you last fetched.
-- **git pull --rebase** — Fetches the remote branch and replays local commits on top, producing a linear history instead of a merge commit.
-- **git reflog** — A log of where HEAD and branch references have pointed; the primary tool for recovering from accidental resets, rebases, or branch deletions.
-- **git rebase -i** — Interactive rebase that lets you reorder, squash, edit, or drop recent commits before sharing them.
-- **BFG Repo-Cleaner** — A fast alternative to `git filter-repo` for stripping large files or sensitive data from repository history.
-- **git mergetool** — Launches an external merge tool to help resolve conflicts graphically.
+- **git reflog** — A Git command that shows a log of where HEAD and branch references have pointed, useful for recovering lost commits after rebase or reset.
+- **interactive rebase** — `git rebase -i` lets you squash, reorder, or edit commits before they are applied onto another branch.
+- **.gitignore** — A file that tells Git which files or patterns to ignore when tracking changes in a repository.
 
 ## GitHub Actions
 
@@ -52,6 +47,8 @@
 - **needs** — The `needs:` keyword that declares job dependencies, making one job wait for another to complete.
 - **runner image** — The operating system and toolchain image used by a GitHub Actions runner (e.g. `ubuntu-latest`, `windows-latest`).
 - **exit code** — A numeric code returned by a process to indicate success (0) or failure (non-zero); used in workflow logs to identify which step failed.
+- **gh CLI** — The GitHub CLI tool that lets you interact with GitHub from the command line, including triggering and validating workflows.
+- **run-name** — A workflow-level key that sets a custom name for a workflow run, often using expressions like `${{ github.event_name }}`.
 
 ## Kubernetes
 
