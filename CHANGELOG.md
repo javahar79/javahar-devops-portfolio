@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-21
+
+- Added Git & Version Control concept primer (docs/concepts/git-version-control/0000-primer-git-version-control.md)
+
 ## 2026-07-20
 
 - Added Git common mistakes notes (git/notes/2026-07-20-common-git-mistakes.md)
