@@ -1,4 +1,5 @@
 # javahar-devops-portfolio
+
 > A working DevOps engineer's quick-reference for Docker, Git, GitHub Actions, Kubernetes, and Terraform.
 
 ![Last commit](https://img.shields.io/github/last-commit/javahar79/javahar-devops-portfolio)
@@ -21,41 +22,42 @@ A DevOps learning portfolio across five tool families — Docker, Git, GitHub Ac
 ## Quick links
 
 - [Docker Quickstart — What Tripped Me Up (2026-07-18)](docker/notes/2026-07-18-docker-quickstart-tripped-me.md) — Latest port-mapping, volume, and debugging gotchas
-- [Git Common Mistakes (2026-07-20)](git/notes/2026-07-20-common-git-mistakes.md) — Mistakes to avoid in Git workflow
-- [Git Clean History Script (2026-07-20)](git/scripts/2026-07-20-clean-git-history.sh) — .gitignore audit and merge conflict recovery
-- [Git Reflog & Rebase Cleanup (2026-07-20)](git/snippets/2026-07-20-git-reflog-rebase.sh) — Interactive rebase and history cleanup
-- [GitHub Actions Debug Run Conditions (2026-07-19)](github-actions/snippets/2026-07-19-debug-run-name-conditions.yaml) — workflow run-name and conditional steps
+- [Git Undo/Stage/Commit/Push (2026-07-19)](git/notes/2026-07-19-git-undo-stage-commit-push.md) — Fixing mistakes in Git workflow
+- [Reading Workflow Logs & Debugging (2026-07-19)](github-actions/docs/2026-07-19-reading-workflow-logs-and-debugging.md) — Debugging GHA failures
+- [K8s Quickstart — What Tripped Me Up (2026-07-19)](kubernetes/notes/2026-07-19-k8s-quickstart-trials.md) — Latest K8s first-contact gotchas
+- [Terraform Directory Structure (2026-07-19)](terraform/notes/2026-07-19-terraform-directory-structure.md) — Terraform project layout
 
 ## Layout
 
 | Directory | Contents |
 |-----------|----------|
 | `docker/` | Docker primer, CLI walkthrough notes, install/port-map scripts, Dockerfiles, compose config |
-| `git/` | Git primer, CLI exploration notes, undo/stage/commit workflow, branch/merge/revert script, reflog cleanup |
-| `github-actions/` | Actions primer, UI walkthrough, CI workflow configs, workflow debugging docs, debug snippets |
-| `kubernetes/` | K8s primer, kubectl notes, local cluster install script, manifests, pod/service debugging docs, troubleshoot script |
-| `terraform/` | Terraform primer, install script, provider configs, local file resource configs, init & version notes, directory structure |
+| `git/` | Git primer, CLI exploration notes, undo/stage/commit workflow, branch/merge/revert script, reflog/rebase snippet |
+| `github-actions/` | Actions primer, UI walkthrough, CI workflow configs, workflow debugging docs, run-name/conditions snippet |
+| `kubernetes/` | K8s primer, kubectl notes, local cluster install script, manifests, pod/service debugging docs |
+| `terraform/` | Terraform primer, install script, provider configs, local file resource configs, init & version notes |
 | `docs/` | Cross-cutting concept primers (CI/CD, Linux fundamentals, networking basics) |
 | `00_index/` | Topic index, quick links, glossary, learning path |
+| `CHANGELOG.md` | Release notes and change log |
 
 ---
 
 ## Coverage
 
-| Tool | Notes | Scripts | Configs | Dockerfiles | Manifests | Docs | Snippets | Source | Last verified |
-|------|-------|---------|---------|-------------|-----------|------|----------|--------|---------------|
-| Docker | 20 | 18 | 1 | 18 | — | — | — | 2 | 2026-07-18 |
-| Git | 7 | 5 | — | — | — | — | 1 | — | 2026-07-20 |
-| GitHub Actions | 3 | — | 4 | — | — | 2 | 1 | — | 2026-07-19 |
-| Kubernetes | 4 | 2 | — | — | 1 | 2 | — | — | 2026-07-19 |
-| Terraform | 8 | 1 | 4 | — | — | — | — | — | 2026-07-19 |
+| Tool | Notes | Scripts | Configs | Dockerfiles | Manifests | Docs | Source | Last verified |
+|------|-------|---------|---------|-------------|-----------|------|--------|---------------|
+| Docker | 20 | 18 | 1 | 18 | — | — | 2 | 2026-07-18 |
+| Git | 6 | 6 | — | — | — | — | — | 2026-07-20 |
+| GitHub Actions | 3 | — | 5 | — | — | 2 | — | 2026-07-19 |
+| Kubernetes | 4 | 2 | — | — | 1 | 2 | — | 2026-07-19 |
+| Terraform | 8 | 1 | 4 | — | — | — | — | 2026-07-19 |
 
 ---
 
 ## Status
 
-Actively building out first-contact notes and runnable configs across all five tools. Recent additions include Git common mistakes notes, clean history script, reflog cleanup snippet, and GHA workflow debugging snippets (all 2026-07-20). Docker L2 content and tagged non-root Dockerfiles continue to be the deepest category.
+Actively building out first-contact notes and runnable configs across all five tools. Recent additions include Git quickstart notes, GHA workflow debugging docs, K8s pod/service inspection notes, and Terraform directory structure notes (all 2026-07-19). Docker L2 content and tagged non-root Dockerfiles continue to be the deepest category.
 
 ---
 
-_Last updated: 2026-07-20_
+_Last updated: 2026-07-21_
