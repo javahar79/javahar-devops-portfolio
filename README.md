@@ -32,12 +32,13 @@ A DevOps learning portfolio across five tool families — Docker, Git, GitHub Ac
 | Directory | Contents |
 |-----------|----------|
 | `docker/` | Docker primer, CLI walkthrough notes, install/port-map scripts, Dockerfiles, compose config |
-| `git/` | Git primer, CLI exploration notes, undo/stage/commit workflow, branch/merge/revert script |
-| `github-actions/` | Actions primer, UI walkthrough, CI workflow configs, workflow debugging docs |
+| `git/` | Git primer, CLI exploration notes, undo/stage/commit workflow, branch/merge/revert script, reflog/rebase snippet |
+| `github-actions/` | Actions primer, UI walkthrough, CI workflow configs, workflow debugging docs, run-name/conditions snippet |
 | `kubernetes/` | K8s primer, kubectl notes, local cluster install script, manifests, pod/service debugging docs |
 | `terraform/` | Terraform primer, install script, provider configs, local file resource configs, init & version notes |
 | `docs/` | Cross-cutting concept primers (CI/CD, Linux fundamentals, networking basics) |
 | `00_index/` | Topic index, quick links, glossary, learning path |
+| `CHANGELOG.md` | Release notes and change log |
 
 ---
 
@@ -46,9 +47,9 @@ A DevOps learning portfolio across five tool families — Docker, Git, GitHub Ac
 | Tool | Notes | Scripts | Configs | Dockerfiles | Manifests | Docs | Source | Last verified |
 |------|-------|---------|---------|-------------|-----------|------|--------|---------------|
 | Docker | 20 | 18 | 1 | 18 | — | — | 2 | 2026-07-18 |
-| Git | 6 | 2 | — | — | — | — | — | 2026-07-19 |
-| GitHub Actions | 3 | — | 4 | — | — | 2 | — | 2026-07-19 |
-| Kubernetes | 4 | 1 | — | — | 1 | 2 | — | 2026-07-19 |
+| Git | 6 | 6 | — | — | — | — | — | 2026-07-20 |
+| GitHub Actions | 3 | — | 5 | — | — | 2 | — | 2026-07-19 |
+| Kubernetes | 4 | 2 | — | — | 1 | 2 | — | 2026-07-19 |
 | Terraform | 8 | 1 | 4 | — | — | — | — | 2026-07-19 |
 
 ---
@@ -59,4 +60,4 @@ Actively building out first-contact notes and runnable configs across all five t
 
 ---
 
-_Last updated: 2026-07-20_
+_Last updated: 2026-07-21_
