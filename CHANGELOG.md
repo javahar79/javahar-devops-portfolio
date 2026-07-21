@@ -5,6 +5,9 @@
 - Added minimal Kubernetes Deployment + Service manifest (kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml)
 - Added GitHub Actions quickstart notes — what tripped me up (github-actions/notes/2026-07-21-gha-quickstart-tripped-me.md)
 - Added Git & Version Control concept primer (docs/concepts/git-version-control/0000-primer-git-version-control.md)
+- Added GitHub Actions workflow validation script with gh CLI (github-actions/scripts/2026-07-21-validate-workflow-runs.sh)
+- Added kubectl debugging snippet — port-forward, exec, logs (kubernetes/snippets/2026-07-21-debugging-port-forward-exec-logs.sh)
+- Added Kubernetes failing Deployment troubleshoot script (kubernetes/scripts/2026-07-21-troubleshoot-failing-deployment.sh)
 
 ## 2026-07-20
 
