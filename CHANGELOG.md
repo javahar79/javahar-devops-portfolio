@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-21
+
+- Added minimal Kubernetes Deployment + Service manifest (kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml)
+- Added GitHub Actions quickstart notes — what tripped me up (github-actions/notes/2026-07-21-gha-quickstart-tripped-me.md)
+
 ## 2026-07-20
 
 - Added Git common mistakes notes (git/notes/2026-07-20-common-git-mistakes.md)
