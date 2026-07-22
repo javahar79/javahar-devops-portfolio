@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-22
+
+- Added Terraform variables, outputs, and resource dependencies config (terraform/configs/2026-07-22-variables-outputs-dependencies.hcl)
+- Added Terraform init/validate/plan/apply lifecycle script (terraform/scripts/2026-07-22-terraform-lifecycle.sh)
+
 ## 2026-07-21
 
 - Added minimal Kubernetes Deployment + Service manifest (kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml)
