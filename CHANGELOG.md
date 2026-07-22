@@ -2,9 +2,8 @@
 
 ## 2026-07-22
 
-- Added Terraform state files, remote backends, and workspace isolation docs (terraform/docs/2026-07-22-terraform-state-files-remote-backends.md)
-- Added Scripting & Automation concept primer (docs/concepts/scripting-automation/0000-primer-scripting-automation.md)
-- Added Git branching, merging, and conflict resolution practice script (docs/concepts/git-version-control/scripts/2026-07-22-git-branching-merging-conflicts.sh)
+- Added Terraform variables, outputs, and resource dependencies config (terraform/configs/2026-07-22-variables-outputs-dependencies.hcl)
+- Added Terraform init/validate/plan/apply lifecycle script (terraform/scripts/2026-07-22-terraform-lifecycle.sh)
 
 ## 2026-07-21
 
