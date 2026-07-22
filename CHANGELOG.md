@@ -8,6 +8,9 @@
 - Added GitHub Actions workflow validation script with gh CLI (github-actions/scripts/2026-07-21-validate-workflow-runs.sh)
 - Added kubectl debugging snippet — port-forward, exec, logs (kubernetes/snippets/2026-07-21-debugging-port-forward-exec-logs.sh)
 - Added Kubernetes failing Deployment troubleshoot script (kubernetes/scripts/2026-07-21-troubleshoot-failing-deployment.sh)
+- Added Terraform quickstart — what tripped me up notes (terraform/notes/2026-07-21-what-tripped-me-up-quickstart.md)
+- Added Terraform variables and outputs scaffold script (terraform/scripts/2026-07-21-terraform-vars-and-outputs.sh)
+- Added Terraform validate and plan first-run notes (terraform/notes/2026-07-21-what-i-learned-from-validate-and-plan.md)
 
 ## 2026-07-20
 
