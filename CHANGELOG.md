@@ -2,6 +2,9 @@
 
 ## 2026-07-22
 
+- Added Infrastructure as Code concept primer (docs/concepts/infrastructure-as-code/0000-primer-infrastructure-as-code.md)
+- Added Container Fundamentals concept primer (docs/concepts/container-fundamentals/0000-primer-container-fundamentals.md)
+- Added Cloud Computing Fundamentals concept primer (docs/concepts/cloud-computing-fundamentals/0000-primer-cloud-computing-fundamentals.md)
 - Added Terraform variables, outputs, and resource dependencies config (terraform/configs/2026-07-22-variables-outputs-dependencies.hcl)
 - Added Terraform init/validate/plan/apply lifecycle script (terraform/scripts/2026-07-22-terraform-lifecycle.sh)
 
@@ -21,13 +24,13 @@
 
 - Added Git common mistakes notes (git/notes/2026-07-20-common-git-mistakes.md)
 - Added Git clean history, .gitignore audit, and merge conflict recovery script (git/scripts/2026-07-20-clean-git-history.sh)
-- Added Git reflog and interactive rebase cleanup snippet (git/snippets/2026-07-20-git-reflog-rebase.sh)
+- Added Git reflog and interactive rebase cleanup snippet (git/scripts/2026-07-20-git-reflog-rebase.sh)
 - Added Git branch, merge, and revert workflow script (git/scripts/2026-07-20-branch-merge-revert-workflow.sh)
 - Added Git minimal config for user.name, user.email, and init script (git/scripts/2026-07-20-minimal-git-config-init.sh)
 
 ## 2026-07-19
 
-- Added GitHub Actions debug snippet with run-name and conditional steps (github-actions/snippets/2026-07-19-debug-run-name-conditions.yaml)
+- Added GitHub Actions debug snippet with run-name and conditional steps (github-actions/configs/2026-07-19-debug-run-name-conditions.yaml)
 - Added Kubernetes troubleshoot-pods script using kubectl logs and describe (kubernetes/scripts/2026-07-19-troubleshoot-pods.sh)
 - Added Kubernetes inspecting pods, services, events docs (kubernetes/docs/2026-07-19-inspecting-pods-services-events.md)
 - Added GitHub Actions reading workflow logs & debugging docs (github-actions/docs/2026-07-19-reading-workflow-logs-and-debugging.md)
@@ -37,7 +40,7 @@
 - Added minimal CI workflow config with setup-python caching (github-actions/configs/2026-07-19-minimal-ci-workflow.yaml)
 - Added Git quickstart — what tripped me up notes (git/notes/2026-07-19-git-quickstart-trials.md)
 - Documented Terraform directory structure, purpose, and WIP modules (terraform/notes/2026-07-19-terraform-directory-structure.md)
-- Documented CI/CD workflow linking GitHub Actions and Jenkins directories (docs/concepts/2026-07-19-ci-cd-workflow-overview.md)
+- Documented CI/CD workflow linking GitHub Actions and Jenkins directories (docs/concepts/ci-cd-concepts/2026-07-19-ci-cd-workflow-overview.md)
 - Added Terraform install + version notes (terraform/notes/2026-07-19-install-terraform-and-run-version.md)
 - Added first local file resource Terraform config (terraform/configs/2026-07-19-first-local-file-resource.hcl)
 - Added Git undo, stage, commit, and push tutorial notes (git/notes/2026-07-19-git-undo-stage-commit-push.md)
