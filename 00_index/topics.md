@@ -6,7 +6,7 @@
 
 - **primer:** [primer-docker](../docker/notes/0000-primer-docker.md)
 - **notes** (20): most recent → [Docker Quickstart — What Tripped Me Up (2026-07-18)](../docker/notes/2026-07-18-docker-quickstart-tripped-me.md), [Docker Quickstart — What Tripped Me Up (2026-07-16)](../docker/notes/2026-07-16-docker-quickstart-tripped-me.md), [Docker Quickstart Trials (2026-07-08)](../docker/notes/2026-07-08-docker-quickstart-trials.md)
-- **scripts** (18): [Run Container Port Map (2026-07-18)](../docker/scripts/2026-07-18-run-container-port-map.sh), [Run Container Port Map (2026-07-16)](../docker/scripts/2026-07-16-run-container-port-map.sh), [Port Map Container (2026-07-12)](../docker/scripts/2026-07-12-run-container-port-map.sh)
+- **scripts** (18): [Run Container Port Map (2026-07-18)](../docker/scripts/2026-07-18-run-container-port-map.sh), [Run Container Port Map (2026-07-16)](../docker/scripts/2026-07-16-run-container-port-map.sh), [Run Container Port Map (2026-07-12)](../docker/scripts/2026-07-12-run-container-port-map.sh)
 - **dockerfiles** (20): [Tagged Non-Root (2026-07-18)](../docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-16)](../docker/dockerfiles/2026-07-16-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-12)](../docker/dockerfiles/2026-07-12-tagged-nonroot.Dockerfile)
 - **configs** (1): [Multi-Service Compose](../docker/configs/multi-service-compose.yaml)
 - **source** (2): [Go module](../docker/dockerfiles/go.mod), [Go server](../docker/dockerfiles/main.go)
@@ -41,16 +41,19 @@
 ## Terraform  ·  19 files
 
 - **primer:** [primer-terraform](../terraform/notes/0000-primer-terraform.md)
-- **notes** (10): most recent → [What I Learned from Validate and Plan (2026-07-21)](../terraform/notes/2026-07-21-what-i-learned-from-validate-and-plan.md), [What Tripped Me Up — Terraform Quickstart (2026-07-21)](../terraform/notes/2026-07-21-what-tripped-me-up-quickstart.md), [Terraform Directory Structure (2026-07-19)](../terraform/notes/2026-07-19-terraform-directory-structure.md)
-- **configs** (5): [Variables, Outputs, and Dependencies (2026-07-22)](../terraform/configs/2026-07-22-variables-outputs-dependencies.hcl), [First Local File Resource (2026-07-19)](../terraform/configs/2026-07-19-first-local-file-resource.hcl), [Local File Resource (2026-07-16)](../terraform/configs/2026-07-16-local-file-resource.hcl)
+- **notes** (10): most recent → [Terraform Directory Structure (2026-07-19)](../terraform/notes/2026-07-19-terraform-directory-structure.md), [Terraform Version & Init (2026-07-19)](../terraform/notes/2026-07-19-terraform-version-init.md), [Install Terraform and Run Version (2026-07-19)](../terraform/notes/2026-07-19-install-terraform-and-run-version.md)
+- **configs** (5): [Variables, Outputs, and Dependencies (2026-07-22)](../terraform/configs/2026-07-22-variables-outputs-dependencies.hcl), [First Local File Resource (2026-07-19)](../terraform/configs/2026-07-19-first-local-file-resource.hcl), [Local Provider Config](../terraform/configs/local-provider.hcl)
+- **docs** (1): [State Files & Remote Backends (2026-07-22)](../terraform/docs/2026-07-22-terraform-state-files-remote-backends.md)
 - **scripts** (3): [Terraform Lifecycle (2026-07-22)](../terraform/scripts/2026-07-22-terraform-lifecycle.sh), [Terraform Vars and Outputs (2026-07-21)](../terraform/scripts/2026-07-21-terraform-vars-and-outputs.sh), [Install Terraform](../terraform/scripts/2026-06-17-install-terraform.sh)
-- **docs** (1): [Terraform State Files & Remote Backends (2026-07-22)](../terraform/docs/2026-07-22-terraform-state-files-remote-backends.md)
 - _…and browse `terraform/` for the full collection._
 
-## Cross-cutting concepts  ·  7 files
+## Cross-cutting concepts  ·  10 files
 
 - **CI/CD concepts** (2): [CI/CD Primer](../docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md), [CI/CD Workflow Overview (2026-07-19)](../docs/concepts/ci-cd-concepts/2026-07-19-ci-cd-workflow-overview.md)
+- **Cloud Computing** (1): [Cloud Computing Fundamentals Primer](../docs/concepts/cloud-computing-fundamentals/0000-primer-cloud-computing-fundamentals.md)
+- **Container Fundamentals** (1): [Container Fundamentals Primer](../docs/concepts/container-fundamentals/0000-primer-container-fundamentals.md)
 - **Git & version control** (2): [Git Version Control Primer](../docs/concepts/git-version-control/0000-primer-git-version-control.md), [Git Branching, Merging, and Conflicts (2026-07-22)](../docs/concepts/git-version-control/scripts/2026-07-22-git-branching-merging-conflicts.sh)
-- **Scripting & automation** (1): [Scripting & Automation Primer](../docs/concepts/scripting-automation/0000-primer-scripting-automation.md)
+- **Infrastructure as Code** (1): [Infrastructure as Code Primer](../docs/concepts/infrastructure-as-code/0000-primer-infrastructure-as-code.md)
 - **Linux OS fundamentals** (1): [Linux Primer](../docs/concepts/linux-os-fundamentals/0000-primer-linux-os-fundamentals.md)
 - **Networking basics** (1): [Networking Primer](../docs/concepts/networking-basics/0000-primer-networking-basics.md)
+- **Scripting & Automation** (1): [Scripting & Automation Primer](../docs/concepts/scripting-automation/0000-primer-scripting-automation.md)
