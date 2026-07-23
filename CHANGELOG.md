@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-23
+
+- Added multi-stage Python web app Dockerfile with HEALTHCHECK and non-root user (docker/dockerfiles/multi-stage-python-webapp.Dockerfile)
+- Added Dockerfile antipatterns docs on layer caching, pinned tags, and common mistakes (docker/docs/dockerfile-antipatterns.md)
+
 ## 2026-07-22
 
 - Added Infrastructure as Code concept primer (docs/concepts/infrastructure-as-code/0000-primer-infrastructure-as-code.md)
