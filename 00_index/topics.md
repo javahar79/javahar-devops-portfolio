@@ -2,14 +2,14 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Docker  ·  59 files
+## Docker  ·  62 files
 
 - **primer:** [primer-docker](../docker/notes/0000-primer-docker.md)
 - **notes** (20): most recent → [Docker Quickstart — What Tripped Me Up (2026-07-18)](../docker/notes/2026-07-18-docker-quickstart-tripped-me.md), [Docker Quickstart — What Tripped Me Up (2026-07-16)](../docker/notes/2026-07-16-docker-quickstart-tripped-me.md), [Docker Quickstart Trials (2026-07-08)](../docker/notes/2026-07-08-docker-quickstart-trials.md)
-- **scripts** (18): [Run Container Port Map (2026-07-18)](../docker/scripts/2026-07-18-run-container-port-map.sh), [Run Container Port Map (2026-07-16)](../docker/scripts/2026-07-16-run-container-port-map.sh), [Run Container Port Map (2026-07-12)](../docker/scripts/2026-07-12-run-container-port-map.sh)
-- **dockerfiles** (20): [Tagged Non-Root (2026-07-18)](../docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-16)](../docker/dockerfiles/2026-07-16-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-12)](../docker/dockerfiles/2026-07-12-tagged-nonroot.Dockerfile)
+- **scripts** (19): [Run Container Port Map (2026-07-18)](../docker/scripts/2026-07-18-run-container-port-map.sh), [Run Container Port Map (2026-07-16)](../docker/scripts/2026-07-16-run-container-port-map.sh), [Run Container Port Map (2026-07-12)](../docker/scripts/2026-07-12-run-container-port-map.sh)
+- **dockerfiles** (21): [Multi-Stage Python Webapp](../docker/dockerfiles/multi-stage-python-webapp.Dockerfile), [Tagged Non-Root (2026-07-18)](../docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile), [Tagged Non-Root (2026-07-16)](../docker/dockerfiles/2026-07-16-tagged-nonroot.Dockerfile)
 - **configs** (1): [Multi-Service Compose](../docker/configs/multi-service-compose.yaml)
-- **source** (2): [Go module](../docker/dockerfiles/go.mod), [Go server](../docker/dockerfiles/main.go)
+- **docs** (1): [Dockerfile Antipatterns](../docker/docs/dockerfile-antipatterns.md)
 - _…and browse `docker/` for the full collection._
 
 ## Git  ·  13 files
@@ -47,9 +47,9 @@
 - **scripts** (3): [Terraform Lifecycle (2026-07-22)](../terraform/scripts/2026-07-22-terraform-lifecycle.sh), [Terraform Vars and Outputs (2026-07-21)](../terraform/scripts/2026-07-21-terraform-vars-and-outputs.sh), [Install Terraform](../terraform/scripts/2026-06-17-install-terraform.sh)
 - _…and browse `terraform/` for the full collection._
 
-## Cross-cutting concepts  ·  10 files
+## Cross-cutting concepts  ·  11 files
 
-- **CI/CD concepts** (2): [CI/CD Primer](../docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md), [CI/CD Workflow Overview (2026-07-19)](../docs/concepts/ci-cd-concepts/2026-07-19-ci-cd-workflow-overview.md)
+- **CI/CD concepts** (3): [CI/CD Primer](../docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md), [CI/CD Workflow Overview (2026-07-19)](../docs/concepts/ci-cd-concepts/2026-07-19-ci-cd-workflow-overview.md), [Minimal CI Pipeline Script (2026-07-23)](../docs/concepts/ci-cd-concepts/scripts/2026-07-23-minimal-ci-pipeline.sh)
 - **Cloud Computing** (1): [Cloud Computing Fundamentals Primer](../docs/concepts/cloud-computing-fundamentals/0000-primer-cloud-computing-fundamentals.md)
 - **Container Fundamentals** (1): [Container Fundamentals Primer](../docs/concepts/container-fundamentals/0000-primer-container-fundamentals.md)
 - **Git & version control** (2): [Git Version Control Primer](../docs/concepts/git-version-control/0000-primer-git-version-control.md), [Git Branching, Merging, and Conflicts (2026-07-22)](../docs/concepts/git-version-control/scripts/2026-07-22-git-branching-merging-conflicts.sh)

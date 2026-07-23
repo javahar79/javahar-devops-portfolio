@@ -47,6 +47,8 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 
 - [Docker Quickstart Walkthroughs](../docker/notes/2026-06-25-docker-quickstart-walkthrough.md) — Multi-stage builds and practical Dockerfile walkthroughs.
 - [Docker Quickstart — What Tripped Me Up (2026-07-18)](../docker/notes/2026-07-18-docker-quickstart-tripped-me.md) — Latest quickstart notes with port mapping, volume mount, and debugging gotchas.
+- [Dockerfile Antipatterns](../docker/docs/dockerfile-antipatterns.md) — Common Dockerfile mistakes and how to avoid them.
+- [Multi-Stage Python Webapp Dockerfile](../docker/dockerfiles/multi-stage-python-webapp.Dockerfile) — Python multi-stage build with pip dependencies.
 - [Tagged Non-Root Dockerfile (2026-07-18)](../docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile) — Newest multi-stage Dockerfile with pinned tag and non-root runtime user.
 - [Run Container Port Map Script (2026-07-18)](../docker/scripts/2026-07-18-run-container-port-map.sh) — Newest build-and-run script for Go container with port mapping.
 - [Multi-Service Compose Config](../docker/configs/multi-service-compose.yaml) — Multi-container applications with Compose.
@@ -54,6 +56,7 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Validate Workflow Runs (2026-07-21)](../github-actions/scripts/2026-07-21-validate-workflow-runs.sh) — Validate GHA workflows from the command line with gh CLI.
 - [Debug Run-Name & Conditions (2026-07-19)](../github-actions/configs/2026-07-19-debug-run-name-conditions.yaml) — Run-name and conditional step examples.
 - [Minimal CI Workflow (2026-07-19)](../github-actions/configs/2026-07-19-minimal-ci-workflow.yaml) — GHA CI workflow with setup-python caching.
+- [Minimal CI Pipeline Script (2026-07-23)](../docs/concepts/ci-cd-concepts/scripts/2026-07-23-minimal-ci-pipeline.sh) — Hands-on sandbox for practicing CI pipeline mechanics.
 - [Reading Workflow Logs and Debugging (2026-07-19)](../github-actions/docs/2026-07-19-reading-workflow-logs-and-debugging.md) — How I learned to read logs and debug GHA failures.
 - [CI/CD Workflow Overview (2026-07-19)](../docs/concepts/ci-cd-concepts/2026-07-19-ci-cd-workflow-overview.md) — Mapping the CI/CD pieces in this portfolio.
 - [Terraform Directory Structure (2026-07-19)](../terraform/notes/2026-07-19-terraform-directory-structure.md) — How the terraform/ folder is organised and what each directory holds.
@@ -94,7 +97,6 @@ Stage 1 → Stage 2 → Stage 3 → Stage 4 → Stage 5
   Git/Docker          ↓         ↓
   Primers       K8s Debug  K8s Debug
          ↓       (describe, (describe,
-   Linux/Net     logs,        logs,
+  Linux/Net     logs,        logs,
          ↓       events)     events)
-   Networking
-```
+  Networking

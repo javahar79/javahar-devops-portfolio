@@ -15,23 +15,23 @@ A working DevOps engineer's quick-reference: first-contact notes, runnable snipp
 
 ## What's in here
 
-A DevOps learning portfolio across five tool families — Docker (59 files), Git (13), GitHub Actions (12), Kubernetes (12), and Terraform (19) — plus cross-cutting concept primers in CI/CD, Cloud Computing, Container Fundamentals, Git & version control, Infrastructure as Code, Linux OS fundamentals, Networking, and Scripting & Automation. Each tool has a primer, dated CLI walkthrough notes, Dockerfiles, scripts, and config files accumulated through hands-on practice.
+A DevOps learning portfolio across five tool families — Docker (62 files), Git (13), GitHub Actions (12), Kubernetes (12), and Terraform (19) — plus cross-cutting concept primers in CI/CD, Cloud Computing, Container Fundamentals, Git & version control, Infrastructure as Code, Linux OS fundamentals, Networking, and Scripting & Automation. Each tool has a primer, dated CLI walkthrough notes, Dockerfiles, scripts, and config files accumulated through hands-on practice.
 
 ---
 
 ## Quick links
 
+- [Dockerfile Antipatterns](docker/docs/dockerfile-antipatterns.md) — Common Dockerfile mistakes and how to avoid them
+- [Multi-Stage Python Webapp Dockerfile](docker/dockerfiles/multi-stage-python-webapp.Dockerfile) — Python multi-stage build with pip dependencies
+- [Minimal CI Pipeline Script](docs/concepts/ci-cd-concepts/scripts/2026-07-23-minimal-ci-pipeline.sh) — Hands-on sandbox for practicing CI pipeline mechanics
 - [Cloud Computing Fundamentals Primer](docs/concepts/cloud-computing-fundamentals/0000-primer-cloud-computing-fundamentals.md) — IaaS, PaaS, SaaS, regions, and service models explained
 - [Container Fundamentals Primer](docs/concepts/container-fundamentals/0000-primer-container-fundamentals.md) — Images, containers, registries, and volumes explained
-- [Infrastructure as Code Primer](docs/concepts/infrastructure-as-code/0000-primer-infrastructure-as-code.md) — Declarative config, state, drift, and modules explained
-- [Git Branching, Merging, and Conflicts (2026-07-22)](docs/concepts/git-version-control/scripts/2026-07-22-git-branching-merging-conflicts.sh) — Hands-on sandbox for practicing merge conflict resolution
-- [Scripting & Automation Primer](docs/concepts/scripting-automation/0000-primer-scripting-automation.md) — Shell, Cron, idempotency, and automation patterns explained
 
 ## Layout
 
 | Directory | Contents |
 |-----------|----------|
-| `docker/` | Docker primer, CLI walkthrough notes, install/port-map scripts, Dockerfiles, compose config |
+| `docker/` | Docker primer, CLI walkthrough notes, install/port-map scripts, Dockerfiles, compose config, antipatterns doc |
 | `git/` | Git primer, CLI exploration notes, undo/stage/commit/push notes, branch/merge/revert/reflog scripts |
 | `github-actions/` | Actions primer, UI walkthrough, CI workflow configs, workflow debugging docs, validation script |
 | `kubernetes/` | K8s primer, kubectl notes, local cluster install script, manifests, pod/service debugging scripts and docs |
@@ -44,20 +44,20 @@ A DevOps learning portfolio across five tool families — Docker (59 files), Git
 
 ## Coverage
 
-| Tool | Notes | Scripts | Configs | Dockerfiles | Manifests | Docs | Snippets | Source | Last verified |
-|------|-------|---------|---------|-------------|-----------|------|----------|--------|---------------|
-| Docker | 20 | 18 | 1 | 18 | — | — | — | 2 | 2026-07-18 |
-| Git | 7 | 6 | — | — | — | — | — | — | 2026-07-20 |
-| GitHub Actions | 4 | 1 | 5 | — | — | 2 | — | — | 2026-07-21 |
-| Kubernetes | 4 | 3 | — | — | 2 | 2 | 1 | — | 2026-07-21 |
-| Terraform | 10 | 3 | 5 | — | — | 1 | — | — | 2026-07-22 |
+| Tool | Notes | Scripts | Configs | Dockerfiles | Manifests | Docs | Snippets | Last verified |
+|------|-------|---------|---------|-------------|-----------|------|----------|---------------|
+| Docker | 20 | 19 | 1 | 21 | — | 1 | — | 2026-07-18 |
+| Git | 7 | 6 | — | — | — | — | — | 2026-07-20 |
+| GitHub Actions | 4 | 1 | 5 | — | — | 2 | — | 2026-07-21 |
+| Kubernetes | 4 | 3 | — | — | 2 | 2 | 1 | 2026-07-21 |
+| Terraform | 10 | 3 | 5 | — | — | 1 | — | 2026-07-22 |
 
 ---
 
 ## Status
 
-Actively building out first-contact notes and runnable configs across all five tools. Recent additions include new concept primers for Cloud Computing, Container Fundamentals, Infrastructure as Code, and Scripting & Automation; updated Terraform remote backend and state management docs; and a Git branching/merging sandbox script (all 2026-07-22). Docker L2 content and tagged non-root Dockerfiles remain the deepest category.
+Actively building out first-contact notes and runnable configs across all five tools. Recent additions include a Dockerfile antipatterns doc, a multi-stage Python webapp Dockerfile, a CI pipeline practice script, and a Cloud Computing Fundamentals primer. Docker L2 content and tagged non-root Dockerfiles remain the deepest category.
 
 ---
 
-_Last updated: 2026-07-23_
+_Last updated: 2026-07-24_
