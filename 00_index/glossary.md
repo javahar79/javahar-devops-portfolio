@@ -31,9 +31,14 @@
 - **git commit --amend** — Modifies the most recent commit, either to update the commit message or to include additional staged changes.
 - **merge commit** — A commit created by `git merge` that combines two branches; it has two parent commits.
 - **sandbox** — An isolated directory used for safe experimentation without affecting real repositories.
-- **git reflog** — A Git command that shows a log of where HEAD and branch references have pointed, useful for recovering lost commits after rebase or reset.
-- **interactive rebase** — `git rebase -i` lets you squash, reorder, or edit commits before they are applied onto another branch.
-- **.gitignore** — A file that tells Git which files or patterns to ignore when tracking changes in a repository.
+- **git switch** — A modern Git command for switching branches and creating new ones; replaces most everyday uses of `git checkout`.
+- **detached HEAD** — A state where HEAD points directly to a commit rather than a branch tip; commits made in this state are orphaned unless captured in a new branch.
+- **git push --force-with-lease** — A safer variant of `git push --force` that refuses to overwrite the remote if someone else has pushed since you last fetched.
+- **git pull --rebase** — Fetches the remote branch and replays local commits on top, producing a linear history instead of a merge commit.
+- **git reflog** — A log of where HEAD and branch references have pointed; the primary tool for recovering from accidental resets, rebases, or branch deletions.
+- **git rebase -i** — Interactive rebase that lets you reorder, squash, edit, or drop recent commits before sharing them.
+- **BFG Repo-Cleaner** — A fast alternative to `git filter-repo` for stripping large files or sensitive data from repository history.
+- **git mergetool** — Launches an external merge tool to help resolve conflicts graphically.
 
 ## GitHub Actions
 
@@ -47,8 +52,6 @@
 - **needs** — The `needs:` keyword that declares job dependencies, making one job wait for another to complete.
 - **runner image** — The operating system and toolchain image used by a GitHub Actions runner (e.g. `ubuntu-latest`, `windows-latest`).
 - **exit code** — A numeric code returned by a process to indicate success (0) or failure (non-zero); used in workflow logs to identify which step failed.
-- **gh CLI** — The GitHub CLI tool that lets you interact with GitHub from the command line, including triggering and validating workflows.
-- **run-name** — A workflow-level key that sets a custom name for a workflow run, often using expressions like `${{ github.event_name }}`.
 
 ## Kubernetes
 
@@ -82,6 +85,10 @@
 - **.terraform.lock.hcl** — A lock file created by `terraform init` that pins provider versions so all team members and CI use the same versions.
 - **backend** — The storage backend (local or remote) that Terraform uses to persist its state data; configured in the `terraform {}` block and initialized during `terraform init`.
 - **required_providers** — A block within `terraform {}` that declares which provider plugins and version constraints a configuration needs before it can be initialized.
+- **remote backend** — A backend that stores state in a remote service (like S3) instead of locally, enabling team collaboration on the same state.
+- **workspace** — A Terraform feature that lets you manage multiple state files within a single backend by creating isolated environments.
+- **DynamoDB locking** — A DynamoDB table used as a distributed lock for Terraform state, preventing concurrent `apply` runs from corrupting state.
+- **S3 versioning** — Versioning enabled on an S3 bucket used as a Terraform backend, allowing recovery from accidental state-file deletions.
 
 ## CI/CD
 
@@ -105,3 +112,11 @@
 - **DNS** — The Domain Name System that maps human-readable hostnames to IP addresses.
 - **CIDR** — Classless Inter-Domain Routing notation (e.g. `10.0.0.0/24`) that expresses an IP range and its subnet mask.
 - **NAT** — Network Address Translation, which maps private internal addresses to a public one so hosts can share an outbound connection.
+
+## Scripting & Automation
+
+- **Script** — A short program written in a scripting language like Bash or Python, used to automate repetitive tasks.
+- **Shell** — The command-line interpreter that executes scripts (e.g. `bash` or `zsh`).
+- **Cron** — A scheduler that runs scripts at fixed times or intervals.
+- **Idempotency** — Running the same script or command multiple times produces the same result without side effects.
+- **Conditional** — A control structure that runs different code based on a test (e.g. `if`, `case`).
