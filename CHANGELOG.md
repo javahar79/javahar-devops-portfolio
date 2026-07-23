@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-23
+
+- Added Docker workflow script with resource limits, health checks, and volume cleanup (docker/scripts/docker-workflow-limits-healthcheck-cleanup.sh)
+- Added CI/CD Concepts minimal CI pipeline practice script (docs/concepts/ci-cd-concepts/scripts/2026-07-23-minimal-ci-pipeline.sh)
+
 ## 2026-07-22
 
 - Added Infrastructure as Code concept primer (docs/concepts/infrastructure-as-code/0000-primer-infrastructure-as-code.md)
