@@ -1,5 +1,4 @@
 # javahar-devops-portfolio
-
 > A working DevOps engineer's quick-reference for Docker, Git, GitHub Actions, Kubernetes, and Terraform.
 
 ![Last commit](https://img.shields.io/github/last-commit/javahar79/javahar-devops-portfolio)
@@ -16,28 +15,28 @@ A working DevOps engineer's quick-reference: first-contact notes, runnable snipp
 
 ## What's in here
 
-A DevOps learning portfolio across five tool families — Docker (59 files), Git (13), GitHub Actions (12), Kubernetes (12), and Terraform (19) — plus cross-cutting concept primers in CI/CD, Git & version control, Linux OS fundamentals, networking, and scripting & automation. Each tool has a primer, dated CLI walkthrough notes, Dockerfiles, scripts, and config files accumulated through hands-on practice.
+A DevOps learning portfolio across five tool families — Docker (59 files), Git (13), GitHub Actions (12), Kubernetes (12), and Terraform (19) — plus cross-cutting concept primers in CI/CD, Cloud Computing, Container Fundamentals, Git & version control, Infrastructure as Code, Linux OS fundamentals, Networking, and Scripting & Automation. Each tool has a primer, dated CLI walkthrough notes, Dockerfiles, scripts, and config files accumulated through hands-on practice.
 
 ---
 
 ## Quick links
 
-- [Terraform State Files & Remote Backends (2026-07-22)](terraform/docs/2026-07-22-terraform-state-files-remote-backends.md) — S3 backends, DynamoDB locking, and workspace isolation
-- [Git Branching, Merging, and Conflicts (2026-07-22)](docs/concepts/git-version-control/scripts/2026-07-22-git-branching-merging-conflicts.sh) — Hands-on merge-conflict resolution script
-- [What I Learned from Validate and Plan (2026-07-21)](terraform/notes/2026-07-21-what-i-learned-from-validate-and-plan.md) — `terraform validate` and `plan` before applying
-- [What Tripped Me Up — Terraform Quickstart (2026-07-21)](terraform/notes/2026-07-21-what-tripped-me-up-quickstart.md) — Init-order and directory mistakes
-- [GHA Quickstart — What Tripped Me Up (2026-07-21)](github-actions/notes/2026-07-21-gha-quickstart-tripped-me.md) — Workflow syntax, triggers, and debugging gotchas
+- [Cloud Computing Fundamentals Primer](docs/concepts/cloud-computing-fundamentals/0000-primer-cloud-computing-fundamentals.md) — IaaS, PaaS, SaaS, regions, and service models explained
+- [Container Fundamentals Primer](docs/concepts/container-fundamentals/0000-primer-container-fundamentals.md) — Images, containers, registries, and volumes explained
+- [Infrastructure as Code Primer](docs/concepts/infrastructure-as-code/0000-primer-infrastructure-as-code.md) — Declarative config, state, drift, and modules explained
+- [Git Branching, Merging, and Conflicts (2026-07-22)](docs/concepts/git-version-control/scripts/2026-07-22-git-branching-merging-conflicts.sh) — Hands-on sandbox for practicing merge conflict resolution
+- [Scripting & Automation Primer](docs/concepts/scripting-automation/0000-primer-scripting-automation.md) — Shell, Cron, idempotency, and automation patterns explained
 
 ## Layout
 
 | Directory | Contents |
 |-----------|----------|
 | `docker/` | Docker primer, CLI walkthrough notes, install/port-map scripts, Dockerfiles, compose config |
-| `git/` | Git primer, CLI exploration notes, undo/stage/commit workflow, branch/merge/revert script, reflog/rebase script |
+| `git/` | Git primer, CLI exploration notes, undo/stage/commit/push notes, branch/merge/revert/reflog scripts |
 | `github-actions/` | Actions primer, UI walkthrough, CI workflow configs, workflow debugging docs, validation script |
 | `kubernetes/` | K8s primer, kubectl notes, local cluster install script, manifests, pod/service debugging scripts and docs |
 | `terraform/` | Terraform primer, install script, provider configs, local file resource configs, init & version notes, remote backend docs |
-| `docs/` | Cross-cutting concept primers (CI/CD, Git & version control, Linux fundamentals, networking, scripting & automation) |
+| `docs/` | Cross-cutting concept primers (CI/CD, Cloud Computing, Container Fundamentals, Git & version control, Infrastructure as Code, Linux fundamentals, Networking, Scripting & Automation) |
 | `00_index/` | Topic index, quick links, glossary, learning path |
 | `CHANGELOG.md` | Release notes and change log |
 
@@ -47,7 +46,7 @@ A DevOps learning portfolio across five tool families — Docker (59 files), Git
 
 | Tool | Notes | Scripts | Configs | Dockerfiles | Manifests | Docs | Snippets | Source | Last verified |
 |------|-------|---------|---------|-------------|-----------|------|----------|--------|---------------|
-| Docker | 20 | 18 | 1 | 20 | — | — | — | 2 | 2026-07-18 |
+| Docker | 20 | 18 | 1 | 18 | — | — | — | 2 | 2026-07-18 |
 | Git | 7 | 6 | — | — | — | — | — | — | 2026-07-20 |
 | GitHub Actions | 4 | 1 | 5 | — | — | 2 | — | — | 2026-07-21 |
 | Kubernetes | 4 | 3 | — | — | 2 | 2 | 1 | — | 2026-07-21 |
@@ -57,8 +56,8 @@ A DevOps learning portfolio across five tool families — Docker (59 files), Git
 
 ## Status
 
-Actively building out first-contact notes and runnable configs across all five tools. Recent additions include Terraform remote backend docs, Git branching/conflict resolution scripts, scripting & automation primer, and Terraform validate/plan notes (all 2026-07-21/22). Docker L2 content and tagged non-root Dockerfiles remain the deepest category.
+Actively building out first-contact notes and runnable configs across all five tools. Recent additions include new concept primers for Cloud Computing, Container Fundamentals, Infrastructure as Code, and Scripting & Automation; updated Terraform remote backend and state management docs; and a Git branching/merging sandbox script (all 2026-07-22). Docker L2 content and tagged non-root Dockerfiles remain the deepest category.
 
 ---
 
-_Last updated: 2026-07-22_
+_Last updated: 2026-07-23_
