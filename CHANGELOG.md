@@ -6,6 +6,7 @@
 - Added CI/CD Concepts minimal CI pipeline practice script (docs/concepts/ci-cd-concepts/scripts/2026-07-23-minimal-ci-pipeline.sh)
 - Added multi-stage Python web app Dockerfile with HEALTHCHECK and non-root user (docker/dockerfiles/multi-stage-python-webapp.Dockerfile)
 - Added Dockerfile antipatterns docs on layer caching, pinned tags, and common mistakes (docker/docs/dockerfile-antipatterns.md)
+- Added CI/CD Concepts interactive notebook with CI pipeline simulation and approval gates (docs/concepts/ci-cd-concepts/notebooks/2026-07-23-intro-to-cicd-core-concepts-with-interactive-examples.ipynb)
 
 ## 2026-07-22
 
