@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-24
+
+- Added matrix builds and conditional deploys docs (github-actions/docs/matrix-builds-conditional-deploys.md)
+- Added failed workflow run audit script using gh CLI (github-actions/scripts/audit-failed-workflow-runs.sh)
+
 ## 2026-07-23
 
 - Added Docker workflow script with resource limits, health checks, and volume cleanup (docker/scripts/docker-workflow-limits-healthcheck-cleanup.sh)
