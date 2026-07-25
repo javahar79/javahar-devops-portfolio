@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-25
+
+- Added Docker image optimization comparison docs (docker/docs/multi-stage-vs-distroless-vs-alpine.md)
+- Added Docker Compose container lifecycle automation script (docker/scripts/automating-container-lifecycle.sh)
+
 ## 2026-07-24
 
 - Added matrix builds and conditional deploys docs (github-actions/docs/matrix-builds-conditional-deploys.md)
