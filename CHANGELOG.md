@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-26
+
+- Added reusable workflow config with inputs for lint-test-deploy pipeline pattern (github-actions/configs/reusable-workflow-with-inputs.yaml)
+
 ## 2026-07-25
 
 - Added Docker image optimization comparison docs (docker/docs/multi-stage-vs-distroless-vs-alpine.md)
