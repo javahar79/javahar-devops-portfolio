@@ -29,6 +29,10 @@
 - **Compose** — A tool for defining and running multi-container Docker applications using a YAML file.
 - **Volume / bind mount** — A mechanism to mount a host directory into a container, enabling data persistence and live-reload during development.
 - **Compose watch** — A Docker Compose feature that synchronises changed files into a running container without a full rebuild, available in Compose v2.23+.
+- **Distroless image** — A Docker image that strips everything except the app binary and its runtime libraries; no shell, package manager, or standard utilities. Reduces attack surface at the cost of debuggability.
+- **Alpine-based image** — A Docker image built on Alpine Linux; small footprint (~5 MB) but uses musl libc instead of glibc, which can cause compatibility issues with some binaries.
+- **Smoke test** — A minimal validation that the app is alive and responding after deploy. Catches obvious breakage before running the full test suite.
+- **detached mode** — `docker compose up -d` runs containers in the background and returns control to the shell; useful for CI and long-running stacks.
 
 ## CI/CD
 
@@ -51,6 +55,8 @@
 - **sandbox** — An isolated directory used for safe experimentation without affecting real repositories.
 - **git reflog** — A Git command that shows a log of where HEAD and branch references have pointed, useful for recovering lost commits after rebase or reset.
 - **interactive rebase** — `git rebase -i` lets you squash, reorder, or edit commits before they are applied onto another branch.
+- **git reset --soft** — Moves HEAD to the given ref and leaves all changes staged; preserves the working diff while undoing commits.
+- **git reset --mixed** — Moves HEAD to the given ref and unstages changes but keeps them in the working tree; the default `git reset` behaviour.
 - **.gitignore** — A file that tells Git which files or patterns to ignore when tracking changes in a repository.
 
 ## GitHub Actions
