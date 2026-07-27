@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-27
+
+- Added common rebase and reset patterns snippet (docs/concepts/git-version-control/snippets/2026-07-27-common-rebase-reset-patterns.sh)
+- Added common loops, conditions, and file processing patterns snippet (docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh)
+- Added common modular, reusable, and versioned configs snippet (docs/concepts/infrastructure-as-code/snippets/2026-07-27-common-modular-versioned-configs.hcl)
+
 ## 2026-07-26
 
 - Added reusable workflow config with inputs for lint-test-deploy pipeline pattern (github-actions/configs/reusable-workflow-with-inputs.yaml)
