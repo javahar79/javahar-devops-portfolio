@@ -2,6 +2,9 @@
 
 ## 2026-07-27
 
+- Reworked Linux & OS Fundamentals concept primer (con-001) — restructured sections, 800-word first-person voice, verified front-matter
+- Reworked Networking Basics concept primer (con-002) — expanded terminology, refreshed diagnostic bash example, verified front-matter
+
 - Added common rebase and reset patterns snippet (docs/concepts/git-version-control/snippets/2026-07-27-common-rebase-reset-patterns.sh)
 - Added common loops, conditions, and file processing patterns snippet (docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh)
 - Added common modular, reusable, and versioned configs snippet (docs/concepts/infrastructure-as-code/snippets/2026-07-27-common-modular-versioned-configs.hcl)
