@@ -20,7 +20,7 @@ A DevOps learning portfolio across five tool families — Docker (64 files), Git
 ## Quick links
 
 - [Multi-Stage vs Distroless vs Alpine](docker/docs/multi-stage-vs-distroless-vs-alpine.md) — When to choose each Docker image base
-- [Reusable Workflow with Inputs](gha/configs/reusable-workflow-with-inputs.yaml) — DRY pattern for lint-test-deploy pipelines
+- [Dockerfile Antipatterns](docker/docs/dockerfile-antipatterns.md) — Common Dockerfile mistakes and how to avoid them
 - [Common Rebase and Reset Patterns](docs/concepts/git-version-control/snippets/2026-07-27-common-rebase-reset-patterns.sh) — Interactive rebase and reset recovery patterns
 - [Common Loops, Conditions, and File Patterns](docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh) — Bash patterns for real-world scripting
 - [Common Modular and Versioned Configs](docs/concepts/infrastructure-as-code/snippets/2026-07-27-common-modular-versioned-configs.hcl) — Reusable Terraform patterns with modules and version constraints
@@ -35,7 +35,6 @@ A DevOps learning portfolio across five tool families — Docker (64 files), Git
 | `kubernetes/` | K8s primer, kubectl notes, local cluster install script, manifests, pod/service debugging scripts and docs |
 | `terraform/` | Terraform primer, install script, provider configs, local file resource configs, init & version notes, remote backend docs |
 | `docs/` | Cross-cutting concept primers and runnable snippets (CI/CD, Cloud Computing, Container Fundamentals, Git & version control, Infrastructure as Code, Linux fundamentals, Networking, Scripting & Automation) |
-| `gha/` | Reusable GitHub Actions workflow configs |
 | `00_index/` | Topic index, quick links, glossary, learning path |
 
 ## Coverage
@@ -50,7 +49,7 @@ A DevOps learning portfolio across five tool families — Docker (64 files), Git
 
 ## Status
 
-Actively building out first-contact notes and runnable configs across all five tools. Recent additions include multi-stage vs distroless vs alpine comparison docs, a reusable GHA workflow with inputs, a CI pipeline practice script, and cross-cutting concept snippets for Git rebase/reset, Bash loops/conditions, and HCL modular configs. Docker tagged non-root Dockerfiles and Terraform state/backend docs remain the deepest categories.
+Actively building out first-contact notes and runnable configs across all five tools. Recent additions include multi-stage vs distroless vs alpine comparison docs, a CI pipeline practice script, and cross-cutting concept snippets for Git rebase/reset, Bash loops/conditions, and HCL modular configs. Docker tagged non-root Dockerfiles and Terraform state/backend docs remain the deepest categories.
 
 ---
 

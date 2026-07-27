@@ -36,7 +36,6 @@
 - [Multi-Stage vs Distroless vs Alpine](../docker/docs/multi-stage-vs-distroless-vs-alpine.md) — When to choose each Docker image base
 
 ### Automate with CI/CD
-- [Reusable Workflow with Inputs](../gha/configs/reusable-workflow-with-inputs.yaml) — DRY pattern for lint-test-deploy pipelines
 - [GHA Quickstart — What Tripped Me Up (2026-07-21)](../github-actions/notes/2026-07-21-gha-quickstart-tripped-me.md) — GHA workflow syntax, triggers, and debugging gotchas
 - [Minimal CI Workflow (2026-07-19)](../github-actions/configs/2026-07-19-minimal-ci-workflow.yaml) — GHA CI workflow with setup-python caching
 - [Debug Run-Name & Conditions (2026-07-19)](../github-actions/configs/2026-07-19-debug-run-name-conditions.yaml) — Run-name and conditional step examples
