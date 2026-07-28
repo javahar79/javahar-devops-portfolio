@@ -9,6 +9,9 @@
 - Added common loops, conditions, and file processing patterns snippet (docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh)
 - Added common modular, reusable, and versioned configs snippet (docs/concepts/infrastructure-as-code/snippets/2026-07-27-common-modular-versioned-configs.hcl)
 
+- Added VPC multi-resource infrastructure config (tf/configs/vpc-multi-resource-infrastructure.hcl)
+- Added Terraform workspaces vs directory-per-env comparison doc (tf/docs/terraform-workspaces-vs-directory-per-env.md)
+
 ## 2026-07-26
 
 - Added reusable workflow config with inputs for lint-test-deploy pipeline pattern (github-actions/configs/reusable-workflow-with-inputs.yaml)
