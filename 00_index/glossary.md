@@ -48,6 +48,12 @@
 - **Commit** — A snapshot of changes in the repository at a given point in time.
 - **Branch** — A movable pointer to a commit, used to isolate work on different features or fixes.
 - **Remote** — A version of the repository hosted on a server (e.g. GitHub), used for collaboration.
+- **Clone** — Copying a remote repository to my local machine so I can work on it. Example: `git clone https://github.com/org/repo.git`.
+- **Pull** — Fetching changes from a remote and merging them into my local branch. Example: `git pull origin main` before starting new work.
+- **Push** — Sending my local commits to a remote repository. Example: `git push origin feature/add-auth`.
+- **Staging area** — A place to prepare changes before committing them. Example: `git add file.txt` stages it for the next commit.
+- **Merge** — Combining changes from one branch into another. Example: merging `feature/add-auth` into `main` after review.
+- **Conflict** — When two people change the same part of a file and Git can't auto-merge. Example: I edit line 10 while a teammate deletes it.
 - **git revert** — Creates a new commit that reverses the changes from a previous commit; safe for shared branches.
 - **git restore --staged** — Unstages a file from the staging area without modifying the working copy.
 - **git commit --amend** — Modifies the most recent commit, either to update the commit message or to include additional staged changes.

@@ -38,13 +38,13 @@
 - **snippets** (1): [Debugging Port-Forward, Exec, and Logs (2026-07-21)](../kubernetes/snippets/2026-07-21-debugging-port-forward-exec-logs.sh)
 - _…and browse `kubernetes/` for the full collection._
 
-## Terraform · 19 files
+## Terraform · 22 files
 
 - **primer:** [primer-terraform](../terraform/notes/0000-primer-terraform.md)
-- **notes** (10): most recent → [Terraform Directory Structure (2026-07-19)](../terraform/notes/2026-07-19-terraform-directory-structure.md), [Terraform Version & Init (2026-07-19)](../terraform/notes/2026-07-19-terraform-version-init.md), [Install Terraform and Run Version (2026-07-19)](../terraform/notes/2026-07-19-install-terraform-and-run-version.md)
-- **configs** (5): [Variables, Outputs, and Dependencies (2026-07-22)](../terraform/configs/2026-07-22-variables-outputs-dependencies.hcl), [First Local File Resource (2026-07-19)](../terraform/configs/2026-07-19-first-local-file-resource.hcl), [Local Provider Config](../terraform/configs/local-provider.hcl)
-- **docs** (1): [State Files & Remote Backends (2026-07-22)](../terraform/docs/2026-07-22-terraform-state-files-remote-backends.md)
-- **scripts** (3): [Terraform Lifecycle (2026-07-22)](../terraform/scripts/2026-07-22-terraform-lifecycle.sh), [Terraform Vars and Outputs (2026-07-21)](../terraform/scripts/2026-07-21-terraform-vars-and-outputs.sh), [Install Terraform](../terraform/scripts/2026-06-17-install-terraform.sh)
+- **notes** (10): most recent → [What I Learned from Validate and Plan (2026-07-21)](../terraform/notes/2026-07-21-what-i-learned-from-validate-and-plan.md), [What Tripped Me Up Quickstart (2026-07-21)](../terraform/notes/2026-07-21-what-tripped-me-up-quickstart.md), [Terraform Directory Structure (2026-07-19)](../terraform/notes/2026-07-19-terraform-directory-structure.md)
+- **configs** (6): [Variables, Outputs, and Dependencies (2026-07-22)](../terraform/configs/2026-07-22-variables-outputs-dependencies.hcl), [VPC Multi-Resource Infrastructure](../terraform/configs/vpc-multi-resource-infrastructure.hcl), [Local Provider Config](../terraform/configs/local-provider.hcl)
+- **docs** (2): [State Files & Remote Backends (2026-07-22)](../terraform/docs/2026-07-22-terraform-state-files-remote-backends.md), [Workspaces vs Directory-per-Env](../terraform/docs/terraform-workspaces-vs-directory-per-env.md)
+- **scripts** (4): [Remote State Management (S3 + DynamoDB)](../terraform/scripts/remote-state-management-s3.sh), [Terraform Lifecycle (2026-07-22)](../terraform/scripts/2026-07-22-terraform-lifecycle.sh), [Terraform Vars and Outputs (2026-07-21)](../terraform/scripts/2026-07-21-terraform-vars-and-outputs.sh)
 - _…and browse `terraform/` for the full collection._
 
 ## Cross-cutting concepts · 15 files
