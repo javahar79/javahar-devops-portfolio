@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-28
+
+- Added terraform remote state management script with S3 backend init, migrate, and lock (tf-013)
+
 ## 2026-07-27
 
 - Reworked Linux & OS Fundamentals concept primer (con-001) — restructured sections, 800-word first-person voice, verified front-matter
