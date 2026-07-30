@@ -1,6 +1,6 @@
 ---
 last_verified: 2026-07-30
-tool_version: 1.29
+tool_version: "≥1.24"
 sources:
   - https://clankercloud.ai/blog/iac-kubernetes-practical-patterns-2026
   - https://markaicode.com/integrate/kubernetes-with-docker/
@@ -10,13 +10,7 @@ sources:
 
 ## Purpose
 
-Reference doc on how to inject configuration and sensitive data into Kubernetes workloads using ConfigMaps, Secrets, and environment variables across a multi-tier application. Covers the patterns a DevOps engineer needs to wire these resources into a Deployment so that the web tier receives its configuration without hardcoding values into container images.
-
-## When to use
-
-Use ConfigMaps for non-sensitive configuration data such as feature flags, log levels, and upstream endpoints. Use Secrets for credentials, tokens, and TLS material. Reference both from Deployments via `env` blocks or mounted volume files.
-
-A multi-tier application typically has a web tier that reads configuration from ConfigMaps and secrets from Secrets, while backend services may need different values for the same keys depending on the environment. This pattern keeps configuration out of container images and out of git history, making it possible to swap tiers between environments without rebuilding.
+This doc covers how to inject configuration and sensitive data into a Kubernetes Deployment using ConfigMaps, Secrets, and environment variables across a multi-tier application. One way to do this is to define a ConfigMap for non-sensitive settings and a Secret for credentials, then wire both into the pod spec via `env` blocks or volume mounts — the docs also suggest volume mounting for larger configuration payloads.
 
 ## Steps
 
@@ -46,7 +40,7 @@ kubectl create secret generic app-secrets \
 
 ### 3. Wire both into a Deployment
 
-Reference the ConfigMap and Secret from the Deployment spec. Environment variables take precedence over volume-mounted files when both target the same key, so choose one mechanism per key to avoid confusion.
+Reference the ConfigMap and Secret from the Deployment spec. Environment variables take precedence over volume-mounted files when both target the same key, so it is best to choose one mechanism per key to avoid confusion.
 
 ```yaml
 apiVersion: apps/v1
@@ -89,7 +83,7 @@ spec:
 
 ### 4. Apply the resources in order
 
-Apply the ConfigMap and Secret before the Deployment so that the pod scheduler can resolve references at creation time.
+Apply the ConfigMap and Secret before the Deployment so that the pod scheduler can resolve references at creation time. If a reference cannot be resolved at scheduling time, the pod will fail to start — it is worth verifying that both resources exist first.
 
 ```bash
 kubectl apply -f app-configmap.yaml
@@ -99,14 +93,9 @@ kubectl apply -f app-deployment.yaml
 
 ## Verify
 
-Confirm the deployment rolls out with healthy replicas and that the environment variables are populated inside the container. Use `kubectl describe pod` to surface any events related to missing ConfigMap or Secret references.
+Confirm the deployment rolls out with healthy replicas and that the environment variables are populated inside the container. Use `kubectl describe pod` to surface any events related to missing ConfigMap or Secret references — if something is missing, the events will show a `MissingConfigMap` or `MissingSecret` reason.
 
 ```bash
 kubectl rollout status deployment/web-app
 kubectl exec -it <pod-name> -- env | grep -E 'LOG_LEVEL|DB_PASSWORD'
 ```
-
-## References
-
-- [IAC Kubernetes practical patterns](https://clankercloud.ai/blog/iac-kubernetes-practical-patterns-2026).
-- [Integrate Kubernetes with Docker](https://markaicode.com/integrate/kubernetes-with-docker/).

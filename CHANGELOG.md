@@ -4,6 +4,7 @@
 
 - Added kubectl rollout vs edit zero-downtime comparison script (k8s-009)
 - Reworked k8s-007 docs: fixed path from k8s/docs/ to kubernetes/docs/ and adjusted voice to L3 instructional tone (k8s-007)
+- Reworked k8s-007 docs again: removed L5 "When to use" and "References" sections, fixed voice to L3 instructional tone with hedging, corrected tool_version to ≥1.24 from research.md (k8s-007)
 
 ## 2026-07-29
 
