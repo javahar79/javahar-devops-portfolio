@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-07-30
+
+- Reworked k8s-007 docs: fixed path from k8s/docs/ to kubernetes/docs/ and adjusted voice to L3 instructional tone (k8s-007)
+
+## 2026-07-29
+
+- Added ConfigMaps, Secrets, and env vars reference doc for multi-tier K8s app (k8s-007)
+- Added kubectl rollout vs edit comparison script for zero-downtime updates (k8s-009)
+
 ## 2026-07-28
 
 - Added terraform remote state management script with S3 backend init, migrate, and lock (tf-013)
