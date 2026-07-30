@@ -15,7 +15,7 @@ A working DevOps engineer's quick-reference: first-contact notes, runnable snipp
 
 ## What's in here
 
-A DevOps learning portfolio across five tool families — Docker (64 files), Git (13), GitHub Actions (14), Kubernetes (12), and Terraform (19) — plus cross-cutting concept primers in CI/CD, Cloud Computing, Container Fundamentals, Git & version control, Infrastructure as Code, Linux OS fundamentals, Networking, and Scripting & Automation. Each tool has a primer, dated CLI walkthrough notes, runnable scripts, Dockerfiles, configs, and manifests accumulated through hands-on practice.
+A DevOps learning portfolio across five tool families — Docker (64 files), Git (13), GitHub Actions (14), Kubernetes (12), and Terraform (22) — plus cross-cutting concept primers in CI/CD, Cloud Computing, Container Fundamentals, Git & version control, Infrastructure as Code, Linux OS fundamentals, Networking, and Scripting & Automation. Each tool has a primer, dated CLI walkthrough notes, runnable scripts, Dockerfiles, configs, and manifests accumulated through hands-on practice.
 
 ## Quick links
 
@@ -45,12 +45,12 @@ A DevOps learning portfolio across five tool families — Docker (64 files), Git
 | Git | 7 | 6 | — | — | — | — | — | 2026-07-20 |
 | GitHub Actions | 4 | 2 | 5 | — | — | 3 | — | 2026-07-24 |
 | Kubernetes | 4 | 3 | — | — | 2 | 2 | 1 | 2026-07-21 |
-| Terraform | 10 | 3 | 5 | — | — | 1 | — | 2026-07-22 |
+| Terraform | 10 | 4 | 6 | — | — | 2 | — | 2026-07-22 |
 
 ## Status
 
-Actively building out first-contact notes and runnable configs across all five tools. Recent additions include multi-stage vs distroless vs alpine comparison docs, a CI pipeline practice script, and cross-cutting concept snippets for Git rebase/reset, Bash loops/conditions, and HCL modular configs. Docker tagged non-root Dockerfiles and Terraform state/backend docs remain the deepest categories.
+Actively building out first-contact notes and runnable configs across all five tools. Recent additions include Terraform remote state management with S3 backends and DynamoDB locking, cross-cutting concept snippets for Git rebase/reset, Bash loops/conditions, and HCL modular configs, and Docker multi-stage vs distroless vs alpine comparison docs. Docker tagged non-root Dockerfiles and Terraform notes/configs remain the deepest categories.
 
 ---
 
-_Last updated: 2026-07-27_
+_Last updated: 2026-07-28_
