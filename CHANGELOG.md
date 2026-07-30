@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-30
+
+- Added kubectl rollout vs edit zero-downtime comparison script (k8s-009)
+
 ## 2026-07-28
 
 - Added terraform remote state management script with S3 backend init, migrate, and lock (tf-013)
