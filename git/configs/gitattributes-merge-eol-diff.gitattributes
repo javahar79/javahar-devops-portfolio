@@ -1,0 +1,61 @@
+# last_verified: 2026-07-30 · git n/a
+# .gitattributes — merge strategy, EOL normalization, and diff configuration
+#
+# Place this file at the root of a repository as `.gitattributes`.
+# Each rule matches path patterns; see `git help gitattributes` for syntax.
+
+# ── EOL normalization ─────────────────────────────────────────────────────
+# `text=auto` lets Git detect text files and normalize CRLF→LF on commit,
+# then restore the platform-native line ending on checkout.
+* text=auto
+
+# Force LF for shell scripts so they never break when checked out on
+# Windows (where the default would be CRLF).
+*.sh text eol=lf
+
+# Force CRLF for Windows-native batch files.
+*.bat text eol=crlf
+
+# Binary files: skip line-ending conversion and text-based diffs.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.tar.gz binary
+
+# ── Merge strategies ────────────────────────────────────────────────────
+# `merge=ours` — keep our version during a merge. Useful for vendored
+# dependencies that should not be overwritten by upstream changes.
+vendor/ merge=ours
+
+# `merge=theirs` — accept their version. Useful for lock files that
+# should always reflect the branch being merged in.
+package-lock.json merge=theirs
+yarn.lock merge=theirs
+
+# Custom merge driver for JSON files. Define it in .git/config:
+#   git config merge.json.name "JSON merge driver"
+#   git config merge.json.driver "cp %B %A"
+# %A = current version, %B = merged result, %O = base version.
+*.json merge=json
+
+# ── Diff configuration ─────────────────────────────────────────────────
+# Custom diff drivers render structured files as readable diffs instead
+# of raw line-by-line text. Define each in .git/config:
+#
+#   git config diff.ipynb.textconv "jq -r '.cells[].source | join(\"\")'"
+#   git config diff.sql.textconv "sed 's/;.*//'"
+#   git config diff.markdown.xfuncname 's/^#+/## /'
+#
+# Then reference them here:
+
+# Render Jupyter notebooks as source diffs, not raw JSON.
+*.ipynb diff=ipynb
+
+# Word-based diffing for SQL files.
+*.sql diff=sql
+
+# Header-aware diffing for Markdown files.
+*.md diff=markdown

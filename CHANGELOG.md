@@ -4,6 +4,9 @@
 
 - Added kubectl rollout vs edit zero-downtime comparison script (k8s-009)
 - Reworked k8s-007 docs: fixed path from k8s/docs/ to kubernetes/docs/ and adjusted voice to L3 instructional tone (k8s-007)
+- Added git bisect automation script for finding the first breaking commit (git-008)
+- Added git merge vs git rebase comparison doc (git-009)
+- Added .gitattributes config for merge strategy, EOL normalization, and diff configuration (git-010)
 
 ## 2026-07-29
 
