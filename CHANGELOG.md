@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-31
+
+- Added StatefulSet with PVC manifest for PostgreSQL (k8s-008)
+
 ## 2026-07-30
 
 - Added kubectl rollout vs edit zero-downtime comparison script (k8s-009)
