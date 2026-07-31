@@ -33,6 +33,7 @@
 - **Alpine-based image** — A Docker image built on Alpine Linux; small footprint (~5 MB) but uses musl libc instead of glibc, which can cause compatibility issues with some binaries.
 - **Smoke test** — A minimal validation that the app is alive and responding after deploy. Catches obvious breakage before running the full test suite.
 - **detached mode** — `docker compose up -d` runs containers in the background and returns control to the shell; useful for CI and long-running stacks.
+- **BuildKit secret** — A `--secret` mount passed at build time that injects sensitive data into a specific build stage without baking it into any image layer; the secret never appears in `docker history` or the final image.
 
 ## CI/CD
 
@@ -41,6 +42,7 @@
 - **Runner/Agent** — The machine that executes a pipeline's jobs. Example: the `ubuntu-latest` hosted runner on GitHub Actions.
 - **DORA metrics** — Deployment frequency, lead time for changes, change failure rate, and MTTR; used to gauge how healthy a team's CI/CD practice is.
 - **Blue-green / canary** — Deployment strategies that reduce risk by shifting traffic gradually (canary) or switching between two identical environments (blue-green).
+- **state-aware pipeline** — A pipeline design that treats infrastructure changes and application changes as separate lifecycles, applying plan/approve/apply to IaC and rolling updates to apps so one does not block the other.
 
 ## Git
 
@@ -82,6 +84,7 @@
 - **exit code** — A numeric code returned by a process to indicate success (0) or failure (non-zero); used in workflow logs to identify which step failed.
 - **gh CLI** — The GitHub CLI tool that lets you interact with GitHub from the command line, including triggering and validating workflows.
 - **run-name** — A workflow-level key that sets a custom name for a workflow run, often using expressions like `${{ github.event_name }}`.
+- **approval gate** — A workflow job that targets a GitHub `environment:` with required reviewers; the job stays pending until a reviewer clicks Approve in the UI, creating a manual gate before production deploy.
 
 ## Infrastructure as Code
 
