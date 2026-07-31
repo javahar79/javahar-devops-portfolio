@@ -36,6 +36,9 @@ Apply the mental models with hands-on practice. Work through these in order — 
 - [Branch, Merge, and Revert Workflow (2026-07-20)](../git/scripts/2026-07-20-branch-merge-revert-workflow.sh) — Hands-on practice with feature branches, merge commits, and reverts.
 - [Clean Git History (2026-07-20)](../git/scripts/2026-07-20-clean-git-history.sh) — .gitignore audit and merge conflict recovery.
 - [Git Reflog & Rebase (2026-07-20)](../git/scripts/2026-07-20-git-reflog-rebase.sh) — Interactive rebase and reflog recovery.
+- [Git Merge vs Rebase](../git/docs/git-merge-vs-rebase.md) — When to merge (preserve history) vs rebase (keep linear).
+- [.gitattributes Config](../git/configs/gitattributes-merge-eol-diff.gitattributes) — EOL normalization, merge strategies, and diff configuration for cleaner diffs.
+- [Automate Git Bisect](../git/scripts/git-bisect-automation.sh) — Binary-search commit history to find the first breaking change.
 - [Docker CLI Notes](../docker/notes/2026-06-16-explore-docker-cli.md) — Build, run, and manage containers from the command line.
 - [Docker Quickstart Notes](../docker/notes/2026-06-20-docker-quickstart.md) — Building your first image and running a container.
 - [Install Docker Script](../docker/scripts/2026-06-16-install-docker.sh) — Docker installation smoke test.
@@ -79,6 +82,9 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Inspecting Pods, Services, and Events (2026-07-19)](../kubernetes/docs/2026-07-19-inspecting-pods-services-events.md) — `kubectl get`, `describe`, and `logs` patterns for real-world debugging.
 - [Troubleshoot Failing Deployments (2026-07-21)](../kubernetes/scripts/2026-07-21-troubleshoot-failing-deployment.sh) — Diagnose CrashLoopBackOff and ImagePullBackOff.
 - [Debugging Port-Forward, Exec, and Logs (2026-07-21)](../kubernetes/snippets/2026-07-21-debugging-port-forward-exec-logs.sh) — Port-forward, exec into pods, tail logs.
+- [ConfigMaps, Secrets, and env vars](../kubernetes/docs/configmaps-secrets-env-vars.md) — Wiring configuration and secrets into a K8s Deployment.
+- [kubectl Rollout vs Edit](../kubernetes/scripts/kubectl-rollout-vs-edit.sh) — Zero-downtime update strategy comparison: rollout restart vs edit/patch.
+- [StatefulSet PostgreSQL with PVC](../kubernetes/manifests/statefulset-postgresql-pvc.yaml) — StatefulSet manifest with persistent volume claim for PostgreSQL.
 
 ## Stage 5: Mastery
 
