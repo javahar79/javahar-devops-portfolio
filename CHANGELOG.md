@@ -3,6 +3,8 @@
 ## 2026-07-31
 
 - Added StatefulSet with PVC manifest for PostgreSQL (k8s-008)
+- Added state-aware CI/CD + IaC pipeline doc combining CI/CD with Infrastructure as Code (con-027)
+- Added CI/CD pipeline stage patterns snippet with build, test, deploy, approval gate, and rollback stages (con-021)
 
 ## 2026-07-30
 
