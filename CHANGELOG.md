@@ -7,6 +7,7 @@
 - Added git bisect automation script for finding the first breaking commit (git-008)
 - Added git merge vs git rebase comparison doc (git-009)
 - Added .gitattributes config for merge strategy, EOL normalization, and diff configuration (git-010)
+- Reworked k8s-007 docs again: removed L5 "When to use" and "References" sections, fixed voice to L3 instructional tone with hedging, corrected tool_version to ≥1.24 from research.md (k8s-007)
 
 ## 2026-07-29
 
