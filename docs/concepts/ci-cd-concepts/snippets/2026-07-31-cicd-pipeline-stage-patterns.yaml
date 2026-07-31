@@ -1,0 +1,56 @@
+# last_verified: 2026-07-31 · n/a (concept)
+# Why I wrote this: practice CI/CD *stage* patterns, not a real deploy pipeline.
+# Each job is a stage: build -> test -> deploy -> approval gate -> revert.
+# Approval gate: the deploy job targets environment: staging, which in GitHub
+# Actions requires a reviewer to click Approve before it runs.
+# Revert path: the final job runs only when the deploy fails (if: failure())
+# and redeploys the previous image tag. I use actions/checkout@v6 and
+# actions/setup-node@v7 — the versions listed in research.md.
+
+name: cicd-stage-patterns
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - run: npm ci
+      - run: npm run build
+
+  test:
+    name: Test
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+      - run: npm ci
+      - run: npm test
+
+  deploy:
+    name: Deploy to staging (approval gate)
+    needs: test
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - uses: actions/checkout@v6
+      - run: ./deploy.sh staging
+
+  rollback:
+    name: Revert on failure
+    needs: deploy
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - run: ./deploy.sh rollback --previous
