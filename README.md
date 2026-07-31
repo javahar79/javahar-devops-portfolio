@@ -15,22 +15,22 @@ A working DevOps engineer's quick-reference: first-contact notes, runnable snipp
 
 ## What's in here
 
-A DevOps learning portfolio across five tool families — Docker (64 files), Git (13), GitHub Actions (14), Kubernetes (12), and Terraform (22) — plus cross-cutting concept primers in CI/CD, Cloud Computing, Container Fundamentals, Git & version control, Infrastructure as Code, Linux OS fundamentals, Networking, and Scripting & Automation. Each tool has a primer, dated CLI walkthrough notes, runnable scripts, Dockerfiles, configs, and manifests accumulated through hands-on practice.
+A DevOps learning portfolio across five tool families — Docker (64 files), Git (16), GitHub Actions (14), Kubernetes (15), and Terraform (22) — plus cross-cutting concept primers in CI/CD, Cloud Computing, Container Fundamentals, Git & version control, Infrastructure as Code, Linux OS fundamentals, Networking, and Scripting & Automation. Each tool has a primer, dated CLI walkthrough notes, runnable scripts, Dockerfiles, configs, and manifests accumulated through hands-on practice.
 
 ## Quick links
 
-- [Multi-Stage vs Distroless vs Alpine](docker/docs/multi-stage-vs-distroless-vs-alpine.md) — When to choose each Docker image base
-- [Dockerfile Antipatterns](docker/docs/dockerfile-antipatterns.md) — Common Dockerfile mistakes and how to avoid them
-- [Common Rebase and Reset Patterns](docs/concepts/git-version-control/snippets/2026-07-27-common-rebase-reset-patterns.sh) — Interactive rebase and reset recovery patterns
-- [Common Loops, Conditions, and File Patterns](docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh) — Bash patterns for real-world scripting
-- [Common Modular and Versioned Configs](docs/concepts/infrastructure-as-code/snippets/2026-07-27-common-modular-versioned-configs.hcl) — Reusable Terraform patterns with modules and version constraints
+- [Automate Git Bisect](git/scripts/git-bisect-automation.sh) — Find the first breaking commit with automated bisect
+- [Git Merge vs Rebase](git/docs/git-merge-vs-rebase.md) — Comparing merge and rebase for integrating changes
+- [.gitattributes Config](git/configs/gitattributes-merge-eol-diff.gitattributes) — EOL normalization, merge strategies, and diff configuration
+- [kubectl Rollout vs Edit](kubernetes/scripts/kubectl-rollout-vs-edit.sh) — Zero-downtime update strategy comparison
+- [ConfigMaps, Secrets, and env vars](kubernetes/docs/configmaps-secrets-env-vars.md) — Wiring configuration and secrets into a K8s Deployment
 
 ## Layout
 
 | Directory | Contents |
 |-----------|----------|
 | `docker/` | Docker primer, CLI walkthrough notes, install/port-map scripts, Dockerfiles, compose config, docs |
-| `git/` | Git primer, CLI exploration notes, undo/stage/commit/push notes, branch/merge/revert/reflog scripts |
+| `git/` | Git primer, CLI notes, undo/stage/commit/push notes, branch/merge/revert/reflog/bisect scripts, .gitattributes config, merge-vs-rebase docs |
 | `github-actions/` | Actions primer, UI walkthrough, CI workflow configs, workflow debugging docs, validation & audit scripts |
 | `kubernetes/` | K8s primer, kubectl notes, local cluster install script, manifests, pod/service debugging scripts and docs |
 | `terraform/` | Terraform primer, install script, provider configs, local file resource configs, init & version notes, remote backend docs |
@@ -41,16 +41,16 @@ A DevOps learning portfolio across five tool families — Docker (64 files), Git
 
 | Tool | Notes | Scripts | Configs | Dockerfiles | Manifests | Docs | Snippets | Last verified |
 |------|-------|---------|---------|-------------|-----------|------|----------|---------------|
-| Docker | 20 | 19 | 1 | 21 | — | 2 | — | 2026-07-25 |
-| Git | 7 | 6 | — | — | — | — | — | 2026-07-20 |
+| Docker | 20 | 20 | 1 | 21 | — | 2 | — | 2026-07-25 |
+| Git | 7 | 7 | 1 | — | — | 1 | — | 2026-07-30 |
 | GitHub Actions | 4 | 2 | 5 | — | — | 3 | — | 2026-07-24 |
-| Kubernetes | 4 | 3 | — | — | 2 | 2 | 1 | 2026-07-21 |
-| Terraform | 10 | 4 | 6 | — | — | 2 | — | 2026-07-22 |
+| Kubernetes | 4 | 4 | — | — | 3 | 3 | 1 | 2026-07-30 |
+| Terraform | 10 | 4 | 6 | — | — | 2 | — | 2026-07-27 |
 
 ## Status
 
-Actively building out first-contact notes and runnable configs across all five tools. Recent additions include Terraform remote state management with S3 backends and DynamoDB locking, cross-cutting concept snippets for Git rebase/reset, Bash loops/conditions, and HCL modular configs, and Docker multi-stage vs distroless vs alpine comparison docs. Docker tagged non-root Dockerfiles and Terraform notes/configs remain the deepest categories.
+Actively building out first-contact notes and runnable configs across all five tools. Recent additions include Git bisect automation, merge-vs-rebase docs, and .gitattributes config; Kubernetes ConfigMap/Secret wiring and zero-downtime rollout-vs-edit scripts; and a PostgreSQL StatefulSet manifest with PVC. Docker tagged non-root Dockerfiles and Terraform notes/configs remain the deepest categories.
 
 ---
 
-_Last updated: 2026-07-28_
+_Last updated: 2026-07-31_

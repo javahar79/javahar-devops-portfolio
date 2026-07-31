@@ -64,6 +64,10 @@
 - **git reset --soft** — Moves HEAD to the given ref and leaves all changes staged; preserves the working diff while undoing commits.
 - **git reset --mixed** — Moves HEAD to the given ref and unstages changes but keeps them in the working tree; the default `git reset` behaviour.
 - **.gitignore** — A file that tells Git which files or patterns to ignore when tracking changes in a repository.
+- **git bisect** — A Git command that performs a binary search through commit history to find the first commit that introduced a bug. Given a test script, `git bisect run` automates the process.
+- **git rebase** — A Git command that replays commits from one branch on top of another, producing a linear history. Unlike merge, it rewrites commit hashes, so it should only be used on private branches.
+- **git push --force-with-lease** — A safer force-push that only overwrites the remote if no one else has pushed since you last fetched, preventing accidental loss of others' work.
+- **.gitattributes** — A file that controls Git's handling of text conversion, merge strategies, and diff rendering for specific file types.
 
 ## GitHub Actions
 
@@ -104,6 +108,13 @@
 - **ContainerCreating** — A pod status indicating the container image is being pulled and the container is being started.
 - **CrashLoopBackOff** — A pod status indicating the container is repeatedly crashing after start; Kubernetes waits between restarts with an increasing back-off delay.
 - **ImagePullBackOff** — A pod status indicating Kubernetes cannot pull the container image from the registry, usually due to a missing tag, auth failure, or network issue.
+- **ConfigMap** — A Kubernetes object that stores non-sensitive configuration data as key-value pairs, which can be consumed as environment variables or mounted as files in pods.
+- **Secret** — A Kubernetes object that stores sensitive data (passwords, tokens, certificates) as base64-encoded key-value pairs, with tighter access controls than ConfigMaps.
+- **StatefulSet** — A Kubernetes workload resource for managing stateful applications, providing stable network identities, ordered deployment, and persistent storage via volumeClaimTemplates.
+- **PersistentVolumeClaim (PVC)** — A request for storage by a pod, specifying access mode and capacity; Kubernetes binds it to a suitable PersistentVolume.
+- **RollingUpdate** — A Kubernetes Deployment strategy that replaces old pods with new ones incrementally, ensuring availability during updates.
+- **readiness probe** — A Kubernetes container probe that signals when a pod is ready to serve traffic; until it passes, the pod is not added to the service's endpoints.
+- **kubectl rollout** — A kubectl subcommand for managing and inspecting Deployment rollouts, including restart, status, history, and undo.
 
 ## Linux OS Fundamentals
 
