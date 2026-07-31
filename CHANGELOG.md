@@ -2,6 +2,8 @@
 
 ## 2026-07-31
 
+- Added multi-stage Dockerfile with BuildKit cache mounts, distroless runtime, non-root user, and HEALTHCHECK (docker-008)
+- Added bash build script demonstrating BuildKit secrets mount pattern (docker-008)
 - Added StatefulSet with PVC manifest for PostgreSQL (k8s-008)
 - Added state-aware CI/CD + IaC pipeline doc combining CI/CD with Infrastructure as Code (con-027)
 - Added CI/CD pipeline stage patterns snippet with build, test, deploy, approval gate, and rollback stages (con-021)
