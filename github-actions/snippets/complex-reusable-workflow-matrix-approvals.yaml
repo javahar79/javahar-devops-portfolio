@@ -1,0 +1,140 @@
+# last_verified: 2026-08-01 · GitHub Actions workflow_call reusable workflow
+
+name: Reusable CI/CD Pipeline
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string
+      aws-region:
+        required: true
+        type: string
+        default: us-east-1
+      node-version:
+        required: false
+        type: string
+        default: '20'
+    secrets:
+      aws-role-arn:
+        required: true
+    outputs:
+      deploy-status:
+        value: ${{ jobs.deploy.outputs.status }}
+      artifact-url:
+        value: ${{ jobs.build.outputs.artifact-url }}
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ['18', '20', '22']
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Test
+        run: npm test -- --coverage
+
+      - name: Upload coverage
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-${{ matrix.node-version }}
+          path: coverage/
+          retention-days: 7
+
+  build:
+    needs: lint-and-test
+    runs-on: ubuntu-latest
+    outputs:
+      artifact-url: ${{ steps.push.outputs.artifact-url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ inputs.node-version }}
+
+      - name: Cache node modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+      - name: Build production bundle
+        run: npm run build
+
+      - name: Run security scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          scan-ref: '.'
+
+      - name: Push container image
+        id: push
+        uses: aws-actions/amazon-ecr-login@v2
+        with:
+          role-to-assume: ${{ secrets.aws-role-arn }}
+          region: ${{ inputs.aws-region }}
+
+      - run: |
+          docker build -t my-app:${{ github.sha }} .
+          docker push my-app:${{ github.sha }}
+
+      - name: Set artifact output
+        id: artifact
+        run: echo "artifact-url=my-app:${{ github.sha }}" >> $GITHUB_OUTPUT
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: ${{ inputs.environment }}
+      url: https://app.example.com
+    outputs:
+      status: ${{ steps.deploy.outputs.status }}
+    steps:
+      - name: Deploy to ECS
+        id: deploy
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v2
+        with:
+          task-definition: task-definition.json
+          service: my-app-service
+          cluster: ${{ inputs.environment }}-cluster
+          wait-for-service-stability: true
+
+      - name: Smoke test
+        if: success()
+        run: |
+          curl -f https://app.example.com/health || exit 1
+
+  rollback:
+    needs: [deploy]
+    if: failure()
+    runs-on: ubuntu-latest
+    environment:
+      name: ${{ inputs.environment }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rollback to previous task definition
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v2
+        with:
+          task-definition: task-definition-previous.json
+          service: my-app-service
+          cluster: ${{ inputs.environment }}-cluster
+
+      - name: Notify team
+        run: |
+          echo "::warning::Deployment to ${{ inputs.environment }} failed. Rollback executed."

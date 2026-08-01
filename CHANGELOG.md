@@ -2,6 +2,8 @@
 
 ## 2026-08-01
 
+- Added complex reusable GitHub Actions workflow snippet with matrix builds, environment approval gates, and automatic rollback trigger (gha-009)
+- Added multi-tier Kubernetes app deployment and debugging notebook covering ConfigMap, StatefulSet, Deployment, Service, Ingress, and five common failure modes (k8s-010)
 - Converted git bisect automation and history rewrite notebook from invalid markdown to valid Jupyter notebook JSON (git-011)
 
 ## 2026-07-31
