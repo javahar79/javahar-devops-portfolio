@@ -2,23 +2,25 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Docker · 66 files
+## Docker · 67 files
 
 - **primer:** [primer-docker](../docker/notes/0000-primer-docker.md)
 - **notes** (20): most recent → [Docker Quickstart — What Tripped Me Up (2026-07-18)](../docker/notes/2026-07-18-docker-quickstart-tripped-me.md), [Docker Quickstart — What Tripped Me Up (2026-07-16)](../docker/notes/2026-07-16-docker-quickstart-tripped-me.md), [Docker Quickstart Trials (2026-07-08)](../docker/notes/2026-07-08-docker-quickstart-trials.md)
-- **scripts** (21): [Build Multi-Stage with Secrets (2026-07-31)](../docker/scripts/build-multi-stage-with-secrets.sh), [Run Container Port Map (2026-07-18)](../docker/scripts/2026-07-18-run-container-port-map.sh), [Automating Container Lifecycle](../docker/scripts/automating-container-lifecycle.sh)
-- **dockerfiles** (22): [Multi-Stage BuildKit Distroless (2026-07-18)](../docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile), [Multi-Stage Python Webapp](../docker/dockerfiles/multi-stage-python-webapp.Dockerfile), [Minimal Multi-Stage](../docker/dockerfiles/minimal-multi-stage.Dockerfile)
+- **scripts** (21): most recent → [Build Multi-Stage with Secrets (2026-07-31)](../docker/scripts/build-multi-stage-with-secrets.sh), [Run Container Port Map (2026-07-18)](../docker/scripts/2026-07-18-run-container-port-map.sh), [Run Container Port Map (2026-07-16)](../docker/scripts/2026-07-16-run-container-port-map.sh)
+- **dockerfiles** (22): most recent → [Multi-Stage BuildKit Distroless (2026-07-31)](../docker/dockerfiles/multi-stage-buildkit-distroless.Dockerfile), [Tagged Non-Root (2026-07-18)](../docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile), [Multi-Stage Python Webapp](../docker/dockerfiles/multi-stage-python-webapp.Dockerfile)
 - **configs** (1): [Multi-Service Compose](../docker/configs/multi-service-compose.yaml)
 - **docs** (2): [Multi-Stage vs Distroless vs Alpine](../docker/docs/multi-stage-vs-distroless-vs-alpine.md), [Dockerfile Antipatterns](../docker/docs/dockerfile-antipatterns.md)
+- **notebooks** (1): [Multi-Service Compose Notebook](../docker/notebooks/multi-service-compose.ipynb)
 - _…and browse `docker/` for the full collection._
 
-## Git · 16 files
+## Git · 17 files
 
 - **primer:** [primer-git](../git/notes/0000-primer-git.md)
 - **notes** (7): most recent → [Common Git Mistakes (2026-07-20)](../git/notes/2026-07-20-common-git-mistakes.md), [Git Undo/Stage/Commit/Push (2026-07-19)](../git/notes/2026-07-19-git-undo-stage-commit-push.md), [Git Quickstart Trials (2026-07-19)](../git/notes/2026-07-19-git-quickstart-trials.md)
 - **scripts** (7): most recent → [Automate Git Bisect (2026-07-30)](../git/scripts/git-bisect-automation.sh), [Branch, Merge, and Revert Workflow (2026-07-20)](../git/scripts/2026-07-20-branch-merge-revert-workflow.sh), [Clean Git History (2026-07-20)](../git/scripts/2026-07-20-clean-git-history.sh)
 - **configs** (1): [.gitattributes: merge, EOL, diff](../git/configs/gitattributes-merge-eol-diff.gitattributes)
 - **docs** (1): [Git Merge vs Rebase](../git/docs/git-merge-vs-rebase.md)
+- **notebooks** (1): [Git Bisect Automation and History Rewrite](../git/notebooks/git-bisect-automation-and-history-rewrite.ipynb)
 - _…and browse `git/` for the full collection._
 
 ## GitHub Actions · 14 files
@@ -30,20 +32,15 @@
 - **scripts** (2): [Validate Workflow Runs (2026-07-21)](../github-actions/scripts/2026-07-21-validate-workflow-runs.sh), [Audit Failed Workflow Runs](../github-actions/scripts/audit-failed-workflow-runs.sh)
 - _…and browse `github-actions/` for the full collection._
 
-## Kubernetes · 15 files
+## Kubernetes · 16 files
 
 - **primer:** [primer-kubernetes](../kubernetes/notes/0000-primer-kubernetes.md)
 - **notes** (4): most recent → [K8s Quickstart — What Tripped Me Up (2026-07-19)](../kubernetes/notes/2026-07-19-k8s-quickstart-trials.md), [K8s Quickstart — What Tripped Me Up (2026-07-10)](../kubernetes/notes/2026-07-10-k8s-quickstart-trials.md), [kubectl CLI Exploration (2026-06-16)](../kubernetes/notes/2026-06-16-explore-kubectl.md)
 - **scripts** (4): most recent → [kubectl Rollout vs Edit (2026-07-30)](../kubernetes/scripts/kubectl-rollout-vs-edit.sh), [Troubleshoot Failing Deployments (2026-07-21)](../kubernetes/scripts/2026-07-21-troubleshoot-failing-deployment.sh), [Troubleshoot Pods (2026-07-19)](../kubernetes/scripts/2026-07-19-troubleshoot-pods.sh)
 - **docs** (3): most recent → [ConfigMaps, Secrets, and env vars (2026-07-30)](../kubernetes/docs/configmaps-secrets-env-vars.md), [Inspecting Pods, Services, and Events (2026-07-19)](../kubernetes/docs/2026-07-19-inspecting-pods-services-events.md), [Inspecting Pods, Services, and Events (2026-07-12)](../kubernetes/docs/2026-07-12-inspecting-pods-services-events.md)
-- **manifests** (3): most recent → [StatefulSet PostgreSQL with PVC (2026-07-31)](../kubernetes/manifests/statefulset-postgresql-pvc.yaml), [Minimal Deployment + Service (2026-07-21)](../kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml), [Minimal Deployment + Service (2026-07-10)](../kubernetes/manifests/2026-07-10-minimal-deployment-service.yaml)
+- **manifests** (4): most recent → [StatefulSet PostgreSQL with PVC (2026-07-31)](../kubernetes/manifests/statefulset-postgresql-pvc.yaml), [StatefulSet PostgreSQL](../kubernetes/manifests/statefulset-postgresql.yaml), [Minimal Deployment + Service (2026-07-21)](../kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml)
 - **snippets** (1): [Debugging Port-Forward, Exec, and Logs (2026-07-21)](../kubernetes/snippets/2026-07-21-debugging-port-forward-exec-logs.sh)
 - _…and browse `kubernetes/` for the full collection._
-
-## k8s · 1 file
-
-- **manifests** (1): [StatefulSet PostgreSQL with PVC](../k8s/manifests/statefulset-postgresql.yaml)
-- _…and browse `k8s/` for the full collection._
 
 ## Terraform · 22 files
 
@@ -56,11 +53,11 @@
 
 ## Cross-cutting concepts · 17 files
 
-- **CI/CD concepts** (6): [CI/CD Primer](../docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md), [State-Aware IaC Pipelines (2026-07-31)](../docs/concepts/ci-cd-concepts/state-aware-iac-pipelines.md), [CI/CD Workflow Overview (2026-07-19)](../docs/concepts/ci-cd-concepts/2026-07-19-ci-cd-workflow-overview.md), [Minimal CI Pipeline Script (2026-07-23)](../docs/concepts/ci-cd-concepts/scripts/2026-07-23-minimal-ci-pipeline.sh), [Intro to CI/CD Core Concepts (2026-07-23)](../docs/concepts/ci-cd-concepts/notebooks/2026-07-23-intro-to-cicd-core-concepts-with-interactive-examples.ipynb), [CI/CD Stage Patterns (2026-07-31)](../docs/concepts/ci-cd-concepts/snippets/2026-07-31-cicd-pipeline-stage-patterns.yaml)
+- **CI/CD concepts** (6): [CI/CD Primer](../docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md), [CI/CD Workflow Overview (2026-07-19)](../docs/concepts/ci-cd-concepts/2026-07-19-ci-cd-workflow-overview.md), [Minimal CI Pipeline Script (2026-07-23)](../docs/concepts/ci-cd-concepts/scripts/2026-07-23-minimal-ci-pipeline.sh), [Intro to CI/CD Core Concepts (2026-07-23)](../docs/concepts/ci-cd-concepts/notebooks/2026-07-23-intro-to-cicd-core-concepts-with-interactive-examples.ipynb), [CI/CD Pipeline Stage Patterns (2026-07-31)](../docs/concepts/ci-cd-concepts/snippets/2026-07-31-cicd-pipeline-stage-patterns.yaml), [State-Aware IaC Pipelines (2026-07-31)](../docs/concepts/ci-cd-concepts/state-aware-iac-pipelines.md)
 - **Cloud Computing** (1): [Cloud Computing Fundamentals Primer](../docs/concepts/cloud-computing-fundamentals/0000-primer-cloud-computing-fundamentals.md)
 - **Container Fundamentals** (1): [Container Fundamentals Primer](../docs/concepts/container-fundamentals/0000-primer-container-fundamentals.md)
 - **Git & version control** (3): [Git Version Control Primer](../docs/concepts/git-version-control/0000-primer-git-version-control.md), [Git Branching, Merging, and Conflicts (2026-07-22)](../docs/concepts/git-version-control/scripts/2026-07-22-git-branching-merging-conflicts.sh), [Common Rebase and Reset Patterns (2026-07-27)](../docs/concepts/git-version-control/snippets/2026-07-27-common-rebase-reset-patterns.sh)
-- **Infrastructure as Code** (2): [Infrastructure as Code Primer](../docs/concepts/infrastructure-as-code/0000-primer-infrastructure-as-code.md), [Common Modular Configs](../docs/concepts/infrastructure-as-code/snippets/2026-07-27-common-modular-versioned-configs.hcl)
+- **Infrastructure as Code** (2): [Infrastructure as Code Primer](../docs/concepts/infrastructure-as-code/0000-primer-infrastructure-as-code.md), [Common Modular and Versioned Configs (2026-07-27)](../docs/concepts/infrastructure-as-code/snippets/2026-07-27-common-modular-versioned-configs.hcl)
 - **Linux OS fundamentals** (1): [Linux Primer](../docs/concepts/linux-os-fundamentals/0000-primer-linux-os-fundamentals.md)
 - **Networking basics** (1): [Networking Primer](../docs/concepts/networking-basics/0000-primer-networking-basics.md)
-- **Scripting & Automation** (2): [Scripting & Automation Primer](../docs/concepts/scripting-automation/0000-primer-scripting-automation.md), [Common Loops and Conditions](../docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh)
+- **Scripting & Automation** (2): [Scripting & Automation Primer](../docs/concepts/scripting-automation/0000-primer-scripting-automation.md), [Common Loops and Conditions (2026-07-27)](../docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh)

@@ -23,6 +23,7 @@
 - **dangling image** — An image with no tag (`<none>`) that remains on disk after a newer image replaces the same repository and tag.
 - **docker system prune** — Removes unused data (dangling images, stopped containers, unused networks, build cache) to reclaim disk space.
 - **docker compose** — The modern CLI syntax (space, not hyphen) for running Docker Compose; replaces the legacy `docker-compose` command.
+- **BuildKit** — Docker's modern build engine that supports cache mounts, parallel builds, and secrets injection; enabled with `DOCKER_BUILDKIT=1`.
 - **health check** — A Docker Compose or Dockerfile instruction (`HEALTHCHECK`) that defines how to test if a container is still working; used with `depends_on: condition: service_healthy` to control startup order.
 - **depends_on** — A Docker Compose key that expresses service startup and shutdown dependencies; can be configured with `condition: service_healthy` or `condition: service_started`.
 - **docker scout** — A Docker CLI command that analyzes container images for CVEs and generates SBOMs; available in recent Docker Desktop and Docker Engine versions.
@@ -42,6 +43,11 @@
 - **Runner/Agent** — The machine that executes a pipeline's jobs. Example: the `ubuntu-latest` hosted runner on GitHub Actions.
 - **DORA metrics** — Deployment frequency, lead time for changes, change failure rate, and MTTR; used to gauge how healthy a team's CI/CD practice is.
 - **Blue-green / canary** — Deployment strategies that reduce risk by shifting traffic gradually (canary) or switching between two identical environments (blue-green).
+- **GitOps** — A declarative operational model where the desired cluster state is stored in Git and a controller (e.g. ArgoCD, Flux) continuously reconciles the cluster toward that state.
+- **Observability** — The ability to understand a system's internal state from its outputs — metrics, logs, and traces. The three pillars used to debug live systems.
+- **Approval gate** — A CI/CD stage that requires manual review before proceeding, typically used for production deployments.
+- **Rollback** — Reverting a deployment to a previous known-good version after detecting a failure in the current release.
+- **Blast radius** — The scope of impact if a change fails; in pipeline design, minimising blast radius means isolating infrastructure changes from application changes so one does not block or break the other.
 - **state-aware pipeline** — A pipeline design that treats infrastructure changes and application changes as separate lifecycles, applying plan/approve/apply to IaC and rolling updates to apps so one does not block the other.
 
 ## Git
