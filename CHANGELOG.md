@@ -7,6 +7,7 @@
 - Added StatefulSet with PVC manifest for PostgreSQL (k8s-008)
 - Added state-aware CI/CD + IaC pipeline doc combining CI/CD with Infrastructure as Code (con-027)
 - Added CI/CD pipeline stage patterns snippet with build, test, deploy, approval gate, and rollback stages (con-021)
+- Added Docker Compose multi-service notebook: Flask web app + PostgreSQL with healthcheck, network inspection, and service discovery walkthrough (docker-007)
 
 ## 2026-07-30
 
@@ -35,8 +36,8 @@
 - Added common loops, conditions, and file processing patterns snippet (docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh)
 - Added common modular, reusable, and versioned configs snippet (docs/concepts/infrastructure-as-code/snippets/2026-07-27-common-modular-versioned-configs.hcl)
 
-- Added VPC multi-resource infrastructure config (tf/configs/vpc-multi-resource-infrastructure.hcl)
-- Added Terraform workspaces vs directory-per-env comparison doc (tf/docs/terraform-workspaces-vs-directory-per-env.md)
+- Added VPC multi-resource infrastructure config (terraform/configs/vpc-multi-resource-infrastructure.hcl)
+- Added Terraform workspaces vs directory-per-env comparison doc (terraform/docs/terraform-workspaces-vs-directory-per-env.md)
 
 ## 2026-07-26
 
