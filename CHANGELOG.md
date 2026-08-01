@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-01
+
+- Converted git bisect automation and history rewrite notebook from invalid markdown to valid Jupyter notebook JSON (git-011)
+
 ## 2026-07-31
 
 - Added multi-stage Dockerfile with BuildKit cache mounts, distroless runtime, non-root user, and HEALTHCHECK (docker-008)
