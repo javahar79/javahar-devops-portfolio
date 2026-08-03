@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-03
+
+- Updated Terraform state, backends, and modules interactive notebook with current research sources and verification date (tf-015)
+
 ## 2026-08-02
 
 - Added Terraform state, backends, and modules interactive notebook covering state management, remote backends, and reusable modules (tf-015)

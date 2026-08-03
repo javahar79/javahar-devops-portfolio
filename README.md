@@ -14,7 +14,7 @@ A working DevOps engineer's quick-reference: first-contact notes, runnable snipp
 
 ## What's in here
 
-A DevOps learning portfolio across five tool families — Docker (67 files), Git (17), GitHub Actions (14), Kubernetes (16), and Terraform (22) — plus cross-cutting concept primers (17 files) in CI/CD, Cloud Computing, Container Fundamentals, Git & version control, Infrastructure as Code, Linux OS fundamentals, Networking, and Scripting & Automation. Each tool has a primer, dated CLI walkthrough notes, runnable scripts, Dockerfiles, configs, manifests, and notebooks accumulated through hands-on practice.
+A DevOps learning portfolio across five tool families — Docker (67 files), Git (17), GitHub Actions (14), Kubernetes (16), and Terraform (23) — plus cross-cutting concept primers (17 files) in CI/CD, Cloud Computing, Container Fundamentals, Git & version control, Infrastructure as Code, Linux OS fundamentals, Networking, and Scripting & Automation. Each tool has a primer, dated CLI walkthrough notes, runnable scripts, Dockerfiles, configs, manifests, and notebooks accumulated through hands-on practice.
 
 ## Quick links
 
@@ -32,7 +32,7 @@ A DevOps learning portfolio across five tool families — Docker (67 files), Git
 | `git/` | Git primer, CLI notes, undo/stage/commit/push notes, branch/merge/revert/reflog/bisect scripts, .gitattributes config, merge-vs-rebase docs, bisect notebook |
 | `github-actions/` | Actions primer, UI walkthrough, CI workflow configs, workflow debugging docs, validation & audit scripts |
 | `kubernetes/` | K8s primer, kubectl notes, local cluster install script, manifests, pod/service debugging scripts and docs |
-| `terraform/` | Terraform primer, install script, provider configs, local file resource configs, init & version notes, remote backend docs |
+| `terraform/` | Terraform primer, install script, provider configs, local file resource configs, init & version notes, remote backend docs, notebooks |
 | `docs/concepts/` | Cross-cutting concept primers and runnable snippets (CI/CD, Cloud Computing, Container Fundamentals, Git & version control, Infrastructure as Code, Linux fundamentals, Networking, Scripting & Automation) |
 | `00_index/` | Topic index, quick links, glossary, learning path |
 
@@ -44,7 +44,7 @@ A DevOps learning portfolio across five tool families — Docker (67 files), Git
 | Git | 7 | 7 | 1 | — | — | 1 | 1 | — | 2026-07-30 |
 | GitHub Actions | 4 | 2 | 5 | — | — | 3 | — | — | 2026-07-24 |
 | Kubernetes | 4 | 4 | — | — | 4 | 3 | — | 1 | 2026-07-30 |
-| Terraform | 10 | 4 | 6 | — | — | 2 | — | — | 2026-07-27 |
+| Terraform | 10 | 4 | 6 | — | — | 2 | 1 | — | 2026-08-03 |
 
 ## Status
 
@@ -52,4 +52,4 @@ Actively building out first-contact notes and runnable configs across all five t
 
 ---
 
-_Last updated: 2026-08-01_
+_Last updated: 2026-08-03_
