@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-04
+
+- Added scripting automation practice script (con-013), IaC declarative config CLI exercises (con-015), and container fundamentals Dockerfile/layers/registry script (con-017)
+
 ## 2026-08-03
 
 - Updated Terraform state, backends, and modules interactive notebook with current research sources and verification date (tf-015)
