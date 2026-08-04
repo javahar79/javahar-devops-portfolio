@@ -2,6 +2,9 @@
 
 ## 2026-08-04
 
+- Added Container Fundamentals Dockerfile snippet demonstrating multi-stage builds and non-root runtimes (con-018)
+- Added Cloud Computing Fundamentals CLI practice script for provisioning and managing cloud resources (con-019)
+- Added Cloud Computing Fundamentals bash snippet covering networking, IAM, and storage patterns (con-020)
 - Added scripting automation practice script (con-013), IaC declarative config CLI exercises (con-015), and container fundamentals Dockerfile/layers/registry script (con-017)
 - Fixed invalid source URL in Terraform notebook front-matter (tf-015)
 
