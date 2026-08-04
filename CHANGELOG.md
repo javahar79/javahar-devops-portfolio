@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-04
+
+- Fixed invalid source URL in Terraform notebook front-matter (tf-015)
+
 ## 2026-08-03
 
 - Updated Terraform state, backends, and modules interactive notebook with current research sources and verification date (tf-015)
