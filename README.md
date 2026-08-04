@@ -14,15 +14,15 @@ A working DevOps engineer's quick-reference: first-contact notes, runnable snipp
 
 ## What's in here
 
-A DevOps learning portfolio across six tool families — Docker (67 files), Git (17), GitHub Actions (16), Kubernetes (17), Terraform (22), and TF (1) — plus cross-cutting concept primers (17 files) in CI/CD, Cloud Computing, Container Fundamentals, Git & version control, Infrastructure as Code, Linux OS fundamentals, Networking, and Scripting & Automation. Each tool has a primer, dated CLI walkthrough notes, runnable scripts, Dockerfiles, configs, manifests, and notebooks accumulated through hands-on practice.
+A DevOps learning portfolio across six tool families — Docker (67 files), Git (17), GitHub Actions (16), Kubernetes (17), Terraform (22), and TF (1) — plus cross-cutting concept primers (20 files) in CI/CD, Cloud Computing, Container Fundamentals, Git & version control, Infrastructure as Code, Linux OS fundamentals, Networking, and Scripting & Automation. Each tool has a primer, dated CLI walkthrough notes, runnable scripts, Dockerfiles, configs, manifests, and notebooks accumulated through hands-on practice.
 
 ## Quick links
 
+- [Dockerfile Layers and Registry Script](docs/concepts/container-fundamentals/scripts/2026-08-04-dockerfile-layers-registry.sh) — Hands-on Dockerfile layer inspection and registry push exercises
+- [Declarative Config CLI Exercises](docs/concepts/infrastructure-as-code/scripts/2026-08-04-declarative-config-cli-exercises.sh) — CLI exercises for declarative infrastructure config patterns
+- [Scheduling, Error Handling, and Parsing Script](docs/concepts/scripting-automation/scripts/2026-08-04-scheduling-error-handling-parsing.sh) — Cron scheduling, error trapping, and output parsing patterns
 - [Terraform State, Backends, and Modules Notebook](tf/notebooks/terraform-state-backends-and-modules.ipynb) — Interactive notebook on Terraform state management, remote backends, and module patterns
 - [Reusable Workflow with Inputs](github-actions/configs/reusable-workflow-with-inputs.yaml) — Reusable GitHub Actions workflow with input parameters and matrix strategy
-- [Complex Reusable Workflow](github-actions/snippets/complex-reusable-workflow-matrix-approvals.yaml) — Reusable workflow with matrix builds, approval gates, and rollback
-- [Multi-Tier App Debugging Walkthrough](kubernetes/notebooks/multi-tier-app-debugging-walkthrough.ipynb) — End-to-end K8s debugging notebook for multi-tier applications
-- [Git Bisect Automation Notebook](git/notebooks/git-bisect-automation-and-history-rewrite.ipynb) — Binary search through commit history to isolate the first breaking change
 
 ## Layout
 
@@ -41,16 +41,16 @@ A DevOps learning portfolio across six tool families — Docker (67 files), Git 
 
 | Tool | Notes | Scripts | Configs | Dockerfiles | Manifests | Docs | Snippets | Notebooks | Last verified |
 |------|-------|---------|---------|-------------|-----------|------|----------|-----------|---------------|
-| Docker | 20 | 21 | 1 | 22 | — | 2 | — | 1 | 2026-08-03 |
-| Git | 7 | 7 | 1 | — | — | 1 | — | 1 | 2026-08-03 |
-| GitHub Actions | 4 | 2 | 6 | — | — | 3 | 1 | — | 2026-08-03 |
-| Kubernetes | 4 | 4 | — | — | 4 | 3 | 1 | 1 | 2026-08-03 |
-| Terraform | 10 | 4 | 6 | — | — | 2 | — | — | 2026-08-03 |
-| TF | — | — | — | — | — | — | — | 1 | 2026-08-03 |
+| Docker | 20 | 21 | 1 | 22 | — | 2 | — | 1 | 2026-07-25 |
+| Git | 7 | 7 | 1 | — | — | 1 | — | 1 | 2026-07-30 |
+| GitHub Actions | 4 | 2 | 6 | — | — | 3 | 1 | — | 2026-07-24 |
+| Kubernetes | 4 | 4 | — | — | 4 | 3 | 1 | 1 | 2026-07-30 |
+| Terraform | 10 | 4 | 6 | — | — | 2 | — | — | 2026-07-27 |
+| TF | — | — | — | — | — | — | — | 1 | 2026-08-04 |
 
 ## Status
 
-Actively building out first-contact notes and runnable configs across all six tools. Recent additions include a Terraform state and modules interactive notebook; a reusable GitHub Actions workflow with inputs and matrix strategy; a multi-tier Kubernetes debugging notebook; and a Git bisect automation notebook. Docker tagged non-root and multi-stage Dockerfiles and Terraform notes/configs remain the deepest categories.
+Actively building out first-contact notes and runnable configs across all six tools. Recent additions include L2 bash scripts for container fundamentals, infrastructure as code, and scripting automation; a Terraform state and modules interactive notebook; a reusable GitHub Actions workflow with inputs and matrix strategy; a multi-tier Kubernetes debugging notebook; and a Git bisect automation notebook. Docker tagged non-root and multi-stage Dockerfiles and Terraform notes/configs remain the deepest categories.
 
 ---
-_Last updated: 2026-08-03_
+_Last updated: 2026-08-04_

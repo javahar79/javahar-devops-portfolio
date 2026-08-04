@@ -17,7 +17,7 @@
 
 - **primer:** [primer-git](../git/notes/0000-primer-git.md)
 - **notes** (7): most recent → [Common Git Mistakes (2026-07-20)](../git/notes/2026-07-20-common-git-mistakes.md), [Git Undo/Stage/Commit/Push (2026-07-19)](../git/notes/2026-07-19-git-undo-stage-commit-push.md), [Git Quickstart Trials (2026-07-19)](../git/notes/2026-07-19-git-quickstart-trials.md)
-- **scripts** (7): most recent → [Automate Git Bisect (2026-07-30)](../git/scripts/git-bisect-automation.sh), [Branch, Merge, and Revert Workflow (2026-07-20)](../git/scripts/2026-07-20-branch-merge-revert-workflow.sh), [Clean Git History (2026-07-20)](../git/scripts/2026-07-20-clean-git-history.sh)
+- **scripts** (7): most recent → [Automate Git Bisect (2026-07-31)](../git/scripts/git-bisect-automation.sh), [Clean Git History (2026-07-20)](../git/scripts/2026-07-20-clean-git-history.sh), [Git Reflog & Rebase (2026-07-20)](../git/scripts/2026-07-20-git-reflog-rebase.sh)
 - **configs** (1): [.gitattributes: merge, EOL, diff](../git/configs/gitattributes-merge-eol-diff.gitattributes)
 - **docs** (1): [Git Merge vs Rebase](../git/docs/git-merge-vs-rebase.md)
 - **notebooks** (1): [Git Bisect Automation & History Rewrite](../git/notebooks/git-bisect-automation-and-history-rewrite.ipynb)
@@ -58,13 +58,13 @@
 - **notebooks** (1): [Terraform State, Backends, and Modules](../tf/notebooks/terraform-state-backends-and-modules.ipynb)
 - _…and browse `tf/` for the full collection._
 
-## Cross-cutting concepts · 17 files
+## Cross-cutting concepts · 20 files
 
 - **CI/CD concepts** (6): [CI/CD Primer](../docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md), [State-Aware IaC Pipelines (2026-07-31)](../docs/concepts/ci-cd-concepts/state-aware-iac-pipelines.md), [CI/CD Workflow Overview (2026-07-19)](../docs/concepts/ci-cd-concepts/2026-07-19-ci-cd-workflow-overview.md), [Minimal CI Pipeline Script (2026-07-23)](../docs/concepts/ci-cd-concepts/scripts/2026-07-23-minimal-ci-pipeline.sh), [Intro to CI/CD Core Concepts (2026-07-23)](../docs/concepts/ci-cd-concepts/notebooks/2026-07-23-intro-to-cicd-core-concepts-with-interactive-examples.ipynb), [CI/CD Stage Patterns (2026-07-31)](../docs/concepts/ci-cd-concepts/snippets/2026-07-31-cicd-pipeline-stage-patterns.yaml)
 - **Cloud Computing** (1): [Cloud Computing Fundamentals Primer](../docs/concepts/cloud-computing-fundamentals/0000-primer-cloud-computing-fundamentals.md)
-- **Container Fundamentals** (1): [Container Fundamentals Primer](../docs/concepts/container-fundamentals/0000-primer-container-fundamentals.md)
+- **Container Fundamentals** (2): [Container Fundamentals Primer](../docs/concepts/container-fundamentals/0000-primer-container-fundamentals.md), [Dockerfile Layers and Registry Script (2026-08-04)](../docs/concepts/container-fundamentals/scripts/2026-08-04-dockerfile-layers-registry.sh)
 - **Git & version control** (3): [Git Version Control Primer](../docs/concepts/git-version-control/0000-primer-git-version-control.md), [Git Branching, Merging, and Conflicts (2026-07-22)](../docs/concepts/git-version-control/scripts/2026-07-22-git-branching-merging-conflicts.sh), [Common Rebase and Reset Patterns (2026-07-27)](../docs/concepts/git-version-control/snippets/2026-07-27-common-rebase-reset-patterns.sh)
-- **Infrastructure as Code** (2): [Infrastructure as Code Primer](../docs/concepts/infrastructure-as-code/0000-primer-infrastructure-as-code.md), [Common Modular Configs](../docs/concepts/infrastructure-as-code/snippets/2026-07-27-common-modular-versioned-configs.hcl)
+- **Infrastructure as Code** (3): [Infrastructure as Code Primer](../docs/concepts/infrastructure-as-code/0000-primer-infrastructure-as-code.md), [Declarative Config CLI Exercises (2026-08-04)](../docs/concepts/infrastructure-as-code/scripts/2026-08-04-declarative-config-cli-exercises.sh), [Common Modular Configs](../docs/concepts/infrastructure-as-code/snippets/2026-07-27-common-modular-versioned-configs.hcl)
 - **Linux OS fundamentals** (1): [Linux Primer](../docs/concepts/linux-os-fundamentals/0000-primer-linux-os-fundamentals.md)
 - **Networking basics** (1): [Networking Primer](../docs/concepts/networking-basics/0000-primer-networking-basics.md)
-- **Scripting & Automation** (2): [Scripting & Automation Primer](../docs/concepts/scripting-automation/0000-primer-scripting-automation.md), [Common Loops and Conditions](../docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh)
+- **Scripting & Automation** (3): [Scripting & Automation Primer](../docs/concepts/scripting-automation/0000-primer-scripting-automation.md), [Scheduling, Error Handling, and Parsing (2026-08-04)](../docs/concepts/scripting-automation/scripts/2026-08-04-scheduling-error-handling-parsing.sh), [Common Loops and Conditions](../docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh)
