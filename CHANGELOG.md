@@ -2,6 +2,7 @@
 
 ## 2026-08-04
 
+- Added scripting automation practice script (con-013), IaC declarative config CLI exercises (con-015), and container fundamentals Dockerfile/layers/registry script (con-017)
 - Fixed invalid source URL in Terraform notebook front-matter (tf-015)
 
 ## 2026-08-03
