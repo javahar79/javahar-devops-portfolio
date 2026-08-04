@@ -91,6 +91,7 @@
 - **gh CLI** — The GitHub CLI tool that lets you interact with GitHub from the command line, including triggering and validating workflows.
 - **run-name** — A workflow-level key that sets a custom name for a workflow run, often using expressions like `${{ github.event_name }}`.
 - **approval gate** — A workflow job that targets a GitHub `environment:` with required reviewers; the job stays pending until a reviewer clicks Approve in the UI, creating a manual gate before production deploy.
+- **reusable workflow** — A GitHub Actions workflow defined in a separate repository or the same repository that can be called from another workflow using `uses:`. Inputs and outputs can be passed between the calling and called workflows, enabling modular pipeline composition.
 
 ## Infrastructure as Code
 
