@@ -6,7 +6,7 @@
 
 - **primer:** [primer-docker](../docker/notes/0000-primer-docker.md)
 - **notes** (20): most recent → [Docker Quickstart — What Tripped Me Up (2026-07-18)](../docker/notes/2026-07-18-docker-quickstart-tripped-me.md), [Docker Quickstart — What Tripped Me Up (2026-07-16)](../docker/notes/2026-07-16-docker-quickstart-tripped-me.md), [Docker Quickstart Trials (2026-07-08)](../docker/notes/2026-07-08-docker-quickstart-trials.md)
-- **scripts** (21): [Build Multi-Stage with Secrets (2026-07-31)](../docker/scripts/build-multi-stage-with-secrets.sh), [Run Container Port Map (2026-07-18)](../docker/scripts/2026-07-18-run-container-port-map.sh), [Automating Container Lifecycle](../docker/scripts/automating-container-lifecycle.sh)
+- **scripts** (21): most recent → [Build Multi-Stage with Secrets (2026-07-31)](../docker/scripts/build-multi-stage-with-secrets.sh), [Run Container Port Map (2026-07-18)](../docker/scripts/2026-07-18-run-container-port-map.sh), [Automating Container Lifecycle](../docker/scripts/automating-container-lifecycle.sh)
 - **dockerfiles** (22): most recent → [Multi-Stage BuildKit Distroless (2026-07-18)](../docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile), [Multi-Stage Python Webapp](../docker/dockerfiles/multi-stage-python-webapp.Dockerfile), [Minimal Multi-Stage](../docker/dockerfiles/minimal-multi-stage.Dockerfile)
 - **configs** (1): [Multi-Service Compose](../docker/configs/multi-service-compose.yaml)
 - **docs** (2): [Multi-Stage vs Distroless vs Alpine](../docker/docs/multi-stage-vs-distroless-vs-alpine.md), [Dockerfile Antipatterns](../docker/docs/dockerfile-antipatterns.md)
@@ -44,23 +44,19 @@
 - **notebooks** (1): [Multi-Tier App Debugging Walkthrough](../kubernetes/notebooks/multi-tier-app-debugging-walkthrough.ipynb)
 - _…and browse `kubernetes/` for the full collection._
 
-## Terraform · 22 files
+## Terraform · 23 files
 
 - **primer:** [primer-terraform](../terraform/notes/0000-primer-terraform.md)
 - **notes** (10): most recent → [What I Learned from Validate and Plan (2026-07-21)](../terraform/notes/2026-07-21-what-i-learned-from-validate-and-plan.md), [What Tripped Me Up Quickstart (2026-07-21)](../terraform/notes/2026-07-21-what-tripped-me-up-quickstart.md), [Terraform Directory Structure (2026-07-19)](../terraform/notes/2026-07-19-terraform-directory-structure.md)
 - **configs** (6): [Variables, Outputs, and Dependencies (2026-07-22)](../terraform/configs/2026-07-22-variables-outputs-dependencies.hcl), [VPC Multi-Resource Infrastructure](../terraform/configs/vpc-multi-resource-infrastructure.hcl), [Local Provider Config](../terraform/configs/local-provider.hcl)
 - **docs** (2): [State Files & Remote Backends (2026-07-22)](../terraform/docs/2026-07-22-terraform-state-files-remote-backends.md), [Workspaces vs Directory-per-Env](../terraform/docs/terraform-workspaces-vs-directory-per-env.md)
 - **scripts** (4): [Remote State Management (S3 + DynamoDB)](../terraform/scripts/remote-state-management-s3.sh), [Terraform Lifecycle (2026-07-22)](../terraform/scripts/2026-07-22-terraform-lifecycle.sh), [Terraform Vars and Outputs (2026-07-21)](../terraform/scripts/2026-07-21-terraform-vars-and-outputs.sh)
+- **notebooks** (1): [Terraform State, Backends, and Modules](../terraform/notebooks/terraform-state-backends-and-modules.ipynb)
 - _…and browse `terraform/` for the full collection._
-
-## TF · 1 file
-
-- **notebooks** (1): [Terraform State, Backends, and Modules](../tf/notebooks/terraform-state-backends-and-modules.ipynb)
-- _…and browse `tf/` for the full collection._
 
 ## Cross-cutting concepts · 17 files
 
-- **CI/CD concepts** (6): [CI/CD Primer](../docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md), [State-Aware IaC Pipelines (2026-07-31)](../docs/concepts/ci-cd-concepts/state-aware-iac-pipelines.md), [CI/CD Workflow Overview (2026-07-19)](../docs/concepts/ci-cd-concepts/2026-07-19-ci-cd-workflow-overview.md), [Minimal CI Pipeline Script (2026-07-23)](../docs/concepts/ci-cd-concepts/scripts/2026-07-23-minimal-ci-pipeline.sh), [Intro to CI/CD Core Concepts (2026-07-23)](../docs/concepts/ci-cd-concepts/notebooks/2026-07-23-intro-to-cicd-core-concepts-with-interactive-examples.ipynb), [CI/CD Stage Patterns (2026-07-31)](../docs/concepts/ci-cd-concepts/snippets/2026-07-31-cicd-pipeline-stage-patterns.yaml)
+- **CI/CD concepts** (6): [CI/CD Primer](../docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md), [CI/CD Workflow Overview (2026-07-19)](../docs/concepts/ci-cd-concepts/2026-07-19-ci-cd-workflow-overview.md), [Minimal CI Pipeline Script (2026-07-23)](../docs/concepts/ci-cd-concepts/scripts/2026-07-23-minimal-ci-pipeline.sh), [Intro to CI/CD Core Concepts (2026-07-23)](../docs/concepts/ci-cd-concepts/notebooks/2026-07-23-intro-to-cicd-core-concepts-with-interactive-examples.ipynb), [CI/CD Pipeline Stage Patterns (2026-07-31)](../docs/concepts/ci-cd-concepts/snippets/2026-07-31-cicd-pipeline-stage-patterns.yaml), [State-Aware IaC Pipelines (2026-07-31)](../docs/concepts/ci-cd-concepts/state-aware-iac-pipelines.md)
 - **Cloud Computing** (1): [Cloud Computing Fundamentals Primer](../docs/concepts/cloud-computing-fundamentals/0000-primer-cloud-computing-fundamentals.md)
 - **Container Fundamentals** (1): [Container Fundamentals Primer](../docs/concepts/container-fundamentals/0000-primer-container-fundamentals.md)
 - **Git & version control** (3): [Git Version Control Primer](../docs/concepts/git-version-control/0000-primer-git-version-control.md), [Git Branching, Merging, and Conflicts (2026-07-22)](../docs/concepts/git-version-control/scripts/2026-07-22-git-branching-merging-conflicts.sh), [Common Rebase and Reset Patterns (2026-07-27)](../docs/concepts/git-version-control/snippets/2026-07-27-common-rebase-reset-patterns.sh)
