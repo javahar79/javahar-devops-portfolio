@@ -2,6 +2,8 @@
 
 ## 2026-08-05
 
+- Added Docker Compose manifest for a multi-service web app and database (docker-010)
+- Added OpenTofu quick primer covering what OpenTofu is, key terminology, and a tiny example (of-001)
 - Added Ansible quick primer covering what Ansible is, key terminology, and a tiny ping playbook (ansible-001)
 - Added Ansible install and first-command notes (ansible-002)
 - Added Ansible ping playbook config (ansible-003)
