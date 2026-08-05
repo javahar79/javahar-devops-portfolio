@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-05
+
+- Added Ansible quick primer covering what Ansible is, key terminology, and a tiny ping playbook (ansible-001)
+- Added Ansible install and first-command notes (ansible-002)
+- Added Ansible ping playbook config (ansible-003)
+
 ## 2026-08-04
 
 - Added Container Fundamentals Dockerfile snippet demonstrating multi-stage builds and non-root runtimes (con-018)
