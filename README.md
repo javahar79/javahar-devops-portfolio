@@ -14,7 +14,7 @@ A working DevOps engineer's quick-reference: first-contact notes, runnable snipp
 
 ## What's in here
 
-A DevOps learning portfolio across six tool families — Docker (67 files), Git (17), GitHub Actions (16), Kubernetes (17), Terraform (22), and TF (1) — plus cross-cutting concept primers (20 files) in CI/CD, Cloud Computing, Container Fundamentals, Git & version control, Infrastructure as Code, Linux OS fundamentals, Networking, and Scripting & Automation. Each tool has a primer, dated CLI walkthrough notes, runnable scripts, Dockerfiles, configs, manifests, and notebooks accumulated through hands-on practice.
+A DevOps learning portfolio across nine tool families — Docker (67 files), Git (17), GitHub Actions (16), Kubernetes (17), Terraform (22), TF (1), Ansible (3), OpenTofu (2), and Jenkins (3) — plus cross-cutting concept primers (20 files) in CI/CD, Cloud Computing, Container Fundamentals, Git & version control, Infrastructure as Code, Linux OS fundamentals, Networking, and Scripting & Automation. Each tool has a primer, dated CLI walkthrough notes, runnable scripts, Dockerfiles, configs, manifests, and notebooks accumulated through hands-on practice.
 
 ## Quick links
 
@@ -34,6 +34,9 @@ A DevOps learning portfolio across six tool families — Docker (67 files), Git 
 | `kubernetes/` | K8s primer, kubectl notes, local cluster install script, manifests, pod/service debugging scripts and docs, snippets, notebook |
 | `terraform/` | Terraform primer, install script, provider configs, local file resource configs, init & version notes, remote backend docs |
 | `tf/` | Terraform state and modules interactive notebook |
+| `ansible/` | Ansible primer, install and first-command notes, playbook configs |
+| `of/` | OpenTofu primer and first-resource config |
+| `jenkins/` | Jenkins primer, install and first-UI notes, first pipeline snippet |
 | `docs/concepts/` | Cross-cutting concept primers and runnable snippets (CI/CD, Cloud Computing, Container Fundamentals, Git & version control, Infrastructure as Code, Linux fundamentals, Networking, Scripting & Automation) |
 | `00_index/` | Topic index, quick links, glossary, learning path |
 
@@ -47,10 +50,13 @@ A DevOps learning portfolio across six tool families — Docker (67 files), Git 
 | Kubernetes | 4 | 4 | — | — | 4 | 3 | 1 | 1 | 2026-07-30 |
 | Terraform | 10 | 4 | 6 | — | — | 2 | — | — | 2026-07-27 |
 | TF | — | — | — | — | — | — | — | 1 | 2026-08-04 |
+| Ansible | 2 | — | 1 | — | — | — | — | — | 2026-08-05 |
+| OpenTofu | 1 | — | 1 | — | — | — | — | — | 2026-08-05 |
+| Jenkins | 2 | — | — | — | — | — | 1 | — | 2026-08-06 |
 
 ## Status
 
-Actively building out first-contact notes and runnable configs across all six tools. Recent additions include L2 bash scripts for container fundamentals, infrastructure as code, and scripting automation; a Terraform state and modules interactive notebook; a reusable GitHub Actions workflow with inputs and matrix strategy; a multi-tier Kubernetes debugging notebook; and a Git bisect automation notebook. Docker tagged non-root and multi-stage Dockerfiles and Terraform notes/configs remain the deepest categories.
+Actively building out first-contact notes and runnable configs across all nine tools. Recent additions include L2 bash scripts for container fundamentals, infrastructure as code, and scripting automation; a Terraform state and modules interactive notebook; a reusable GitHub Actions workflow with inputs and matrix strategy; a multi-tier Kubernetes debugging notebook; and a Git bisect automation notebook. Docker tagged non-root and multi-stage Dockerfiles and Terraform notes/configs remain the deepest categories.
 
 ---
-_Last updated: 2026-08-04_
+_Last updated: 2026-08-06_
