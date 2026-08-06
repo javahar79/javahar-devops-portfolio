@@ -2,6 +2,8 @@
 
 ## 2026-08-06
 
+- Added Terraform modules, state, and workspaces interactive notebook (tf-016)
+- Added OpenTofu install and version check script (of-002)
 - Added Jenkins quick primer (jenkins-001), install and first-UI notes (jenkins-002), and first pipeline snippet (jenkins-003)
 
 ## 2026-08-05
