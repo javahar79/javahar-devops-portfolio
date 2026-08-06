@@ -37,7 +37,7 @@ aws s3api head-bucket --bucket "$BUCKET_NAME" 2>/dev/null && echo "Bucket exists
 echo "--- Upload with metadata ---"
 echo "test content" > /tmp/cf-upload-test.txt
 aws s3 cp /tmp/cf-upload-test.txt "s3://my-practice-bucket/test-upload.txt" \
-  --metadata "purpose=cf-practice,created-by=agent-06" 2>/dev/null || echo "Upload failed — bucket may not exist"
+  --metadata "purpose=cf-practice" 2>/dev/null || echo "Upload failed — bucket may not exist"
 
 # --- Storage: set bucket encryption ---
 echo "--- Enabling bucket encryption ---"

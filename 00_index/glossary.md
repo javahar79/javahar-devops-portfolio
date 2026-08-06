@@ -101,6 +101,13 @@
 - **Drift** — A manual change outside IaC (e.g. resizing an instance in the console). Tools detect and reconcile it.
 - **Module** — A reusable group of resources I define once and reference in multiple projects.
 
+## Jenkins
+
+- **Jenkinsfile** — A text file that defines a Jenkins pipeline as code, typically checked into the repository alongside the application code.
+- **JVM** — Java Virtual Machine; Jenkins runs on the JVM, so a Java runtime is required before Jenkins can be installed and started.
+- **Stage** — A logical grouping of steps within a Jenkins pipeline, representing a phase such as build, test, or deploy.
+- **Job** — A single unit of work Jenkins runs. Example: a Jenkins job that runs `npm test` on every push.
+
 ## Kubernetes
 
 - **Pod** — The smallest deployable unit in Kubernetes, representing one or more containers.
@@ -167,14 +174,5 @@
 - **workspace** — A Terraform feature that lets you manage multiple state files within a single backend by creating isolated environments.
 - **DynamoDB locking** — A DynamoDB table used as a distributed lock for Terraform state, preventing concurrent `apply` runs from corrupting state.
 - **S3 versioning** — Versioning enabled on an S3 bucket used as a Terraform backend, allowing recovery from accidental state-file deletions.
-
-## Jenkins
-
-- **Jenkinsfile** — A text file that defines a Jenkins pipeline as code, typically checked into the repository alongside the application code.
-- **JVM** — Java Virtual Machine; Jenkins runs on the JVM, so a Java runtime is required before Jenkins can be installed and started.
-- **Stage** — A logical grouping of steps within a Jenkins pipeline, representing a phase such as build, test, or deploy.
-
-## Terraform
-
 - **Variable** — A placeholder value in a Terraform or OpenTofu configuration that can be set differently per environment, allowing the same config to work across dev, staging, and production.
 - **Output** — A block in a Terraform or OpenTofu configuration that exposes a computed value after apply, such as a resource ID or endpoint URL.

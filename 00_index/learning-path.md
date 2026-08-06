@@ -18,11 +18,12 @@ Start where everything else begins — the tools and concepts that underpin ever
 
 ## Stage 2: Core Tools
 
-Once Git and Docker make sense, pick up the three tools that sit at the centre of most DevOps workflows.
+Once Git and Docker make sense, pick up the four tools that sit at the centre of most DevOps workflows.
 
+- [GitHub Actions Primer](../github-actions/notes/0000-primer-github-actions.md) — Automation built into GitHub. Learn workflows, jobs, runners, and triggers.
 - [Kubernetes Primer](../kubernetes/notes/0000-primer-kubernetes.md) — Container orchestration at scale. Learn what pods, deployments, and services actually mean.
 - [Terraform Primer](../terraform/notes/0000-primer-terraform.md) — Declarative infrastructure as code. Understand providers, resources, and why this approach replaces manual provisioning.
-- [GitHub Actions Primer](../github-actions/notes/0000-primer-github-actions.md) — Automation built into GitHub. Learn workflows, jobs, runners, and triggers.
+- [OpenTofu Primer](../of/notes/0000-primer-opentofu.md) — A Terraform-compatible alternative for infrastructure as code; useful for understanding the open-source fork and its ecosystem.
 
 ## Stage 3: Building Skills
 
@@ -66,6 +67,7 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Build Multi-Stage with Secrets Script (2026-07-31)](../docker/scripts/build-multi-stage-with-secrets.sh) — BuildKit secrets mount pattern keeping API keys out of image layers.
 - [Multi-Service Compose Config](../docker/configs/multi-service-compose.yaml) — Multi-container applications with Compose.
 - [Multi-Service Compose Notebook (2026-07-31)](../docker/notebooks/multi-service-compose.ipynb) — Interactive walkthrough: Flask web app, PostgreSQL, healthcheck, network inspection, and service discovery.
+- [Project Scaffold Docker Compose](../docker/templates/project-scaffold-docker-compose/docker-compose.yml) — Multi-service production scaffold template with nginx, web app, and PostgreSQL.
 - [GHA Quickstart — What Tripped Me Up (2026-07-21)](../github-actions/notes/2026-07-21-gha-quickstart-tripped-me.md) — Workflow syntax, triggers, and debugging gotchas.
 - [Minimal CI Workflow (2026-07-19)](../github-actions/configs/2026-07-19-minimal-ci-workflow.yaml) — GHA CI workflow with setup-python caching.
 - [Debug Run-Name & Conditions (2026-07-19)](../github-actions/configs/2026-07-19-debug-run-name-conditions.yaml) — Run-name and conditional step examples.
@@ -95,6 +97,7 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Minimal Deployment + Service (2026-07-21)](../kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml) — Basic nginx Deployment with ClusterIP Service.
 - [StatefulSet PostgreSQL with PVC](../kubernetes/manifests/statefulset-postgresql-pvc.yaml) — StatefulSet manifest with persistent volume claim for PostgreSQL.
 - [StatefulSet PostgreSQL](../kubernetes/manifests/statefulset-postgresql.yaml) — PostgreSQL StatefulSet without PVC for local development.
+- [Kubernetes Deployment Resource Limits](../docker/manifests/kubernetes-deployment-resource-limits.yaml) — Deployment manifest with resource limits and security controls.
 - [Inspecting Pods, Services, and Events (2026-07-19)](../kubernetes/docs/2026-07-19-inspecting-pods-services-events.md) — `kubectl get`, `describe`, and `logs` patterns for real-world debugging.
 - [Troubleshoot Failing Deployments (2026-07-21)](../kubernetes/scripts/2026-07-21-troubleshoot-failing-deployment.sh) — Diagnose CrashLoopBackOff and ImagePullBackOff.
 - [Debugging Port-Forward, Exec, and Logs (2026-07-21)](../kubernetes/snippets/2026-07-21-debugging-port-forward-exec-logs.sh) — Port-forward, exec into pods, tail logs.
@@ -106,6 +109,7 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Run First Jenkins Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy) — Groovy snippet for a minimal Jenkins pipeline
 - [OpenTofu Primer](../of/notes/0000-primer-opentofu.md) — OpenTofu primer, a Terraform-compatible IaC tool
 - [First OpenTofu Resource](../of/configs/2026-08-05-first-resource.hcl) — First Terraform-compatible OpenTofu resource configuration.
+- [Install OpenTofu](../of/scripts/2026-08-06-install-opentofu.sh) — Install OpenTofu and verify the installation
 
 ## Stage 5: Mastery
 
@@ -121,17 +125,17 @@ Advanced patterns and production-ready configurations across the full stack.
 
 ```
 Stage 1 → Stage 2 → Stage 3 → Stage 4 → Stage 5
-          ↓         ↓         ↓         ↓
-   Concepts   →  Core     → Quickstart → Compose  → Advanced
- (Cloud,      →  Tools    → CLI Notes  → K8s     → GitOps
-  Container,   → (K8s,     → Branch/    → Install
-   IaC,         Terraform,  → Conflict   → State
-   Scripting)    GitHub     → Docker     → Multi-env
-          ↓      Actions)    Port Map    GHA
-   Git/Docker          ↓         ↓
-   Primers       K8s Debug  K8s Debug
-          ↓       (describe, (describe,
-   Linux/Net     logs,        logs,
-          ↓       events)     events)
-   Networking
+           ↓         ↓         ↓         ↓
+    Concepts   →  Core     → Quickstart → Compose  → Advanced
+  (Cloud,      →  Tools    → CLI Notes  → K8s     → GitOps
+   Container,   → (K8s,     → Branch/    → Install
+    IaC,         Terraform,  → Conflict   → State
+    Scripting)    GitHub     → Docker     → Multi-env
+           ↓      Actions)    Port Map    GHA
+    Git/Docker          ↓         ↓
+    Primers       K8s Debug  K8s Debug
+           ↓       (describe, (describe,
+    Linux/Net     logs,        logs,
+           ↓       events)     events)
+    Networking
 ```
