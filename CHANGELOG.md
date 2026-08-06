@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-06
+
+- Added Jenkins quick primer (jenkins-001), install and first-UI notes (jenkins-002), and first pipeline snippet (jenkins-003)
+
 ## 2026-08-05
 
 - Added Docker Compose manifest for a multi-service web app and database (docker-010)
