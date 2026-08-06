@@ -10,6 +10,8 @@
 - [Install Terraform](../terraform/scripts/2026-06-17-install-terraform.sh) — Install Terraform CLI and init your first project
 - [Install Terraform and Run Version (2026-07-16)](../terraform/notes/2026-07-16-install-terraform-and-run-version.md) — Terraform CLI install, init, and version verification
 - [Install Local Kubernetes Cluster](../kubernetes/scripts/install-local-cluster.sh) — Set up kind for local development
+- [Install Jenkins and Open Web UI](../jenkins/notes/2026-08-06-install-jenkins-and-open-web-ui.md) — Install Jenkins locally and access the web UI
+- [Install Ansible and Run First Command](../ansible/notes/2026-08-05-install-ansible-and-run-first-command.md) — Install Ansible and run your first ad-hoc command
 
 ### Understand a tool
 - [Docker Primer](../docker/notes/0000-primer-docker.md) — Containers and images explained
@@ -18,6 +20,8 @@
 - [GitHub Actions Primer](../github-actions/notes/0000-primer-github-actions.md) — Automation with GitHub workflows
 - [Kubernetes Primer](../kubernetes/notes/0000-primer-kubernetes.md) — Container orchestration basics
 - [Terraform Primer](../terraform/notes/0000-primer-terraform.md) — Infrastructure as Code introduction
+- [Jenkins Primer](../jenkins/notes/0000-primer-jenkins.md) — Jenkins primer with first-contact notes and pipeline basics
+- [OpenTofu Primer](../of/notes/0000-primer-opentofu.md) — OpenTofu primer, a Terraform-compatible IaC tool
 - [Terraform State, Backends, and Modules](../tf/notebooks/terraform-state-backends-and-modules.ipynb) — Interactive notebook on Terraform state management, remote backends, and module patterns
 - [Cloud Computing Fundamentals Primer](../docs/concepts/cloud-computing-fundamentals/0000-primer-cloud-computing-fundamentals.md) — IaaS, PaaS, SaaS, and service models explained
 - [Container Fundamentals Primer](../docs/concepts/container-fundamentals/0000-primer-container-fundamentals.md) — Images, registries, and volumes explained
@@ -51,6 +55,7 @@
 - [Validate Workflow Runs (2026-07-21)](../github-actions/scripts/2026-07-21-validate-workflow-runs.sh) — Validate GHA workflows from the command line with gh CLI
 - [Audit Failed Workflow Runs](../github-actions/scripts/audit-failed-workflow-runs.sh) — Audit failed GHA runs and identify root causes
 - [Matrix Builds & Conditional Deploys](../github-actions/docs/matrix-builds-conditional-deploys.md) — Matrix strategies and conditional deployment patterns
+- [Run First Jenkins Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy) — Groovy snippet for a minimal Jenkins pipeline
 
 ### Provision infrastructure
 - [Terraform Directory Structure (2026-07-19)](../terraform/notes/2026-07-19-terraform-directory-structure.md) — How the terraform/ folder is organised and what each directory holds
@@ -66,6 +71,7 @@
 - [Terraform Lifecycle (2026-07-22)](../terraform/scripts/2026-07-22-terraform-lifecycle.sh) — init, validate, plan, and apply end-to-end
 - [Remote State Management (S3 + DynamoDB)](../terraform/scripts/remote-state-management-s3.sh) — Initialize S3 backend, migrate local state, and enable DynamoDB locking
 - [Declarative Config CLI Exercises (2026-08-04)](../docs/concepts/infrastructure-as-code/scripts/2026-08-04-declarative-config-cli-exercises.sh) — CLI exercises for declarative infrastructure config patterns
+- [First OpenTofu Resource](../of/configs/2026-08-05-first-resource.hcl) — First Terraform-compatible OpenTofu resource configuration
 
 ### Deploy on Kubernetes
 - [Minimal Deployment + Service (2026-07-21)](../kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml) — Basic nginx Deployment with ClusterIP Service
@@ -85,3 +91,4 @@
 - [Clean Git History (2026-07-20)](../git/scripts/2026-07-20-clean-git-history.sh) — .gitignore audit and merge conflict recovery
 - [Git Reflog & Rebase (2026-07-20)](../git/scripts/2026-07-20-git-reflog-rebase.sh) — Interactive rebase and reflog recovery
 - [Scheduling, Error Handling, and Parsing (2026-08-04)](../docs/concepts/scripting-automation/scripts/2026-08-04-scheduling-error-handling-parsing.sh) — Cron scheduling, error trapping, and output parsing patterns
+- [Networking Exercises (2026-08-05)](../docs/concepts/networking-basics/scripts/2026-08-05-networking-exercises.sh) — Hands-on exercises for IP, port, and DNS fundamentals
