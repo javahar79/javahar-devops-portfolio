@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-07
+
+- Added Jenkins install and first web UI notes (jenkins-005)
+
 ## 2026-08-06
 
 - Added Kubernetes deployment manifest with resource limits and security controls for Docker images (docker-014)
