@@ -12,7 +12,7 @@
 - [Install Local Kubernetes Cluster](../kubernetes/scripts/install-local-cluster.sh) — Set up kind for local development
 - [Install Jenkins and Open Web UI](../jenkins/notes/2026-08-06-install-jenkins-and-open-web-ui.md) — Install Jenkins locally and access the web UI
 - [Install Ansible and Run First Command](../ansible/notes/2026-08-05-install-ansible-and-run-first-command.md) — Install Ansible and run your first ad-hoc command
-- [Install OpenTofu](../of/scripts/2026-08-06-install-opentofu.sh) — Install OpenTofu and verify the installation
+- [Install OpenTofu](../of/scripts/2026-08-06-install-opentofu.sh) — Install OpenTofu CLI and initialise your first resource
 
 ### Understand a tool
 - [Docker Primer](../docker/notes/0000-primer-docker.md) — Containers and images explained
@@ -37,8 +37,6 @@
 
 ### Build and run a container
 - [Multi-Service Compose](../docker/configs/multi-service-compose.yaml) — Web app with PostgreSQL setup
-- [Project Scaffold Docker Compose](../docker/templates/project-scaffold-docker-compose/docker-compose.yml) — Multi-service production scaffold template
-- [Project Scaffold Dockerfile](../docker/templates/project-scaffold-docker-compose/dockerfiles/Dockerfile) — Dockerfile for the project scaffold template
 - [Multi-Stage Python Webapp Dockerfile](../docker/dockerfiles/multi-stage-python-webapp.Dockerfile) — Python multi-stage build with pip dependencies
 - [Multi-Stage BuildKit Distroless Dockerfile](../docker/dockerfiles/multi-stage-buildkit-distroless.Dockerfile) — Multi-stage Dockerfile with BuildKit cache mounts, distroless runtime, non-root user, and HEALTHCHECK
 - [Build Multi-Stage with Secrets](../docker/scripts/build-multi-stage-with-secrets.sh) — Build multi-stage Dockerfile with BuildKit secrets mount for sensitive data
@@ -77,7 +75,6 @@
 - [First OpenTofu Resource](../of/configs/2026-08-05-first-resource.hcl) — First Terraform-compatible OpenTofu resource configuration
 
 ### Deploy on Kubernetes
-- [Kubernetes Deployment Resource Limits](../docker/manifests/kubernetes-deployment-resource-limits.yaml) — Deployment manifest with resource limits and security controls
 - [Minimal Deployment + Service (2026-07-21)](../kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml) — Basic nginx Deployment with ClusterIP Service
 - [StatefulSet PostgreSQL with PVC](../kubernetes/manifests/statefulset-postgresql-pvc.yaml) — PostgreSQL StatefulSet with persistent volume claim
 - [PostgreSQL StatefulSet with PVC](../kubernetes/manifests/statefulset-postgresql.yaml) — PostgreSQL StatefulSet manifest with persistent volume claim

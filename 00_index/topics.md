@@ -8,11 +8,10 @@
 - **notes** (20): most recent → [Docker Quickstart — What Tripped Me Up (2026-07-18)](../docker/notes/2026-07-18-docker-quickstart-tripped-me.md), [Docker Quickstart — What Tripped Me Up (2026-07-16)](../docker/notes/2026-07-16-docker-quickstart-tripped-me.md), [Docker Quickstart Trials (2026-07-08)](../docker/notes/2026-07-08-docker-quickstart-trials.md)
 - **scripts** (21): [Build Multi-Stage with Secrets (2026-07-31)](../docker/scripts/build-multi-stage-with-secrets.sh), [Run Container Port Map (2026-07-18)](../docker/scripts/2026-07-18-run-container-port-map.sh), [Automating Container Lifecycle](../docker/scripts/automating-container-lifecycle.sh)
 - **dockerfiles** (22): most recent → [Multi-Stage BuildKit Distroless (2026-07-18)](../docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile), [Multi-Stage Python Webapp](../docker/dockerfiles/multi-stage-python-webapp.Dockerfile), [Minimal Multi-Stage](../docker/dockerfiles/minimal-multi-stage.Dockerfile)
-- **templates** (5): most recent → [Project Scaffold Docker Compose](../docker/templates/project-scaffold-docker-compose/docker-compose.yml), [Project Scaffold Dockerfile](../docker/templates/project-scaffold-docker-compose/dockerfiles/Dockerfile), [Project Scaffold Nginx Config](../docker/templates/project-scaffold-docker-compose/nginx/default.conf)
-- **manifests** (2): [Kubernetes Deployment Resource Limits](../docker/manifests/kubernetes-deployment-resource-limits.yaml), [Multi-Service App](../docker/manifests/multi-service-app.yaml)
 - **configs** (1): [Multi-Service Compose](../docker/configs/multi-service-compose.yaml)
 - **docs** (2): [Multi-Stage vs Distroless vs Alpine](../docker/docs/multi-stage-vs-distroless-vs-alpine.md), [Dockerfile Antipatterns](../docker/docs/dockerfile-antipatterns.md)
 - **notebooks** (1): [Multi-Service Compose Walkthrough](../docker/notebooks/multi-service-compose.ipynb)
+- **templates** (5): [Project Scaffold README](../docker/templates/project-scaffold-docker-compose/README.md)
 - _…and browse `docker/` for the full collection._
 
 ## Git · 17 files
@@ -64,13 +63,13 @@
 
 ## TF · 2 files
 
-- **notebooks** (2): [Terraform State, Backends, and Modules (2026-08-06)](../tf/notebooks/terraform-modules-state-workspaces.ipynb), [Terraform State Backends and Modules](../tf/notebooks/terraform-state-backends-and-modules.ipynb)
+- **notebooks** (2): [Terraform State, Backends, and Modules](../tf/notebooks/terraform-state-backends-and-modules.ipynb), [Terraform Modules, State, and Workspaces](../tf/notebooks/terraform-modules-state-workspaces.ipynb)
 - _…and browse `tf/` for the full collection._
 
 ## Ansible · 3 files
 
 - **primer:** [primer-ansible](../ansible/notes/0000-primer-ansible.md)
-- **notes** (2): most recent → [Install Ansible and Run First Command (2026-08-05)](../ansible/notes/2026-08-05-install-ansible-and-run-first-command.md), [Ansible Primer (2026-08-05)](../ansible/notes/0000-primer-ansible.md)
+- **notes** (2): [Install Ansible and Run First Command (2026-08-05)](../ansible/notes/2026-08-05-install-ansible-and-run-first-command.md), [Ansible Primer (2026-08-05)](../ansible/notes/0000-primer-ansible.md)
 - **configs** (1): [First Ping Playbook](../ansible/configs/2026-08-05-first-ping-playbook.yaml)
 - _…and browse `ansible/` for the full collection._
 
@@ -78,15 +77,15 @@
 
 - **primer:** [primer-opentofu](../of/notes/0000-primer-opentofu.md)
 - **notes** (1): [OpenTofu Primer (2026-08-05)](../of/notes/0000-primer-opentofu.md)
-- **configs** (1): [First Resource (2026-08-05)](../of/configs/2026-08-05-first-resource.hcl)
+- **configs** (1): [First Resource](../of/configs/2026-08-05-first-resource.hcl)
 - **scripts** (1): [Install OpenTofu (2026-08-06)](../of/scripts/2026-08-06-install-opentofu.sh)
 - _…and browse `of/` for the full collection._
 
 ## Cross-cutting concepts · 24 files
 
 - **CI/CD concepts** (6): [CI/CD Primer](../docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md), [State-Aware IaC Pipelines (2026-07-31)](../docs/concepts/ci-cd-concepts/state-aware-iac-pipelines.md), [CI/CD Workflow Overview (2026-07-19)](../docs/concepts/ci-cd-concepts/2026-07-19-ci-cd-workflow-overview.md), [Minimal CI Pipeline Script (2026-07-23)](../docs/concepts/ci-cd-concepts/scripts/2026-07-23-minimal-ci-pipeline.sh), [Intro to CI/CD Core Concepts (2026-07-23)](../docs/concepts/ci-cd-concepts/notebooks/2026-07-23-intro-to-cicd-core-concepts-with-interactive-examples.ipynb), [CI/CD Stage Patterns (2026-07-31)](../docs/concepts/ci-cd-concepts/snippets/2026-07-31-cicd-pipeline-stage-patterns.yaml)
-- **Cloud Computing** (3): [Cloud Computing Fundamentals Primer](../docs/concepts/cloud-computing-fundamentals/0000-primer-cloud-computing-fundamentals.md), [Practice Cloud Computing Exercises (2026-08-04)](../docs/concepts/cloud-computing-fundamentals/scripts/2026-08-04-practice-cloud-computing-exercises.sh), [Common Patterns for Networking, IAM, and Storage (2026-08-04)](../docs/concepts/cloud-computing-fundamentals/snippets/2026-08-04-common-patterns-for-networking-iam-and-storage.sh)
-- **Container Fundamentals** (3): [Container Fundamentals Primer](../docs/concepts/container-fundamentals/0000-primer-container-fundamentals.md), [Dockerfile Layers and Registry Script (2026-08-04)](../docs/concepts/container-fundamentals/scripts/2026-08-04-dockerfile-layers-registry.sh), [Common Patterns for Multi-Stage Builds and Non-Root Runtimes (2026-08-04)](../docs/concepts/container-fundamentals/snippets/2026-08-04-common-patterns-for-multi-stage-builds-and-non-root-runtimes.dockerfile)
+- **Cloud Computing** (2): [Cloud Computing Fundamentals Primer](../docs/concepts/cloud-computing-fundamentals/0000-primer-cloud-computing-fundamentals.md), [Practice Cloud Computing Exercises (2026-08-04)](../docs/concepts/cloud-computing-fundamentals/scripts/2026-08-04-practice-cloud-computing-exercises.sh)
+- **Container Fundamentals** (2): [Container Fundamentals Primer](../docs/concepts/container-fundamentals/0000-primer-container-fundamentals.md), [Dockerfile Layers and Registry Script (2026-08-04)](../docs/concepts/container-fundamentals/scripts/2026-08-04-dockerfile-layers-registry.sh)
 - **Git & version control** (3): [Git Version Control Primer](../docs/concepts/git-version-control/0000-primer-git-version-control.md), [Git Branching, Merging, and Conflicts (2026-07-22)](../docs/concepts/git-version-control/scripts/2026-07-22-git-branching-merging-conflicts.sh), [Common Rebase and Reset Patterns (2026-07-27)](../docs/concepts/git-version-control/snippets/2026-07-27-common-rebase-reset-patterns.sh)
 - **Infrastructure as Code** (3): [Infrastructure as Code Primer](../docs/concepts/infrastructure-as-code/0000-primer-infrastructure-as-code.md), [Declarative Config CLI Exercises (2026-08-04)](../docs/concepts/infrastructure-as-code/scripts/2026-08-04-declarative-config-cli-exercises.sh), [Common Modular Configs](../docs/concepts/infrastructure-as-code/snippets/2026-07-27-common-modular-versioned-configs.hcl)
 - **Linux OS fundamentals** (1): [Linux Primer](../docs/concepts/linux-os-fundamentals/0000-primer-linux-os-fundamentals.md)
