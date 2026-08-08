@@ -7,6 +7,9 @@
 - Added first kubectl command and node listing script for Kubernetes CLI exploration (k8s-018)
 - Added CI/CD + GitOps integration doc covering CI-to-GitOps controller flow, prerequisites, and verification steps (con-052)
 - Added Scripting & Automation + Container Fundamentals automated build pipeline doc covering shell script build orchestration and idempotent CI integration (con-053)
+- Added Git install and first-commit notes (git-017)
+- Added Git branch and merge bash snippet (git-018)
+- Added kubectl install and cluster exploration notes (k8s-016)
 
 ## 2026-08-06
 
