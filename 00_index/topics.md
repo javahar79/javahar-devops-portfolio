@@ -14,40 +14,34 @@
 - **templates** (5): [Project Scaffold README](../docker/templates/project-scaffold-docker-compose/README.md)
 - _…and browse `docker/` for the full collection._
 
-## Git · 17 files
+## Git · 19 files
 
 - **primer:** [primer-git](../git/notes/0000-primer-git.md)
-- **notes** (7): most recent → [Common Git Mistakes (2026-07-20)](../git/notes/2026-07-20-common-git-mistakes.md), [Git Undo/Stage/Commit/Push (2026-07-19)](../git/notes/2026-07-19-git-undo-stage-commit-push.md), [Git Quickstart Trials (2026-07-19)](../git/notes/2026-07-19-git-quickstart-trials.md)
-- **scripts** (7): most recent → [Automate Git Bisect (2026-07-31)](../git/scripts/git-bisect-automation.sh), [Clean Git History (2026-07-20)](../git/scripts/2026-07-20-clean-git-history.sh), [Git Reflog & Rebase (2026-07-20)](../git/scripts/2026-07-20-git-reflog-rebase.sh)
-- **configs** (1): [.gitattributes: merge, EOL, diff](../git/configs/gitattributes-merge-eol-diff.gitattributes)
-- **docs** (1): [Git Merge vs Rebase](../git/docs/git-merge-vs-rebase.md)
+- **notes** (8): most recent → [Install Git and log my first commit (2026-08-08)](../git/notes/2026-08-08-install-git-and-log-first-commit.md), [Common Git Mistakes (2026-07-20)](../git/notes/2026-07-20-common-git-mistakes.md), [Git Undo/Stage/Commit/Push (2026-07-19)](../git/notes/2026-07-19-git-undo-stage-commit-push.md)
+- **scripts** (7): [Automate Git Bisect](../git/scripts/git-bisect-automation.sh), [Clean Git History (2026-07-20)](../git/scripts/2026-07-20-clean-git-history.sh), [Git Reflog & Rebase (2026-07-20)](../git/scripts/2026-07-20-git-reflog-rebase.sh)
+- **snippets** (1): [First Git branch and merge (2026-08-08)](../git/snippets/2026-08-08-first-git-branch-and-merge.sh)
 - **notebooks** (1): [Git Bisect Automation & History Rewrite](../git/notebooks/git-bisect-automation-and-history-rewrite.ipynb)
+- **docs** (1): [Git Merge vs Rebase](../git/docs/git-merge-vs-rebase.md)
+- **configs** (1): [.gitattributes: merge, EOL, diff](../git/configs/gitattributes-merge-eol-diff.gitattributes)
 - _…and browse `git/` for the full collection._
 
 ## GitHub Actions · 16 files
 
 - **primer:** [primer-github-actions](../github-actions/notes/0000-primer-github-actions.md)
 - **notes** (4): [GHA Quickstart — What Tripped Me Up (2026-07-21)](../github-actions/notes/2026-07-21-gha-quickstart-tripped-me.md), [GHA Quickstart — What Tripped Me Up (2026-07-09)](../github-actions/notes/2026-07-09-gha-quickstart-trials.md), [GitHub Actions UI Walkthrough (2026-06-16)](../github-actions/notes/2026-06-16-explore-gha-ui.md)
-- **configs** (6): most recent → [Reusable Workflow with Inputs](../github-actions/configs/reusable-workflow-with-inputs.yaml), [CI Workflow](../github-actions/configs/ci-workflow.yaml), [Minimal CI Workflow (2026-07-19)](../github-actions/configs/2026-07-19-minimal-ci-workflow.yaml), [Minimal CI Workflow (2026-07-12)](../github-actions/configs/2026-07-12-minimal-ci-workflow.yaml), [Debug Run-Name & Conditions (2026-07-19)](../github-actions/configs/2026-07-19-debug-run-name-conditions.yaml)
+- **configs** (6): most recent → [Reusable Workflow with Inputs](../github-actions/configs/reusable-workflow-with-inputs.yaml), [CI Workflow](../github-actions/configs/ci-workflow.yaml), [Minimal CI Workflow (2026-07-19)](../github-actions/configs/2026-07-19-minimal-ci-workflow.yaml), [Minimal CI Workflow (2026-07-12)](../github-actions/configs/2026-07-12-minimal-ci-workflow.yaml), [Debug Run-Name & Conditions (2026-07-19)](../github-actions/configs/2026-07-19-debug-run-name-conditions.yaml), [Minimal CI Workflow (2026-07-09)](../github-actions/configs/2026-07-09-minimal-ci-workflow.yaml)
 - **docs** (3): [Reading Workflow Logs and Debugging (2026-07-19)](../github-actions/docs/2026-07-19-reading-workflow-logs-and-debugging.md), [Reading Workflow Logs and Debugging (2026-07-10)](../github-actions/docs/2026-07-10-reading-workflow-logs-and-debugging.md), [Matrix Builds & Conditional Deploys](../github-actions/docs/matrix-builds-conditional-deploys.md)
 - **scripts** (2): [Validate Workflow Runs (2026-07-21)](../github-actions/scripts/2026-07-21-validate-workflow-runs.sh), [Audit Failed Workflow Runs](../github-actions/scripts/audit-failed-workflow-runs.sh)
 - **snippets** (1): [Complex Reusable Workflow: Matrix, Approvals, Rollback](../github-actions/snippets/complex-reusable-workflow-matrix-approvals.yaml)
 - _…and browse `github-actions/` for the full collection._
 
-## Jenkins · 3 files
-
-- **primer:** [primer-jenkins](../jenkins/notes/0000-primer-jenkins.md)
-- **notes** (2): most recent → [Install Jenkins and Open Web UI (2026-08-06)](../jenkins/notes/2026-08-06-install-jenkins-and-open-web-ui.md), [Jenkins Primer (2026-08-06)](../jenkins/notes/0000-primer-jenkins.md)
-- **snippets** (1): [Run First Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy)
-- _…and browse `jenkins/` for the full collection._
-
-## Kubernetes · 17 files
+## Kubernetes · 19 files
 
 - **primer:** [primer-kubernetes](../kubernetes/notes/0000-primer-kubernetes.md)
-- **notes** (4): most recent → [K8s Quickstart — What Tripped Me Up (2026-07-19)](../kubernetes/notes/2026-07-19-k8s-quickstart-trials.md), [K8s Quickstart — What Tripped Me Up (2026-07-10)](../kubernetes/notes/2026-07-10-k8s-quickstart-trials.md), [kubectl CLI Exploration (2026-06-16)](../kubernetes/notes/2026-06-16-explore-kubectl.md)
-- **scripts** (4): most recent → [kubectl Rollout vs Edit (2026-07-30)](../kubernetes/scripts/kubectl-rollout-vs-edit.sh), [Troubleshoot Failing Deployments (2026-07-21)](../kubernetes/scripts/2026-07-21-troubleshoot-failing-deployment.sh), [Troubleshoot Pods (2026-07-19)](../kubernetes/scripts/2026-07-19-troubleshoot-pods.sh)
-- **docs** (3): most recent → [ConfigMaps, Secrets, and env vars (2026-07-30)](../kubernetes/docs/configmaps-secrets-env-vars.md), [Inspecting Pods, Services, and Events (2026-07-19)](../kubernetes/docs/2026-07-19-inspecting-pods-services-events.md), [Inspecting Pods, Services, and Events (2026-07-12)](../kubernetes/docs/2026-07-12-inspecting-pods-services-events.md)
-- **manifests** (4): most recent → [StatefulSet PostgreSQL with PVC (2026-07-31)](../kubernetes/manifests/statefulset-postgresql-pvc.yaml), [Minimal Deployment + Service (2026-07-21)](../kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml), [Minimal Deployment + Service (2026-07-10)](../kubernetes/manifests/2026-07-10-minimal-deployment-service.yaml), [StatefulSet PostgreSQL](../kubernetes/manifests/statefulset-postgresql.yaml)
+- **notes** (5): most recent → [Install kubectl and explore cluster (2026-08-08)](../kubernetes/notes/2026-08-08-install-kubectl-and-explore-cluster.md), [K8s Quickstart — What Tripped Me Up (2026-07-19)](../kubernetes/notes/2026-07-19-k8s-quickstart-trials.md), [K8s Quickstart — What Tripped Me Up (2026-07-10)](../kubernetes/notes/2026-07-10-k8s-quickstart-trials.md)
+- **scripts** (5): [kubectl Rollout vs Edit](../kubernetes/scripts/kubectl-rollout-vs-edit.sh), [Troubleshoot Failing Deployments (2026-07-21)](../kubernetes/scripts/2026-07-21-troubleshoot-failing-deployment.sh), [Troubleshoot Pods (2026-07-19)](../kubernetes/scripts/2026-07-19-troubleshoot-pods.sh)
+- **manifests** (4): [StatefulSet PostgreSQL with PVC](../kubernetes/manifests/statefulset-postgresql-pvc.yaml), [Minimal Deployment + Service (2026-07-21)](../kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml), [Minimal Deployment + Service (2026-07-10)](../kubernetes/manifests/2026-07-10-minimal-deployment-service.yaml)
+- **docs** (3): [ConfigMaps, Secrets, and env vars](../kubernetes/docs/configmaps-secrets-env-vars.md), [Inspecting Pods, Services, and Events (2026-07-19)](../kubernetes/docs/2026-07-19-inspecting-pods-services-events.md), [Inspecting Pods, Services, and Events (2026-07-12)](../kubernetes/docs/2026-07-12-inspecting-pods-services-events.md)
 - **snippets** (1): [Debugging Port-Forward, Exec, and Logs (2026-07-21)](../kubernetes/snippets/2026-07-21-debugging-port-forward-exec-logs.sh)
 - **notebooks** (1): [Multi-Tier App Debugging Walkthrough](../kubernetes/notebooks/multi-tier-app-debugging-walkthrough.ipynb)
 - _…and browse `kubernetes/` for the full collection._
@@ -81,13 +75,21 @@
 - **scripts** (1): [Install OpenTofu (2026-08-06)](../of/scripts/2026-08-06-install-opentofu.sh)
 - _…and browse `of/` for the full collection._
 
-## Cross-cutting concepts · 24 files
+## Jenkins · 3 files
 
-- **CI/CD concepts** (6): [CI/CD Primer](../docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md), [State-Aware IaC Pipelines (2026-07-31)](../docs/concepts/ci-cd-concepts/state-aware-iac-pipelines.md), [CI/CD Workflow Overview (2026-07-19)](../docs/concepts/ci-cd-concepts/2026-07-19-ci-cd-workflow-overview.md), [Minimal CI Pipeline Script (2026-07-23)](../docs/concepts/ci-cd-concepts/scripts/2026-07-23-minimal-ci-pipeline.sh), [Intro to CI/CD Core Concepts (2026-07-23)](../docs/concepts/ci-cd-concepts/notebooks/2026-07-23-intro-to-cicd-core-concepts-with-interactive-examples.ipynb), [CI/CD Stage Patterns (2026-07-31)](../docs/concepts/ci-cd-concepts/snippets/2026-07-31-cicd-pipeline-stage-patterns.yaml)
-- **Cloud Computing** (2): [Cloud Computing Fundamentals Primer](../docs/concepts/cloud-computing-fundamentals/0000-primer-cloud-computing-fundamentals.md), [Practice Cloud Computing Exercises (2026-08-04)](../docs/concepts/cloud-computing-fundamentals/scripts/2026-08-04-practice-cloud-computing-exercises.sh)
-- **Container Fundamentals** (2): [Container Fundamentals Primer](../docs/concepts/container-fundamentals/0000-primer-container-fundamentals.md), [Dockerfile Layers and Registry Script (2026-08-04)](../docs/concepts/container-fundamentals/scripts/2026-08-04-dockerfile-layers-registry.sh)
-- **Git & version control** (3): [Git Version Control Primer](../docs/concepts/git-version-control/0000-primer-git-version-control.md), [Git Branching, Merging, and Conflicts (2026-07-22)](../docs/concepts/git-version-control/scripts/2026-07-22-git-branching-merging-conflicts.sh), [Common Rebase and Reset Patterns (2026-07-27)](../docs/concepts/git-version-control/snippets/2026-07-27-common-rebase-reset-patterns.sh)
+- **primer:** [primer-jenkins](../jenkins/notes/0000-primer-jenkins.md)
+- **notes** (2): [Install Jenkins and Open Web UI (2026-08-06)](../jenkins/notes/2026-08-06-install-jenkins-and-open-web-ui.md), [Jenkins Primer (2026-08-06)](../jenkins/notes/0000-primer-jenkins.md)
+- **snippets** (1): [Run First Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy)
+- _…and browse `jenkins/` for the full collection._
+
+## Cross-cutting concepts · 26 files
+
+- **CI/CD concepts** (7): [CI/CD Primer](../docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md), [State-Aware IaC Pipelines (2026-07-31)](../docs/concepts/ci-cd-concepts/state-aware-iac-pipelines.md), [CI/CD Workflow Overview (2026-07-19)](../docs/concepts/ci-cd-concepts/2026-07-19-ci-cd-workflow-overview.md), [Integrating CI with GitOps (2026-08-08)](../docs/concepts/ci-cd-concepts/integrating-ci-with-gitops.md), [Minimal CI Pipeline Script (2026-07-23)](../docs/concepts/ci-cd-concepts/scripts/2026-07-23-minimal-ci-pipeline.sh), [Intro to CI/CD Core Concepts (2026-07-23)](../docs/concepts/ci-cd-concepts/notebooks/2026-07-23-intro-to-cicd-core-concepts-with-interactive-examples.ipynb), [CI/CD Stage Patterns (2026-07-31)](../docs/concepts/ci-cd-concepts/snippets/2026-07-31-cicd-pipeline-stage-patterns.yaml)
+- **Scripting & Automation** (4): [Scripting & Automation Primer](../docs/concepts/scripting-automation/0000-primer-scripting-automation.md), [Automated Build Pipeline (2026-08-08)](../docs/concepts/scripting-automation/automated-build-pipeline.md), [Scheduling, Error Handling, and Parsing (2026-08-04)](../docs/concepts/scripting-automation/scripts/2026-08-04-scheduling-error-handling-parsing.sh), [Common Loops and Conditions](../docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh)
 - **Infrastructure as Code** (3): [Infrastructure as Code Primer](../docs/concepts/infrastructure-as-code/0000-primer-infrastructure-as-code.md), [Declarative Config CLI Exercises (2026-08-04)](../docs/concepts/infrastructure-as-code/scripts/2026-08-04-declarative-config-cli-exercises.sh), [Common Modular Configs](../docs/concepts/infrastructure-as-code/snippets/2026-07-27-common-modular-versioned-configs.hcl)
-- **Linux OS fundamentals** (1): [Linux Primer](../docs/concepts/linux-os-fundamentals/0000-primer-linux-os-fundamentals.md)
+- **Git & version control** (3): [Git Version Control Primer](../docs/concepts/git-version-control/0000-primer-git-version-control.md), [Git Branching, Merging, and Conflicts (2026-07-22)](../docs/concepts/git-version-control/scripts/2026-07-22-git-branching-merging-conflicts.sh), [Common Rebase and Reset Patterns (2026-07-27)](../docs/concepts/git-version-control/snippets/2026-07-27-common-rebase-reset-patterns.sh)
+- **Container Fundamentals** (3): [Container Fundamentals Primer](../docs/concepts/container-fundamentals/0000-primer-container-fundamentals.md), [Dockerfile Layers and Registry Script (2026-08-04)](../docs/concepts/container-fundamentals/scripts/2026-08-04-dockerfile-layers-registry.sh), [Common Multi-Stage Builds and Non-Root Runtimes](../docs/concepts/container-fundamentals/snippets/2026-08-04-common-patterns-for-multi-stage-builds-and-non-root-runtimes.dockerfile)
+- **Cloud Computing** (3): [Cloud Computing Fundamentals Primer](../docs/concepts/cloud-computing-fundamentals/0000-primer-cloud-computing-fundamentals.md), [Practice Cloud Computing Exercises (2026-08-04)](../docs/concepts/cloud-computing-fundamentals/scripts/2026-08-04-practice-cloud-computing-exercises.sh), [Common Networking, IAM, and Storage Patterns](../docs/concepts/cloud-computing-fundamentals/snippets/2026-08-04-common-patterns-for-networking-iam-and-storage.sh)
 - **Networking basics** (2): [Networking Primer](../docs/concepts/networking-basics/0000-primer-networking-basics.md), [Networking Exercises (2026-08-05)](../docs/concepts/networking-basics/scripts/2026-08-05-networking-exercises.sh)
-- **Scripting & Automation** (3): [Scripting & Automation Primer](../docs/concepts/scripting-automation/0000-primer-scripting-automation.md), [Scheduling, Error Handling, and Parsing (2026-08-04)](../docs/concepts/scripting-automation/scripts/2026-08-04-scheduling-error-handling-parsing.sh), [Common Loops and Conditions](../docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh)
+- **Linux OS fundamentals** (1): [Linux Primer](../docs/concepts/linux-os-fundamentals/0000-primer-linux-os-fundamentals.md)
+- _…and browse `docs/concepts/` for the full collection._
