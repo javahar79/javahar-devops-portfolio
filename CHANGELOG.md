@@ -4,6 +4,9 @@
 
 - Reworked multi-stage Dockerfile with BuildKit cache mounts and distroless non-root runtime, fixing HEALTHCHECK exec-form syntax and updating to Docker 29.7.2 (docker-013)
 - Updated companion Go service with healthcheck subcommand for distroless liveness probe (docker-013)
+- Added Git install and first-commit notes (git-017)
+- Added Git branch and merge bash snippet (git-018)
+- Added kubectl install and cluster exploration notes (k8s-016)
 
 ## 2026-08-06
 
