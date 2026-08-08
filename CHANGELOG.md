@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-08
+
+- Reworked multi-stage Dockerfile with BuildKit cache mounts and distroless non-root runtime, fixing HEALTHCHECK exec-form syntax and updating to Docker 29.7.2 (docker-013)
+- Updated companion Go service with healthcheck subcommand for distroless liveness probe (docker-013)
+
 ## 2026-08-06
 
 - Added Kubernetes deployment manifest with resource limits and security controls for Docker images (docker-014)
