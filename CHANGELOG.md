@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-09
+
+- Added Terraform + Docker multi-service deployment project scaffold template (tf-020)
+
 ## 2026-08-08
 
 - Reworked multi-stage Dockerfile with BuildKit cache mounts and distroless non-root runtime, fixing HEALTHCHECK exec-form syntax and updating to Docker 29.7.2 (docker-013)
