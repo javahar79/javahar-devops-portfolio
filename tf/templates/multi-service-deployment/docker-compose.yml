@@ -1,0 +1,58 @@
+# last_verified: 2026-08-09 · docker n/a
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: dockerfiles/web/Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      api:
+        condition: service_healthy
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_HOST: db
+      DATABASE_PORT: "5432"
+      API_URL: http://api:8001
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      dockerfile: dockerfiles/api/Dockerfile
+    ports:
+      - "8001:8001"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_HOST: db
+      DATABASE_PORT: "5432"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8001/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+
+  db:
+    image: postgres:16-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: appdb
+      POSTGRES_USER: appuser
+      POSTGRES_PASSWORD: "${DB_PASSWORD:-app_password}"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U appuser -d appdb"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  db_data:

@@ -5,6 +5,7 @@
 ### Set up a tool
 - [Install Docker](../docker/scripts/2026-06-16-install-docker.sh) — Install Docker Engine and run your first container
 - [Configure Git](../git/scripts/configure-and-commit-first.sh) — Set up Git identity and make your first commit
+- [Install Git and log my first commit](../git/notes/2026-08-08-install-git-and-log-first-commit.md) — Installing Git and making the first commit
 - [.gitattributes Config](../git/configs/gitattributes-merge-eol-diff.gitattributes) — EOL normalization, merge strategies, and diff configuration
 - [Minimal Git Config Init (2026-07-20)](../git/scripts/2026-07-20-minimal-git-config-init.sh) — Git user.name, user.email, and init script
 - [Install Terraform](../terraform/scripts/2026-06-17-install-terraform.sh) — Install Terraform CLI and init your first project
@@ -17,6 +18,7 @@
 ### Understand a tool
 - [Docker Primer](../docker/notes/0000-primer-docker.md) — Containers and images explained
 - [Git Primer](../git/notes/0000-primer-git.md) — Version control fundamentals
+- [First Git branch and merge](../git/snippets/2026-08-08-first-git-branch-and-merge.sh) — First Git branch and merge workflow
 - [Git Merge vs Rebase](../git/docs/git-merge-vs-rebase.md) — Comparing merge and rebase for integrating changes
 - [GitHub Actions Primer](../github-actions/notes/0000-primer-github-actions.md) — Automation with GitHub workflows
 - [Kubernetes Primer](../kubernetes/notes/0000-primer-kubernetes.md) — Container orchestration basics
@@ -52,6 +54,8 @@
 - [Debug Run-Name & Conditions (2026-07-19)](../github-actions/configs/2026-07-19-debug-run-name-conditions.yaml) — Run-name and conditional step examples
 - [Reusable Workflow with Inputs](../github-actions/configs/reusable-workflow-with-inputs.yaml) — Reusable GHA workflow with input parameters and matrix strategy
 - [Complex Reusable Workflow](../github-actions/snippets/complex-reusable-workflow-matrix-approvals.yaml) — Reusable workflow with matrix builds, approval gates, and rollback
+- [Integrating CI with GitOps](../docs/concepts/ci-cd-concepts/integrating-ci-with-gitops.md) — Connecting a CI pipeline to a GitOps controller for automated, Git-driven deployments
+- [Automated Build Pipeline](../docs/concepts/scripting-automation/automated-build-pipeline.md) — Wiring a shell script into a containerized build pipeline for reproducible images
 - [Reading Workflow Logs and Debugging (2026-07-19)](../github-actions/docs/2026-07-19-reading-workflow-logs-and-debugging.md) — How I learned to read logs and debug GHA failures
 - [Validate Workflow Runs (2026-07-21)](../github-actions/scripts/2026-07-21-validate-workflow-runs.sh) — Validate GHA workflows from the command line with gh CLI
 - [Audit Failed Workflow Runs](../github-actions/scripts/audit-failed-workflow-runs.sh) — Audit failed GHA runs and identify root causes
@@ -75,6 +79,7 @@
 - [First OpenTofu Resource](../of/configs/2026-08-05-first-resource.hcl) — First Terraform-compatible OpenTofu resource configuration
 
 ### Deploy on Kubernetes
+- [First kubectl command](../kubernetes/scripts/2026-08-08-first-kubectl-command.sh) — First kubectl commands and node listing
 - [Minimal Deployment + Service (2026-07-21)](../kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml) — Basic nginx Deployment with ClusterIP Service
 - [StatefulSet PostgreSQL with PVC](../kubernetes/manifests/statefulset-postgresql-pvc.yaml) — PostgreSQL StatefulSet with persistent volume claim
 - [PostgreSQL StatefulSet with PVC](../kubernetes/manifests/statefulset-postgresql.yaml) — PostgreSQL StatefulSet manifest with persistent volume claim

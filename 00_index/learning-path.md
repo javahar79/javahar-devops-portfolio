@@ -43,12 +43,15 @@ Apply the mental models with hands-on practice. Work through these in order — 
 - [Install Docker Script](../docker/scripts/2026-06-16-install-docker.sh) — Docker installation smoke test.
 - [First Container Port Map Script](../docker/scripts/2026-06-21-first-container-port-map.sh) — Run nginx and verify port mapping.
 - [Configure Git Script](../git/scripts/configure-and-commit-first.sh) — Set up Git identity and push your first commit.
+- [Install Git and log my first commit](../git/notes/2026-08-08-install-git-and-log-first-commit.md) — Installing Git and making the first commit.
+- [First Git branch and merge](../git/snippets/2026-08-08-first-git-branch-and-merge.sh) — First Git branch and merge workflow.
 - [Common Loops, Conditions, and File Patterns (2026-07-27)](../docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh) — Bash patterns for iterating arrays, branching on conditions, and processing files idempotently.
 - [Dockerfile Layers and Registry Script (2026-08-04)](../docs/concepts/container-fundamentals/scripts/2026-08-04-dockerfile-layers-registry.sh) — Hands-on Dockerfile layer inspection and registry push exercises.
 - [Declarative Config CLI Exercises (2026-08-04)](../docs/concepts/infrastructure-as-code/scripts/2026-08-04-declarative-config-cli-exercises.sh) — CLI exercises for declarative infrastructure config patterns.
 - [Scheduling, Error Handling, and Parsing (2026-08-04)](../docs/concepts/scripting-automation/scripts/2026-08-04-scheduling-error-handling-parsing.sh) — Cron scheduling, error trapping, and output parsing patterns.
 - [Networking Exercises (2026-08-05)](../docs/concepts/networking-basics/scripts/2026-08-05-networking-exercises.sh) — Hands-on exercises for DNS resolution, port testing, and SSH tunneling.
 - [Practice Cloud Computing Exercises (2026-08-04)](../docs/concepts/cloud-computing-fundamentals/scripts/2026-08-04-practice-cloud-computing-exercises.sh) — Hands-on exercises for cloud service models and provider patterns.
+- [First kubectl command](../kubernetes/scripts/2026-08-08-first-kubectl-command.sh) — First kubectl commands and node listing.
 
 ## Stage 4: Integration
 
@@ -72,6 +75,8 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Matrix Builds & Conditional Deploys](../github-actions/docs/matrix-builds-conditional-deploys.md) — Matrix strategies and conditional deployment patterns.
 - [CI/CD Pipeline Stage Patterns (2026-07-31)](../docs/concepts/ci-cd-concepts/snippets/2026-07-31-cicd-pipeline-stage-patterns.yaml) — Build, test, deploy, approval gate, and rollback stage patterns.
 - [State-Aware IaC Pipelines (2026-07-31)](../docs/concepts/ci-cd-concepts/state-aware-iac-pipelines.md) — Wiring CI/CD and IaC for stateful infrastructure + stateless app rollouts.
+- [Integrating CI with GitOps](../docs/concepts/ci-cd-concepts/integrating-ci-with-gitops.md) — Connecting a CI pipeline to a GitOps controller for automated, Git-driven deployments.
+- [Automated Build Pipeline](../docs/concepts/scripting-automation/automated-build-pipeline.md) — Wiring a shell script into a containerized build pipeline for reproducible images.
 - [Reading Workflow Logs and Debugging (2026-07-19)](../github-actions/docs/2026-07-19-reading-workflow-logs-and-debugging.md) — How I learned to read logs and debug GHA failures.
 - [Audit Failed Workflow Runs](../github-actions/scripts/audit-failed-workflow-runs.sh) — Audit failed GHA runs and identify root causes via gh CLI.
 - [Validate Workflow Runs (2026-07-21)](../github-actions/scripts/2026-07-21-validate-workflow-runs.sh) — Validate GHA workflows from the command line with gh CLI.
