@@ -91,6 +91,7 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Terraform State Files & Remote Backends (2026-07-22)](../terraform/docs/2026-07-22-terraform-state-files-remote-backends.md) — Remote state management, S3 backends, DynamoDB locking, and workspace isolation.
 - [Terraform State, Backends, and Modules Notebook](../tf/notebooks/terraform-state-backends-and-modules.ipynb) — Interactive notebook on Terraform state management, remote backends, and reusable module patterns.
 - [Terraform Modules, State, and Workspaces Notebook](../tf/notebooks/terraform-modules-state-workspaces.ipynb) — Interactive notebook on Terraform modules, state backends, and workspace isolation.
+- [Multi-Service Deployment Scaffold](../tf/templates/multi-service-deployment/README.md) — Terraform + Docker Compose scaffold that provisions a container registry and IAM user for CI/CD image pushes while defining a local three-service stack.
 - [Variables, Outputs, and Dependencies (2026-07-22)](../terraform/configs/2026-07-22-variables-outputs-dependencies.hcl) — Terraform variables, output blocks, and explicit dependencies.
 - [Common Modular and Versioned Configs (2026-07-27)](../docs/concepts/infrastructure-as-code/snippets/2026-07-27-common-modular-versioned-configs.hcl) — Reusable Terraform patterns with modules and version constraints.
 - [Terraform Lifecycle (2026-07-22)](../terraform/scripts/2026-07-22-terraform-lifecycle.sh) — init, validate, plan, and apply end-to-end.
