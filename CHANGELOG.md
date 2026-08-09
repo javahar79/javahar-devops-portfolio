@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-09
+
+- Added multi-stage Dockerfile for Terraform provisioning workflows with provider caching and minimal runtime (tf-021)
+
 ## 2026-08-08
 
 - Reworked multi-stage Dockerfile with BuildKit cache mounts and distroless non-root runtime, fixing HEALTHCHECK exec-form syntax and updating to Docker 29.7.2 (docker-013)
