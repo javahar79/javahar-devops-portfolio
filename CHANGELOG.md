@@ -2,6 +2,7 @@
 
 ## 2026-08-09
 
+- Added multi-stage Dockerfile for Terraform provisioning workflows with provider caching and minimal runtime (tf-021)
 - Added Terraform + Docker multi-service deployment project scaffold template (tf-020)
 
 ## 2026-08-08
