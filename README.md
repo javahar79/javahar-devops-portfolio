@@ -20,9 +20,9 @@ A DevOps learning portfolio across nine tool families and cross-cutting concept 
 
 - [Multi-Service Deployment Scaffold](tf/templates/multi-service-deployment/README.md) — Terraform + Docker Compose scaffold for provisioning infrastructure and running a local three-service stack
 - [Multi-Service Docker Compose](tf/templates/multi-service-deployment/docker-compose.yml) — Web, API, and database services with health checks for local development
+- [Terraform Provisioning Dockerfile](tf/dockerfiles/multi-stage-dockerfile-terraform-provisioning.Dockerfile) — Multi-stage Dockerfile for Terraform plan/apply workflows
 - [API Service Dockerfile](tf/templates/multi-service-deployment/dockerfiles/api/Dockerfile) — Multi-stage Dockerfile for the API service
 - [Web Service Dockerfile](tf/templates/multi-service-deployment/dockerfiles/web/Dockerfile) — Multi-stage Dockerfile for the web frontend
-- [Terraform Multi-Service Deployment](tf/templates/multi-service-deployment/main.tf) — Terraform config provisioning a container registry and IAM user for CI/CD image pushes
 
 ## Layout
 
@@ -49,14 +49,14 @@ A DevOps learning portfolio across nine tool families and cross-cutting concept 
 | GitHub Actions | 4 | 2 | 6 | — | — | 3 | 1 | — | — | 2026-07-24 |
 | Kubernetes | 5 | 5 | — | — | 4 | 3 | 1 | 1 | — | 2026-08-08 |
 | Terraform | 10 | 4 | 6 | — | — | 2 | — | — | — | 2026-07-27 |
-| TF | — | — | — | — | — | — | — | 2 | 9 | 2026-08-09 |
+| TF | — | — | — | 1 | — | — | — | 2 | 9 | 2026-08-09 |
 | Ansible | 2 | — | 1 | — | — | — | — | — | — | 2026-08-05 |
-| OpenTofu | 1 | — | 1 | — | — | — | — | — | — | 2026-08-05 |
+| OpenTofu | 1 | 1 | 1 | — | — | — | — | — | — | 2026-08-05 |
 | Jenkins | 2 | — | — | — | — | — | 1 | — | — | 2026-08-06 |
 
 ## Status
 
-Actively building out first-contact notes and runnable configs across all nine tools. Recent additions include L2 bash scripts for container fundamentals, infrastructure as code, and scripting automation; a Terraform state and modules interactive notebook; a reusable GitHub Actions workflow with inputs and matrix strategy; a multi-tier Kubernetes debugging notebook; and a Git bisect automation notebook. Docker tagged non-root and multi-stage Dockerfiles and Terraform notes/configs remain the deepest categories. The `tf/templates/` folder now holds a multi-service deployment scaffold pairing Terraform provisioning with Docker Compose.
+Actively building out first-contact notes and runnable configs across all nine tools. Recent additions include a multi-service Terraform + Docker Compose deployment scaffold, a Terraform provisioning Dockerfile, and updated cross-cutting concept exercises. Docker tagged non-root and multi-stage Dockerfiles and Terraform notes/configs remain the deepest categories.
 
 ---
 _Last updated: 2026-08-10_

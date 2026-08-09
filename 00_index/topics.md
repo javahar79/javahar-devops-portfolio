@@ -62,8 +62,9 @@
 - **scripts** (4): [Remote State Management (S3 + DynamoDB)](../terraform/scripts/remote-state-management-s3.sh), [Terraform Lifecycle (2026-07-22)](../terraform/scripts/2026-07-22-terraform-lifecycle.sh), [Terraform Vars and Outputs (2026-07-21)](../terraform/scripts/2026-07-21-terraform-vars-and-outputs.sh)
 - _…and browse `terraform/` for the full collection._
 
-## TF · 11 files
+## TF · 12 files
 
+- **dockerfiles** (1): [Terraform Provisioning (2026-08-09)](../tf/dockerfiles/multi-stage-dockerfile-terraform-provisioning.Dockerfile)
 - **notebooks** (2): [Terraform State, Backends, and Modules](../tf/notebooks/terraform-state-backends-and-modules.ipynb), [Terraform Modules, State, and Workspaces](../tf/notebooks/terraform-modules-state-workspaces.ipynb)
 - **templates** (9): [Multi-Service Deployment Scaffold](../tf/templates/multi-service-deployment/README.md)
 - _…and browse `tf/` for the full collection._
