@@ -2,6 +2,9 @@
 
 ## 2026-08-10
 
+- Added first Trivy vulnerability scan notes covering basic scan execution, severity filtering, and next steps (trivy-005)
+- Added shell scripting fundamentals practice script demonstrating variables, conditionals, loops, and functions (con-063)
+- Added Linux system administration patterns snippet covering disk usage, process inspection, service checks, and large file discovery (con-064)
 - Added Terraform + GitHub Actions CI/CD integration doc covering remote state, credential scoping, plan/apply workflows, and environment promotion (tf-023)
 - Added production Terraform workspace manifest with remote S3 state and DynamoDB locking (tf-022)
 - Added Trivy quick primer covering vulnerability scanning, terminology, and first-scan example (trivy-004)
