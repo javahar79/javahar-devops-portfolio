@@ -23,6 +23,7 @@
 - [Terraform Primer](../terraform/notes/0000-primer-terraform.md) — Infrastructure as Code introduction
 - [Jenkins Primer](../jenkins/notes/0000-primer-jenkins.md) — Jenkins primer with first-contact notes and pipeline basics
 - [OpenTofu Primer](../of/notes/0000-primer-opentofu.md) — OpenTofu primer, a Terraform-compatible IaC tool
+- [Trivy Primer](../trivy/notes/0000-primer-trivy.md) — Vulnerability scanning, terminology, and first-scan example
 - [Terraform State, Backends, and Modules](../tf/notebooks/terraform-state-backends-and-modules.ipynb) — Interactive notebook on Terraform state management, remote backends, and module patterns
 - [Cloud Computing Fundamentals Primer](../docs/concepts/cloud-computing-fundamentals/0000-primer-cloud-computing-fundamentals.md) — IaaS, PaaS, SaaS, and service models explained
 - [Container Fundamentals Primer](../docs/concepts/container-fundamentals/0000-primer-container-fundamentals.md) — Images, registries, and volumes explained
@@ -76,6 +77,8 @@
 - [Multi-Service Deployment Scaffold](../tf/templates/multi-service-deployment/README.md) — Terraform + Docker Compose scaffold for provisioning infrastructure and running a local three-service stack
 - [Multi-Service Docker Compose](../tf/templates/multi-service-deployment/docker-compose.yml) — Web, API, and database services with health checks for local development
 - [Terraform Multi-Service Deployment](../tf/templates/multi-service-deployment/main.tf) — Terraform config provisioning a container registry and IAM user for CI/CD image pushes
+- [Terraform + GitHub Actions CI/CD Integration (2026-08-10)](../tf/docs/terraform-github-actions-ci-cd.md) — How Terraform plan/apply workflows integrate with GitHub Actions and cloud credentials
+- [Production Terraform Workspace Manifest (2026-08-10)](../tf/manifests/production-terraform-workspace-remote-state-locking.yaml) — Production workspace config with remote S3 state and DynamoDB locking
 
 ### Deploy on Kubernetes
 - [Minimal Deployment + Service (2026-07-21)](../kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml) — Basic nginx Deployment with ClusterIP Service
@@ -84,6 +87,9 @@
 - [Inspecting Pods, Services, and Events (2026-07-19)](../kubernetes/docs/2026-07-19-inspecting-pods-services-events.md) — `kubectl get`, `describe`, and `logs` patterns for real-world debugging
 - [ConfigMaps, Secrets, and env vars](../kubernetes/docs/configmaps-secrets-env-vars.md) — Wiring configuration and secrets into a K8s Deployment
 - [kubectl Rollout vs Edit](../kubernetes/scripts/kubectl-rollout-vs-edit.sh) — Zero-downtime update strategy comparison
+
+### Scan for vulnerabilities
+- [First Trivy Scan (2026-08-10)](../trivy/notes/2026-08-10-first-trivy-scan.md) — First-day notes for running a Trivy vulnerability scan against a container image
 
 ### Troubleshoot
 - [Troubleshoot Failing Deployments (2026-07-21)](../kubernetes/scripts/2026-07-21-troubleshoot-failing-deployment.sh) — Diagnose CrashLoopBackOff and ImagePullBackOff
@@ -94,5 +100,5 @@
 - [Git Undo/Stage/Commit/Push (2026-07-19)](../git/notes/2026-07-19-git-undo-stage-commit-push.md) — Fixing mistakes in Git workflow
 - [Clean Git History (2026-07-20)](../git/scripts/2026-07-20-clean-git-history.sh) — .gitignore audit and merge conflict recovery
 - [Git Reflog & Rebase (2026-07-20)](../git/scripts/2026-07-20-git-reflog-rebase.sh) — Interactive rebase and reflog recovery
-- [Scheduling, Error Handling, and Parsing (2026-08-04)](../docs/concepts/scripting-automation/scripts/2026-08-04-scheduling-error-handling-parsing.sh) — Cron scheduling, error trapping, and output parsing patterns
-- [Networking Exercises (2026-08-05)](../docs/concepts/networking-basics/scripts/2026-08-05-networking-exercises.sh) — Hands-on exercises for IP, port, and DNS fundamentals
+- [Shell Scripting Fundamentals (2026-08-10)](../docs/concepts/linux-os-fundamentals/scripts/2026-08-10-shell-scripting-fundamentals.sh) — Practice script covering variables, conditionals, loops, and functions
+- [System Admin Patterns (2026-08-10)](../docs/concepts/linux-os-fundamentals/snippets/2026-08-10-system-admin-patterns.sh) — Common patterns for disk usage, process inspection, and service checks

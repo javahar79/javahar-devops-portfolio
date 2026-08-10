@@ -4,7 +4,7 @@
 
 ## Stage 1: Foundations
 
-Start where everything else begins — the concepts that underpin every other skill in this portfolio.
+Start where everything begins — the concepts that underpin every other skill in this portfolio.
 
 - [Linux OS Fundamentals Primer](../docs/concepts/linux-os-fundamentals/0000-primer-linux-os-fundamentals.md) — Filesystems, processes, and permissions — the ground every container and server stands on.
 - [Networking Basics Primer](../docs/concepts/networking-basics/0000-primer-networking-basics.md) — IPs, ports, DNS, and how traffic actually flows between services.
@@ -17,7 +17,7 @@ Start where everything else begins — the concepts that underpin every other sk
 
 ## Stage 2: Core Tools
 
-Once the foundations make sense, pick up the three tools that sit at the centre of most DevOps workflows.
+Once the foundations make sense, pick up the tools that sit at the centre of most DevOps workflows.
 
 - [Git Primer](../git/notes/0000-primer-git.md) — Version control is the bedrock of modern DevOps. Understand commits, branches, and remotes before you touch any other tool.
 - [Docker Primer](../docker/notes/0000-primer-docker.md) — Containers package software with its environment. This primer explains images, containers, and why Docker exists in the first place.
@@ -51,6 +51,8 @@ Apply the mental models with hands-on practice. Work through these in order — 
 - [Scheduling, Error Handling, and Parsing (2026-08-04)](../docs/concepts/scripting-automation/scripts/2026-08-04-scheduling-error-handling-parsing.sh) — Cron scheduling, error trapping, and output parsing patterns.
 - [Networking Exercises (2026-08-05)](../docs/concepts/networking-basics/scripts/2026-08-05-networking-exercises.sh) — Hands-on exercises for DNS resolution, port testing, and SSH tunneling.
 - [Practice Cloud Computing Exercises (2026-08-04)](../docs/concepts/cloud-computing-fundamentals/scripts/2026-08-04-practice-cloud-computing-exercises.sh) — Hands-on exercises for cloud service models and provider patterns.
+- [Shell Scripting Fundamentals (2026-08-10)](../docs/concepts/linux-os-fundamentals/scripts/2026-08-10-shell-scripting-fundamentals.sh) — Practice script covering variables, conditionals, loops, and functions.
+- [System Admin Patterns (2026-08-10)](../docs/concepts/linux-os-fundamentals/snippets/2026-08-10-system-admin-patterns.sh) — Common patterns for disk usage, process inspection, and service checks.
 - [First kubectl command](../kubernetes/scripts/2026-08-08-first-kubectl-command.sh) — First kubectl commands and node listing.
 
 ## Stage 4: Integration
@@ -89,35 +91,32 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [What Tripped Me Up Quickstart (2026-07-21)](../terraform/notes/2026-07-21-what-tripped-me-up-quickstart.md) — Quickstart gotchas and recovery patterns.
 - [What I Learned from Validate and Plan (2026-07-21)](../terraform/notes/2026-07-21-what-i-learned-from-validate-and-plan.md) — Validation, planning, and apply walkthrough notes.
 - [Terraform State Files & Remote Backends (2026-07-22)](../terraform/docs/2026-07-22-terraform-state-files-remote-backends.md) — Remote state management, S3 backends, DynamoDB locking, and workspace isolation.
+- [Workspaces vs Directory-per-Env](../terraform/docs/terraform-workspaces-vs-directory-per-env.md) — Comparing Terraform workspace isolation with directory-per-environment patterns.
+- [Variables, Outputs, and Dependencies (2026-07-22)](../terraform/configs/2026-07-22-variables-outputs-dependencies.hcl) — Terraform variables, output blocks, and explicit dependencies.
+- [VPC Multi-Resource Infrastructure](../terraform/configs/vpc-multi-resource-infrastructure.hcl) — Multi-resource VPC setup with subnets, routes, and security groups.
+- [Terraform Lifecycle (2026-07-22)](../terraform/scripts/2026-07-22-terraform-lifecycle.sh) — init, validate, plan, and apply end-to-end.
+- [Remote State Management (S3 + DynamoDB)](../terraform/scripts/remote-state-management-s3.sh) — Initialize S3 backend, migrate local state, and enable DynamoDB locking.
+- [First Local File Resource (2026-07-19)](../terraform/configs/2026-07-19-first-local-file-resource.hcl) — Terraform local_file resource with content and filename.
+- [Local Provider Config](../terraform/configs/local-provider.hcl) — Infrastructure configuration with Terraform.
 - [Terraform State, Backends, and Modules Notebook](../tf/notebooks/terraform-state-backends-and-modules.ipynb) — Interactive notebook on Terraform state management, remote backends, and reusable module patterns.
 - [Terraform Modules, State, and Workspaces Notebook](../tf/notebooks/terraform-modules-state-workspaces.ipynb) — Interactive notebook on Terraform modules, state backends, and workspace isolation.
 - [Multi-Service Deployment Scaffold](../tf/templates/multi-service-deployment/README.md) — Terraform + Docker Compose scaffold that provisions a container registry and IAM user for CI/CD image pushes while defining a local three-service stack.
-- [Variables, Outputs, and Dependencies (2026-07-22)](../terraform/configs/2026-07-22-variables-outputs-dependencies.hcl) — Terraform variables, output blocks, and explicit dependencies.
-- [Common Modular and Versioned Configs (2026-07-27)](../docs/concepts/infrastructure-as-code/snippets/2026-07-27-common-modular-versioned-configs.hcl) — Reusable Terraform patterns with modules and version constraints.
-- [Terraform Lifecycle (2026-07-22)](../terraform/scripts/2026-07-22-terraform-lifecycle.sh) — init, validate, plan, and apply end-to-end.
-- [First Local File Resource (2026-07-19)](../terraform/configs/2026-07-19-first-local-file-resource.hcl) — Terraform local_file resource with content and filename.
-- [Local Provider Config](../terraform/configs/local-provider.hcl) — Infrastructure configuration with Terraform.
-- [Remote State Management (S3 + DynamoDB)](../terraform/scripts/remote-state-management-s3.sh) — Initialize S3 backend, migrate local state, and enable DynamoDB locking.
-- [Install Local Cluster Script](../kubernetes/scripts/install-local-cluster.sh) — Local K8s development environment with kind.
-- [Minimal Deployment + Service (2026-07-21)](../kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml) — Basic nginx Deployment with ClusterIP Service.
-- [Kubernetes Deployment Resource Limits](../docker/manifests/kubernetes-deployment-resource-limits.yaml) — Deployment manifest demonstrating resource limits and replica configuration.
-- [StatefulSet PostgreSQL with PVC](../kubernetes/manifests/statefulset-postgresql-pvc.yaml) — StatefulSet manifest with persistent volume claim for PostgreSQL.
-- [StatefulSet PostgreSQL](../kubernetes/manifests/statefulset-postgresql.yaml) — PostgreSQL StatefulSet without PVC for local development.
-- [Inspecting Pods, Services, and Events (2026-07-19)](../kubernetes/docs/2026-07-19-inspecting-pods-services-events.md) — `kubectl get`, `describe`, and `logs` patterns for real-world debugging.
-- [Troubleshoot Failing Deployments (2026-07-21)](../kubernetes/scripts/2026-07-21-troubleshoot-failing-deployment.sh) — Diagnose CrashLoopBackOff and ImagePullBackOff.
-- [Debugging Port-Forward, Exec, and Logs (2026-07-21)](../kubernetes/snippets/2026-07-21-debugging-port-forward-exec-logs.sh) — Port-forward, exec into pods, tail logs.
-- [ConfigMaps, Secrets, and env vars](../kubernetes/docs/configmaps-secrets-env-vars.md) — Wiring configuration and secrets into a K8s Deployment.
-- [kubectl Rollout vs Edit](../kubernetes/scripts/kubectl-rollout-vs-edit.sh) — Zero-downtime update strategy comparison: rollout restart vs edit/patch.
-- [Troubleshoot Pods (2026-07-19)](../kubernetes/scripts/2026-07-19-troubleshoot-pods.sh) — Debug K8s pods with kubectl logs and describe
-- [Jenkins Primer](../jenkins/notes/0000-primer-jenkins.md) — First-contact notes for Jenkins setup and pipeline basics
-- [Install Jenkins and Open Web UI](../jenkins/notes/2026-08-06-install-jenkins-and-open-web-ui.md) — Install Jenkins locally and access the web UI
-- [Run First Jenkins Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy) — Groovy snippet for a minimal Jenkins pipeline
-- [OpenTofu Primer](../of/notes/0000-primer-opentofu.md) — OpenTofu primer, a Terraform-compatible IaC tool
-- [Install OpenTofu](../of/scripts/2026-08-06-install-opentofu.sh) — Install OpenTofu CLI and initialise your first resource
+- [Terraform Multi-Service Deployment Main](../tf/templates/multi-service-deployment/main.tf) — Terraform config provisioning a container registry and IAM user for CI/CD image pushes.
+- [Multi-Service Docker Compose for Terraform Scaffold](../tf/templates/multi-service-deployment/docker-compose.yml) — Web, API, and database services with health checks for local development.
+- [Terraform Provisioning Dockerfile](../tf/dockerfiles/multi-stage-dockerfile-terraform-provisioning.Dockerfile) — Multi-stage Dockerfile for Terraform plan/apply workflows.
+- [Terraform + GitHub Actions CI/CD Integration (2026-08-10)](../tf/docs/terraform-github-actions-ci-cd.md) — How Terraform plan/apply workflows integrate with GitHub Actions and cloud credentials.
+- [Production Terraform Workspace Manifest (2026-08-10)](../tf/manifests/production-terraform-workspace-remote-state-locking.yaml) — Production workspace config with remote S3 state and DynamoDB locking.
+- [Run First Jenkins Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy) — Groovy snippet for a minimal Jenkins pipeline.
+- [Jenkins Primer](../jenkins/notes/0000-primer-jenkins.md) — First-contact notes for Jenkins setup and pipeline basics.
+- [Install Jenkins and Open Web UI](../jenkins/notes/2026-08-06-install-jenkins-and-open-web-ui.md) — Install Jenkins locally and access the web UI.
+- [Ansible Primer](../ansible/notes/0000-primer-ansible.md) — Ansible primer with first-contact notes for configuration management.
+- [Install Ansible and Run First Command](../ansible/notes/2026-08-05-install-ansible-and-run-first-command.md) — Install Ansible and run your first ad-hoc command.
+- [First Ping Playbook](../ansible/configs/2026-08-05-first-ping-playbook.yaml) — Minimal playbook to verify Ansible connectivity.
+- [OpenTofu Primer](../of/notes/0000-primer-opentofu.md) — OpenTofu primer, a Terraform-compatible IaC tool.
+- [Install OpenTofu](../of/scripts/2026-08-06-install-opentofu.sh) — Install OpenTofu CLI and initialise your first resource.
 - [First OpenTofu Resource](../of/configs/2026-08-05-first-resource.hcl) — First Terraform-compatible OpenTofu resource configuration.
-- [Ansible Primer](../ansible/notes/0000-primer-ansible.md) — Ansible primer with first-contact notes for configuration management
-- [Install Ansible and Run First Command](../ansible/notes/2026-08-05-install-ansible-and-run-first-command.md) — Install Ansible and run your first ad-hoc command
-- [First Ping Playbook](../ansible/configs/2026-08-05-first-ping-playbook.yaml) — Minimal playbook to verify Ansible connectivity
+- [Trivy Primer](../trivy/notes/0000-primer-trivy.md) — Vulnerability scanning, SBOM generation, and severity filtering for container images.
+- [First Trivy Scan (2026-08-10)](../trivy/notes/2026-08-10-first-trivy-scan.md) — First-day notes for running a Trivy vulnerability scan against a container image.
 
 ## Stage 5: Mastery
 
@@ -126,24 +125,22 @@ Advanced patterns and production-ready configurations across the full stack.
 - ⏳ GitOps workflows with full Kubernetes deployments
 - ⏳ Advanced networking and service meshes
 - ⏳ Secret management and CI/CD security hardening
-- ⏳ Multi-environment Terraform with remote backends and workspace isolation
-- ⏳ Container image security scanning and SBOM generation
 
 ## Progression Map
 
 ```
 Stage 1 → Stage 2 → Stage 3 → Stage 4 → Stage 5
-           ↓         ↓         ↓         ↓
-    Concepts   →  Core     → Quickstart → Compose  → Advanced
-  (Cloud,      →  Tools    → CLI Notes  → K8s     → GitOps
-   Container,   → (K8s,     → Branch/    → Install
-    IaC,         Terraform,  → Conflict   → State
+            ↓         ↓         ↓         ↓
+     Concepts   →  Core     → Quickstart → Compose  → Advanced
+   (Cloud,      →  Tools    → CLI Notes  → K8s     → GitOps
+    Container,   → (K8s,     → Branch/    → Install
+     IaC,         Terraform,  → Conflict   → State
     Scripting)    GitHub     → Docker     → Multi-env
-           ↓      Actions)    Port Map    GHA
-    Git/Docker          ↓         ↓
-    Primers       K8s Debug  K8s Debug
-           ↓       (describe, (describe,
-    Linux/Net     logs,        logs,
-           ↓       events)     events)
-    Networking
+            ↓      Actions)    Port Map    GHA
+     Git/Docker          ↓         ↓
+     Primers       K8s Debug  K8s Debug
+            ↓       (describe, (describe,
+     Linux/Net     logs,        logs,
+            ↓       events)     events)
+     Networking
 ```
