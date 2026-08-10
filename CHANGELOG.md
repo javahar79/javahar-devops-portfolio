@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-10
+
+- Added production Terraform workspace manifest with remote S3 state and DynamoDB locking (tf-022)
+- Added Trivy quick primer covering vulnerability scanning, terminology, and first-scan example (trivy-004)
+
 ## 2026-08-09
 
 - Added multi-stage Dockerfile for Terraform provisioning workflows with provider caching and minimal runtime (tf-021)
