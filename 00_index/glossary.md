@@ -6,12 +6,26 @@
 - **PaaS** — Platform as a Service; the provider manages the OS and runtime, and I only deploy code (e.g. Heroku, AWS Elastic Beanstalk).
 - **SaaS** — Software as a Service; fully managed application accessed over the web (e.g. Gmail, GitHub, Slack).
 - **Region** — A geographic area with multiple data centres that a cloud provider exposes as a deployable parameter (e.g. `us-east-1`, `eu-west-1`). Latency and compliance rules usually dictate which region to pick.
-- **Multi-cloud** — Using more than one cloud provider to avoid vendor lock-in or to pick the best service from each.
+- **Multi-cloud** — Using more than one cloud provider to avoid vendor lock-in.
+
+## CI/CD
+
+- **Pipeline** — An automated sequence of stages from commit to deploy. Example: a GitHub Actions workflow triggered on every push.
+- **Trigger** — The event that starts a pipeline: a `push` to a branch, a `pull_request`, or a scheduled cron.
+- **Runner/Agent** — The machine that executes a pipeline's jobs. Example: the `ubuntu-latest` hosted runner on GitHub Actions.
+- **DORA metrics** — Deployment frequency, lead time for changes, change failure rate, and MTTR; used to gauge how healthy a team's CI/CD practice is.
+- **Blue-green / canary** — Deployment strategies that reduce risk by shifting traffic gradually (canary) or switching between two identical environments (blue-green).
+- **GitOps** — A declarative operational model where the desired cluster state is stored in Git and a controller (e.g. ArgoCD, Flux) continuously reconciles the cluster toward that state.
+- **Observability** — The ability to understand a system's internal state from its outputs — metrics, logs, and traces. The three pillars used to debug live systems.
+- **Approval gate** — A CI/CD stage that requires manual review before proceeding, typically used for production deployments.
+- **Rollback** — Reverting a deployment to a previous known-good version after detecting a failure in the current release.
+- **Blast radius** — The scope of impact if a change fails; in pipeline design, minimising blast radius means isolating infrastructure changes from application changes so one does not block or break the other.
+- **state-aware pipeline** — A pipeline design that treats infrastructure changes and application changes as separate lifecycles, applying plan/approve/apply to IaC and rolling updates to apps so one does not block the other.
 
 ## Container Fundamentals
 
-- **Image** — A read-only template for creating a container. Built from a Dockerfile, stored in a registry.
 - **Container** — A runnable instance of an image. I can start, stop, move, or delete it.
+- **Image** — A packaged application with its dependencies, code, and runtime. Built from a Dockerfile and stored in a registry.
 - **Dockerfile** — A text file of instructions that builds an image. Each line is a layer.
 - **Registry** — A server that stores and serves container images. `docker pull` downloads from a registry; `docker push` uploads to one. Example: Docker Hub, ACR, ECR.
 - **Volume** — Persistent storage that survives container restarts. Without volumes, data written inside a container vanishes when the container stops.
@@ -35,20 +49,6 @@
 - **Smoke test** — A minimal validation that the app is alive and responding after deploy. Catches obvious breakage before running the full test suite.
 - **detached mode** — `docker compose up -d` runs containers in the background and returns control to the shell; useful for CI and long-running stacks.
 - **BuildKit secret** — A `--secret` mount passed at build time that injects sensitive data into a specific build stage without baking it into any image layer; the secret never appears in `docker history` or the final image.
-
-## CI/CD
-
-- **Pipeline** — An automated sequence of stages from commit to deploy. Example: a GitHub Actions workflow triggered on every push.
-- **Trigger** — The event that starts a pipeline: a `push` to a branch, a `pull_request`, or a scheduled cron.
-- **Runner/Agent** — The machine that executes a pipeline's jobs. Example: the `ubuntu-latest` hosted runner on GitHub Actions.
-- **DORA metrics** — Deployment frequency, lead time for changes, change failure rate, and MTTR; used to gauge how healthy a team's CI/CD practice is.
-- **Blue-green / canary** — Deployment strategies that reduce risk by shifting traffic gradually (canary) or switching between two identical environments (blue-green).
-- **GitOps** — A declarative operational model where the desired cluster state is stored in Git and a controller (e.g. ArgoCD, Flux) continuously reconciles the cluster toward that state.
-- **Observability** — The ability to understand a system's internal state from its outputs — metrics, logs, and traces. The three pillars used to debug live systems.
-- **Approval gate** — A CI/CD stage that requires manual review before proceeding, typically used for production deployments.
-- **Rollback** — Reverting a deployment to a previous known-good version after detecting a failure in the current release.
-- **Blast radius** — The scope of impact if a change fails; in pipeline design, minimising blast radius means isolating infrastructure changes from application changes so one does not block or break the other.
-- **state-aware pipeline** — A pipeline design that treats infrastructure changes and application changes as separate lifecycles, applying plan/approve/apply to IaC and rolling updates to apps so one does not block the other.
 
 ## Git
 
@@ -100,6 +100,18 @@
 - **State** — A snapshot of current infrastructure. Terraform compares your config against state to decide what to create, update, or delete.
 - **Drift** — A manual change outside IaC (e.g. resizing an instance in the console). Tools detect and reconcile it.
 - **Module** — A reusable group of resources I define once and reference in multiple projects.
+- **locals** — A Terraform block that defines values computed from other variables or expressions, used to avoid repetition across resources.
+- **terraform.tfvars** — A file that stores variable values for a Terraform configuration, used to separate secrets and environment-specific values from the main configuration.
+- **path.module** — A Terraform expression that returns the filesystem path of the module where the variable is declared; useful for constructing file paths relative to the current module.
+
+## Ansible
+
+- **Playbook** — A YAML file that defines a set of tasks to run on target machines. Example: `ansible-playbook site.yml` runs all the steps in that file.
+- **Play** — A single section of a playbook that targets one group of hosts and applies a set of tasks to them.
+- **Task** — The smallest unit of work in a playbook. Each task calls an Ansible module to do one thing, like install a package or start a service.
+- **Module** — A reusable unit of code that Ansible calls to perform an action. Example: the `apt` module installs packages on Debian systems.
+- **Inventory** — A list of the machines Ansible manages, grouped however I want. Example: I can group servers by role like `webservers` or `databases`.
+- **Handler** — A special task that only runs when another task notifies it, usually to restart a service after a configuration change.
 
 ## Jenkins
 
@@ -147,6 +159,12 @@
 - **DNS** — The Domain Name System that maps human-readable hostnames to IP addresses.
 - **CIDR** — Classless Inter-Domain Routing notation (e.g. `10.0.0.0/24`) that expresses an IP range and its subnet mask.
 - **NAT** — Network Address Translation, which maps private internal addresses to a public one so hosts can share an outbound connection.
+
+## OpenTofu
+
+- **OpenTofu** — An open-source Terraform-compatible infrastructure as code tool. Same HCL syntax and provider ecosystem, maintained by the community.
+- **Resource** — A block in an OpenTofu config that describes a piece of infrastructure.
+- **Provider** — A plugin that OpenTofu uses to interact with a cloud or service API.
 
 ## Scripting & Automation
 
