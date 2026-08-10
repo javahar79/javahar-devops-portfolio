@@ -194,3 +194,11 @@
 - **S3 versioning** — Versioning enabled on an S3 bucket used as a Terraform backend, allowing recovery from accidental state-file deletions.
 - **Variable** — A placeholder value in a Terraform or OpenTofu configuration that can be set differently per environment, allowing the same config to work across dev, staging, and production.
 - **Output** — A block in a Terraform or OpenTofu configuration that exposes a computed value after apply, such as a resource ID or endpoint URL.
+
+## Trivy
+
+- **Vulnerability** — A weakness in software that an attacker can exploit, such as an outdated OpenSSL package with a known remote-code-execution flaw. Trivy detects vulnerabilities by comparing installed packages against a database of known CVEs.
+- **Misconfiguration** — A setting that weakens security without involving a code bug, such as a container that mounts the host filesystem read-write. Trivy flags misconfigurations in Dockerfiles and Kubernetes manifests.
+- **SBOM** — Software Bill of Materials, a complete inventory of every component inside an image. Trivy can generate an SBOM so compliance teams know exactly what shipped in a build.
+- **Severity** — The risk level assigned to a Trivy finding, typically CRITICAL, HIGH, MEDIUM, LOW, or UNKNOWN. Filtering by severity (e.g. `--severity HIGH,CRITICAL`) keeps scan output actionable.
+- **Scanner** — A tool that inspects software artifacts for security issues. Trivy is an open-source scanner by Aqua Security that checks container images, filesystems, and Git repositories against vulnerability databases.
