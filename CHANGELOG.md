@@ -3,6 +3,8 @@
 ## 2026-08-10
 
 - Added Terraform + GitHub Actions CI/CD integration doc covering remote state, credential scoping, plan/apply workflows, and environment promotion (tf-023)
+- Added production Terraform workspace manifest with remote S3 state and DynamoDB locking (tf-022)
+- Added Trivy quick primer covering vulnerability scanning, terminology, and first-scan example (trivy-004)
 
 ## 2026-08-09
 

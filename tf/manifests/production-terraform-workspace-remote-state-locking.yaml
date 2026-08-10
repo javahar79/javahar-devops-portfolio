@@ -1,0 +1,16 @@
+# last_verified: 2026-08-10 · Terraform n/a
+# Production Terraform workspace manifest — remote S3 state with DynamoDB locking.
+# Purpose: define the backend and workspace settings for collaborative infrastructure.
+
+terraform:
+  backend:
+    type: s3
+    config:
+      bucket: production-terraform-state
+      key: workspace/terraform.tfstate
+      region: us-east-1
+      dynamodb_table: terraform-state-locks
+      encrypt: true
+  workspace:
+    name: production
+    auto_create: true
