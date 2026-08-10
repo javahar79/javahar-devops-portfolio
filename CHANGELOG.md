@@ -2,6 +2,7 @@
 
 ## 2026-08-10
 
+- Added minikube install and first cluster interaction notes covering start, deployment creation, and addon troubleshooting (k8s-012)
 - Added first Trivy vulnerability scan notes covering basic scan execution, severity filtering, and next steps (trivy-005)
 - Added shell scripting fundamentals practice script demonstrating variables, conditionals, loops, and functions (con-063)
 - Added Linux system administration patterns snippet covering disk usage, process inspection, service checks, and large file discovery (con-064)
