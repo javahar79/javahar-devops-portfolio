@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-10
+
+- Added Terraform + GitHub Actions CI/CD integration doc covering remote state, credential scoping, plan/apply workflows, and environment promotion (tf-023)
+
 ## 2026-08-09
 
 - Added multi-stage Dockerfile for Terraform provisioning workflows with provider caching and minimal runtime (tf-021)
