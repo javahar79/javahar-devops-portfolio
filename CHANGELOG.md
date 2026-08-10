@@ -2,6 +2,9 @@
 
 ## 2026-08-10
 
+- Added Pulumi quick primer covering what Pulumi is, key terminology, and a tiny first program example (pulumi-004)
+- Added first Pulumi program in Python creating an AWS S3 bucket (pulumi-005)
+- Added first Trivy container image scan bash snippet with severity filtering and JSON output (trivy-006)
 - Added minikube install and first cluster interaction notes covering start, deployment creation, and addon troubleshooting (k8s-012)
 - Added first Trivy vulnerability scan notes covering basic scan execution, severity filtering, and next steps (trivy-005)
 - Added shell scripting fundamentals practice script demonstrating variables, conditionals, loops, and functions (con-063)
