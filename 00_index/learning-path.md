@@ -117,6 +117,10 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [First OpenTofu Resource](../of/configs/2026-08-05-first-resource.hcl) — First Terraform-compatible OpenTofu resource configuration.
 - [Trivy Primer](../trivy/notes/0000-primer-trivy.md) — Vulnerability scanning, SBOM generation, and severity filtering for container images.
 - [First Trivy Scan (2026-08-10)](../trivy/notes/2026-08-10-first-trivy-scan.md) — First-day notes for running a Trivy vulnerability scan against a container image.
+- [First Trivy Scan Snippet (2026-08-10)](../trivy/snippets/2026-08-10-first-trivy-scan.sh) — Scan an image, filter by severity, and export JSON.
+- [Pulumi Primer](../pulumi/notes/0000-primer-pulumi.md) — Infrastructure as Code in a real programming language instead of HCL.
+- [First Pulumi Program (2026-08-10)](../pulumi/snippets/2026-08-10-first-pulumi-program.py) — Minimal Python program defining an S3 bucket through the Pulumi workflow.
+- [Install minikube and log first cluster interaction (2026-08-10)](../kubernetes/notes/2026-08-10-install-minikube-and-log-my-first-kubernetes-cluster-interaction.md) — Local single-node cluster, first deployment, and addon gotchas.
 
 ## Stage 5: Mastery
 
