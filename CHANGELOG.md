@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-12
+
+- Added automated provisioning pipeline doc combining Infrastructure as Code with CI/CD — plan on PR, approved apply, remote state with locking (con-055)
+- Added Terraform module exploration notebook covering module interfaces, calling modules from a root, and reading real-world modules (con-056)
+- Added container networking patterns script covering bridge/host/none modes, port publishing, and shared-network service discovery (con-057)
+
 ## 2026-08-10
 
 - Added Pulumi quick primer covering what Pulumi is, key terminology, and a tiny first program example (pulumi-004)
