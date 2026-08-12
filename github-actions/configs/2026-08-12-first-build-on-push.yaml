@@ -1,0 +1,16 @@
+# last_verified: 2026-08-12 · GitHub Actions n/a
+# First workflow — a build job that triggers on every push.
+
+name: Build on Push
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Simple build step
+        run: echo "Build step completed OK"
