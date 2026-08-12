@@ -47,6 +47,7 @@ Apply the mental models with hands-on practice. Work through these in order — 
 - [First Git branch and merge](../git/snippets/2026-08-08-first-git-branch-and-merge.sh) — First Git branch and merge workflow.
 - [Common Loops, Conditions, and File Patterns (2026-07-27)](../docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh) — Bash patterns for iterating arrays, branching on conditions, and processing files idempotently.
 - [Dockerfile Layers and Registry Script (2026-08-04)](../docs/concepts/container-fundamentals/scripts/2026-08-04-dockerfile-layers-registry.sh) — Hands-on Dockerfile layer inspection and registry push exercises.
+- [Container Networking Patterns (2026-08-04)](../docs/concepts/container-fundamentals/scripts/container-networking-patterns.sh) — Container networking patterns and exercises.
 - [Declarative Config CLI Exercises (2026-08-04)](../docs/concepts/infrastructure-as-code/scripts/2026-08-04-declarative-config-cli-exercises.sh) — CLI exercises for declarative infrastructure config patterns.
 - [Scheduling, Error Handling, and Parsing (2026-08-04)](../docs/concepts/scripting-automation/scripts/2026-08-04-scheduling-error-handling-parsing.sh) — Cron scheduling, error trapping, and output parsing patterns.
 - [Networking Exercises (2026-08-05)](../docs/concepts/networking-basics/scripts/2026-08-05-networking-exercises.sh) — Hands-on exercises for DNS resolution, port testing, and SSH tunneling.
@@ -54,6 +55,10 @@ Apply the mental models with hands-on practice. Work through these in order — 
 - [Shell Scripting Fundamentals (2026-08-10)](../docs/concepts/linux-os-fundamentals/scripts/2026-08-10-shell-scripting-fundamentals.sh) — Practice script covering variables, conditionals, loops, and functions.
 - [System Admin Patterns (2026-08-10)](../docs/concepts/linux-os-fundamentals/snippets/2026-08-10-system-admin-patterns.sh) — Common patterns for disk usage, process inspection, and service checks.
 - [First kubectl command](../kubernetes/scripts/2026-08-08-first-kubectl-command.sh) — First kubectl commands and node listing.
+- [OpenTofu — log my first command](../of/notes/2026-08-11-first-opentofu-command.md) — First `tofu` session, backend prompt gotcha, and `.terraform.lock.hcl`.
+- [Install OpenTofu](../of/scripts/2026-08-06-install-opentofu.sh) — Install OpenTofu CLI and initialise your first resource.
+- [First Pulumi Program (2026-08-10)](../pulumi/snippets/2026-08-10-first-pulumi-program.py) — Minimal Python program defining an S3 bucket through the Pulumi workflow.
+- [Install minikube and log first cluster interaction (2026-08-10)](../kubernetes/notes/2026-08-10-install-minikube-and-log-my-first-kubernetes-cluster-interaction.md) — Local single-node cluster, first deployment, and addon gotchas.
 
 ## Stage 4: Integration
 
@@ -98,8 +103,11 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Remote State Management (S3 + DynamoDB)](../terraform/scripts/remote-state-management-s3.sh) — Initialize S3 backend, migrate local state, and enable DynamoDB locking.
 - [First Local File Resource (2026-07-19)](../terraform/configs/2026-07-19-first-local-file-resource.hcl) — Terraform local_file resource with content and filename.
 - [Local Provider Config](../terraform/configs/local-provider.hcl) — Infrastructure configuration with Terraform.
+- [Automated Terraform Workflow (2026-08-04)](../docs/concepts/scripting-automation/scripts/automated-terraform-workflow.sh) — End-to-end Terraform init, plan, and apply automation.
+- [Automated Provisioning Pipeline (2026-08-12)](../docs/concepts/infrastructure-as-code/automated-provisioning-pipeline.md) — Plan-on-PR / apply-on-merge pipeline with remote state, approval gates, and locking.
 - [Terraform State, Backends, and Modules Notebook](../tf/notebooks/terraform-state-backends-and-modules.ipynb) — Interactive notebook on Terraform state management, remote backends, and reusable module patterns.
 - [Terraform Modules, State, and Workspaces Notebook](../tf/notebooks/terraform-modules-state-workspaces.ipynb) — Interactive notebook on Terraform modules, state backends, and workspace isolation.
+- [Terraform Module Exploration (2026-08-12)](../docs/concepts/infrastructure-as-code/notebooks/terraform-module-exploration.ipynb) — Interactive notebook exploring Terraform modules and state patterns.
 - [Multi-Service Deployment Scaffold](../tf/templates/multi-service-deployment/README.md) — Terraform + Docker Compose scaffold that provisions a container registry and IAM user for CI/CD image pushes while defining a local three-service stack.
 - [Terraform Multi-Service Deployment Main](../tf/templates/multi-service-deployment/main.tf) — Terraform config provisioning a container registry and IAM user for CI/CD image pushes.
 - [Multi-Service Docker Compose for Terraform Scaffold](../tf/templates/multi-service-deployment/docker-compose.yml) — Web, API, and database services with health checks for local development.
@@ -113,14 +121,11 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Install Ansible and Run First Command](../ansible/notes/2026-08-05-install-ansible-and-run-first-command.md) — Install Ansible and run your first ad-hoc command.
 - [First Ping Playbook](../ansible/configs/2026-08-05-first-ping-playbook.yaml) — Minimal playbook to verify Ansible connectivity.
 - [OpenTofu Primer](../of/notes/0000-primer-opentofu.md) — OpenTofu primer, a Terraform-compatible IaC tool.
-- [Install OpenTofu](../of/scripts/2026-08-06-install-opentofu.sh) — Install OpenTofu CLI and initialise your first resource.
 - [First OpenTofu Resource](../of/configs/2026-08-05-first-resource.hcl) — First Terraform-compatible OpenTofu resource configuration.
+- [My First Pulumi Stack Config (2026-08-11)](../pulumi/configs/2026-08-11-my-first-pulumi-stack.yaml) — First Pulumi stack config with AWS region and project settings.
 - [Trivy Primer](../trivy/notes/0000-primer-trivy.md) — Vulnerability scanning, SBOM generation, and severity filtering for container images.
 - [First Trivy Scan (2026-08-10)](../trivy/notes/2026-08-10-first-trivy-scan.md) — First-day notes for running a Trivy vulnerability scan against a container image.
 - [First Trivy Scan Snippet (2026-08-10)](../trivy/snippets/2026-08-10-first-trivy-scan.sh) — Scan an image, filter by severity, and export JSON.
-- [Pulumi Primer](../pulumi/notes/0000-primer-pulumi.md) — Infrastructure as Code in a real programming language instead of HCL.
-- [First Pulumi Program (2026-08-10)](../pulumi/snippets/2026-08-10-first-pulumi-program.py) — Minimal Python program defining an S3 bucket through the Pulumi workflow.
-- [Install minikube and log first cluster interaction (2026-08-10)](../kubernetes/notes/2026-08-10-install-minikube-and-log-my-first-kubernetes-cluster-interaction.md) — Local single-node cluster, first deployment, and addon gotchas.
 
 ## Stage 5: Mastery
 
@@ -134,17 +139,17 @@ Advanced patterns and production-ready configurations across the full stack.
 
 ```
 Stage 1 → Stage 2 → Stage 3 → Stage 4 → Stage 5
-            ↓         ↓         ↓         ↓
-     Concepts   →  Core     → Quickstart → Compose  → Advanced
-   (Cloud,      →  Tools    → CLI Notes  → K8s     → GitOps
-    Container,   → (K8s,     → Branch/    → Install
-     IaC,         Terraform,  → Conflict   → State
-    Scripting)    GitHub     → Docker     → Multi-env
-            ↓      Actions)    Port Map    GHA
-     Git/Docker          ↓         ↓
-     Primers       K8s Debug  K8s Debug
-            ↓       (describe, (describe,
-     Linux/Net     logs,        logs,
-            ↓       events)     events)
-     Networking
+             ↓         ↓         ↓         ↓
+      Concepts   →  Core     → Quickstart → Compose  → Advanced
+    (Cloud,      →  Tools    → CLI Notes  → K8s     → GitOps
+     Container,   → (K8s,     → Branch/    → Install
+      IaC,         Terraform,  → Conflict   → State
+     Scripting)    GitHub     → Docker     → Multi-env
+             ↓      Actions)    Port Map    GHA
+      Git/Docker          ↓         ↓
+      Primers       K8s Debug  K8s Debug
+             ↓       (describe, (describe,
+      Linux/Net     logs,        logs,
+             ↓       events)     events)
+      Networking
 ```

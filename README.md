@@ -14,17 +14,17 @@ A working DevOps engineer's quick-reference: first-contact notes, runnable snipp
 
 ## What's in here
 
-A DevOps learning portfolio across eleven tool directories and cross-cutting concept primers. Each tool has a primer, dated CLI walkthrough notes, runnable scripts, Dockerfiles, configs, manifests, and notebooks accumulated through hands-on practice. The `tf/` folder pairs Terraform provisioning with a Docker Compose multi-service scaffold. Recent additions include a Pulumi primer with a first Python program, a Trivy scan snippet, and minikube first-cluster notes.
+A DevOps learning portfolio across eleven tool directories and cross-cutting concept primers. Each tool has a primer, dated CLI walkthrough notes, runnable scripts, Dockerfiles, configs, manifests, and notebooks accumulated through hands-on practice. The `tf/` folder pairs Terraform provisioning with a Docker Compose multi-service scaffold. Recent additions include OpenTofu first-command notes, a Pulumi stack config, an automated provisioning pipeline doc, and minikube first-cluster notes.
 
 ## Quick links
 
 The five most recently added files:
 
-- [Pulumi — Quick Primer](pulumi/notes/0000-primer-pulumi.md) — First-day notes on Infrastructure as Code in Python instead of HCL
-- [First Pulumi Program](pulumi/snippets/2026-08-10-first-pulumi-program.py) — Minimal S3 bucket program to test the Pulumi workflow
-- [First Trivy Scan Snippet](trivy/snippets/2026-08-10-first-trivy-scan.sh) — Scan an image, filter by severity, and export JSON
-- [Install minikube and log my first cluster interaction](kubernetes/notes/2026-08-10-install-minikube-and-log-my-first-kubernetes-cluster-interaction.md) — Local single-node cluster, first deployment, and addon gotchas
-- [Shell Scripting Fundamentals Script](docs/concepts/linux-os-fundamentals/scripts/2026-08-10-shell-scripting-fundamentals.sh) — Practice script covering variables, conditionals, loops, and functions
+- [Combining Infrastructure as Code with CI/CD — automated provisioning pipeline](docs/concepts/infrastructure-as-code/automated-provisioning-pipeline.md) — Plan-on-PR / apply-on-merge pipeline with remote state, approval gates, and locking
+- [My First Pulumi Stack Config](pulumi/configs/2026-08-11-my-first-pulumi-stack.yaml) — First Pulumi stack config with AWS region and project settings
+- [OpenTofu — log my first command](of/notes/2026-08-11-first-opentofu-command.md) — First `tofu` session, backend prompt gotcha, and `.terraform.lock.hcl`
+- [Automated Terraform Workflow](docs/concepts/scripting-automation/scripts/automated-terraform-workflow.sh) — End-to-end Terraform init, plan, and apply automation
+- [Terraform Module Exploration](docs/concepts/infrastructure-as-code/notebooks/terraform-module-exploration.ipynb) — Interactive notebook exploring Terraform modules and state patterns
 
 ## Layout
 
@@ -37,8 +37,8 @@ The five most recently added files:
 | `terraform/` | Terraform primer, install script, provider configs, local file resource configs, init & version notes, remote backend docs |
 | `tf/` | Terraform provisioning Dockerfile, CI/CD integration docs, production workspace manifest, state/modules notebooks, multi-service deployment template scaffold |
 | `ansible/` | Ansible primer, install and first-command notes, playbook configs |
-| `of/` | OpenTofu primer, install script, first-resource config |
-| `pulumi/` | Pulumi primer, first Python program snippet |
+| `of/` | OpenTofu primer, install script, first-resource config, first-command notes |
+| `pulumi/` | Pulumi primer, first Python program snippet, first stack config |
 | `jenkins/` | Jenkins primer, install and first-UI notes, first pipeline snippet |
 | `trivy/` | Trivy primer, first vulnerability scan notes and snippet |
 | `docs/concepts/` | Cross-cutting concept primers and runnable snippets (CI/CD, Cloud Computing, Container Fundamentals, Git & version control, Infrastructure as Code, Linux fundamentals, Networking, Scripting & Automation) |
@@ -55,15 +55,15 @@ The five most recently added files:
 | Terraform | 10 | 4 | 6 | — | — | 2 | — | — | — | 2026-07-27 |
 | TF | — | — | — | 1 | 1 | 1 | — | 2 | 9 | 2026-08-10 |
 | Ansible | 2 | — | 1 | — | — | — | — | — | — | 2026-08-05 |
-| OpenTofu | 1 | 1 | 1 | — | — | — | — | — | — | 2026-08-05 |
-| Pulumi | 1 | — | — | — | — | — | 1 | — | — | 2026-08-10 |
+| OpenTofu | 2 | 1 | 1 | — | — | — | — | — | — | 2026-08-11 |
+| Pulumi | 1 | — | 1 | — | — | — | 1 | — | — | 2026-08-10 |
 | Jenkins | 2 | — | — | — | — | — | 1 | — | — | 2026-08-06 |
 | Trivy | 2 | — | — | — | — | — | 1 | — | — | 2026-08-10 |
 
 ## Status
 
-Actively building out first-contact notes and runnable configs across the tool families. The latest focus is new-tool first contact — Pulumi in Python, Trivy scanning, and local Kubernetes with minikube — alongside the deeper Docker (non-root, multi-stage) and Terraform workspaces. Docker tagged non-root and multi-stage Dockerfiles and Terraform notes/configs remain the deepest categories.
+Actively building out first-contact notes and runnable configs across the tool families. Recent additions include OpenTofu first-command notes, a Pulumi stack config, an automated provisioning pipeline doc, container networking patterns, and minikube first-cluster notes. Docker tagged non-root and multi-stage Dockerfiles and Terraform notes/configs remain the deepest categories.
 
 ---
 
-_Last updated: 2026-08-11_
+_Last updated: 2026-08-12_
