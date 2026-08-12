@@ -1,0 +1,8 @@
+# last_verified: 2026-08-11 · pulumi n/a
+# My first Pulumi stack config — values I set after reading the quickstart.
+
+config:
+  aws:region: us-east-1
+  project: my-first-project
+  stack: dev
+  resourcePrefix: myapp
