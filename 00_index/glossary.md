@@ -174,6 +174,14 @@
 - **Idempotency** — Running the same script or command multiple times produces the same result without side effects.
 - **Conditional** — A control structure that runs different code based on a test (e.g. `if`, `case`).
 
+## Pulumi
+
+- **Pulumi** — An Infrastructure as Code tool that provisions cloud resources using a real programming language (Python, TypeScript, Go, YAML) instead of a dedicated config language like HCL.
+- **Stack** — A named deployment target in Pulumi, such as "dev" or "prod"; each stack has its own config and state. Example: `pulumi stack init dev`.
+- **Program** — The code (in a real language) that describes the resources you want, e.g. an S3 bucket or a Kubernetes namespace.
+- **Config** — Key-value settings per stack that let the same program behave differently across environments without code changes.
+- **pulumi up** — The command that computes a diff against state and provisions the changes described by the program.
+
 ## Terraform
 
 - **Infrastructure as Code (IaC)** — Managing infrastructure through configuration files rather than manual processes.

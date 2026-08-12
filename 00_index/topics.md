@@ -42,10 +42,10 @@
 - **snippets** (1): [Run First Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy)
 - _…and browse `jenkins/` for the full collection._
 
-## Kubernetes · 19 files
+## Kubernetes · 20 files
 
 - **primer:** [primer-kubernetes](../kubernetes/notes/0000-primer-kubernetes.md)
-- **notes** (5): most recent → [Install kubectl and Explore Cluster (2026-08-08)](../kubernetes/notes/2026-08-08-install-kubectl-and-explore-cluster.md), [K8s Quickstart — What Tripped Me Up (2026-07-19)](../kubernetes/notes/2026-07-19-k8s-quickstart-trials.md), [K8s Quickstart — What Tripped Me Up (2026-07-10)](../kubernetes/notes/2026-07-10-k8s-quickstart-trials.md)
+- **notes** (6): most recent → [Install minikube and log first cluster interaction (2026-08-10)](../kubernetes/notes/2026-08-10-install-minikube-and-log-my-first-kubernetes-cluster-interaction.md), [Install kubectl and Explore Cluster (2026-08-08)](../kubernetes/notes/2026-08-08-install-kubectl-and-explore-cluster.md), [K8s Quickstart — What Tripped Me Up (2026-07-19)](../kubernetes/notes/2026-07-19-k8s-quickstart-trials.md)
 - **scripts** (5): most recent → [First kubectl Command (2026-08-08)](../kubernetes/scripts/2026-08-08-first-kubectl-command.sh), [kubectl Rollout vs Edit (2026-07-30)](../kubernetes/scripts/kubectl-rollout-vs-edit.sh), [Troubleshoot Failing Deployments (2026-07-21)](../kubernetes/scripts/2026-07-21-troubleshoot-failing-deployment.sh)
 - **docs** (3): most recent → [ConfigMaps, Secrets, and env vars (2026-07-30)](../kubernetes/docs/configmaps-secrets-env-vars.md), [Inspecting Pods, Services, and Events (2026-07-19)](../kubernetes/docs/2026-07-19-inspecting-pods-services-events.md), [Inspecting Pods, Services, and Events (2026-07-12)](../kubernetes/docs/2026-07-12-inspecting-pods-services-events.md)
 - **manifests** (4): most recent → [StatefulSet PostgreSQL with PVC (2026-07-31)](../kubernetes/manifests/statefulset-postgresql-pvc.yaml), [Minimal Deployment + Service (2026-07-21)](../kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml), [Minimal Deployment + Service (2026-07-10)](../kubernetes/manifests/2026-07-10-minimal-deployment-service.yaml), [StatefulSet PostgreSQL](../kubernetes/manifests/statefulset-postgresql.yaml)
@@ -86,10 +86,18 @@
 - **scripts** (1): [Install OpenTofu (2026-08-06)](../of/scripts/2026-08-06-install-opentofu.sh)
 - _…and browse `of/` for the full collection._
 
-## Trivy · 2 files
+## Pulumi · 2 files
+
+- **primer:** [primer-pulumi](../pulumi/notes/0000-primer-pulumi.md)
+- **notes** (1): [Pulumi Primer (2026-08-10)](../pulumi/notes/0000-primer-pulumi.md)
+- **snippets** (1): [First Pulumi Program (2026-08-10)](../pulumi/snippets/2026-08-10-first-pulumi-program.py)
+- _…and browse `pulumi/` for the full collection._
+
+## Trivy · 3 files
 
 - **primer:** [primer-trivy](../trivy/notes/0000-primer-trivy.md)
 - **notes** (1): [First Trivy Scan (2026-08-10)](../trivy/notes/2026-08-10-first-trivy-scan.md)
+- **snippets** (1): [First Trivy Scan Snippet (2026-08-10)](../trivy/snippets/2026-08-10-first-trivy-scan.sh)
 - _…and browse `trivy/` for the full collection._
 
 ## Cross-cutting concepts · 28 files
