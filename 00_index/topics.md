@@ -78,19 +78,20 @@
 - **configs** (1): [First Ping Playbook](../ansible/configs/2026-08-05-first-ping-playbook.yaml)
 - _…and browse `ansible/` for the full collection._
 
-## OpenTofu · 3 files
+## OpenTofu · 4 files
 
 - **primer:** [primer-opentofu](../of/notes/0000-primer-opentofu.md)
-- **notes** (1): [OpenTofu Primer (2026-08-05)](../of/notes/0000-primer-opentofu.md)
+- **notes** (2): most recent → [OpenTofu — log my first command (2026-08-11)](../of/notes/2026-08-11-first-opentofu-command.md), [OpenTofu Primer (2026-08-05)](../of/notes/0000-primer-opentofu.md)
 - **configs** (1): [First Resource](../of/configs/2026-08-05-first-resource.hcl)
 - **scripts** (1): [Install OpenTofu (2026-08-06)](../of/scripts/2026-08-06-install-opentofu.sh)
 - _…and browse `of/` for the full collection._
 
-## Pulumi · 2 files
+## Pulumi · 3 files
 
 - **primer:** [primer-pulumi](../pulumi/notes/0000-primer-pulumi.md)
 - **notes** (1): [Pulumi Primer (2026-08-10)](../pulumi/notes/0000-primer-pulumi.md)
 - **snippets** (1): [First Pulumi Program (2026-08-10)](../pulumi/snippets/2026-08-10-first-pulumi-program.py)
+- **configs** (1): [My First Pulumi Stack Config (2026-08-11)](../pulumi/configs/2026-08-11-my-first-pulumi-stack.yaml)
 - _…and browse `pulumi/` for the full collection._
 
 ## Trivy · 3 files
@@ -100,14 +101,14 @@
 - **snippets** (1): [First Trivy Scan Snippet (2026-08-10)](../trivy/snippets/2026-08-10-first-trivy-scan.sh)
 - _…and browse `trivy/` for the full collection._
 
-## Cross-cutting concepts · 28 files
+## Cross-cutting concepts · 32 files
 
 - **CI/CD concepts** (7): [CI/CD Primer](../docs/concepts/ci-cd-concepts/0000-primer-ci-cd-concepts.md), [State-Aware IaC Pipelines (2026-07-31)](../docs/concepts/ci-cd-concepts/state-aware-iac-pipelines.md), [Integrating CI with GitOps](../docs/concepts/ci-cd-concepts/integrating-ci-with-gitops.md), [CI/CD Workflow Overview (2026-07-19)](../docs/concepts/ci-cd-concepts/2026-07-19-ci-cd-workflow-overview.md), [Minimal CI Pipeline Script (2026-07-23)](../docs/concepts/ci-cd-concepts/scripts/2026-07-23-minimal-ci-pipeline.sh), [Intro to CI/CD Core Concepts (2026-07-23)](../docs/concepts/ci-cd-concepts/notebooks/2026-07-23-intro-to-cicd-core-concepts-with-interactive-examples.ipynb), [CI/CD Stage Patterns (2026-07-31)](../docs/concepts/ci-cd-concepts/snippets/2026-07-31-cicd-pipeline-stage-patterns.yaml)
 - **Cloud Computing** (3): [Cloud Computing Fundamentals Primer](../docs/concepts/cloud-computing-fundamentals/0000-primer-cloud-computing-fundamentals.md), [Practice Cloud Computing Exercises (2026-08-04)](../docs/concepts/cloud-computing-fundamentals/scripts/2026-08-04-practice-cloud-computing-exercises.sh), [Common Patterns for Networking, IAM, and Storage (2026-08-04)](../docs/concepts/cloud-computing-fundamentals/snippets/2026-08-04-common-patterns-for-networking-iam-and-storage.sh)
-- **Container Fundamentals** (3): [Container Fundamentals Primer](../docs/concepts/container-fundamentals/0000-primer-container-fundamentals.md), [Dockerfile Layers and Registry Script (2026-08-04)](../docs/concepts/container-fundamentals/scripts/2026-08-04-dockerfile-layers-registry.sh), [Common Patterns for Multi-Stage Builds and Non-Root Runtimes (2026-08-04)](../docs/concepts/container-fundamentals/snippets/2026-08-04-common-patterns-for-multi-stage-builds-and-non-root-runtimes.dockerfile)
+- **Container Fundamentals** (4): [Container Fundamentals Primer](../docs/concepts/container-fundamentals/0000-primer-container-fundamentals.md), [Dockerfile Layers and Registry Script (2026-08-04)](../docs/concepts/container-fundamentals/scripts/2026-08-04-dockerfile-layers-registry.sh), [Common Patterns for Multi-Stage Builds and Non-Root Runtimes (2026-08-04)](../docs/concepts/container-fundamentals/snippets/2026-08-04-common-patterns-for-multi-stage-builds-and-non-root-runtimes.dockerfile), [Container Networking Patterns (2026-08-04)](../docs/concepts/container-fundamentals/scripts/container-networking-patterns.sh)
 - **Git & version control** (3): [Git Version Control Primer](../docs/concepts/git-version-control/0000-primer-git-version-control.md), [Git Branching, Merging, and Conflicts (2026-07-22)](../docs/concepts/git-version-control/scripts/2026-07-22-git-branching-merging-conflicts.sh), [Common Rebase and Reset Patterns (2026-07-27)](../docs/concepts/git-version-control/snippets/2026-07-27-common-rebase-reset-patterns.sh)
-- **Infrastructure as Code** (3): [Infrastructure as Code Primer](../docs/concepts/infrastructure-as-code/0000-primer-infrastructure-as-code.md), [Declarative Config CLI Exercises (2026-08-04)](../docs/concepts/infrastructure-as-code/scripts/2026-08-04-declarative-config-cli-exercises.sh), [Common Modular Configs](../docs/concepts/infrastructure-as-code/snippets/2026-07-27-common-modular-versioned-configs.hcl)
+- **Infrastructure as Code** (5): [Infrastructure as Code Primer](../docs/concepts/infrastructure-as-code/0000-primer-infrastructure-as-code.md), [Automated Provisioning Pipeline (2026-08-12)](../docs/concepts/infrastructure-as-code/automated-provisioning-pipeline.md), [Declarative Config CLI Exercises (2026-08-04)](../docs/concepts/infrastructure-as-code/scripts/2026-08-04-declarative-config-cli-exercises.sh), [Common Modular Configs](../docs/concepts/infrastructure-as-code/snippets/2026-07-27-common-modular-versioned-configs.hcl), [Terraform Module Exploration (2026-08-12)](../docs/concepts/infrastructure-as-code/notebooks/terraform-module-exploration.ipynb)
 - **Linux OS fundamentals** (3): [Linux Primer](../docs/concepts/linux-os-fundamentals/0000-primer-linux-os-fundamentals.md), [Shell Scripting Fundamentals (2026-08-10)](../docs/concepts/linux-os-fundamentals/scripts/2026-08-10-shell-scripting-fundamentals.sh), [System Admin Patterns (2026-08-10)](../docs/concepts/linux-os-fundamentals/snippets/2026-08-10-system-admin-patterns.sh)
 - **Networking basics** (2): [Networking Primer](../docs/concepts/networking-basics/0000-primer-networking-basics.md), [Networking Exercises (2026-08-05)](../docs/concepts/networking-basics/scripts/2026-08-05-networking-exercises.sh)
-- **Scripting & Automation** (4): [Scripting & Automation Primer](../docs/concepts/scripting-automation/0000-primer-scripting-automation.md), [Automated Build Pipeline](../docs/concepts/scripting-automation/automated-build-pipeline.md), [Scheduling, Error Handling, and Parsing (2026-08-04)](../docs/concepts/scripting-automation/scripts/2026-08-04-scheduling-error-handling-parsing.sh), [Common Loops and Conditions](../docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh)
+- **Scripting & Automation** (5): [Scripting & Automation Primer](../docs/concepts/scripting-automation/0000-primer-scripting-automation.md), [Automated Build Pipeline](../docs/concepts/scripting-automation/automated-build-pipeline.md), [Automated Terraform Workflow (2026-08-04)](../docs/concepts/scripting-automation/scripts/automated-terraform-workflow.sh), [Scheduling, Error Handling, and Parsing (2026-08-04)](../docs/concepts/scripting-automation/scripts/2026-08-04-scheduling-error-handling-parsing.sh), [Common Loops and Conditions](../docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh)
 - _…and browse `docs/concepts/` for the full collection._

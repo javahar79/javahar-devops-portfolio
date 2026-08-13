@@ -46,6 +46,7 @@
 - [Tagged Non-Root Dockerfile (2026-07-18)](../docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile) — Multi-stage Dockerfile with pinned tag and non-root runtime user
 - [Run Container Port Map Script (2026-07-18)](../docker/scripts/2026-07-18-run-container-port-map.sh) — Build and run Go container with port mapping
 - [Dockerfile Layers and Registry Script (2026-08-04)](../docs/concepts/container-fundamentals/scripts/2026-08-04-dockerfile-layers-registry.sh) — Hands-on Dockerfile layer inspection and registry push exercises
+- [Container Networking Patterns (2026-08-04)](../docs/concepts/container-fundamentals/scripts/container-networking-patterns.sh) — Container networking patterns and exercises
 - [Dockerfile Antipatterns](../docker/docs/dockerfile-antipatterns.md) — Common Dockerfile mistakes and how to avoid them
 - [Multi-Stage vs Distroless vs Alpine](../docker/docs/multi-stage-vs-distroless-vs-alpine.md) — When to choose each Docker image base
 
@@ -74,9 +75,12 @@
 - [VPC Multi-Resource Infrastructure](../terraform/configs/vpc-multi-resource-infrastructure.hcl) — Multi-resource VPC setup with subnets, routes, and security groups
 - [Terraform Lifecycle (2026-07-22)](../terraform/scripts/2026-07-22-terraform-lifecycle.sh) — init, validate, plan, and apply end-to-end
 - [Remote State Management (S3 + DynamoDB)](../terraform/scripts/remote-state-management-s3.sh) — Initialize S3 backend, migrate local state, and enable DynamoDB locking
+- [Automated Provisioning Pipeline (2026-08-12)](../docs/concepts/infrastructure-as-code/automated-provisioning-pipeline.md) — Plan-on-PR / apply-on-merge pipeline with remote state and approval gates
 - [Declarative Config CLI Exercises (2026-08-04)](../docs/concepts/infrastructure-as-code/scripts/2026-08-04-declarative-config-cli-exercises.sh) — CLI exercises for declarative infrastructure config patterns
 - [First OpenTofu Resource](../of/configs/2026-08-05-first-resource.hcl) — First Terraform-compatible OpenTofu resource configuration
+- [OpenTofu — log my first command (2026-08-11)](../of/notes/2026-08-11-first-opentofu-command.md) — First `tofu` session and backend prompt gotcha
 - [First Pulumi Program (2026-08-10)](../pulumi/snippets/2026-08-10-first-pulumi-program.py) — Minimal Pulumi program in Python defining an S3 bucket
+- [My First Pulumi Stack Config (2026-08-11)](../pulumi/configs/2026-08-11-my-first-pulumi-stack.yaml) — First Pulumi stack config with AWS region and project settings
 - [Multi-Service Deployment Scaffold](../tf/templates/multi-service-deployment/README.md) — Terraform + Docker Compose scaffold for provisioning infrastructure and running a local three-service stack
 - [Multi-Service Docker Compose](../tf/templates/multi-service-deployment/docker-compose.yml) — Web, API, and database services with health checks for local development
 - [Terraform Multi-Service Deployment](../tf/templates/multi-service-deployment/main.tf) — Terraform config provisioning a container registry and IAM user for CI/CD image pushes
