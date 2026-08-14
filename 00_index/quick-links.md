@@ -45,6 +45,7 @@
 - [Build Multi-Stage with Secrets](../docker/scripts/build-multi-stage-with-secrets.sh) — Build multi-stage Dockerfile with BuildKit secrets mount for sensitive data
 - [Tagged Non-Root Dockerfile (2026-07-18)](../docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile) — Multi-stage Dockerfile with pinned tag and non-root runtime user
 - [Run Container Port Map Script (2026-07-18)](../docker/scripts/2026-07-18-run-container-port-map.sh) — Build and run Go container with port mapping
+- [Multi-Container Application Patterns](../docs/concepts/container-fundamentals/multi-container-application-patterns.md) — One process per container, service discovery by name, and stateful backing stores
 - [Dockerfile Layers and Registry Script (2026-08-04)](../docs/concepts/container-fundamentals/scripts/2026-08-04-dockerfile-layers-registry.sh) — Hands-on Dockerfile layer inspection and registry push exercises
 - [Container Networking Patterns (2026-08-04)](../docs/concepts/container-fundamentals/scripts/container-networking-patterns.sh) — Container networking patterns and exercises
 - [Dockerfile Antipatterns](../docker/docs/dockerfile-antipatterns.md) — Common Dockerfile mistakes and how to avoid them
@@ -65,6 +66,8 @@
 - [Run First Jenkins Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy) — Groovy snippet for a minimal Jenkins pipeline
 
 ### Provision infrastructure
+- [Cloud Deployment Patterns](../docs/concepts/cloud-computing-fundamentals/cloud-deployment-patterns.md) — Environment-as-code consistency, GitOps, image-as-delivery-unit, and designed-in rollback
+- [Infrastructure Patterns — Structural Parity Check](../docs/concepts/cloud-computing-fundamentals/scripts/infrastructure-patterns.py) — Drift check that every environment declares the same component layout
 - [Terraform Directory Structure (2026-07-19)](../terraform/notes/2026-07-19-terraform-directory-structure.md) — How the terraform/ folder is organised and what each directory holds
 - [Terraform Version & Init (2026-07-19)](../terraform/notes/2026-07-19-terraform-version-init.md) — Terraform version check, init, and first-run walkthrough
 - [Terraform Init First-Run Notes (2026-07-14)](../terraform/notes/2026-07-14-terraform-init-first-run.md) — First-run `terraform init` behaviour, provider download, and `.terraform.lock.hcl`

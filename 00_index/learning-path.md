@@ -48,6 +48,7 @@ Apply the mental models with hands-on practice. Work through these in order — 
 - [Common Loops, Conditions, and File Patterns (2026-07-27)](../docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh) — Bash patterns for iterating arrays, branching on conditions, and processing files idempotently.
 - [Dockerfile Layers and Registry Script (2026-08-04)](../docs/concepts/container-fundamentals/scripts/2026-08-04-dockerfile-layers-registry.sh) — Hands-on Dockerfile layer inspection and registry push exercises.
 - [Container Networking Patterns (2026-08-04)](../docs/concepts/container-fundamentals/scripts/container-networking-patterns.sh) — Container networking patterns and exercises.
+- [Infrastructure Patterns — Structural Parity Check (2026-08-14)](../docs/concepts/cloud-computing-fundamentals/scripts/infrastructure-patterns.py) — Drift check that dev/stage/prod declare the same component layout before promoting.
 - [Declarative Config CLI Exercises (2026-08-04)](../docs/concepts/infrastructure-as-code/scripts/2026-08-04-declarative-config-cli-exercises.sh) — CLI exercises for declarative infrastructure config patterns.
 - [Scheduling, Error Handling, and Parsing (2026-08-04)](../docs/concepts/scripting-automation/scripts/2026-08-04-scheduling-error-handling-parsing.sh) — Cron scheduling, error trapping, and output parsing patterns.
 - [Networking Exercises (2026-08-05)](../docs/concepts/networking-basics/scripts/2026-08-05-networking-exercises.sh) — Hands-on exercises for DNS resolution, port testing, and SSH tunneling.
@@ -75,6 +76,8 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Build Multi-Stage with Secrets Script (2026-07-31)](../docker/scripts/build-multi-stage-with-secrets.sh) — BuildKit secrets mount pattern keeping API keys out of image layers.
 - [Multi-Service Compose Config](../docker/configs/multi-service-compose.yaml) — Multi-container applications with Compose.
 - [Multi-Service Compose Notebook (2026-07-31)](../docker/notebooks/multi-service-compose.ipynb) — Interactive walkthrough: Flask web app, PostgreSQL, healthcheck, network inspection, and service discovery.
+- [Multi-Container Application Patterns (2026-08-14)](../docs/concepts/container-fundamentals/multi-container-application-patterns.md) — One process per container, service discovery by name, stateful backing stores, and the sidecar composite.
+- [Cloud Deployment Patterns (2026-08-14)](../docs/concepts/cloud-computing-fundamentals/cloud-deployment-patterns.md) — Environment-as-code, GitOps, image-as-delivery-unit, and designed-in rollback in real DevOps projects.
 - [Project Scaffold: Docker + Compose](../docker/templates/project-scaffold-docker-compose/README.md) — Production-grade Docker Compose scaffold for multi-service applications.
 - [GHA Quickstart — What Tripped Me Up (2026-07-21)](../github-actions/notes/2026-07-21-gha-quickstart-tripped-me.md) — Workflow syntax, triggers, and debugging gotchas.
 - [First Workflow and Actions Tab (2026-08-12)](../github-actions/notes/2026-08-12-first-workflow-and-actions-tab.md) — First-day notes for the GitHub Actions UI and workflow tab.
