@@ -2,6 +2,9 @@
 
 ## 2026-08-14
 
+- Added Docker install-from-official-apt-repo notes and hello-world run (docker-015)
+- Added first Docker CLI bash snippet covering pull, run, list, and inspect (docker-016)
+- Added Docker daemon.json config for log rotation and resource limits (docker-017)
 - Added branch-strategies-for-ci doc combining Git & Version Control with CI/CD Concepts — trunk-based, GitFlow, feature-branch flow, and CI policy wiring (con-061)
 - Added automated-release-process bash snippet combining Git & Version Control with Scripting & Automation — tag-based release flow (con-062)
 - Added DNS and connectivity checks practice script for Networking Basics — resolution, reverse lookup, port and HTTP checks (con-065)
