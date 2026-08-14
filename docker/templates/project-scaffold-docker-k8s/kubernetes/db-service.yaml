@@ -1,0 +1,17 @@
+# last_verified: 2026-08-14 · kubernetes n/a
+# Headless service that gives each StatefulSet pod a stable DNS name.
+apiVersion: v1
+kind: Service
+metadata:
+  name: db-svc
+  labels:
+    app: multi-service
+    tier: db
+spec:
+  clusterIP: None
+  selector:
+    app: multi-service
+    tier: db
+  ports:
+    - port: 5432
+      targetPort: 5432

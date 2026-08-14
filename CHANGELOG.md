@@ -2,6 +2,8 @@
 
 ## 2026-08-14
 
+- Added Docker + Kubernetes multi-service project scaffold template — Compose for local dev, K8s manifests (Deployment, Service, Ingress, StatefulSet + PVC) for cluster deploy (docker-018)
+- Added OpenTofu official quickstart walkthrough notes — plan/apply loop, state file, destroy lifecycle (of-005)
 - Added Docker install-from-official-apt-repo notes and hello-world run (docker-015)
 - Added first Docker CLI bash snippet covering pull, run, list, and inspect (docker-016)
 - Added Docker daemon.json config for log rotation and resource limits (docker-017)

@@ -1,0 +1,49 @@
+# last_verified: 2026-08-14 · kubernetes n/a
+# Stateless web tier: a Deployment with replicas, resource limits, and probes.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web
+  labels:
+    app: multi-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: multi-service
+      tier: web
+  template:
+    metadata:
+      labels:
+        app: multi-service
+        tier: web
+    spec:
+      containers:
+        - name: web
+          # Replace with the image you build from the included Dockerfile and push.
+          image: <your-registry>/multi-service-web:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: web-config
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 15
+            periodSeconds: 20
