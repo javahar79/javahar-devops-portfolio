@@ -2,6 +2,9 @@
 
 ## 2026-08-14
 
+- Added branch-strategies-for-ci doc combining Git & Version Control with CI/CD Concepts — trunk-based, GitFlow, feature-branch flow, and CI policy wiring (con-061)
+- Added automated-release-process bash snippet combining Git & Version Control with Scripting & Automation — tag-based release flow (con-062)
+- Added DNS and connectivity checks practice script for Networking Basics — resolution, reverse lookup, port and HTTP checks (con-065)
 - Added cloud deployment patterns doc combining Cloud Computing Fundamentals with CI/CD — GitOps, environment-as-code, canary and red-black rollback (con-059)
 - Added cloud infrastructure cross-environment consistency script (environment-as-code drift checker) in Python (con-060)
 - Added multi-container application patterns doc for Container Fundamentals — sidecar, one-concern-per-container, volumes, service discovery (con-058)
