@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-14
+
+- Added cloud deployment patterns doc combining Cloud Computing Fundamentals with CI/CD — GitOps, environment-as-code, canary and red-black rollback (con-059)
+- Added cloud infrastructure cross-environment consistency script (environment-as-code drift checker) in Python (con-060)
+- Added multi-container application patterns doc for Container Fundamentals — sidecar, one-concern-per-container, volumes, service discovery (con-058)
+
 ## 2026-08-12
 
 - Added automated provisioning pipeline doc combining Infrastructure as Code with CI/CD — plan on PR, approved apply, remote state with locking (con-055)
