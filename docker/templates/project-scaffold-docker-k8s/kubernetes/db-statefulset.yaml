@@ -1,0 +1,56 @@
+# last_verified: 2026-08-14 · kubernetes n/a
+# Stateful stateful workload: PostgreSQL runs as a StatefulSet with one pod per
+# PVC, giving it a stable hostname (db-0.db-svc) and persistent storage.
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: db
+  labels:
+    app: multi-service
+    tier: db
+spec:
+  serviceName: db-svc
+  replicas: 1
+  selector:
+    matchLabels:
+      app: multi-service
+      tier: db
+  template:
+    metadata:
+      labels:
+        app: multi-service
+        tier: db
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:16-alpine
+          ports:
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_DB
+              value: appdb
+            - name: POSTGRES_USER
+              value: appuser
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: db-secret
+                  key: password
+          volumeMounts:
+            - name: db-data
+              mountPath: /var/lib/postgresql/data
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "100m"
+            limits:
+              memory: "1Gi"
+              cpu: "500m"
+  volumeClaimTemplates:
+    - metadata:
+        name: db-data
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 5Gi

@@ -1,0 +1,16 @@
+# last_verified: 2026-08-14 · kubernetes n/a
+# ClusterIP service for the cache tier.
+apiVersion: v1
+kind: Service
+metadata:
+  name: cache-svc
+  labels:
+    app: multi-service
+    tier: cache
+spec:
+  selector:
+    app: multi-service
+    tier: cache
+  ports:
+    - port: 6379
+      targetPort: 6379

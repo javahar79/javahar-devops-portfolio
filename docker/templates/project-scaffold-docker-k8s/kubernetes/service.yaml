@@ -1,0 +1,15 @@
+# last_verified: 2026-08-14 · kubernetes n/a
+# Stable network endpoint for the web tier.
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-svc
+  labels:
+    app: multi-service
+spec:
+  selector:
+    app: multi-service
+    tier: web
+  ports:
+    - port: 80
+      targetPort: 8080

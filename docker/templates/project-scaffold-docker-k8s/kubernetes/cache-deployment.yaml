@@ -1,0 +1,33 @@
+# last_verified: 2026-08-14 · kubernetes n/a
+# Stateless cache tier, mirroring the redis service in docker-compose.yml.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cache
+  labels:
+    app: multi-service
+    tier: cache
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: multi-service
+      tier: cache
+  template:
+    metadata:
+      labels:
+        app: multi-service
+        tier: cache
+    spec:
+      containers:
+        - name: redis
+          image: redis:7-alpine
+          ports:
+            - containerPort: 6379
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "50m"
+            limits:
+              memory: "256Mi"
+              cpu: "250m"

@@ -1,0 +1,14 @@
+# last_verified: 2026-08-14 · kubernetes n/a
+# Shared environment for the web tier. Mounted by the Deployment.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: web-config
+  labels:
+    app: multi-service
+data:
+  DATABASE_HOST: db-svc
+  DATABASE_PORT: "5432"
+  DATABASE_NAME: appdb
+  CACHE_HOST: cache-svc
+  CACHE_PORT: "6379"
