@@ -15,12 +15,14 @@
 - **Runner/Agent** — The machine that executes a pipeline's jobs. Example: the `ubuntu-latest` hosted runner on GitHub Actions.
 - **DORA metrics** — Deployment frequency, lead time for changes, change failure rate, and MTTR; used to gauge how healthy a team's CI/CD practice is.
 - **Blue-green / canary** — Deployment strategies that reduce risk by shifting traffic gradually (canary) or switching between two identical environments (blue-green).
+- **red-black deployment** — A deployment strategy that keeps two full environments running and switches traffic between them for instant rollback (a cloud-flavoured variant of blue-green).
 - **GitOps** — A declarative operational model where the desired cluster state is stored in Git and a controller (e.g. ArgoCD, Flux) continuously reconciles the cluster toward that state.
 - **Observability** — The ability to understand a system's internal state from its outputs — metrics, logs, and traces. The three pillars used to debug live systems.
 - **Approval gate** — A CI/CD stage that requires manual review before proceeding, typically used for production deployments.
 - **Rollback** — Reverting a deployment to a previous known-good version after detecting a failure in the current release.
 - **Blast radius** — The scope of impact if a change fails; in pipeline design, minimising blast radius means isolating infrastructure changes from application changes so one does not block or break the other.
 - **state-aware pipeline** — A pipeline design that treats infrastructure changes and application changes as separate lifecycles, applying plan/approve/apply to IaC and rolling updates to apps so one does not block the other.
+- **environment-as-code consistency** — The pattern of rendering every environment (dev/stage/prod) from the same IaC template so a promotion is "run the same apply against a different backend" rather than rebuilding prod by hand.
 
 ## Container Fundamentals
 
@@ -49,6 +51,8 @@
 - **Smoke test** — A minimal validation that the app is alive and responding after deploy. Catches obvious breakage before running the full test suite.
 - **detached mode** — `docker compose up -d` runs containers in the background and returns control to the shell; useful for CI and long-running stacks.
 - **BuildKit secret** — A `--secret` mount passed at build time that injects sensitive data into a specific build stage without baking it into any image layer; the secret never appears in `docker history` or the final image.
+- **sidecar** — A companion container (logger shipper, metrics exporter, config reloader) that rides alongside the main container and shares its lifecycle, keeping auxiliary concerns out of the application image.
+- **service discovery** — Containers resolving each other by stable name rather than IP, so moving or scaling a container does not break its callers; the same idea orchestrators automate at cluster scale.
 
 ## Git
 
@@ -96,6 +100,7 @@
 ## Infrastructure as Code
 
 - **Declarative vs imperative** — Declarative says "I want three load balancers" and the tool figures out how. Imperative says "run this script then that script." Terraform HCL is declarative.
+- **structural parity** — A drift check that every environment (dev/stage/prod) declares the same set of components, so the diff between environments is configuration-only and never structural.
 - **Idempotent** — Running the same config twice produces the same result. If the resource exists, the tool skips it.
 - **State** — A snapshot of current infrastructure. Terraform compares your config against state to decide what to create, update, or delete.
 - **Drift** — A manual change outside IaC (e.g. resizing an instance in the console). Tools detect and reconcile it.
