@@ -43,6 +43,8 @@
 - **health check** — A Docker Compose or Dockerfile instruction (`HEALTHCHECK`) that defines how to test if a container is still working; used with `depends_on: condition: service_healthy` to control startup order.
 - **depends_on** — A Docker Compose key that expresses service startup and shutdown dependencies; can be configured with `condition: service_healthy` or `condition: service_started`.
 - **docker scout** — A Docker CLI command that analyzes container images for CVEs and generates SBOMs; available in recent Docker Desktop and Docker Engine versions.
+- **daemon.json** — Docker Engine's configuration file (default `/etc/docker/daemon.json`). Options like `log-driver`/`log-opts` (rotation size and file count), `max-concurrent-downloads`, and `default-ulimits` are set here and take effect when the daemon restarts.
+- **official apt repo** — Docker's own Debian/Ubuntu package repository (installs `docker-ce`, `docker-ce-cli`, `containerd.io`), as opposed to the distro's older `docker.io` package. Setup means adding Docker's GPG key under `/etc/apt/keyrings` and a `deb` line for your release codename.
 - **Compose** — A tool for defining and running multi-container Docker applications using a YAML file.
 - **Volume / bind mount** — A mechanism to mount a host directory into a container, enabling data persistence and live-reload during development.
 - **Compose watch** — A Docker Compose feature that synchronises changed files into a running container without a full rebuild, available in Compose v2.23+.
@@ -80,6 +82,10 @@
 - **git rebase** — A Git command that replays commits from one branch on top of another, producing a linear history. Unlike merge, it rewrites commit hashes, so it should only be used on private branches.
 - **git push --force-with-lease** — A safer force-push that only overwrites the remote if no one else has pushed since you last fetched, preventing accidental loss of others' work.
 - **.gitattributes** — A file that controls Git's handling of text conversion, merge strategies, and diff rendering for specific file types.
+- **trunk-based development** — A branch strategy where everyone works on short-lived feature branches and merges straight to a single long-lived trunk (`main`). The trunk is kept releasable at all times, so CI runs on every merge and a broken build blocks the line immediately.
+- **GitFlow** — A heavier branch model with long-lived `develop` and `release/*` branches on top of `main`. Feature branches feed `develop`, a `release/x.y.z` branch stabilizes a version before merging to both `main` and `develop`, and hotfixes skip straight in. Each branch type gets its own CI trigger and validation.
+- **hotfix** — In GitFlow, a short-lived branch cut directly from `main`/production to fix a release-blocker quickly, skipping the normal feature-branch flow.
+- **annotated tag** — `git tag -a` creates a tag with a message, author, and date, so `git describe` and release workflows can treat it as an attributable release point (vs a lightweight tag that is just a pointer).
 
 ## GitHub Actions
 
@@ -164,6 +170,8 @@
 - **DNS** — The Domain Name System that maps human-readable hostnames to IP addresses.
 - **CIDR** — Classless Inter-Domain Routing notation (e.g. `10.0.0.0/24`) that expresses an IP range and its subnet mask.
 - **NAT** — Network Address Translation, which maps private internal addresses to a public one so hosts can share an outbound connection.
+- **getent hosts** — A command that resolves a hostname through the system resolver (`/etc/hosts` and DNS in `nsswitch.conf` order), the same lookup path most CLI tools take.
+- **dig +short** — A terse DNS query that prints just the answers; `dig -x <ip>` does a reverse lookup to find what name sits behind an IP (useful for spotting a proxy or CDN).
 
 ## OpenTofu
 

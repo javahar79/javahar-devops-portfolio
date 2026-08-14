@@ -52,6 +52,7 @@ Apply the mental models with hands-on practice. Work through these in order — 
 - [Declarative Config CLI Exercises (2026-08-04)](../docs/concepts/infrastructure-as-code/scripts/2026-08-04-declarative-config-cli-exercises.sh) — CLI exercises for declarative infrastructure config patterns.
 - [Scheduling, Error Handling, and Parsing (2026-08-04)](../docs/concepts/scripting-automation/scripts/2026-08-04-scheduling-error-handling-parsing.sh) — Cron scheduling, error trapping, and output parsing patterns.
 - [Networking Exercises (2026-08-05)](../docs/concepts/networking-basics/scripts/2026-08-05-networking-exercises.sh) — Hands-on exercises for DNS resolution, port testing, and SSH tunneling.
+- [DNS and Connectivity Checks (2026-08-14)](../docs/concepts/networking-basics/scripts/2026-08-14-dns-and-connectivity-checks.sh) — Resolve a hostname, reverse-lookup the IP, and verify a service is actually reachable on its port.
 - [Practice Cloud Computing Exercises (2026-08-04)](../docs/concepts/cloud-computing-fundamentals/scripts/2026-08-04-practice-cloud-computing-exercises.sh) — Hands-on exercises for cloud service models and provider patterns.
 - [Shell Scripting Fundamentals (2026-08-10)](../docs/concepts/linux-os-fundamentals/scripts/2026-08-10-shell-scripting-fundamentals.sh) — Practice script covering variables, conditionals, loops, and functions.
 - [System Admin Patterns (2026-08-10)](../docs/concepts/linux-os-fundamentals/snippets/2026-08-10-system-admin-patterns.sh) — Common patterns for disk usage, process inspection, and service checks.
@@ -60,6 +61,8 @@ Apply the mental models with hands-on practice. Work through these in order — 
 - [Install OpenTofu](../of/scripts/2026-08-06-install-opentofu.sh) — Install OpenTofu CLI and initialise your first resource.
 - [First Pulumi Program (2026-08-10)](../pulumi/snippets/2026-08-10-first-pulumi-program.py) — Minimal Python program defining an S3 bucket through the Pulumi workflow.
 - [Install minikube and log first cluster interaction (2026-08-10)](../kubernetes/notes/2026-08-10-install-minikube-and-log-my-first-kubernetes-cluster-interaction.md) — Local single-node cluster, first deployment, and addon gotchas.
+- [Install Docker from the Official APT Repo (2026-08-14)](../docker/notes/2026-08-14-install-docker-from-official-apt-repo.md) — Docker Engine from Docker's own repo, plus the docker group so you can skip sudo.
+- [OpenTofu Quickstart — What Tripped Me Up (2026-08-14)](../of/notes/2026-08-14-opentofu-quickstart-trip-ups.md) — plan/apply loop, state-file surprise, and destroy lifecycle in the official quickstart.
 
 ## Stage 4: Integration
 
@@ -79,6 +82,7 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Multi-Container Application Patterns (2026-08-14)](../docs/concepts/container-fundamentals/multi-container-application-patterns.md) — One process per container, service discovery by name, stateful backing stores, and the sidecar composite.
 - [Cloud Deployment Patterns (2026-08-14)](../docs/concepts/cloud-computing-fundamentals/cloud-deployment-patterns.md) — Environment-as-code, GitOps, image-as-delivery-unit, and designed-in rollback in real DevOps projects.
 - [Project Scaffold: Docker + Compose](../docker/templates/project-scaffold-docker-compose/README.md) — Production-grade Docker Compose scaffold for multi-service applications.
+- [Project Scaffold: Compose + K8s](../docker/templates/project-scaffold-docker-k8s/README.md) — Docker Compose for local dev plus the matching K8s manifests (Deployment, Service, Ingress, StatefulSet + PVC) for cluster deploy.
 - [GHA Quickstart — What Tripped Me Up (2026-07-21)](../github-actions/notes/2026-07-21-gha-quickstart-tripped-me.md) — Workflow syntax, triggers, and debugging gotchas.
 - [First Workflow and Actions Tab (2026-08-12)](../github-actions/notes/2026-08-12-first-workflow-and-actions-tab.md) — First-day notes for the GitHub Actions UI and workflow tab.
 - [First Build on Push (2026-08-12)](../github-actions/configs/2026-08-12-first-build-on-push.yaml) — Minimal CI workflow that builds and pushes on every push.
@@ -110,6 +114,8 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Local Provider Config](../terraform/configs/local-provider.hcl) — Infrastructure configuration with Terraform.
 - [Automated Terraform Workflow (2026-08-04)](../docs/concepts/scripting-automation/scripts/automated-terraform-workflow.sh) — End-to-end Terraform init, plan, and apply automation.
 - [Automated Provisioning Pipeline (2026-08-12)](../docs/concepts/infrastructure-as-code/automated-provisioning-pipeline.md) — Plan-on-PR / apply-on-merge pipeline with remote state, approval gates, and locking.
+- [Branch Strategies for CI (2026-08-14)](../docs/concepts/git-version-control/branch-strategies-for-ci.md) — Trunk-based vs GitFlow vs feature-branch, and how each one changes what CI runs and what a merge means.
+- [Automated Release Process (2026-08-14)](../docs/concepts/git-version-control/snippets/automated-release-process.sh) — Tag-based release flow: bump the version file, commit, tag, and push in one repeatable script.
 - [Terraform State, Backends, and Modules Notebook](../tf/notebooks/terraform-state-backends-and-modules.ipynb) — Interactive notebook on Terraform state management, remote backends, and reusable module patterns.
 - [Terraform Modules, State, and Workspaces Notebook](../tf/notebooks/terraform-modules-state-workspaces.ipynb) — Interactive notebook on Terraform modules, state backends, and workspace isolation.
 - [Terraform Module Exploration (2026-08-12)](../docs/concepts/infrastructure-as-code/notebooks/terraform-module-exploration.ipynb) — Interactive notebook exploring Terraform modules and state patterns.

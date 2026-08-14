@@ -4,6 +4,7 @@
 
 ### Set up a tool
 - [Install Docker](../docker/scripts/2026-06-16-install-docker.sh) — Install Docker Engine and run your first container
+- [Install Docker from the Official APT Repo (2026-08-14)](../docker/notes/2026-08-14-install-docker-from-official-apt-repo.md) — Installing Docker Engine from Docker's own apt repository
 - [Configure Git](../git/scripts/configure-and-commit-first.sh) — Set up Git identity and make your first commit
 - [.gitattributes Config](../git/configs/gitattributes-merge-eol-diff.gitattributes) — EOL normalization, merge strategies, and diff configuration
 - [Minimal Git Config Init (2026-07-20)](../git/scripts/2026-07-20-minimal-git-config-init.sh) — Git user.name, user.email, and init script
@@ -40,11 +41,15 @@
 
 ### Build and run a container
 - [Multi-Service Compose](../docker/configs/multi-service-compose.yaml) — Web app with PostgreSQL setup
+- [daemon.json: Log Rotation & Limits (2026-08-14)](../docker/configs/2026-08-14-daemon-json.json) — Docker daemon config for log rotation and resource limits
 - [Multi-Stage Python Webapp Dockerfile](../docker/dockerfiles/multi-stage-python-webapp.Dockerfile) — Python multi-stage build with pip dependencies
 - [Multi-Stage BuildKit Distroless Dockerfile](../docker/dockerfiles/multi-stage-buildkit-distroless.Dockerfile) — Multi-stage Dockerfile with BuildKit cache mounts, distroless runtime, non-root user, and HEALTHCHECK
 - [Build Multi-Stage with Secrets](../docker/scripts/build-multi-stage-with-secrets.sh) — Build multi-stage Dockerfile with BuildKit secrets mount for sensitive data
 - [Tagged Non-Root Dockerfile (2026-07-18)](../docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile) — Multi-stage Dockerfile with pinned tag and non-root runtime user
 - [Run Container Port Map Script (2026-07-18)](../docker/scripts/2026-07-18-run-container-port-map.sh) — Build and run Go container with port mapping
+- [First Docker CLI Snippet (2026-08-14)](../docker/snippets/2026-08-14-first-docker-cli.sh) — pull, run, list, and inspect a container
+- [Project Scaffold: Docker + Compose](../docker/templates/project-scaffold-docker-compose/README.md) — Production-grade Docker Compose scaffold for multi-service applications
+- [Project Scaffold: Compose + K8s](../docker/templates/project-scaffold-docker-k8s/README.md) — Compose for local dev and K8s manifests for cluster deploy
 - [Multi-Container Application Patterns](../docs/concepts/container-fundamentals/multi-container-application-patterns.md) — One process per container, service discovery by name, and stateful backing stores
 - [Dockerfile Layers and Registry Script (2026-08-04)](../docs/concepts/container-fundamentals/scripts/2026-08-04-dockerfile-layers-registry.sh) — Hands-on Dockerfile layer inspection and registry push exercises
 - [Container Networking Patterns (2026-08-04)](../docs/concepts/container-fundamentals/scripts/container-networking-patterns.sh) — Container networking patterns and exercises
@@ -64,6 +69,8 @@
 - [Audit Failed Workflow Runs](../github-actions/scripts/audit-failed-workflow-runs.sh) — Audit failed GHA runs and identify root causes
 - [Matrix Builds & Conditional Deploys](../github-actions/docs/matrix-builds-conditional-deploys.md) — Matrix strategies and conditional deployment patterns
 - [Run First Jenkins Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy) — Groovy snippet for a minimal Jenkins pipeline
+- [Branch Strategies for CI (2026-08-14)](../docs/concepts/git-version-control/branch-strategies-for-ci.md) — Trunk-based, GitFlow, and feature-branch flows plus CI policy wiring
+- [Automated Release Process (2026-08-14)](../docs/concepts/git-version-control/snippets/automated-release-process.sh) — Tag-based release flow that triggers the deploy pipeline
 
 ### Provision infrastructure
 - [Cloud Deployment Patterns](../docs/concepts/cloud-computing-fundamentals/cloud-deployment-patterns.md) — Environment-as-code consistency, GitOps, image-as-delivery-unit, and designed-in rollback
@@ -84,6 +91,7 @@
 - [Declarative Config CLI Exercises (2026-08-04)](../docs/concepts/infrastructure-as-code/scripts/2026-08-04-declarative-config-cli-exercises.sh) — CLI exercises for declarative infrastructure config patterns
 - [First OpenTofu Resource](../of/configs/2026-08-05-first-resource.hcl) — First Terraform-compatible OpenTofu resource configuration
 - [OpenTofu — log my first command (2026-08-11)](../of/notes/2026-08-11-first-opentofu-command.md) — First `tofu` session and backend prompt gotcha
+- [OpenTofu Quickstart — What Tripped Me Up (2026-08-14)](../of/notes/2026-08-14-opentofu-quickstart-trip-ups.md) — plan/apply loop, state file, and destroy lifecycle
 - [First Pulumi Program (2026-08-10)](../pulumi/snippets/2026-08-10-first-pulumi-program.py) — Minimal Pulumi program in Python defining an S3 bucket
 - [My First Pulumi Stack Config (2026-08-11)](../pulumi/configs/2026-08-11-my-first-pulumi-stack.yaml) — First Pulumi stack config with AWS region and project settings
 - [Multi-Service Deployment Scaffold](../tf/templates/multi-service-deployment/README.md) — Terraform + Docker Compose scaffold for provisioning infrastructure and running a local three-service stack
@@ -109,6 +117,7 @@
 - [Troubleshoot Failing Deployments (2026-07-21)](../kubernetes/scripts/2026-07-21-troubleshoot-failing-deployment.sh) — Diagnose CrashLoopBackOff and ImagePullBackOff
 - [Debugging Port-Forward, Exec, and Logs (2026-07-21)](../kubernetes/snippets/2026-07-21-debugging-port-forward-exec-logs.sh) — Port-forward, exec into pods, tail logs
 - [Troubleshoot Pods (2026-07-19)](../kubernetes/scripts/2026-07-19-troubleshoot-pods.sh) — Debug K8s pods with kubectl logs and describe
+- [DNS and Connectivity Checks (2026-08-14)](../docs/concepts/networking-basics/scripts/2026-08-14-dns-and-connectivity-checks.sh) — Resolution, reverse lookup, and port/HTTP connectivity checks
 - [Automate Git Bisect](../git/scripts/git-bisect-automation.sh) — Find the first breaking commit with automated bisect
 - [Reading Workflow Logs and Debugging (2026-07-19)](../github-actions/docs/2026-07-19-reading-workflow-logs-and-debugging.md) — Reading logs and debugging GHA failures
 - [Git Undo/Stage/Commit/Push (2026-07-19)](../git/notes/2026-07-19-git-undo-stage-commit-push.md) — Fixing mistakes in Git workflow
