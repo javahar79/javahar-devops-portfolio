@@ -25,11 +25,11 @@
 - **snippets** (1): [First Git Branch and Merge (2026-08-08)](../git/snippets/2026-08-08-first-git-branch-and-merge.sh)
 - _…and browse `git/` for the full collection._
 
-## GitHub Actions · 16 files
+## GitHub Actions · 18 files
 
 - **primer:** [primer-github-actions](../github-actions/notes/0000-primer-github-actions.md)
-- **notes** (4): [GHA Quickstart — What Tripped Me Up (2026-07-21)](../github-actions/notes/2026-07-21-gha-quickstart-tripped-me.md), [GHA Quickstart — What Tripped Me Up (2026-07-09)](../github-actions/notes/2026-07-09-gha-quickstart-trials.md), [GitHub Actions UI Walkthrough (2026-06-16)](../github-actions/notes/2026-06-16-explore-gha-ui.md)
-- **configs** (6): most recent → [Reusable Workflow with Inputs](../github-actions/configs/reusable-workflow-with-inputs.yaml), [CI Workflow](../github-actions/configs/ci-workflow.yaml), [Minimal CI Workflow (2026-07-19)](../github-actions/configs/2026-07-19-minimal-ci-workflow.yaml), [Minimal CI Workflow (2026-07-12)](../github-actions/configs/2026-07-12-minimal-ci-workflow.yaml), [Debug Run-Name & Conditions (2026-07-19)](../github-actions/configs/2026-07-19-debug-run-name-conditions.yaml)
+- **notes** (5): most recent → [First Workflow and Actions Tab (2026-08-12)](../github-actions/notes/2026-08-12-first-workflow-and-actions-tab.md), [GHA Quickstart — What Tripped Me Up (2026-07-21)](../github-actions/notes/2026-07-21-gha-quickstart-tripped-me.md), [GHA Quickstart — What Tripped Me Up (2026-07-09)](../github-actions/notes/2026-07-09-gha-quickstart-trials.md)
+- **configs** (7): most recent → [First Build on Push (2026-08-12)](../github-actions/configs/2026-08-12-first-build-on-push.yaml), [Reusable Workflow with Inputs](../github-actions/configs/reusable-workflow-with-inputs.yaml), [CI Workflow](../github-actions/configs/ci-workflow.yaml), [Minimal CI Workflow (2026-07-19)](../github-actions/configs/2026-07-19-minimal-ci-workflow.yaml), [Minimal CI Workflow (2026-07-12)](../github-actions/configs/2026-07-12-minimal-ci-workflow.yaml)
 - **docs** (3): [Reading Workflow Logs and Debugging (2026-07-19)](../github-actions/docs/2026-07-19-reading-workflow-logs-and-debugging.md), [Reading Workflow Logs and Debugging (2026-07-10)](../github-actions/docs/2026-07-10-reading-workflow-logs-and-debugging.md), [Matrix Builds & Conditional Deploys](../github-actions/docs/matrix-builds-conditional-deploys.md)
 - **scripts** (2): [Validate Workflow Runs (2026-07-21)](../github-actions/scripts/2026-07-21-validate-workflow-runs.sh), [Audit Failed Workflow Runs](../github-actions/scripts/audit-failed-workflow-runs.sh)
 - **snippets** (1): [Complex Reusable Workflow: Matrix, Approvals, Rollback](../github-actions/snippets/complex-reusable-workflow-matrix-approvals.yaml)
@@ -42,14 +42,14 @@
 - **snippets** (1): [Run First Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy)
 - _…and browse `jenkins/` for the full collection._
 
-## Kubernetes · 20 files
+## Kubernetes · 21 files
 
 - **primer:** [primer-kubernetes](../kubernetes/notes/0000-primer-kubernetes.md)
 - **notes** (6): most recent → [Install minikube and log first cluster interaction (2026-08-10)](../kubernetes/notes/2026-08-10-install-minikube-and-log-my-first-kubernetes-cluster-interaction.md), [Install kubectl and Explore Cluster (2026-08-08)](../kubernetes/notes/2026-08-08-install-kubectl-and-explore-cluster.md), [K8s Quickstart — What Tripped Me Up (2026-07-19)](../kubernetes/notes/2026-07-19-k8s-quickstart-trials.md)
 - **scripts** (5): most recent → [First kubectl Command (2026-08-08)](../kubernetes/scripts/2026-08-08-first-kubectl-command.sh), [kubectl Rollout vs Edit (2026-07-30)](../kubernetes/scripts/kubectl-rollout-vs-edit.sh), [Troubleshoot Failing Deployments (2026-07-21)](../kubernetes/scripts/2026-07-21-troubleshoot-failing-deployment.sh)
 - **docs** (3): most recent → [ConfigMaps, Secrets, and env vars (2026-07-30)](../kubernetes/docs/configmaps-secrets-env-vars.md), [Inspecting Pods, Services, and Events (2026-07-19)](../kubernetes/docs/2026-07-19-inspecting-pods-services-events.md), [Inspecting Pods, Services, and Events (2026-07-12)](../kubernetes/docs/2026-07-12-inspecting-pods-services-events.md)
 - **manifests** (4): most recent → [StatefulSet PostgreSQL with PVC (2026-07-31)](../kubernetes/manifests/statefulset-postgresql-pvc.yaml), [Minimal Deployment + Service (2026-07-21)](../kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml), [Minimal Deployment + Service (2026-07-10)](../kubernetes/manifests/2026-07-10-minimal-deployment-service.yaml), [StatefulSet PostgreSQL](../kubernetes/manifests/statefulset-postgresql.yaml)
-- **snippets** (1): [Debugging Port-Forward, Exec, and Logs (2026-07-21)](../kubernetes/snippets/2026-07-21-debugging-port-forward-exec-logs.sh)
+- **snippets** (2): [Debugging Port-Forward, Exec, and Logs (2026-07-21)](../kubernetes/snippets/2026-07-21-debugging-port-forward-exec-logs.sh), [First kubectl Deploy, Inspect, Delete (2026-08-12)](../kubernetes/snippets/2026-08-12-first-kubectl-deploy-inspect-delete.sh)
 - **notebooks** (1): [Multi-Tier App Debugging Walkthrough](../kubernetes/notebooks/multi-tier-app-debugging-walkthrough.ipynb)
 - _…and browse `kubernetes/` for the full collection._
 

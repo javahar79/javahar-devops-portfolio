@@ -14,17 +14,17 @@ A working DevOps engineer's quick-reference: first-contact notes, runnable snipp
 
 ## What's in here
 
-A DevOps learning portfolio across eleven tool directories and cross-cutting concept primers. Each tool has a primer, dated CLI walkthrough notes, runnable scripts, Dockerfiles, configs, manifests, and notebooks accumulated through hands-on practice. The `tf/` folder pairs Terraform provisioning with a Docker Compose multi-service scaffold. Recent additions include OpenTofu first-command notes, a Pulumi stack config, an automated provisioning pipeline doc, and minikube first-cluster notes.
+A DevOps learning portfolio across eleven tool directories and cross-cutting concept primers. Each tool has a primer, dated CLI walkthrough notes, runnable scripts, Dockerfiles, configs, manifests, and notebooks accumulated through hands-on practice. The `tf/` folder pairs Terraform provisioning with a Docker Compose multi-service scaffold. Recent additions include a GitHub Actions first-build workflow, Kubernetes deploy/inspect/delete snippet, container networking patterns, and an automated provisioning pipeline doc.
 
 ## Quick links
 
 The five most recently added files:
 
-- [Combining Infrastructure as Code with CI/CD — automated provisioning pipeline](docs/concepts/infrastructure-as-code/automated-provisioning-pipeline.md) — Plan-on-PR / apply-on-merge pipeline with remote state, approval gates, and locking
-- [My First Pulumi Stack Config](pulumi/configs/2026-08-11-my-first-pulumi-stack.yaml) — First Pulumi stack config with AWS region and project settings
-- [OpenTofu — log my first command](of/notes/2026-08-11-first-opentofu-command.md) — First `tofu` session, backend prompt gotcha, and `.terraform.lock.hcl`
-- [Automated Terraform Workflow](docs/concepts/scripting-automation/scripts/automated-terraform-workflow.sh) — End-to-end Terraform init, plan, and apply automation
-- [Terraform Module Exploration](docs/concepts/infrastructure-as-code/notebooks/terraform-module-exploration.ipynb) — Interactive notebook exploring Terraform modules and state patterns
+- [First Build on Push](github-actions/configs/2026-08-12-first-build-on-push.yaml) — Minimal CI workflow that builds and pushes on every push
+- [First Workflow and Actions Tab](github-actions/notes/2026-08-12-first-workflow-and-actions-tab.md) — First-day notes for the GitHub Actions UI and workflow tab
+- [First kubectl Deploy, Inspect, Delete](kubernetes/snippets/2026-08-12-first-kubectl-deploy-inspect-delete.sh) — kubectl create, get, describe, logs, and delete workflow
+- [Container Networking Patterns](docs/concepts/container-fundamentals/scripts/container-networking-patterns.sh) — Hands-on exercises for bridge, host, and overlay networks
+- [Automated Provisioning Pipeline](docs/concepts/infrastructure-as-code/automated-provisioning-pipeline.md) — Plan-on-PR / apply-on-merge pipeline with remote state, approval gates, and locking
 
 ## Layout
 
@@ -50,8 +50,8 @@ The five most recently added files:
 |------|-------|---------|---------|-------------|-----------|------|----------|-----------|-----------|---------------|
 | Docker | 20 | 21 | 1 | 22 | 2 | 2 | — | 1 | 5 | 2026-08-06 |
 | Git | 8 | 7 | 1 | — | — | 1 | 1 | 1 | — | 2026-08-08 |
-| GitHub Actions | 4 | 2 | 6 | — | — | 3 | 1 | — | — | 2026-07-24 |
-| Kubernetes | 6 | 5 | — | — | 4 | 3 | 1 | 1 | — | 2026-08-10 |
+| GitHub Actions | 4 | 2 | 7 | — | — | 3 | 1 | — | — | 2026-08-12 |
+| Kubernetes | 6 | 5 | — | — | 4 | 3 | 2 | 1 | — | 2026-08-10 |
 | Terraform | 10 | 4 | 6 | — | — | 2 | — | — | — | 2026-07-27 |
 | TF | — | — | — | 1 | 1 | 1 | — | 2 | 9 | 2026-08-10 |
 | Ansible | 2 | — | 1 | — | — | — | — | — | — | 2026-08-05 |
@@ -62,8 +62,8 @@ The five most recently added files:
 
 ## Status
 
-Actively building out first-contact notes and runnable configs across the tool families. Recent additions include OpenTofu first-command notes, a Pulumi stack config, an automated provisioning pipeline doc, container networking patterns, and minikube first-cluster notes. Docker tagged non-root and multi-stage Dockerfiles and Terraform notes/configs remain the deepest categories.
+Actively building out first-contact notes and runnable configs across the tool families. Recent additions include a GitHub Actions first-build workflow, Kubernetes deploy/inspect/delete snippet, container networking patterns, and an automated provisioning pipeline doc. Docker tagged non-root and multi-stage Dockerfiles and Terraform notes/configs remain the deepest categories.
 
 ---
 
-_Last updated: 2026-08-12_
+_Last updated: 2026-08-13_
