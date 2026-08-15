@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-15
+
+- Added minimal OpenTofu program snippet — local_file resource with required_providers and output (of-006)
+- Added OpenTofu S3 backend HCL config with DynamoDB state locking (of-007)
+
 ## 2026-08-14
 
 - Added Docker + Kubernetes multi-service project scaffold template — Compose for local dev, K8s manifests (Deployment, Service, Ingress, StatefulSet + PVC) for cluster deploy (docker-018)
