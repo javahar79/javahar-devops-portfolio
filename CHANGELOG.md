@@ -2,6 +2,8 @@
 
 ## 2026-08-15
 
+- Added container lifecycle management script combining Scripting & Automation with Container Fundamentals — create, start, verify, stop, remove lifecycle (con-067)
+- Added network diagnostics and traffic analysis practice script for Networking Basics — connectivity, listeners, and active connection states (con-068)
 - Added minimal OpenTofu program snippet — local_file resource with required_providers and output (of-006)
 - Added OpenTofu S3 backend HCL config with DynamoDB state locking (of-007)
 
