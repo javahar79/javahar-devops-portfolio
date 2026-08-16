@@ -2,6 +2,7 @@
 
 ## 2026-08-16
 
+- Added reusable Git helper script to clean up merged local branches and sync a fork with its upstream remote (git-020)
 - Added branch strategies for automated pipelines doc combining CI/CD Concepts with Git & Version Control — trunk-based, GitHub Flow, GitFlow, and pipeline trigger mapping (con-066)
 
 ## 2026-08-15
