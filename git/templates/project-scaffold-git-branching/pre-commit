@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+# last_verified: 2026-08-16 · git n/a
+# Pre-commit hook: enforce branching convention
+# Rejects commits on protected branches and validates branch names.
+
+set -euo pipefail
+
+PROTECTED_BRANCHES="main develop"
+BRANCH_PATTERN="^(main|develop|feature|release|hotfix|bugfix)/.+$"
+
+CURRENT_BRANCH="$(git symbolic-ref --short HEAD 2>/dev/null || echo "")"
+
+if [ -z "$CURRENT_BRANCH" ]; then
+  echo "ERROR: Detached HEAD state — checkout a branch before committing."
+  exit 1
+fi
+
+for PROTECTED in $PROTECTED_BRANCHES; do
+  if [ "$CURRENT_BRANCH" = "$PROTECTED" ]; then
+    echo "ERROR: Direct commits to '$CURRENT_BRANCH' are not allowed."
+    echo "Create a feature branch and open a pull request."
+    exit 1
+  fi
+done
+
+if ! echo "$CURRENT_BRANCH" | grep -qE "$BRANCH_PATTERN"; then
+  echo "ERROR: Branch name '$CURRENT_BRANCH' does not match the convention."
+  echo "Allowed patterns: $BRANCH_PATTERN"
+  exit 1
+fi
+
+echo "Branch '$CURRENT_BRANCH' is valid. Proceeding with commit."
+exit 0
