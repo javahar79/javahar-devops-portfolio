@@ -48,6 +48,7 @@
 - [Tagged Non-Root Dockerfile (2026-07-18)](../docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile) — Multi-stage Dockerfile with pinned tag and non-root runtime user
 - [Run Container Port Map Script (2026-07-18)](../docker/scripts/2026-07-18-run-container-port-map.sh) — Build and run Go container with port mapping
 - [First Docker CLI Snippet (2026-08-14)](../docker/snippets/2026-08-14-first-docker-cli.sh) — pull, run, list, and inspect a container
+- [Container Lifecycle Management (2026-08-15)](../docs/concepts/scripting-automation/scripts/container-lifecycle-management.sh) — create → start → verify → stop → clean, failing loudly on a broken step
 - [Project Scaffold: Docker + Compose](../docker/templates/project-scaffold-docker-compose/README.md) — Production-grade Docker Compose scaffold for multi-service applications
 - [Project Scaffold: Compose + K8s](../docker/templates/project-scaffold-docker-k8s/README.md) — Compose for local dev and K8s manifests for cluster deploy
 - [Multi-Container Application Patterns](../docs/concepts/container-fundamentals/multi-container-application-patterns.md) — One process per container, service discovery by name, and stateful backing stores
@@ -69,6 +70,7 @@
 - [Audit Failed Workflow Runs](../github-actions/scripts/audit-failed-workflow-runs.sh) — Audit failed GHA runs and identify root causes
 - [Matrix Builds & Conditional Deploys](../github-actions/docs/matrix-builds-conditional-deploys.md) — Matrix strategies and conditional deployment patterns
 - [Run First Jenkins Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy) — Groovy snippet for a minimal Jenkins pipeline
+- [Branch Strategies for Automated Pipelines (2026-08-16)](../docs/concepts/ci-cd-concepts/branch-strategies-for-automated-pipelines.md) — How branch models map to pipeline stages, triggers, and release cadence
 - [Branch Strategies for CI (2026-08-14)](../docs/concepts/git-version-control/branch-strategies-for-ci.md) — Trunk-based, GitFlow, and feature-branch flows plus CI policy wiring
 - [Automated Release Process (2026-08-14)](../docs/concepts/git-version-control/snippets/automated-release-process.sh) — Tag-based release flow that triggers the deploy pipeline
 
@@ -90,6 +92,8 @@
 - [Automated Provisioning Pipeline (2026-08-12)](../docs/concepts/infrastructure-as-code/automated-provisioning-pipeline.md) — Plan-on-PR / apply-on-merge pipeline with remote state and approval gates
 - [Declarative Config CLI Exercises (2026-08-04)](../docs/concepts/infrastructure-as-code/scripts/2026-08-04-declarative-config-cli-exercises.sh) — CLI exercises for declarative infrastructure config patterns
 - [First OpenTofu Resource](../of/configs/2026-08-05-first-resource.hcl) — First Terraform-compatible OpenTofu resource configuration
+- [OpenTofu S3 Backend & State Locking (2026-08-15)](../of/configs/2026-08-15-s3-backend-state-locking.hcl) — Remote state in S3 with DynamoDB table locking so applies never race
+- [OpenTofu — Provision a Local Resource (2026-08-15)](../of/snippets/2026-08-15-provision-local-resource.hcl) — Minimal single-file OpenTofu program that creates a local resource
 - [OpenTofu — log my first command (2026-08-11)](../of/notes/2026-08-11-first-opentofu-command.md) — First `tofu` session and backend prompt gotcha
 - [OpenTofu Quickstart — What Tripped Me Up (2026-08-14)](../of/notes/2026-08-14-opentofu-quickstart-trip-ups.md) — plan/apply loop, state file, and destroy lifecycle
 - [First Pulumi Program (2026-08-10)](../pulumi/snippets/2026-08-10-first-pulumi-program.py) — Minimal Pulumi program in Python defining an S3 bucket
@@ -117,8 +121,10 @@
 - [Troubleshoot Failing Deployments (2026-07-21)](../kubernetes/scripts/2026-07-21-troubleshoot-failing-deployment.sh) — Diagnose CrashLoopBackOff and ImagePullBackOff
 - [Debugging Port-Forward, Exec, and Logs (2026-07-21)](../kubernetes/snippets/2026-07-21-debugging-port-forward-exec-logs.sh) — Port-forward, exec into pods, tail logs
 - [Troubleshoot Pods (2026-07-19)](../kubernetes/scripts/2026-07-19-troubleshoot-pods.sh) — Debug K8s pods with kubectl logs and describe
+- [Network Diagnostics & Traffic Analysis (2026-08-15)](../docs/concepts/networking-basics/scripts/2026-08-15-network-diagnostics-traffic-analysis.sh) — Work connectivity, resolution, listening ports, and on-the-wire traffic in order
 - [DNS and Connectivity Checks (2026-08-14)](../docs/concepts/networking-basics/scripts/2026-08-14-dns-and-connectivity-checks.sh) — Resolution, reverse lookup, and port/HTTP connectivity checks
 - [Automate Git Bisect](../git/scripts/git-bisect-automation.sh) — Find the first breaking commit with automated bisect
+- [Sync Fork & Clean Merged Branches (2026-08-16)](../git/scripts/sync-fork-and-clean-merged.sh) — Prune locally-merged branches and fast-forward a fork against upstream
 - [Reading Workflow Logs and Debugging (2026-07-19)](../github-actions/docs/2026-07-19-reading-workflow-logs-and-debugging.md) — Reading logs and debugging GHA failures
 - [Git Undo/Stage/Commit/Push (2026-07-19)](../git/notes/2026-07-19-git-undo-stage-commit-push.md) — Fixing mistakes in Git workflow
 - [Clean Git History (2026-07-20)](../git/scripts/2026-07-20-clean-git-history.sh) — .gitignore audit and merge conflict recovery
