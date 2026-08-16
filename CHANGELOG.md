@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-16
+
+- Added branch strategies for automated pipelines doc combining CI/CD Concepts with Git & Version Control — trunk-based, GitHub Flow, GitFlow, and pipeline trigger mapping (con-066)
+
 ## 2026-08-15
 
 - Added container lifecycle management script combining Scripting & Automation with Container Fundamentals — create, start, verify, stop, remove lifecycle (con-067)
