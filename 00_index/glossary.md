@@ -86,6 +86,9 @@
 - **GitFlow** — A heavier branch model with long-lived `develop` and `release/*` branches on top of `main`. Feature branches feed `develop`, a `release/x.y.z` branch stabilizes a version before merging to both `main` and `develop`, and hotfixes skip straight in. Each branch type gets its own CI trigger and validation.
 - **hotfix** — In GitFlow, a short-lived branch cut directly from `main`/production to fix a release-blocker quickly, skipping the normal feature-branch flow.
 - **annotated tag** — `git tag -a` creates a tag with a message, author, and date, so `git describe` and release workflows can treat it as an attributable release point (vs a lightweight tag that is just a pointer).
+- **feature branch** — A short-lived branch cut from the main line to hold one discrete piece of work (a feature or fix). It is merged back, usually through a pull request, and deleted once the work lands.
+- **upstream** — In a fork workflow, the remote that a fork was created from. Adding it (`git remote add upstream <url>`) lets you fast-forward your fork so it matches the original repository.
+- **git branch prune** — Removing stale branch references: `git remote prune origin` drops remote-tracking refs for branches deleted on the remote, and `git branch -d` deletes local branches whose work is already merged into the base branch.
 
 ## GitHub Actions
 
@@ -114,6 +117,7 @@
 - **locals** — A Terraform block that defines values computed from other variables or expressions, used to avoid repetition across resources.
 - **terraform.tfvars** — A file that stores variable values for a Terraform configuration, used to separate secrets and environment-specific values from the main configuration.
 - **path.module** — A Terraform expression that returns the filesystem path of the module where the variable is declared; useful for constructing file paths relative to the current module.
+- **Docker provider** — The Terraform `docker` provider that manages containers, images, networks, and volumes as first-class resources, so their lifecycle lives in Terraform state (`terraform apply`/`destroy`) instead of ad-hoc CLI commands.
 
 ## Ansible
 
@@ -172,6 +176,7 @@
 - **NAT** — Network Address Translation, which maps private internal addresses to a public one so hosts can share an outbound connection.
 - **getent hosts** — A command that resolves a hostname through the system resolver (`/etc/hosts` and DNS in `nsswitch.conf` order), the same lookup path most CLI tools take.
 - **dig +short** — A terse DNS query that prints just the answers; `dig -x <ip>` does a reverse lookup to find what name sits behind an IP (useful for spotting a proxy or CDN).
+- **ss** — A socket-status utility that lists what is listening and connected on a host (`ss -tlnp` shows listening TCP ports plus the owning process). The modern replacement for `netstat -a`, and the go-to first check when a port "should" be open but nothing connects.
 
 ## OpenTofu
 

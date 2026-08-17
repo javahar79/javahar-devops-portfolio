@@ -37,6 +37,7 @@ Apply the mental models with hands-on practice. Work through these in order — 
 - [Clean Git History (2026-07-20)](../git/scripts/2026-07-20-clean-git-history.sh) — .gitignore audit and merge conflict recovery.
 - [Git Reflog & Rebase (2026-07-20)](../git/scripts/2026-07-20-git-reflog-rebase.sh) — Interactive rebase and reflog recovery.
 - [Automate Git Bisect](../git/scripts/git-bisect-automation.sh) — Binary-search commit history to find the first breaking change.
+- [Fork Sync & Clean Merged Branches (2026-08-16)](../git/scripts/sync-fork-and-clean-merged.sh) — Prune locally-merged branches and sync a fork against its upstream.
 - [Git Bisect Automation Notebook](../git/notebooks/git-bisect-automation-and-history-rewrite.ipynb) — Interactive walkthrough of bisect automation and history-rewriting techniques.
 - [Docker CLI Notes](../docker/notes/2026-06-16-explore-docker-cli.md) — Build, run, and manage containers from the command line.
 - [Docker Quickstart Notes](../docker/notes/2026-06-20-docker-quickstart.md) — Building your first image and running a container.
@@ -53,6 +54,7 @@ Apply the mental models with hands-on practice. Work through these in order — 
 - [Scheduling, Error Handling, and Parsing (2026-08-04)](../docs/concepts/scripting-automation/scripts/2026-08-04-scheduling-error-handling-parsing.sh) — Cron scheduling, error trapping, and output parsing patterns.
 - [Networking Exercises (2026-08-05)](../docs/concepts/networking-basics/scripts/2026-08-05-networking-exercises.sh) — Hands-on exercises for DNS resolution, port testing, and SSH tunneling.
 - [DNS and Connectivity Checks (2026-08-14)](../docs/concepts/networking-basics/scripts/2026-08-14-dns-and-connectivity-checks.sh) — Resolve a hostname, reverse-lookup the IP, and verify a service is actually reachable on its port.
+- [Network Diagnostics & Traffic Analysis (2026-08-15)](../docs/concepts/networking-basics/scripts/2026-08-15-network-diagnostics-traffic-analysis.sh) — Work through connectivity, resolution, listening ports, then what's actually on the wire.
 - [Practice Cloud Computing Exercises (2026-08-04)](../docs/concepts/cloud-computing-fundamentals/scripts/2026-08-04-practice-cloud-computing-exercises.sh) — Hands-on exercises for cloud service models and provider patterns.
 - [Shell Scripting Fundamentals (2026-08-10)](../docs/concepts/linux-os-fundamentals/scripts/2026-08-10-shell-scripting-fundamentals.sh) — Practice script covering variables, conditionals, loops, and functions.
 - [System Admin Patterns (2026-08-10)](../docs/concepts/linux-os-fundamentals/snippets/2026-08-10-system-admin-patterns.sh) — Common patterns for disk usage, process inspection, and service checks.
@@ -74,6 +76,7 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Multi-Stage vs Distroless vs Alpine](../docker/docs/multi-stage-vs-distroless-vs-alpine.md) — Comparing three strategies for reducing image size and attack surface.
 - [Docker Workflow: Limits, Healthcheck, Cleanup](../docker/scripts/docker-workflow-limits-healthcheck-cleanup.sh) — Resource limits, HEALTHCHECK-driven startup order, and volume cleanup.
 - [Automate Container Lifecycle](../docker/scripts/automating-container-lifecycle.sh) — Build, smoke-test, and tear down a Compose stack in one script.
+- [Container Lifecycle Management (2026-08-15)](../docs/concepts/scripting-automation/scripts/container-lifecycle-management.sh) — Create, start, verify, stop, and clean a container in one fail-loudly script combining scripting with container fundamentals.
 - [Multi-Stage Python Webapp Dockerfile](../docker/dockerfiles/multi-stage-python-webapp.Dockerfile) — Python multi-stage build with pip dependencies.
 - [Multi-Stage BuildKit Distroless Dockerfile (2026-07-31)](../docker/dockerfiles/multi-stage-buildkit-distroless.Dockerfile) — Go multi-stage build with BuildKit cache mounts, distroless runtime, non-root user, and HEALTHCHECK.
 - [Build Multi-Stage with Secrets Script (2026-07-31)](../docker/scripts/build-multi-stage-with-secrets.sh) — BuildKit secrets mount pattern keeping API keys out of image layers.
@@ -115,6 +118,7 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Automated Terraform Workflow (2026-08-04)](../docs/concepts/scripting-automation/scripts/automated-terraform-workflow.sh) — End-to-end Terraform init, plan, and apply automation.
 - [Automated Provisioning Pipeline (2026-08-12)](../docs/concepts/infrastructure-as-code/automated-provisioning-pipeline.md) — Plan-on-PR / apply-on-merge pipeline with remote state, approval gates, and locking.
 - [Branch Strategies for CI (2026-08-14)](../docs/concepts/git-version-control/branch-strategies-for-ci.md) — Trunk-based vs GitFlow vs feature-branch, and how each one changes what CI runs and what a merge means.
+- [Branch Strategies for Automated Pipelines (2026-08-16)](../docs/concepts/ci-cd-concepts/branch-strategies-for-automated-pipelines.md) — How branch models map to pipeline stage triggers and release cadence.
 - [Automated Release Process (2026-08-14)](../docs/concepts/git-version-control/snippets/automated-release-process.sh) — Tag-based release flow: bump the version file, commit, tag, and push in one repeatable script.
 - [Terraform State, Backends, and Modules Notebook](../tf/notebooks/terraform-state-backends-and-modules.ipynb) — Interactive notebook on Terraform state management, remote backends, and reusable module patterns.
 - [Terraform Modules, State, and Workspaces Notebook](../tf/notebooks/terraform-modules-state-workspaces.ipynb) — Interactive notebook on Terraform modules, state backends, and workspace isolation.
@@ -133,6 +137,8 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [First Ping Playbook](../ansible/configs/2026-08-05-first-ping-playbook.yaml) — Minimal playbook to verify Ansible connectivity.
 - [OpenTofu Primer](../of/notes/0000-primer-opentofu.md) — OpenTofu primer, a Terraform-compatible IaC tool.
 - [First OpenTofu Resource](../of/configs/2026-08-05-first-resource.hcl) — First Terraform-compatible OpenTofu resource configuration.
+- [OpenTofu S3 Backend & State Locking (2026-08-15)](../of/configs/2026-08-15-s3-backend-state-locking.hcl) — Keep state in S3 with DynamoDB table locking so applies never race.
+- [OpenTofu — Provision a Local Resource (2026-08-15)](../of/snippets/2026-08-15-provision-local-resource.hcl) — Minimal single-file OpenTofu program that creates a local resource.
 - [My First Pulumi Stack Config (2026-08-11)](../pulumi/configs/2026-08-11-my-first-pulumi-stack.yaml) — First Pulumi stack config with AWS region and project settings.
 - [Trivy Primer](../trivy/notes/0000-primer-trivy.md) — Vulnerability scanning, SBOM generation, and severity filtering for container images.
 - [First Trivy Scan (2026-08-10)](../trivy/notes/2026-08-10-first-trivy-scan.md) — First-day notes for running a Trivy vulnerability scan against a container image.
