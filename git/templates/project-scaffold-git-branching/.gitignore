@@ -1,0 +1,36 @@
+# last_verified: 2026-08-17 · git n/a
+
+# Dependencies
+node_modules/
+vendor/
+venv/
+__pycache__/
+
+# Build outputs
+dist/
+build/
+*.pyc
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# IDE
+.idea/
+.vscode/
