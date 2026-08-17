@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-17
+
+- Reworked Git branching convention scaffold template — removed unverifiable version prerequisites (git-021)
+
 ## 2026-08-16
 
 - Added reusable Git helper script to clean up merged local branches and sync a fork with its upstream remote (git-020)

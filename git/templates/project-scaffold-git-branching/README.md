@@ -1,5 +1,5 @@
 ---
-last_verified: 2026-08-16
+last_verified: 2026-08-17
 tool_version: n/a
 ---
 
@@ -15,8 +15,8 @@ Use this scaffold when onboarding a new repository or when an existing repo lack
 
 ## Prerequisites
 
-- Git 2.5+ (branch name retrieval via `git symbolic-ref`)
-- Bash 4.0+ (regex matching in the hook)
+- Git installed locally
+- A Unix-like shell environment (bash, zsh, or compatible)
 - A repository where you can copy the scaffold into the root directory
 
 ## Steps
