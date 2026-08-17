@@ -2,6 +2,8 @@
 
 ## 2026-08-17
 
+- Added Git worktrees and cherry-pick release-management integration patterns doc (git-022)
+- Added install Git and first commit workflow scratch notes (git-019)
 - Reworked Git branching convention scaffold template — removed unverifiable version prerequisites (git-021)
 
 ## 2026-08-16
