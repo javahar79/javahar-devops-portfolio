@@ -364,3 +364,7 @@
 - Added Terraform install script (terraform/scripts/2026-06-17-install-terraform.sh)
 - Added local provider HCL config (terraform/configs/local-provider.hcl)
 - Updated README.md and 00_index/quick-links.md with Terraform entries
+
+## 2026-08-18
+
+- Added Git monorepo config — sparse-checkout, partial clone, and conditional includes (git/configs/monorepo-sparse-checkout-conditional-includes.ini)
