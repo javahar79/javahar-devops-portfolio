@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-18
+
+- Added manual workflow_dispatch input with dependent deploy job config (gha-013)
+
 ## 2026-08-17
 
 - Added Git worktrees and cherry-pick release-management integration patterns doc (git-022)
