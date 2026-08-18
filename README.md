@@ -20,18 +20,18 @@ A DevOps learning portfolio across eleven tool directories and cross-cutting con
 
 The five most recently added files:
 
+- [Monorepo Sparse-Checkout & Conditional Includes](git/configs/monorepo-sparse-checkout-conditional-includes.ini) — sparse-checkout, partial clone, and `includeIf` patterns for monorepo workflows
 - [Git Worktrees & Cherry-Pick for Release Management](git/docs/git-worktrees-cherry-pick-release-management.md) — check out several branches at once and lift a single fix from `main` onto a release branch
 - [Install Git and First Commit Workflow](git/notes/2026-08-17-install-git-first-commit-workflow.md) — first real Git session: init, stage, commit, log, and the identity gotcha
 - [Project Scaffold: Git Branching Convention](git/templates/project-scaffold-git-branching/README.md) — team-ready scaffold that codifies a branch model and enforces it with a pre-commit hook
 - [Branching Convention](git/templates/project-scaffold-git-branching/branching-convention.md) — the `feature/`, `release/`, `hotfix/`, `bugfix/` naming scheme the hook validates
-- [Scaffold Pre-Commit Hook](git/templates/project-scaffold-git-branching/pre-commit) — rejects commits on protected branches and enforces the branch-naming pattern
 
 ## Layout
 
 | Directory | Contents |
 |-----------|----------|
 | `docker/` | Docker primer, CLI notes, install/port-map scripts, 22 Dockerfiles, compose and daemon configs, integration docs (incl. Docker–Terraform patterns), notebook, two project scaffolds (Compose and Compose+K8s) |
-| `git/` | Git primer, CLI notes, undo/branch/merge/reflog/bisect scripts, a fork-sync helper, worktrees & cherry-pick docs, a branching-convention scaffold, .gitattributes config, bisect notebook |
+| `git/` | Git primer, CLI notes, undo/branch/merge/reflog/bisect scripts, a fork-sync helper, worktrees & cherry-pick docs, a branching-convention scaffold, two configs (`.gitattributes` and monorepo sparse-checkout), bisect notebook |
 | `github-actions/` | Actions primer, UI walkthrough, CI workflow configs, workflow-log debugging docs, validation & audit scripts, snippets |
 | `kubernetes/` | K8s primer, kubectl notes, minikube first-cluster notes, local cluster install script, manifests, pod/service troubleshooting scripts and docs, snippets, notebook |
 | `terraform/` | Terraform primer, install script, HCL configs, init/version/plan-apply notes, remote-state and workspace docs |
@@ -49,7 +49,7 @@ The five most recently added files:
 | Tool | Notes | Scripts | Configs | Dockerfiles | Manifests | Docs | Snippets | Notebooks | Templates | Last verified |
 |------|-------|---------|---------|-------------|-----------|------|----------|-----------|-----------|---------------|
 | Docker | 21 | 21 | 2 | 22 | 2 | 3 | 1 | 1 | 17 | 2026-08-14 |
-| Git | 9 | 8 | 1 | — | — | 2 | 1 | 1 | 4 | 2026-08-17 |
+| Git | 9 | 8 | 2 | — | — | 2 | 1 | 1 | 4 | 2026-08-17 |
 | GitHub Actions | 5 | 2 | 7 | — | — | 3 | 1 | — | — | 2026-08-12 |
 | Kubernetes | 6 | 5 | — | — | 4 | 3 | 2 | 1 | — | 2026-08-10 |
 | Terraform | 10 | 4 | 6 | — | — | 2 | — | — | — | 2026-07-27 |
@@ -62,7 +62,7 @@ The five most recently added files:
 
 ## Status
 
-Recent work landed a Git branching-convention scaffold with a pre-commit hook, Git worktrees and cherry-pick release-management patterns, and a first-commit workflow walkthrough. A Kubernetes StatefulSet-with-PVC walkthrough and a complex reusable GitHub Actions workflow are next on the list.
+Recent work landed a Git branching-convention scaffold with a pre-commit hook, Git worktrees and cherry-pick release-management patterns, a first-commit workflow walkthrough, and a monorepo sparse-checkout / conditional-includes config. A Kubernetes StatefulSet-with-PVC walkthrough and a complex reusable GitHub Actions workflow are next on the list.
 
 ---
-_Last updated: 2026-08-17_
+_Last updated: 2026-08-18_
