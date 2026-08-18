@@ -1,0 +1,11 @@
+# last_verified: 2026-08-18 · GitHub Actions n/a
+name: Manual deploy
+on: {workflow_dispatch: {inputs: {env: {required: true, type: choice, options: [staging, prod]}}}}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: [{run: echo Building ${{ inputs.env }}}]
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps: [{run: echo Deploying ${{ inputs.env }}}]
