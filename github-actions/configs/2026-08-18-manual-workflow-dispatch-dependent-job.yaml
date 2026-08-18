@@ -1,0 +1,25 @@
+# last_verified: 2026-08-18 · GitHub Actions n/a
+name: Manual deploy with input
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Target environment
+        required: true
+        type: choice
+        options:
+           - staging
+           - prod
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Building for ${{ inputs.environment }}"
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to ${{ inputs.environment }}"
