@@ -7,7 +7,6 @@
 - [Install Docker from the Official APT Repo (2026-08-14)](../docker/notes/2026-08-14-install-docker-from-official-apt-repo.md) — Installing Docker Engine from Docker's own apt repository
 - [Configure Git](../git/scripts/configure-and-commit-first.sh) — Set up Git identity and make your first commit
 - [.gitattributes Config](../git/configs/gitattributes-merge-eol-diff.gitattributes) — EOL normalization, merge strategies, and diff configuration
-- [Monorepo Sparse-Checkout & Conditional Includes](../git/configs/monorepo-sparse-checkout-conditional-includes.ini) — sparse-checkout, partial clone, and `includeIf` patterns for monorepo workflows
 - [Minimal Git Config Init (2026-07-20)](../git/scripts/2026-07-20-minimal-git-config-init.sh) — Git user.name, user.email, and init script
 - [Install Terraform](../terraform/scripts/2026-06-17-install-terraform.sh) — Install Terraform CLI and init your first project
 - [Install Terraform and Run Version (2026-07-16)](../terraform/notes/2026-07-16-install-terraform-and-run-version.md) — Terraform CLI install, init, and version verification
@@ -21,7 +20,7 @@
 - [Docker Primer](../docker/notes/0000-primer-docker.md) — Containers and images explained
 - [Git Primer](../git/notes/0000-primer-git.md) — Version control fundamentals
 - [Git Merge vs Rebase](../git/docs/git-merge-vs-rebase.md) — Comparing merge and rebase for integrating changes
-- [Git Worktrees & Cherry-Pick for Release Management](../git/docs/git-worktrees-cherry-pick-release-management.md) — Keep several branches checked out at once and lift a single fix from `main` onto a release branch
+- [Git Worktrees & Cherry-Pick for Release Management](../git/docs/git-worktrees-cherry-pick-release-management.md) — Keep several branches checked out at once and lift a single fix across branches
 - [GitHub Actions Primer](../github-actions/notes/0000-primer-github-actions.md) — Automation with GitHub workflows
 - [Kubernetes Primer](../kubernetes/notes/0000-primer-kubernetes.md) — Container orchestration basics
 - [Terraform Primer](../terraform/notes/0000-primer-terraform.md) — Infrastructure as Code introduction
@@ -115,6 +114,7 @@
 - [Minimal Deployment + Service (2026-07-21)](../kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml) — Basic nginx Deployment with ClusterIP Service
 - [StatefulSet PostgreSQL with PVC](../kubernetes/manifests/statefulset-postgresql-pvc.yaml) — PostgreSQL StatefulSet with persistent volume claim
 - [PostgreSQL StatefulSet with PVC](../kubernetes/manifests/statefulset-postgresql.yaml) — PostgreSQL StatefulSet manifest with persistent volume claim
+- [Production Deployment: Rolling Updates, Probes, PDB](../kubernetes/manifests/production-deployment-rolling-updates-probes-pdb.yaml) — Deployment with rolling-update strategy, liveness/readiness probes, and PodDisruptionBudget
 - [Inspecting Pods, Services, and Events (2026-07-19)](../kubernetes/docs/2026-07-19-inspecting-pods-services-events.md) — `kubectl get`, `describe`, and `logs` patterns for real-world debugging
 - [ConfigMaps, Secrets, and env vars](../kubernetes/docs/configmaps-secrets-env-vars.md) — Wiring configuration and secrets into a K8s Deployment
 - [kubectl Rollout vs Edit](../kubernetes/scripts/kubectl-rollout-vs-edit.sh) — Zero-downtime update strategy comparison
