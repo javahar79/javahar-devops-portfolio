@@ -46,6 +46,7 @@ Apply the mental models with hands-on practice. Work through these in order — 
 - [Configure Git Script](../git/scripts/configure-and-commit-first.sh) — Set up Git identity and push your first commit.
 - [Install Git and log my first commit](../git/notes/2026-08-08-install-git-and-log-first-commit.md) — Installing Git and making the first commit.
 - [Install Git and First Commit Workflow (2026-08-17)](../git/notes/2026-08-17-install-git-first-commit-workflow.md) — First real session: init, stage, commit, and log, plus the identity gotcha.
+- [Monorepo Sparse-Checkout & Conditional Includes](../git/configs/monorepo-sparse-checkout-conditional-includes.ini) — Sparse-checkout, partial clone, and `includeIf` patterns for working efficiently in large monorepos.
 - [First Git branch and merge](../git/snippets/2026-08-08-first-git-branch-and-merge.sh) — First Git branch and merge workflow.
 - [Common Loops, Conditions, and File Patterns (2026-07-27)](../docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh) — Bash patterns for iterating arrays, branching on conditions, and processing files idempotently.
 - [Dockerfile Layers and Registry Script (2026-08-04)](../docs/concepts/container-fundamentals/scripts/2026-08-04-dockerfile-layers-registry.sh) — Hands-on Dockerfile layer inspection and registry push exercises.

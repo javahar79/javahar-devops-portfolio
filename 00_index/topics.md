@@ -23,7 +23,7 @@
 - **scripts** (8): [Sync Fork & Clean Merged Branches (2026-08-16)](../git/scripts/sync-fork-and-clean-merged.sh), [Automate Git Bisect](../git/scripts/git-bisect-automation.sh), [Clean Git History (2026-07-20)](../git/scripts/2026-07-20-clean-git-history.sh)
 - **docs** (2): [Git Worktrees & Cherry-Pick for Release Management](../git/docs/git-worktrees-cherry-pick-release-management.md), [Git Merge vs Rebase](../git/docs/git-merge-vs-rebase.md)
 - **templates** (4): [Project Scaffold: Git Branching Convention](../git/templates/project-scaffold-git-branching/README.md)
-- **configs** (1): [.gitattributes: merge, EOL, diff](../git/configs/gitattributes-merge-eol-diff.gitattributes)
+- **configs** (2): [Monorepo Sparse-Checkout & Conditional Includes](../git/configs/monorepo-sparse-checkout-conditional-includes.ini), [.gitattributes: merge, EOL, diff](../git/configs/gitattributes-merge-eol-diff.gitattributes)
 - **notebooks** (1): [Git Bisect Automation & History Rewrite](../git/notebooks/git-bisect-automation-and-history-rewrite.ipynb)
 - **snippets** (1): [First Git Branch and Merge (2026-08-08)](../git/snippets/2026-08-08-first-git-branch-and-merge.sh)
 - _…and browse `git/` for the full collection._

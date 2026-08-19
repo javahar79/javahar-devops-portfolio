@@ -7,6 +7,7 @@
 - [Install Docker from the Official APT Repo (2026-08-14)](../docker/notes/2026-08-14-install-docker-from-official-apt-repo.md) — Installing Docker Engine from Docker's own apt repository
 - [Configure Git](../git/scripts/configure-and-commit-first.sh) — Set up Git identity and make your first commit
 - [.gitattributes Config](../git/configs/gitattributes-merge-eol-diff.gitattributes) — EOL normalization, merge strategies, and diff configuration
+- [Monorepo Sparse-Checkout & Conditional Includes](../git/configs/monorepo-sparse-checkout-conditional-includes.ini) — sparse-checkout, partial clone, and `includeIf` patterns for monorepo workflows
 - [Minimal Git Config Init (2026-07-20)](../git/scripts/2026-07-20-minimal-git-config-init.sh) — Git user.name, user.email, and init script
 - [Install Terraform](../terraform/scripts/2026-06-17-install-terraform.sh) — Install Terraform CLI and init your first project
 - [Install Terraform and Run Version (2026-07-16)](../terraform/notes/2026-07-16-install-terraform-and-run-version.md) — Terraform CLI install, init, and version verification
@@ -20,7 +21,7 @@
 - [Docker Primer](../docker/notes/0000-primer-docker.md) — Containers and images explained
 - [Git Primer](../git/notes/0000-primer-git.md) — Version control fundamentals
 - [Git Merge vs Rebase](../git/docs/git-merge-vs-rebase.md) — Comparing merge and rebase for integrating changes
-- [Git Worktrees & Cherry-Pick for Release Management](../git/docs/git-worktrees-cherry-pick-release-management.md) — Keep several branches checked out at once and lift a single fix across branches
+- [Git Worktrees & Cherry-Pick for Release Management](../git/docs/git-worktrees-cherry-pick-release-management.md) — Keep several branches checked out at once and lift a single fix from `main` onto a release branch
 - [GitHub Actions Primer](../github-actions/notes/0000-primer-github-actions.md) — Automation with GitHub workflows
 - [Kubernetes Primer](../kubernetes/notes/0000-primer-kubernetes.md) — Container orchestration basics
 - [Terraform Primer](../terraform/notes/0000-primer-terraform.md) — Infrastructure as Code introduction
@@ -100,7 +101,7 @@
 - [First OpenTofu Resource](../of/configs/2026-08-05-first-resource.hcl) — First Terraform-compatible OpenTofu resource configuration
 - [OpenTofu S3 Backend & State Locking (2026-08-15)](../of/configs/2026-08-15-s3-backend-state-locking.hcl) — Remote state in S3 with DynamoDB table locking so applies never race
 - [OpenTofu — Provision a Local Resource (2026-08-15)](../of/snippets/2026-08-15-provision-local-resource.hcl) — Minimal single-file OpenTofu program that creates a local resource
-- [OpenTofu — log my first command (2026-08-11)](../of/notes/2026-08-11-first-opentofu-command.md) — First `tofu` session and backend prompt gotcha
+- [OpenTofu — log my first command](../of/notes/2026-08-11-first-opentofu-command.md) — First `tofu` session and backend prompt gotcha
 - [OpenTofu Quickstart — What Tripped Me Up (2026-08-14)](../of/notes/2026-08-14-opentofu-quickstart-trip-ups.md) — plan/apply loop, state file, and destroy lifecycle
 - [First Pulumi Program (2026-08-10)](../pulumi/snippets/2026-08-10-first-pulumi-program.py) — Minimal Pulumi program in Python defining an S3 bucket
 - [My First Pulumi Stack Config (2026-08-11)](../pulumi/configs/2026-08-11-my-first-pulumi-stack.yaml) — First Pulumi stack config with AWS region and project settings
