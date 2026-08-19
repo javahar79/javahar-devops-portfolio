@@ -1,0 +1,5 @@
+# last_verified: 2026-08-19 · Kubernetes n/a
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: sample-app
