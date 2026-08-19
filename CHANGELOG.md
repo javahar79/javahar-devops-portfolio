@@ -2,6 +2,8 @@
 
 ## 2026-08-18
 
+- Added GitHub Actions workflow_dispatch manual trigger config with dependent deploy job (gha-013)
+- Added Kubernetes production Deployment manifest with rolling updates, probes, resource limits, and PodDisruptionBudget (k8s-019)
 - Added manual workflow_dispatch input with dependent deploy job config (gha-013)
 
 ## 2026-08-17
