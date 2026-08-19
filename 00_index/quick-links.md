@@ -20,6 +20,7 @@
 - [Docker Primer](../docker/notes/0000-primer-docker.md) — Containers and images explained
 - [Git Primer](../git/notes/0000-primer-git.md) — Version control fundamentals
 - [Git Merge vs Rebase](../git/docs/git-merge-vs-rebase.md) — Comparing merge and rebase for integrating changes
+- [Git Worktrees & Cherry-Pick for Release Management](../git/docs/git-worktrees-cherry-pick-release-management.md) — Keep several branches checked out at once and lift a single fix across branches
 - [GitHub Actions Primer](../github-actions/notes/0000-primer-github-actions.md) — Automation with GitHub workflows
 - [Kubernetes Primer](../kubernetes/notes/0000-primer-kubernetes.md) — Container orchestration basics
 - [Terraform Primer](../terraform/notes/0000-primer-terraform.md) — Infrastructure as Code introduction
@@ -38,6 +39,13 @@
 - [Git & Version Control Primer](../docs/concepts/git-version-control/0000-primer-git-version-control.md) — Why version control underpins DevOps
 - [Common Git Mistakes (2026-07-20)](../git/notes/2026-07-20-common-git-mistakes.md) — Everyday Git pitfalls and how to fix them
 - [CI/CD Workflow Overview (2026-07-19)](../docs/concepts/ci-cd-concepts/2026-07-19-ci-cd-workflow-overview.md) — How CI/CD pipelines connect GitHub Actions, testing, and deployment
+
+### Follow a branching convention
+- [Project Scaffold: Git Branching Convention](../git/templates/project-scaffold-git-branching/README.md) — Codify a branch model and enforce it with a pre-commit hook
+- [Branching Convention](../git/templates/project-scaffold-git-branching/branching-convention.md) — The `feature/`, `release/`, `hotfix/`, `bugfix/` naming scheme the hook validates
+- [Scaffold Pre-Commit Hook](../git/templates/project-scaffold-git-branching/pre-commit) — Rejects commits on protected branches and enforces branch-name patterns
+- [Branch Strategies for Automated Pipelines (2026-08-16)](../docs/concepts/ci-cd-concepts/branch-strategies-for-automated-pipelines.md) — How branch models map to pipeline stages, triggers, and release cadence
+- [Branch Strategies for CI (2026-08-14)](../docs/concepts/git-version-control/branch-strategies-for-ci.md) — Trunk-based, GitFlow, and feature-branch flows plus CI policy wiring
 
 ### Build and run a container
 - [Multi-Service Compose](../docker/configs/multi-service-compose.yaml) — Web app with PostgreSQL setup
@@ -70,8 +78,6 @@
 - [Audit Failed Workflow Runs](../github-actions/scripts/audit-failed-workflow-runs.sh) — Audit failed GHA runs and identify root causes
 - [Matrix Builds & Conditional Deploys](../github-actions/docs/matrix-builds-conditional-deploys.md) — Matrix strategies and conditional deployment patterns
 - [Run First Jenkins Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy) — Groovy snippet for a minimal Jenkins pipeline
-- [Branch Strategies for Automated Pipelines (2026-08-16)](../docs/concepts/ci-cd-concepts/branch-strategies-for-automated-pipelines.md) — How branch models map to pipeline stages, triggers, and release cadence
-- [Branch Strategies for CI (2026-08-14)](../docs/concepts/git-version-control/branch-strategies-for-ci.md) — Trunk-based, GitFlow, and feature-branch flows plus CI policy wiring
 - [Automated Release Process (2026-08-14)](../docs/concepts/git-version-control/snippets/automated-release-process.sh) — Tag-based release flow that triggers the deploy pipeline
 
 ### Provision infrastructure
