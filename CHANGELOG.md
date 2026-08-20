@@ -378,3 +378,7 @@
 ## 2026-08-19
 
 - Added Kubernetes project scaffold template with sample app manifests — Namespace, ConfigMap, Secret, Deployment, Service, and Ingress (k8s-020)
+
+## 2026-08-20
+
+- Added Terraform remote state reference doc covering S3 backend with DynamoDB locking and state-isolation strategies (tf-024)
