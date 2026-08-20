@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-20
+
+- Added reusable kubectl deploy helper with rollout status watch and automatic rollback script (k8s-021)
+
 ## 2026-08-18
 
 - Added GitHub Actions workflow_dispatch manual trigger config with dependent deploy job (gha-013)
