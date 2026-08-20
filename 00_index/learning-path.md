@@ -152,6 +152,14 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 
 Advanced patterns and production-ready configurations across the full stack.
 
+- [Sample-App Scaffold README](../k8s/templates/project-scaffold-sample-app/README.md) — A full Kubernetes sample app scaffold ready to apply to a cluster.
+- [Production Deployment: Rolling Updates, Probes, PDB](../kubernetes/manifests/production-deployment-rolling-updates-probes-pdb.yaml) — Production-grade Deployment with rolling-update strategy, liveness/readiness probes, and PodDisruptionBudget.
+- [Deploy, Rollout, and Rollback (2026-08-20)](../kubernetes/scripts/deploy-rollout-rollback.sh) — Apply a manifest, wait for rollout to reconcile, and auto-rollback if it does not become ready in time.
+- [Complex Reusable Workflow](../github-actions/snippets/complex-reusable-workflow-matrix-approvals.yaml) — Reusable workflow with matrix builds, approval gates, and rollback for production deploys.
+- [Git Worktrees & Cherry-Pick for Release Management](../git/docs/git-worktrees-cherry-pick-release-management.md) — Keep `main` and a release branch checked out side by side, and lift a single fix from `main` onto a release branch.
+- [Automated Release Process (2026-08-14)](../docs/concepts/git-version-control/snippets/automated-release-process.sh) — Tag-based release flow that bumps the version file, commits, tags, and pushes in one repeatable script.
+- [Multi-Service Deployment Scaffold](../tf/templates/multi-service-deployment/README.md) — Terraform + Docker Compose scaffold provisioning a container registry and IAM user for CI/CD image pushes.
+- [Project Scaffold: Compose + K8s](../docker/templates/project-scaffold-docker-k8s/README.md) — Docker Compose for local dev plus matching K8s manifests for cluster deploy.
 - ⏳ GitOps workflows with full Kubernetes deployments
 - ⏳ Advanced networking and service meshes
 - ⏳ Secret management and CI/CD security hardening
