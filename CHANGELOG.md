@@ -374,3 +374,7 @@
 ## 2026-08-18
 
 - Added Git monorepo config — sparse-checkout, partial clone, and conditional includes (git/configs/monorepo-sparse-checkout-conditional-includes.ini)
+
+## 2026-08-19
+
+- Added Kubernetes project scaffold template with sample app manifests — Namespace, ConfigMap, Secret, Deployment, Service, and Ingress (k8s-020)

@@ -1,0 +1,10 @@
+# last_verified: 2026-08-19 · Kubernetes n/a
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sample-app-config
+  namespace: sample-app
+data:
+  APP_ENV: "development"
+  LOG_LEVEL: "info"
+  PORT: "8080"
