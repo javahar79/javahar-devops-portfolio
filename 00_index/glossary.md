@@ -166,6 +166,7 @@
 - **RollingUpdate** — A Kubernetes Deployment strategy that replaces old pods with new ones incrementally, ensuring availability during updates.
 - **readiness probe** — A Kubernetes container probe that signals when a pod is ready to serve traffic; until it passes, the pod is not added to the service's endpoints.
 - **kubectl rollout** — A kubectl subcommand for managing and inspecting Deployment rollouts, including restart, status, history, and undo.
+- **PodDisruptionBudget (PDB)** — A Kubernetes policy object that limits how many pods can be voluntarily evicted at once during node maintenance, ensuring a minimum number of available replicas for critical workloads.
 
 ## Linux OS Fundamentals
 

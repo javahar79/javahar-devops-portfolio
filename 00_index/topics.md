@@ -7,51 +7,44 @@
 - **primer:** [primer-docker](../docker/notes/0000-primer-docker.md)
 - **notes** (21): most recent → [Install Docker from the Official APT Repo (2026-08-14)](../docker/notes/2026-08-14-install-docker-from-official-apt-repo.md), [Docker Quickstart — What Tripped Me Up (2026-07-18)](../docker/notes/2026-07-18-docker-quickstart-tripped-me.md), [Docker Quickstart — What Tripped Me Up (2026-07-16)](../docker/notes/2026-07-16-docker-quickstart-tripped-me.md)
 - **scripts** (21): [Build Multi-Stage with Secrets (2026-07-31)](../docker/scripts/build-multi-stage-with-secrets.sh), [Run Container Port Map (2026-07-18)](../docker/scripts/2026-07-18-run-container-port-map.sh), [Automating Container Lifecycle](../docker/scripts/automating-container-lifecycle.sh)
-- **dockerfiles** (22): most recent → [Multi-Stage BuildKit Distroless (2026-07-18)](../docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile), [Multi-Stage Python Webapp](../docker/dockerfiles/multi-stage-python-webapp.Dockerfile), [Minimal Multi-Stage](../docker/dockerfiles/minimal-multi-stage.Dockerfile)
+- **dockerfiles** (24): most recent → [Multi-Stage BuildKit Distroless (2026-07-18)](../docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile), [Multi-Stage Python Webapp](../docker/dockerfiles/multi-stage-python-webapp.Dockerfile), [Minimal Multi-Stage](../docker/dockerfiles/minimal-multi-stage.Dockerfile)
 - **configs** (2): [Multi-Service Compose](../docker/configs/multi-service-compose.yaml), [daemon.json — log rotation & limits (2026-08-14)](../docker/configs/2026-08-14-daemon-json.json)
 - **docs** (3): [Docker + Terraform Integration Patterns (2026-08-14)](../docker/docs/docker-terraform-integration-patterns.md), [Multi-Stage vs Distroless vs Alpine](../docker/docs/multi-stage-vs-distroless-vs-alpine.md), [Dockerfile Antipatterns](../docker/docs/dockerfile-antipatterns.md)
 - **manifests** (2): [Kubernetes Deployment with Resource Limits](../docker/manifests/kubernetes-deployment-resource-limits.yaml), [Multi-Service App](../docker/manifests/multi-service-app.yaml)
 - **notebooks** (1): [Multi-Service Compose Walkthrough](../docker/notebooks/multi-service-compose.ipynb)
 - **snippets** (1): [First Docker CLI Snippet (2026-08-14)](../docker/snippets/2026-08-14-first-docker-cli.sh)
-- **templates** (17): [Project Scaffold: Compose + K8s](../docker/templates/project-scaffold-docker-k8s/README.md), [Project Scaffold README](../docker/templates/project-scaffold-docker-compose/README.md)
+- **templates** (15): [Project Scaffold: Compose + K8s](../docker/templates/project-scaffold-docker-k8s/README.md), [Project Scaffold README](../docker/templates/project-scaffold-docker-compose/README.md)
 - _…and browse `docker/` for the full collection._
 
-## Git · 26 files
+## Git · 27 files
 
 - **primer:** [primer-git](../git/notes/0000-primer-git.md)
 - **notes** (9): most recent → [Install Git and First Commit Workflow (2026-08-17)](../git/notes/2026-08-17-install-git-first-commit-workflow.md), [Install Git and Log First Commit (2026-08-08)](../git/notes/2026-08-08-install-git-and-log-first-commit.md), [Common Git Mistakes (2026-07-20)](../git/notes/2026-07-20-common-git-mistakes.md)
 - **scripts** (8): [Sync Fork & Clean Merged Branches (2026-08-16)](../git/scripts/sync-fork-and-clean-merged.sh), [Automate Git Bisect](../git/scripts/git-bisect-automation.sh), [Clean Git History (2026-07-20)](../git/scripts/2026-07-20-clean-git-history.sh)
 - **docs** (2): [Git Worktrees & Cherry-Pick for Release Management](../git/docs/git-worktrees-cherry-pick-release-management.md), [Git Merge vs Rebase](../git/docs/git-merge-vs-rebase.md)
 - **templates** (4): [Project Scaffold: Git Branching Convention](../git/templates/project-scaffold-git-branching/README.md)
-- **configs** (2): [Monorepo Sparse-Checkout & Conditional Includes](../git/configs/monorepo-sparse-checkout-conditional-includes.ini), [.gitattributes: merge, EOL, diff](../git/configs/gitattributes-merge-eol-diff.gitattributes)
+- **configs** (2): [.gitattributes: merge, EOL, diff](../git/configs/gitattributes-merge-eol-diff.gitattributes), [Monorepo Sparse-Checkout & Conditional Includes](../git/configs/monorepo-sparse-checkout-conditional-includes.ini)
 - **notebooks** (1): [Git Bisect Automation & History Rewrite](../git/notebooks/git-bisect-automation-and-history-rewrite.ipynb)
 - **snippets** (1): [First Git Branch and Merge (2026-08-08)](../git/snippets/2026-08-08-first-git-branch-and-merge.sh)
 - _…and browse `git/` for the full collection._
 
-## GitHub Actions · 18 files
+## GitHub Actions · 19 files
 
 - **primer:** [primer-github-actions](../github-actions/notes/0000-primer-github-actions.md)
 - **notes** (5): most recent → [First Workflow and Actions Tab (2026-08-12)](../github-actions/notes/2026-08-12-first-workflow-and-actions-tab.md), [GHA Quickstart — What Tripped Me Up (2026-07-21)](../github-actions/notes/2026-07-21-gha-quickstart-tripped-me.md), [GHA Quickstart — What Tripped Me Up (2026-07-09)](../github-actions/notes/2026-07-09-gha-quickstart-trials.md)
-- **configs** (7): most recent → [First Build on Push (2026-08-12)](../github-actions/configs/2026-08-12-first-build-on-push.yaml), [Reusable Workflow with Inputs](../github-actions/configs/reusable-workflow-with-inputs.yaml), [CI Workflow](../github-actions/configs/ci-workflow.yaml), [Minimal CI Workflow (2026-07-19)](../github-actions/configs/2026-07-19-minimal-ci-workflow.yaml), [Minimal CI Workflow (2026-07-12)](../github-actions/configs/2026-07-12-minimal-ci-workflow.yaml)
+- **configs** (8): most recent → [Manual Deploy with Input & Dependent Job (2026-08-18)](../github-actions/configs/2026-08-18-manual-workflow-dispatch-dependent-job.yaml), [First Build on Push (2026-08-12)](../github-actions/configs/2026-08-12-first-build-on-push.yaml), [Reusable Workflow with Inputs](../github-actions/configs/reusable-workflow-with-inputs.yaml)
 - **docs** (3): [Reading Workflow Logs and Debugging (2026-07-19)](../github-actions/docs/2026-07-19-reading-workflow-logs-and-debugging.md), [Reading Workflow Logs and Debugging (2026-07-10)](../github-actions/docs/2026-07-10-reading-workflow-logs-and-debugging.md), [Matrix Builds & Conditional Deploys](../github-actions/docs/matrix-builds-conditional-deploys.md)
 - **scripts** (2): [Validate Workflow Runs (2026-07-21)](../github-actions/scripts/2026-07-21-validate-workflow-runs.sh), [Audit Failed Workflow Runs](../github-actions/scripts/audit-failed-workflow-runs.sh)
 - **snippets** (1): [Complex Reusable Workflow: Matrix, Approvals, Rollback](../github-actions/snippets/complex-reusable-workflow-matrix-approvals.yaml)
 - _…and browse `github-actions/` for the full collection._
 
-## Jenkins · 3 files
-
-- **primer:** [primer-jenkins](../jenkins/notes/0000-primer-jenkins.md)
-- **notes** (2): most recent → [Install Jenkins and Open Web UI (2026-08-06)](../jenkins/notes/2026-08-06-install-jenkins-and-open-web-ui.md), [Jenkins Primer (2026-08-06)](../jenkins/notes/0000-primer-jenkins.md)
-- **snippets** (1): [Run First Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy)
-- _…and browse `jenkins/` for the full collection._
-
-## Kubernetes · 21 files
+## Kubernetes · 22 files
 
 - **primer:** [primer-kubernetes](../kubernetes/notes/0000-primer-kubernetes.md)
 - **notes** (6): most recent → [Install minikube and log first cluster interaction (2026-08-10)](../kubernetes/notes/2026-08-10-install-minikube-and-log-my-first-kubernetes-cluster-interaction.md), [Install kubectl and Explore Cluster (2026-08-08)](../kubernetes/notes/2026-08-08-install-kubectl-and-explore-cluster.md), [K8s Quickstart — What Tripped Me Up (2026-07-19)](../kubernetes/notes/2026-07-19-k8s-quickstart-trials.md)
 - **scripts** (5): most recent → [First kubectl Command (2026-08-08)](../kubernetes/scripts/2026-08-08-first-kubectl-command.sh), [kubectl Rollout vs Edit (2026-07-30)](../kubernetes/scripts/kubectl-rollout-vs-edit.sh), [Troubleshoot Failing Deployments (2026-07-21)](../kubernetes/scripts/2026-07-21-troubleshoot-failing-deployment.sh)
 - **docs** (3): most recent → [ConfigMaps, Secrets, and env vars (2026-07-30)](../kubernetes/docs/configmaps-secrets-env-vars.md), [Inspecting Pods, Services, and Events (2026-07-19)](../kubernetes/docs/2026-07-19-inspecting-pods-services-events.md), [Inspecting Pods, Services, and Events (2026-07-12)](../kubernetes/docs/2026-07-12-inspecting-pods-services-events.md)
-- **manifests** (4): most recent → [StatefulSet PostgreSQL with PVC (2026-07-31)](../kubernetes/manifests/statefulset-postgresql-pvc.yaml), [Minimal Deployment + Service (2026-07-21)](../kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml), [Minimal Deployment + Service (2026-07-10)](../kubernetes/manifests/2026-07-10-minimal-deployment-service.yaml), [StatefulSet PostgreSQL](../kubernetes/manifests/statefulset-postgresql.yaml)
+- **manifests** (5): most recent → [Production Deployment with Rolling Updates, Probes, PDB (2026-08-18)](../kubernetes/manifests/production-deployment-rolling-updates-probes-pdb.yaml), [StatefulSet PostgreSQL with PVC (2026-07-31)](../kubernetes/manifests/statefulset-postgresql-pvc.yaml), [Minimal Deployment + Service (2026-07-21)](../kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml)
 - **snippets** (2): [Debugging Port-Forward, Exec, and Logs (2026-07-21)](../kubernetes/snippets/2026-07-21-debugging-port-forward-exec-logs.sh), [First kubectl Deploy, Inspect, Delete (2026-08-12)](../kubernetes/snippets/2026-08-12-first-kubectl-deploy-inspect-delete.sh)
 - **notebooks** (1): [Multi-Tier App Debugging Walkthrough](../kubernetes/notebooks/multi-tier-app-debugging-walkthrough.ipynb)
 - _…and browse `kubernetes/` for the full collection._
@@ -67,11 +60,11 @@
 
 ## TF · 14 files
 
-- **docs** (1): [Terraform + GitHub Actions CI/CD Integration (2026-08-10)](../tf/docs/terraform-github-actions-ci-cd.md)
-- **dockerfiles** (1): [Terraform Provisioning (2026-08-09)](../tf/dockerfiles/multi-stage-dockerfile-terraform-provisioning.Dockerfile)
-- **manifests** (1): [Production Terraform Workspace (2026-08-10)](../tf/manifests/production-terraform-workspace-remote-state-locking.yaml)
-- **notebooks** (2): [Terraform State, Backends, and Modules](../tf/notebooks/terraform-state-backends-and-modules.ipynb), [Terraform Modules, State, and Workspaces](../tf/notebooks/terraform-modules-state-workspaces.ipynb)
 - **templates** (9): [Multi-Service Deployment Scaffold](../tf/templates/multi-service-deployment/README.md)
+- **notebooks** (2): [Terraform State, Backends, and Modules](../tf/notebooks/terraform-state-backends-and-modules.ipynb), [Terraform Modules, State, and Workspaces](../tf/notebooks/terraform-modules-state-workspaces.ipynb)
+- **dockerfiles** (1): [Terraform Provisioning (2026-08-09)](../tf/dockerfiles/multi-stage-dockerfile-terraform-provisioning.Dockerfile)
+- **docs** (1): [Terraform + GitHub Actions CI/CD Integration (2026-08-10)](../tf/docs/terraform-github-actions-ci-cd.md)
+- **manifests** (1): [Production Terraform Workspace (2026-08-10)](../tf/manifests/production-terraform-workspace-remote-state-locking.yaml)
 - _…and browse `tf/` for the full collection._
 
 ## Ansible · 3 files
@@ -104,6 +97,13 @@
 - **notes** (2): [First Trivy Scan (2026-08-10)](../trivy/notes/2026-08-10-first-trivy-scan.md)
 - **snippets** (1): [First Trivy Scan Snippet (2026-08-10)](../trivy/snippets/2026-08-10-first-trivy-scan.sh)
 - _…and browse `trivy/` for the full collection._
+
+## Jenkins · 3 files
+
+- **primer:** [primer-jenkins](../jenkins/notes/0000-primer-jenkins.md)
+- **notes** (2): most recent → [Install Jenkins and Open Web UI (2026-08-06)](../jenkins/notes/2026-08-06-install-jenkins-and-open-web-ui.md), [Jenkins Primer (2026-08-06)](../jenkins/notes/0000-primer-jenkins.md)
+- **snippets** (1): [Run First Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy)
+- _…and browse `jenkins/` for the full collection._
 
 ## Cross-cutting concepts · 41 files
 

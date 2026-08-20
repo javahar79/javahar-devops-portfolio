@@ -31,6 +31,7 @@ Apply the mental models with hands-on practice. Work through these in order — 
 
 - [Git CLI Exploration](../git/notes/2026-06-16-explore-git-cli.md) — Branching, merging, remotes, and the commands you will use daily.
 - [Git Quickstart Notes](../git/notes/2026-06-22-git-quickstart.md) — Set up your first remote repository and push a commit.
+- [Install Git and First Commit Workflow](../git/notes/2026-08-17-install-git-first-commit-workflow.md) — First real Git session: init, stage, commit, log, and the identity gotcha.
 - [Common Git Mistakes (2026-07-20)](../git/notes/2026-07-20-common-git-mistakes.md) — Everyday Git pitfalls and how to fix them.
 - [Common Rebase and Reset Patterns (2026-07-27)](../docs/concepts/git-version-control/snippets/2026-07-27-common-rebase-reset-patterns.sh) — Soft, mixed, and hard reset patterns plus rebase walkthroughs.
 - [Branch, Merge, and Revert Workflow (2026-07-20)](../git/scripts/2026-07-20-branch-merge-revert-workflow.sh) — Hands-on practice with feature branches, merge commits, and reverts.
@@ -39,14 +40,14 @@ Apply the mental models with hands-on practice. Work through these in order — 
 - [Automate Git Bisect](../git/scripts/git-bisect-automation.sh) — Binary-search commit history to find the first breaking change.
 - [Fork Sync & Clean Merged Branches (2026-08-16)](../git/scripts/sync-fork-and-clean-merged.sh) — Prune locally-merged branches and sync a fork against its upstream.
 - [Git Bisect Automation Notebook](../git/notebooks/git-bisect-automation-and-history-rewrite.ipynb) — Interactive walkthrough of bisect automation and history-rewriting techniques.
+- [Git Worktrees & Cherry-Pick for Release Management](../git/docs/git-worktrees-cherry-pick-release-management.md) — Keep `main` and a release branch checked out side by side, and lift a single fix across branches.
+- [Monorepo Sparse-Checkout & Conditional Includes](../git/configs/monorepo-sparse-checkout-conditional-includes.ini) — Sparse-checkout, partial clone, and `includeIf` patterns for monorepo workflows.
 - [Docker CLI Notes](../docker/notes/2026-06-16-explore-docker-cli.md) — Build, run, and manage containers from the command line.
 - [Docker Quickstart Notes](../docker/notes/2026-06-20-docker-quickstart.md) — Building your first image and running a container.
 - [Install Docker Script](../docker/scripts/2026-06-16-install-docker.sh) — Docker installation smoke test.
 - [First Container Port Map Script](../docker/scripts/2026-06-21-first-container-port-map.sh) — Run nginx and verify port mapping.
 - [Configure Git Script](../git/scripts/configure-and-commit-first.sh) — Set up Git identity and push your first commit.
 - [Install Git and log my first commit](../git/notes/2026-08-08-install-git-and-log-first-commit.md) — Installing Git and making the first commit.
-- [Install Git and First Commit Workflow (2026-08-17)](../git/notes/2026-08-17-install-git-first-commit-workflow.md) — First real session: init, stage, commit, and log, plus the identity gotcha.
-- [Monorepo Sparse-Checkout & Conditional Includes](../git/configs/monorepo-sparse-checkout-conditional-includes.ini) — Sparse-checkout, partial clone, and `includeIf` patterns for working efficiently in large monorepos.
 - [First Git branch and merge](../git/snippets/2026-08-08-first-git-branch-and-merge.sh) — First Git branch and merge workflow.
 - [Common Loops, Conditions, and File Patterns (2026-07-27)](../docs/concepts/scripting-automation/snippets/2026-07-27-common-loops-conditions-file-patterns.sh) — Bash patterns for iterating arrays, branching on conditions, and processing files idempotently.
 - [Dockerfile Layers and Registry Script (2026-08-04)](../docs/concepts/container-fundamentals/scripts/2026-08-04-dockerfile-layers-registry.sh) — Hands-on Dockerfile layer inspection and registry push exercises.
@@ -123,7 +124,6 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Branch Strategies for Automated Pipelines (2026-08-16)](../docs/concepts/ci-cd-concepts/branch-strategies-for-automated-pipelines.md) — How branch models map to pipeline stage triggers and release cadence.
 - [Project Scaffold: Git Branching Convention](../git/templates/project-scaffold-git-branching/README.md) — Codify a branch model and enforce it with a pre-commit hook that blocks direct commits to `main`.
 - [Automated Release Process (2026-08-14)](../docs/concepts/git-version-control/snippets/automated-release-process.sh) — Tag-based release flow: bump the version file, commit, tag, and push in one repeatable script.
-- [Git Worktrees & Cherry-Pick for Release Management](../git/docs/git-worktrees-cherry-pick-release-management.md) — Keep `main` and a release branch checked out side by side, and lift a single fix across branches.
 - [Terraform State, Backends, and Modules Notebook](../tf/notebooks/terraform-state-backends-and-modules.ipynb) — Interactive notebook on Terraform state management, remote backends, and reusable module patterns.
 - [Terraform Modules, State, and Workspaces Notebook](../tf/notebooks/terraform-modules-state-workspaces.ipynb) — Interactive notebook on Terraform modules, state backends, and workspace isolation.
 - [Terraform Module Exploration (2026-08-12)](../docs/concepts/infrastructure-as-code/notebooks/terraform-module-exploration.ipynb) — Interactive notebook exploring Terraform modules and state patterns.
@@ -160,17 +160,16 @@ Advanced patterns and production-ready configurations across the full stack.
 
 ```
 Stage 1 → Stage 2 → Stage 3 → Stage 4 → Stage 5
-             ↓         ↓         ↓         ↓
-      Concepts   →  Core     → Quickstart → Compose  → Advanced
-    (Cloud,      →  Tools    → CLI Notes  → K8s     → GitOps
-     Container,   → (K8s,     → Branch/    → Install
-      IaC,         Terraform,  → Conflict   → State
-     Scripting)    GitHub     → Docker     → Multi-env
-             ↓      Actions)    Port Map    GHA
-      Git/Docker          ↓         ↓
-      Primers       K8s Debug  K8s Debug
-             ↓       (describe, (describe,
-      Linux/Net     logs,        logs,
-             ↓       events)     events)
-      Networking
+         ↓         ↓         ↓         ↓
+  Concepts   →  Core     → Quickstart → Compose  → Advanced
+(Cloud,      →  Tools    → CLI Notes  → K8s     → GitOps
+ Container,   → (K8s,     → Branch/    → Install
+  IaC,         Terraform,  → Conflict   → State
+ Scripting)    GitHub     → Docker     → Multi-env
+               Actions)    Port Map    GHA
+                ↓           ↓
+             K8s Debug  K8s Debug
+            (describe, (describe,
+             logs,        logs,
+             events)     events)
 ```
