@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-21
+
+- Added Terraform state isolation comparison notebook covering workspaces, named environments, and remote-state isolation (tf-026)
+
 ## 2026-08-20
 
 - Added reusable kubectl deploy helper with rollout status watch and automatic rollback script (k8s-021)
