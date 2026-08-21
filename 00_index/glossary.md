@@ -155,6 +155,10 @@
 - **kind** — A tool for running local Kubernetes clusters using Docker containers as nodes.
 - **ReplicaSet** — A Kubernetes resource that ensures a specified number of pod replicas are running at all times; managed by a Deployment.
 - **NodePort** — A Service type that exposes a port on each node's IP address, making the service accessible from outside the cluster.
+- **ClusterIP** — The default Kubernetes Service type that exposes the service on an internal IP address, reachable only from within the cluster.
+- **LoadBalancer** — A Kubernetes Service type that provisions an external load balancer (cloud provider or MetalLB) to route traffic to the service from outside the cluster.
+- **Ingress** — A Kubernetes API object that manages external HTTP/HTTPS access to services in the cluster, typically using an Ingress controller (e.g. nginx, Traefik) to handle routing rules, TLS termination, and path-based or host-based routing.
+- **Ingress controller** — A component (e.g. nginx, Traefik) that watches Ingress resources and implements the actual routing, TLS termination, and load balancing for external traffic.
 - **port-forward** — A `kubectl` command that forwards a local port to a port on a pod or service, used for debugging and direct access.
 - **ContainerCreating** — A pod status indicating the container image is being pulled and the container is being started.
 - **CrashLoopBackOff** — A pod status indicating the container is repeatedly crashing after start; Kubernetes waits between restarts with an increasing back-off delay.
@@ -174,6 +178,9 @@
 - **Process** — A running instance of a program, identified by a PID, that the kernel schedules and tracks.
 - **Permissions** — The read/write/execute bits (and owner/group) that control who can access a file or directory.
 - **Package manager** — A tool (`apt`, `dnf`, `apk`) that installs, upgrades, and removes software and its dependencies.
+- **systemd** — The init system and service manager used by most modern Linux distributions. It starts and manages system services (units), handles logging via journald, and provides tools like `systemctl` and `journalctl` for service control and log inspection.
+- **systemctl** — The command-line tool for controlling systemd services and system state. Examples: `systemctl start nginx`, `systemctl enable docker`, `systemctl status sshd`.
+- **unit** — A systemd resource object (service, socket, mount, timer) described by a `.service`, `.socket`, or `.timer` file in `/etc/systemd/system/` or `/lib/systemd/system/`.
 
 ## Networking Basics
 
