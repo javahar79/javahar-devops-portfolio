@@ -115,9 +115,15 @@
 - [StatefulSet PostgreSQL with PVC](../kubernetes/manifests/statefulset-postgresql-pvc.yaml) — PostgreSQL StatefulSet with persistent volume claim
 - [PostgreSQL StatefulSet with PVC](../kubernetes/manifests/statefulset-postgresql.yaml) — PostgreSQL StatefulSet manifest with persistent volume claim
 - [Production Deployment: Rolling Updates, Probes, PDB](../kubernetes/manifests/production-deployment-rolling-updates-probes-pdb.yaml) — Deployment with rolling-update strategy, liveness/readiness probes, and PodDisruptionBudget
+- [Sample-App Scaffold README](../k8s/templates/project-scaffold-sample-app/README.md) — Ready-to-apply Kubernetes sample app with Deployment, Service, Ingress, ConfigMap, Secret, and Namespace
+- [Sample-App Deployment + Service](../k8s/templates/project-scaffold-sample-app/deployment.yaml) — Deployment and Service manifest for the sample app
+- [Sample-App ConfigMap](../k8s/templates/project-scaffold-sample-app/configmap.yaml) — Non-sensitive configuration wired into the sample app
+- [Sample-App Ingress](../k8s/templates/project-scaffold-sample-app/ingress.yaml) — Ingress routing for the sample app
+- [Sample-App Namespace](../k8s/templates/project-scaffold-sample-app/namespace.yaml) — Dedicated namespace that scopes the sample app
 - [Inspecting Pods, Services, and Events (2026-07-19)](../kubernetes/docs/2026-07-19-inspecting-pods-services-events.md) — `kubectl get`, `describe`, and `logs` patterns for real-world debugging
 - [ConfigMaps, Secrets, and env vars](../kubernetes/docs/configmaps-secrets-env-vars.md) — Wiring configuration and secrets into a K8s Deployment
 - [kubectl Rollout vs Edit](../kubernetes/scripts/kubectl-rollout-vs-edit.sh) — Zero-downtime update strategy comparison
+- [Deploy, Rollout, and Rollback (2026-08-20)](../kubernetes/scripts/deploy-rollout-rollback.sh) — Apply a manifest, wait for rollout, and auto-rollback on failure
 - [First kubectl Deploy, Inspect, Delete (2026-08-12)](../kubernetes/snippets/2026-08-12-first-kubectl-deploy-inspect-delete.sh) — kubectl create, get, describe, logs, and delete workflow
 
 ### Scan for vulnerabilities

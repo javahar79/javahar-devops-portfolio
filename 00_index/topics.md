@@ -7,13 +7,13 @@
 - **primer:** [primer-docker](../docker/notes/0000-primer-docker.md)
 - **notes** (21): most recent → [Install Docker from the Official APT Repo (2026-08-14)](../docker/notes/2026-08-14-install-docker-from-official-apt-repo.md), [Docker Quickstart — What Tripped Me Up (2026-07-18)](../docker/notes/2026-07-18-docker-quickstart-tripped-me.md), [Docker Quickstart — What Tripped Me Up (2026-07-16)](../docker/notes/2026-07-16-docker-quickstart-tripped-me.md)
 - **scripts** (21): [Build Multi-Stage with Secrets (2026-07-31)](../docker/scripts/build-multi-stage-with-secrets.sh), [Run Container Port Map (2026-07-18)](../docker/scripts/2026-07-18-run-container-port-map.sh), [Automating Container Lifecycle](../docker/scripts/automating-container-lifecycle.sh)
-- **dockerfiles** (24): most recent → [Multi-Stage BuildKit Distroless (2026-07-18)](../docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile), [Multi-Stage Python Webapp](../docker/dockerfiles/multi-stage-python-webapp.Dockerfile), [Minimal Multi-Stage](../docker/dockerfiles/minimal-multi-stage.Dockerfile)
+- **dockerfiles** (22): most recent → [Multi-Stage BuildKit Distroless (2026-07-18)](../docker/dockerfiles/2026-07-18-tagged-nonroot.Dockerfile), [Multi-Stage Python Webapp](../docker/dockerfiles/multi-stage-python-webapp.Dockerfile), [Minimal Multi-Stage](../docker/dockerfiles/minimal-multi-stage.Dockerfile)
 - **configs** (2): [Multi-Service Compose](../docker/configs/multi-service-compose.yaml), [daemon.json — log rotation & limits (2026-08-14)](../docker/configs/2026-08-14-daemon-json.json)
 - **docs** (3): [Docker + Terraform Integration Patterns (2026-08-14)](../docker/docs/docker-terraform-integration-patterns.md), [Multi-Stage vs Distroless vs Alpine](../docker/docs/multi-stage-vs-distroless-vs-alpine.md), [Dockerfile Antipatterns](../docker/docs/dockerfile-antipatterns.md)
 - **manifests** (2): [Kubernetes Deployment with Resource Limits](../docker/manifests/kubernetes-deployment-resource-limits.yaml), [Multi-Service App](../docker/manifests/multi-service-app.yaml)
 - **notebooks** (1): [Multi-Service Compose Walkthrough](../docker/notebooks/multi-service-compose.ipynb)
 - **snippets** (1): [First Docker CLI Snippet (2026-08-14)](../docker/snippets/2026-08-14-first-docker-cli.sh)
-- **templates** (15): [Project Scaffold: Compose + K8s](../docker/templates/project-scaffold-docker-k8s/README.md), [Project Scaffold README](../docker/templates/project-scaffold-docker-compose/README.md)
+- **templates** (17): [Project Scaffold: Compose + K8s](../docker/templates/project-scaffold-docker-k8s/README.md), [Project Scaffold README](../docker/templates/project-scaffold-docker-compose/README.md)
 - _…and browse `docker/` for the full collection._
 
 ## Git · 27 files
@@ -38,16 +38,21 @@
 - **snippets** (1): [Complex Reusable Workflow: Matrix, Approvals, Rollback](../github-actions/snippets/complex-reusable-workflow-matrix-approvals.yaml)
 - _…and browse `github-actions/` for the full collection._
 
-## Kubernetes · 22 files
+## Kubernetes · 23 files
 
 - **primer:** [primer-kubernetes](../kubernetes/notes/0000-primer-kubernetes.md)
 - **notes** (6): most recent → [Install minikube and log first cluster interaction (2026-08-10)](../kubernetes/notes/2026-08-10-install-minikube-and-log-my-first-kubernetes-cluster-interaction.md), [Install kubectl and Explore Cluster (2026-08-08)](../kubernetes/notes/2026-08-08-install-kubectl-and-explore-cluster.md), [K8s Quickstart — What Tripped Me Up (2026-07-19)](../kubernetes/notes/2026-07-19-k8s-quickstart-trials.md)
-- **scripts** (5): most recent → [First kubectl Command (2026-08-08)](../kubernetes/scripts/2026-08-08-first-kubectl-command.sh), [kubectl Rollout vs Edit (2026-07-30)](../kubernetes/scripts/kubectl-rollout-vs-edit.sh), [Troubleshoot Failing Deployments (2026-07-21)](../kubernetes/scripts/2026-07-21-troubleshoot-failing-deployment.sh)
+- **scripts** (6): most recent → [Deploy, Rollout, and Rollback (2026-08-20)](../kubernetes/scripts/deploy-rollout-rollback.sh), [First kubectl Command (2026-08-08)](../kubernetes/scripts/2026-08-08-first-kubectl-command.sh), [kubectl Rollout vs Edit (2026-07-30)](../kubernetes/scripts/kubectl-rollout-vs-edit.sh)
 - **docs** (3): most recent → [ConfigMaps, Secrets, and env vars (2026-07-30)](../kubernetes/docs/configmaps-secrets-env-vars.md), [Inspecting Pods, Services, and Events (2026-07-19)](../kubernetes/docs/2026-07-19-inspecting-pods-services-events.md), [Inspecting Pods, Services, and Events (2026-07-12)](../kubernetes/docs/2026-07-12-inspecting-pods-services-events.md)
 - **manifests** (5): most recent → [Production Deployment with Rolling Updates, Probes, PDB (2026-08-18)](../kubernetes/manifests/production-deployment-rolling-updates-probes-pdb.yaml), [StatefulSet PostgreSQL with PVC (2026-07-31)](../kubernetes/manifests/statefulset-postgresql-pvc.yaml), [Minimal Deployment + Service (2026-07-21)](../kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml)
 - **snippets** (2): [Debugging Port-Forward, Exec, and Logs (2026-07-21)](../kubernetes/snippets/2026-07-21-debugging-port-forward-exec-logs.sh), [First kubectl Deploy, Inspect, Delete (2026-08-12)](../kubernetes/snippets/2026-08-12-first-kubectl-deploy-inspect-delete.sh)
 - **notebooks** (1): [Multi-Tier App Debugging Walkthrough](../kubernetes/notebooks/multi-tier-app-debugging-walkthrough.ipynb)
 - _…and browse `kubernetes/` for the full collection._
+
+## k8s · 7 files
+
+- **templates** (7): [Sample-App Scaffold README](../k8s/templates/project-scaffold-sample-app/README.md) — A ready-to-apply Kubernetes sample app: Deployment, Service, Ingress, ConfigMap, Secret, and Namespace
+- _…and browse `k8s/` for the full collection._
 
 ## Terraform · 22 files
 
