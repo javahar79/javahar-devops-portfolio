@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-22
+
+- Added Terraform isolation comparison notebook: workspaces, environments, and remote-state patterns (tf-026)
+
 ## 2026-08-21
 
 - Added Terraform state isolation comparison notebook covering workspaces, named environments, and remote-state isolation (tf-026)
