@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-22
+
+- Enhanced StatefulSet PostgreSQL manifest with resource limits, security context, liveness probe, ConfigMap-based tuning, Secret for credentials, and PVC retention policy (k8s-011)
+
 ## 2026-08-21
 
 - Added reusable VPC module with public/private subnets, NAT gateways, and tiered security groups (tf-025)
