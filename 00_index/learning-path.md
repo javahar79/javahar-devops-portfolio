@@ -61,6 +61,7 @@ Apply the mental models with hands-on practice. Work through these in order — 
 - [Practice Cloud Computing Exercises (2026-08-04)](../docs/concepts/cloud-computing-fundamentals/scripts/2026-08-04-practice-cloud-computing-exercises.sh) — Hands-on exercises for cloud service models and provider patterns.
 - [Shell Scripting Fundamentals (2026-08-10)](../docs/concepts/linux-os-fundamentals/scripts/2026-08-10-shell-scripting-fundamentals.sh) — Practice script covering variables, conditionals, loops, and functions.
 - [System Admin Patterns (2026-08-10)](../docs/concepts/linux-os-fundamentals/snippets/2026-08-10-system-admin-patterns.sh) — Common patterns for disk usage, process inspection, and service checks.
+- [Process Service Management with systemd (2026-08-21)](../docs/concepts/linux-os-fundamentals/scripts/2026-08-21-process-service-management-systemd.sh) — Script for managing services with systemd: start, stop, enable, status.
 - [First kubectl command](../kubernetes/scripts/2026-08-08-first-kubectl-command.sh) — First kubectl commands and node listing.
 - [OpenTofu — log my first command](../of/notes/2026-08-11-first-opentofu-command.md) — First `tofu` session, backend prompt gotcha, and `.terraform.lock.hcl`.
 - [Install OpenTofu](../of/scripts/2026-08-06-install-opentofu.sh) — Install OpenTofu CLI and initialise your first resource.
@@ -133,6 +134,7 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Terraform Provisioning Dockerfile](../tf/dockerfiles/multi-stage-dockerfile-terraform-provisioning.Dockerfile) — Multi-stage Dockerfile for Terraform plan/apply workflows.
 - [Terraform + GitHub Actions CI/CD Integration (2026-08-10)](../tf/docs/terraform-github-actions-ci-cd.md) — How Terraform plan/apply workflows integrate with GitHub Actions and cloud credentials.
 - [Production Terraform Workspace Manifest (2026-08-10)](../tf/manifests/production-terraform-workspace-remote-state-locking.yaml) — Production workspace config with remote S3 state and DynamoDB locking.
+- [Terraform Remote State Reference: S3 + DynamoDB (2026-08-21)](../tf/docs/remote-state-reference-s3-dynamodb-state-isolation.md) — S3 backend with DynamoDB state locking and isolation patterns.
 - [Run First Jenkins Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy) — Groovy snippet for a minimal Jenkins pipeline.
 - [Jenkins Primer](../jenkins/notes/0000-primer-jenkins.md) — First-contact notes for Jenkins setup and pipeline basics.
 - [Install Jenkins and Open Web UI](../jenkins/notes/2026-08-06-install-jenkins-and-open-web-ui.md) — Install Jenkins locally and access the web UI.
@@ -154,7 +156,9 @@ Advanced patterns and production-ready configurations across the full stack.
 
 - [Sample-App Scaffold README](../k8s/templates/project-scaffold-sample-app/README.md) — A full Kubernetes sample app scaffold ready to apply to a cluster.
 - [Production Deployment: Rolling Updates, Probes, PDB](../kubernetes/manifests/production-deployment-rolling-updates-probes-pdb.yaml) — Production-grade Deployment with rolling-update strategy, liveness/readiness probes, and PodDisruptionBudget.
+- [Service Networking: ClusterIP, NodePort, LoadBalancer, Ingress (2026-08-21)](../kubernetes/docs/service-networking-clusterip-nodeport-loadbalancer-ingress.md) — How Kubernetes services work: ClusterIP, NodePort, LoadBalancer, and Ingress.
 - [Deploy, Rollout, and Rollback (2026-08-20)](../kubernetes/scripts/deploy-rollout-rollback.sh) — Apply a manifest, wait for rollout to reconcile, and auto-rollback if it does not become ready in time.
+- [Deploy Rollout Status (2026-08-21)](../kubernetes/scripts/deploy-rollout-status-rollback.sh) — Rollout status monitoring and rollback automation.
 - [Complex Reusable Workflow](../github-actions/snippets/complex-reusable-workflow-matrix-approvals.yaml) — Reusable workflow with matrix builds, approval gates, and rollback for production deploys.
 - [Git Worktrees & Cherry-Pick for Release Management](../git/docs/git-worktrees-cherry-pick-release-management.md) — Keep `main` and a release branch checked out side by side, and lift a single fix from `main` onto a release branch.
 - [Automated Release Process (2026-08-14)](../docs/concepts/git-version-control/snippets/automated-release-process.sh) — Tag-based release flow that bumps the version file, commits, tags, and pushes in one repeatable script.
