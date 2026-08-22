@@ -7,6 +7,9 @@
 ## 2026-08-21
 
 - Added Terraform state isolation comparison notebook covering workspaces, named environments, and remote-state isolation (tf-026)
+## 2026-08-21
+
+- Added reusable VPC module with public/private subnets, NAT gateways, and tiered security groups (tf-025)
 
 ## 2026-08-20
 
