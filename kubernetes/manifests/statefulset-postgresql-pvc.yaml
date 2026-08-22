@@ -1,17 +1,49 @@
-# last_verified: 2026-07-31 · kubernetes n/a
+# last_verified: 2026-08-22 · kubernetes n/a
 # StatefulSet manifest for PostgreSQL with PVC
 # Applying: kubectl apply -f statefulset-postgresql-pvc.yaml
 
 apiVersion: v1
+kind: Namespace
+metadata:
+  name: postgres
+  labels:
+    app.kubernetes.io/name: postgres
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-config
+  namespace: postgres
+  labels:
+    app: postgres
+data:
+  POSTGRES_DB: "app"
+  PGDATA: "/var/lib/postgresql/data/pgdata"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: postgres-secret
+  namespace: postgres
+  labels:
+    app: postgres
+type: Opaque
+stringData:
+  POSTGRES_USER: "admin"
+  POSTGRES_PASSWORD: "changeme"
+---
+apiVersion: v1
 kind: Service
 metadata:
   name: postgres
+  namespace: postgres
   labels:
     app: postgres
 spec:
   ports:
     - port: 5432
       targetPort: 5432
+      name: postgres
   clusterIP: None
   selector:
     app: postgres
@@ -20,9 +52,13 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: postgres
+  namespace: postgres
+  labels:
+    app: postgres
 spec:
   serviceName: postgres
   replicas: 1
+  podManagementPolicy: Parallel
   selector:
     matchLabels:
       app: postgres
@@ -31,30 +67,69 @@ spec:
       labels:
         app: postgres
     spec:
+      terminationGracePeriodSeconds: 30
+      securityContext:
+        fsGroup: 999
+        runAsUser: 999
+        runAsGroup: 999
       containers:
         - name: postgres
           image: postgres:16-alpine
           ports:
             - containerPort: 5432
               name: postgres
-          env:
-            - name: POSTGRES_USER
-              value: admin
-            - name: POSTGRES_PASSWORD
-              value: changeme
-            - name: PGDATA
-              value: /var/lib/postgresql/data/pgdata
+          envFrom:
+            - configMapRef:
+                name: postgres-config
+            - secretRef:
+                name: postgres-secret
+          resources:
+            requests:
+              cpu: 250m
+              memory: 256Mi
+            limits:
+              cpu: "1"
+              memory: 1Gi
           volumeMounts:
             - name: pgdata
               mountPath: /var/lib/postgresql/data
+            - name: postgres-config-volume
+              mountPath: /etc/postgresql/postgresql.conf
+              subPath: postgresql.conf
+              readOnly: true
           readinessProbe:
             exec:
               command:
                 - pg_isready
                 - -U
                 - admin
+                - -d
+                - app
             initialDelaySeconds: 10
             periodSeconds: 5
+            timeoutSeconds: 3
+          livenessProbe:
+            exec:
+              command:
+                - pg_isready
+                - -U
+                - admin
+                - -d
+                - app
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            timeoutSeconds: 3
+          lifecycle:
+            preStop:
+              exec:
+                command:
+                  - /bin/sh
+                  - -c
+                  - pg_ctl stop -D /var/lib/postgresql/data/pgdata -m fast
+      volumes:
+        - name: postgres-config-volume
+          configMap:
+            name: postgres-custom-config
   volumeClaimTemplates:
     - metadata:
         name: pgdata
@@ -64,3 +139,31 @@ spec:
         resources:
           requests:
             storage: 5Gi
+  persistentVolumeClaimRetentionPolicy:
+    whenDeleted: Retain
+    whenScaled: Retain
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-custom-config
+  namespace: postgres
+  labels:
+    app: postgres
+data:
+  postgresql.conf: |
+    listen_addresses = '*'
+    max_connections = 100
+    shared_buffers = 128MB
+    effective_cache_size = 512MB
+    work_mem = 4MB
+    maintenance_work_mem = 64MB
+    wal_buffers = 16MB
+    checkpoint_completion_target = 0.9
+    random_page_cost = 1.1
+    effective_io_concurrency = 200
+    log_min_messages = WARNING
+    log_checkpoints = on
+    log_connections = on
+    log_disconnections = on
+    log_lock_waits = on
