@@ -72,6 +72,7 @@
 - [Minimal CI Workflow (2026-07-19)](../github-actions/configs/2026-07-19-minimal-ci-workflow.yaml) — GHA CI workflow with setup-python caching
 - [Debug Run-Name & Conditions (2026-07-19)](../github-actions/configs/2026-07-19-debug-run-name-conditions.yaml) — Run-name and conditional step examples
 - [Reusable Workflow with Inputs](../github-actions/configs/reusable-workflow-with-inputs.yaml) — Reusable GHA workflow with input parameters and matrix strategy
+- [Manual Deploy with Input & Dependent Job (2026-08-18)](../github-actions/configs/2026-08-18-manual-workflow-dispatch-dependent-job.yaml) — Manual deploy workflow with environment inputs and dependent jobs
 - [Complex Reusable Workflow](../github-actions/snippets/complex-reusable-workflow-matrix-approvals.yaml) — Reusable workflow with matrix builds, approval gates, and rollback
 - [Reading Workflow Logs and Debugging (2026-07-19)](../github-actions/docs/2026-07-19-reading-workflow-logs-and-debugging.md) — How I learned to read logs and debug GHA failures
 - [Validate Workflow Runs (2026-07-21)](../github-actions/scripts/2026-07-21-validate-workflow-runs.sh) — Validate GHA workflows from the command line with gh CLI
@@ -95,6 +96,9 @@
 - [VPC Multi-Resource Infrastructure](../terraform/configs/vpc-multi-resource-infrastructure.hcl) — Multi-resource VPC setup with subnets, routes, and security groups
 - [Terraform Lifecycle (2026-07-22)](../terraform/scripts/2026-07-22-terraform-lifecycle.sh) — init, validate, plan, and apply end-to-end
 - [Remote State Management (S3 + DynamoDB)](../terraform/scripts/remote-state-management-s3.sh) — Initialize S3 backend, migrate local state, and enable DynamoDB locking
+- [VPC Reusable Module — main.tf](../tf/configs/vpc-reusable-module/main.hcl) — Reusable Terraform module for VPC, subnets, routes, and security groups
+- [VPC Reusable Module — variables.tf](../tf/configs/vpc-reusable-module/variables.hcl) — Input variables for the reusable VPC module
+- [VPC Reusable Module — outputs.tf](../tf/configs/vpc-reusable-module/outputs.hcl) — Output block exposing VPC and subnet IDs
 - [Automated Provisioning Pipeline (2026-08-12)](../docs/concepts/infrastructure-as-code/automated-provisioning-pipeline.md) — Plan-on-PR / apply-on-merge pipeline with remote state and approval gates
 - [Declarative Config CLI Exercises (2026-08-04)](../docs/concepts/infrastructure-as-code/scripts/2026-08-04-declarative-config-cli-exercises.sh) — CLI exercises for declarative infrastructure config patterns
 - [First OpenTofu Resource](../of/configs/2026-08-05-first-resource.hcl) — First Terraform-compatible OpenTofu resource configuration
@@ -109,7 +113,6 @@
 - [Terraform Multi-Service Deployment](../tf/templates/multi-service-deployment/main.tf) — Terraform config provisioning a container registry and IAM user for CI/CD image pushes
 - [Terraform + GitHub Actions CI/CD Integration (2026-08-10)](../tf/docs/terraform-github-actions-ci-cd.md) — How Terraform plan/apply workflows integrate with GitHub Actions and cloud credentials
 - [Production Terraform Workspace Manifest (2026-08-10)](../tf/manifests/production-terraform-workspace-remote-state-locking.yaml) — Production workspace config with remote S3 state and DynamoDB locking
-- [Terraform Remote State Reference: S3 + DynamoDB (2026-08-21)](../tf/docs/remote-state-reference-s3-dynamodb-state-isolation.md) — S3 backend with DynamoDB state locking and isolation patterns
 
 ### Deploy on Kubernetes
 - [Minimal Deployment + Service (2026-07-21)](../kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml) — Basic nginx Deployment with ClusterIP Service
@@ -123,10 +126,10 @@
 - [Sample-App Namespace](../k8s/templates/project-scaffold-sample-app/namespace.yaml) — Dedicated namespace that scopes the sample app
 - [Inspecting Pods, Services, and Events (2026-07-19)](../kubernetes/docs/2026-07-19-inspecting-pods-services-events.md) — `kubectl get`, `describe`, and `logs` patterns for real-world debugging
 - [ConfigMaps, Secrets, and env vars](../kubernetes/docs/configmaps-secrets-env-vars.md) — Wiring configuration and secrets into a K8s Deployment
-- [Service Networking: ClusterIP, NodePort, LoadBalancer, Ingress (2026-08-21)](../kubernetes/docs/service-networking-clusterip-nodeport-loadbalancer-ingress.md) — How Kubernetes services work: ClusterIP, NodePort, LoadBalancer, and Ingress
+- [Service Networking: ClusterIP, NodePort, LoadBalancer, Ingress](../kubernetes/docs/service-networking-clusterip-nodeport-loadbalancer-ingress.md) — Kubernetes service types and ingress routing explained
 - [kubectl Rollout vs Edit](../kubernetes/scripts/kubectl-rollout-vs-edit.sh) — Zero-downtime update strategy comparison
 - [Deploy, Rollout, and Rollback (2026-08-20)](../kubernetes/scripts/deploy-rollout-rollback.sh) — Apply a manifest, wait for rollout, and auto-rollback on failure
-- [Deploy Rollout Status (2026-08-21)](../kubernetes/scripts/deploy-rollout-status-rollback.sh) — Rollout status monitoring and rollback automation
+- [Deploy, Rollout Status, and Rollback (2026-08-20)](../kubernetes/scripts/deploy-rollout-status-rollback.sh) — Apply, watch rollout status, and roll back if reconciliation fails
 - [First kubectl Deploy, Inspect, Delete (2026-08-12)](../kubernetes/snippets/2026-08-12-first-kubectl-deploy-inspect-delete.sh) — kubectl create, get, describe, logs, and delete workflow
 
 ### Scan for vulnerabilities
@@ -146,5 +149,4 @@
 - [Clean Git History (2026-07-20)](../git/scripts/2026-07-20-clean-git-history.sh) — .gitignore audit and merge conflict recovery
 - [Git Reflog & Rebase (2026-07-20)](../git/scripts/2026-07-20-git-reflog-rebase.sh) — Interactive rebase and reflog recovery
 - [Shell Scripting Fundamentals (2026-08-10)](../docs/concepts/linux-os-fundamentals/scripts/2026-08-10-shell-scripting-fundamentals.sh) — Practice script covering variables, conditionals, loops, and functions
-- [Process Service Management with systemd (2026-08-21)](../docs/concepts/linux-os-fundamentals/scripts/2026-08-21-process-service-management-systemd.sh) — Script for managing services with systemd: start, stop, enable, status
 - [System Admin Patterns (2026-08-10)](../docs/concepts/linux-os-fundamentals/snippets/2026-08-10-system-admin-patterns.sh) — Common patterns for disk usage, process inspection, and service checks
