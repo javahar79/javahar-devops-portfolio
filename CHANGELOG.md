@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-23
+
+- Added Terraform + GitHub Actions pipeline scaffold template with plan-on-PR workflow, approval-gated apply, and destroy workflow (tf-027)
+- Added first Trivy container image scan notes covering trivy image command, severity filtering, and report reading (trivy-007)
+
 ## 2026-08-22
 
 - Enhanced StatefulSet PostgreSQL manifest with resource limits, security context, liveness probe, ConfigMap-based tuning, Secret for credentials, and PVC retention policy (k8s-011)
