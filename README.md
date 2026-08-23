@@ -57,10 +57,10 @@ The five most recently added files:
 | GitHub Actions | 5 | 2 | 8 | — | — | 3 | 1 | — | — | 2026-08-18 |
 | Kubernetes | 6 | 7 | — | — | 5 | 4 | 2 | 1 | — | 2026-08-21 |
 | k8s | — | — | — | — | — | — | — | — | 7 | 2026-08-19 |
-| Terraform | 10 | 4 | 6 | — | — | 2 | — | — | — | 2026-07-28 |
-| TF | — | — | 3 | 1 | 1 | 2 | — | 2 | 9 | 2026-08-21 |
+| Terraform | 10 | 4 | 6 | — | — | 2 | — | — | — | 2026-07-27 |
+| TF | — | — | 3 | 1 | 1 | 2 | — | 2 | 9 | 2026-08-20 |
 | Ansible | 2 | — | 1 | — | — | — | — | — | — | 2026-08-05 |
-| OpenTofu | 3 | 1 | 2 | — | — | — | 1 | — | — | 2026-08-15 |
+| OpenTofu | 3 | 1 | 2 | — | — | — | 1 | — | — | 2026-08-14 |
 | Pulumi | 1 | — | 1 | — | — | — | 1 | — | — | 2026-08-11 |
 | Jenkins | 2 | — | — | — | — | — | 1 | — | — | 2026-08-06 |
 | Trivy | 2 | — | — | — | — | — | 1 | — | — | 2026-08-10 |
@@ -72,4 +72,4 @@ The five most recently added files:
 Recent work added a reusable Terraform VPC module (main, variables, outputs), Kubernetes service-networking documentation (ClusterIP, NodePort, LoadBalancer, Ingress), deploy/rollback automation scripts, and a systemd process-service management practice script. A complex reusable GitHub Actions workflow with matrix strategies and approval gates is next on the list.
 
 ---
-_Last updated: 2026-08-22_
+_Last updated: 2026-08-23_
