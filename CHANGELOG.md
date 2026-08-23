@@ -4,6 +4,9 @@
 
 - Added Terraform + GitHub Actions pipeline scaffold template with plan-on-PR workflow, approval-gated apply, and destroy workflow (tf-027)
 - Added first Trivy container image scan notes covering trivy image command, severity filtering, and report reading (trivy-007)
+- Added first Trivy commands snippet covering image, fs, and config scans with severity filters (trivy-008)
+- Added Jenkins quickstart follow-up notes covering install, plugin setup, admin unlock, and tripped-up moments (jenkins-006)
+- Added minimal declarative Jenkinsfile config with build, test, and archive stages (jenkins-007)
 
 ## 2026-08-22
 
