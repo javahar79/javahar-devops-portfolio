@@ -1,0 +1,7 @@
+# last_verified: 2026-08-23 · terraform n/a
+# Copy this file to terraform.tfvars and fill in the values.
+# Do NOT commit terraform.tfvars — it may contain sensitive data.
+
+aws_region  = "us-east-1"
+bucket_name = "my-project-bucket-dev"
+environment = "dev"
