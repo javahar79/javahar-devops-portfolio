@@ -141,6 +141,8 @@
 - **JVM** — Java Virtual Machine; Jenkins runs on the JVM, so a Java runtime is required before Jenkins can be installed and started.
 - **Stage** — A logical grouping of steps within a Jenkins pipeline, representing a phase such as build, test, or deploy.
 - **Job** — A single unit of work Jenkins runs. Example: a Jenkins job that runs `npm test` on every push.
+- **Multibranch pipeline** — A Jenkins pipeline configuration that automatically creates pipeline jobs for each branch in a repository, running the Jenkinsfile found in each branch.
+- **Blue Ocean** — A Jenkins UI redesign that provides a visual pipeline editor and cleaner visualization of pipeline runs.
 
 ## Kubernetes
 
@@ -243,3 +245,5 @@
 - **SBOM** — Software Bill of Materials, a complete inventory of every component inside an image. Trivy can generate an SBOM so compliance teams know exactly what shipped in a build.
 - **Severity** — The risk level assigned to a Trivy finding, typically CRITICAL, HIGH, MEDIUM, LOW, or UNKNOWN. Filtering by severity (e.g. `--severity HIGH,CRITICAL`) keeps scan output actionable.
 - **Scanner** — A tool that inspects software artifacts for security issues. Trivy is an open-source scanner by Aqua Security that checks container images, filesystems, and Git repositories against vulnerability databases.
+- **trivy fs** — A Trivy command that scans the local filesystem for vulnerabilities in project dependencies (e.g. package.json, go.mod).
+- **trivy config** — A Trivy command that checks Infrastructure as Code files (Terraform, Kubernetes manifests, Dockerfiles) for security misconfigurations.
