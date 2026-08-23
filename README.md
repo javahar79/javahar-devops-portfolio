@@ -14,17 +14,17 @@ A working DevOps engineer's quick-reference: first-contact notes, runnable snipp
 
 ## What's in here
 
-A DevOps reference across tool directories and cross-cutting concept primers. Each tool has a primer, dated CLI walkthrough notes, runnable scripts, Dockerfiles, configs, manifests, and notebooks accumulated through hands-on practice. The concept folders cover CI/CD, cloud computing, container fundamentals, Git, infrastructure as code, Linux, networking, and scripting — including the deployment and branch-strategy patterns that connect them. Recent additions include a reusable Terraform VPC module, a Kubernetes service-networking doc, deploy/rollback automation scripts, and a systemd process-service management practice script.
+A DevOps reference across tool directories and cross-cutting concept primers. Each tool has a primer, dated CLI walkthrough notes, runnable scripts, Dockerfiles, configs, manifests, and notebooks accumulated through hands-on practice. The concept folders cover CI/CD, cloud computing, container fundamentals, Git, infrastructure as code, Linux, networking, and scripting — including the deployment and branch-strategy patterns that connect them. Recent additions include a Jenkins declarative Jenkinsfile config, a first Trivy commands snippet, and a Jenkins quickstart walkthrough.
 
 ## Quick links
 
 The five most recently added files:
 
-- [VPC Reusable Module — main.tf](tf/configs/vpc-reusable-module/main.hcl) — Reusable Terraform module for VPC, subnets, routes, and security groups
-- [VPC Reusable Module — outputs.tf](tf/configs/vpc-reusable-module/outputs.hcl) — Output block exposing VPC and subnet IDs
-- [VPC Reusable Module — variables.tf](tf/configs/vpc-reusable-module/variables.hcl) — Input variables for the reusable VPC module
-- [Process & Service Management with systemd](docs/concepts/linux-os-fundamentals/scripts/2026-08-21-process-service-management-systemd.sh) — systemd unit files, journalctl, and service lifecycle practice script
-- [Service Networking: ClusterIP, NodePort, LoadBalancer, Ingress](kubernetes/docs/service-networking-clusterip-nodeport-loadbalancer-ingress.md) — Kubernetes service types and ingress routing explained
+- [Minimal Declarative Jenkinsfile](jenkins/configs/2026-08-23-minimal-declarative-jenkinsfile.groovy) — Declarative Jenkins pipeline config with build, test, and deploy stages
+- [Followed Jenkins Quickstart](jenkins/notes/2026-08-23-followed-jenkins-quickstart.md) — First-day notes after installing Jenkins and running a pipeline
+- [First Trivy Commands Snippet](trivy/snippets/2026-08-23-first-trivy-commands.sh) — Trivy image scan, severity filter, and JSON export commands
+- [Trivy First Scan — Scan First Container Image](trivy/notes/2026-08-23-scan-first-container-image.md) — First container image scan with Trivy
+- [Trivy Primer](trivy/notes/0000-primer-trivy.md) — Vulnerability scanning, terminology, and first-scan example
 
 ## Layout
 
@@ -40,8 +40,8 @@ The five most recently added files:
 | `of/` | OpenTofu primer, install script, first-resource config, S3 backend/locking config, provisioning snippet, quickstart notes |
 | `pulumi/` | Pulumi primer, first Python program snippet, first stack config |
 | `ansible/` | Ansible primer, install and first-command notes, ping playbook config |
-| `jenkins/` | Jenkins primer, install and web-UI notes, first pipeline snippet |
-| `trivy/` | Trivy primer, first vulnerability scan notes and snippet |
+| `jenkins/` | Jenkins primer, install and web-UI notes, declarative Jenkinsfile config, first pipeline snippet |
+| `trivy/` | Trivy primer, first vulnerability scan notes and snippet, first container image scan snippet |
 | `docs/concepts/` | Cross-cutting concept primers plus runnable scripts and snippets (CI/CD, Cloud Computing, Container Fundamentals, Git, Infrastructure as Code, Linux, Networking, Scripting & Automation) |
 | `00_index/` | Topic index, quick links, glossary, learning path |
 
@@ -58,18 +58,18 @@ The five most recently added files:
 | Kubernetes | 6 | 7 | — | — | 5 | 4 | 2 | 1 | — | 2026-08-21 |
 | k8s | — | — | — | — | — | — | — | — | 7 | 2026-08-19 |
 | Terraform | 10 | 4 | 6 | — | — | 2 | — | — | — | 2026-07-27 |
-| TF | — | — | 3 | 1 | 1 | 2 | — | 2 | 9 | 2026-08-20 |
+| TF | — | — | 3 | 1 | 1 | 2 | — | 2 | 18 | 2026-08-23 |
 | Ansible | 2 | — | 1 | — | — | — | — | — | — | 2026-08-05 |
 | OpenTofu | 3 | 1 | 2 | — | — | — | 1 | — | — | 2026-08-14 |
 | Pulumi | 1 | — | 1 | — | — | — | 1 | — | — | 2026-08-11 |
-| Jenkins | 2 | — | — | — | — | — | 1 | — | — | 2026-08-06 |
-| Trivy | 2 | — | — | — | — | — | 1 | — | — | 2026-08-10 |
+| Jenkins | 3 | — | 1 | — | — | — | 1 | — | — | 2026-08-23 |
+| Trivy | 3 | — | — | — | — | — | 2 | — | — | 2026-08-23 |
 
 </details>
 
 ## Status
 
-Recent work added a reusable Terraform VPC module (main, variables, outputs), Kubernetes service-networking documentation (ClusterIP, NodePort, LoadBalancer, Ingress), deploy/rollback automation scripts, and a systemd process-service management practice script. A complex reusable GitHub Actions workflow with matrix strategies and approval gates is next on the list.
+Recent work added a Jenkins declarative Jenkinsfile config, a first Trivy commands snippet, and a Jenkins quickstart walkthrough. The learning path has been updated to reflect the latest content.
 
 ---
-_Last updated: 2026-08-23_
+_Last updated: 2026-08-24_

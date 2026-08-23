@@ -149,6 +149,10 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [Trivy Primer](../trivy/notes/0000-primer-trivy.md) — Vulnerability scanning, SBOM generation, and severity filtering for container images.
 - [First Trivy Scan (2026-08-10)](../trivy/notes/2026-08-10-first-trivy-scan.md) — First-day notes for running a Trivy vulnerability scan against a container image.
 - [First Trivy Scan Snippet (2026-08-10)](../trivy/snippets/2026-08-10-first-trivy-scan.sh) — Scan an image, filter by severity, and export JSON.
+- [Scan First Container Image (2026-08-23)](../trivy/notes/2026-08-23-scan-first-container-image.md) — First container image scan with Trivy.
+- [First Trivy Commands (2026-08-23)](../trivy/snippets/2026-08-23-first-trivy-commands.sh) — Trivy image scan, severity filter, and JSON export commands.
+- [Followed Jenkins Quickstart (2026-08-23)](../jenkins/notes/2026-08-23-followed-jenkins-quickstart.md) — First-day notes after installing Jenkins and running a pipeline.
+- [Minimal Declarative Jenkinsfile (2026-08-23)](../jenkins/configs/2026-08-23-minimal-declarative-jenkinsfile.groovy) — Declarative Jenkins pipeline config with build, test, and deploy stages.
 
 ## Stage 5: Mastery
 
