@@ -4,6 +4,8 @@
 
 - Added Terraform + GitHub Actions pipeline scaffold template with plan-on-PR workflow, approval-gated apply, and destroy workflow (tf-027)
 - Added first Trivy container image scan notes covering trivy image command, severity filtering, and report reading (trivy-007)
+- Added Trivy first commands snippet covering image, fs, and config scans with severity filters (trivy-008)
+- Added ArgoCD quick primer covering GitOps basics, key terminology, and first install steps (argocd-001)
 
 ## 2026-08-22
 
