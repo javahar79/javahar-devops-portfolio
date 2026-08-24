@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-24
+
+- Added Grafana quick primer covering what Grafana is, key terminology, and a tiny first dashboard example (grafana-001)
+- Added ArgoCD install and first login notes covering pinned release manifest, admin password retrieval, port-forwarding, and CLI login (argocd-002)
+
 ## 2026-08-23
 
 - Added Terraform + GitHub Actions pipeline scaffold template with plan-on-PR workflow, approval-gated apply, and destroy workflow (tf-027)
