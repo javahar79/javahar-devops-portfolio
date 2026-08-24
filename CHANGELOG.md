@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-24
+
+- Added ArgoCD quick primer covering GitOps basics, key terminology, and first install steps (argocd-001)
+
 ## 2026-08-23
 
 - Added Terraform + GitHub Actions pipeline scaffold template with plan-on-PR workflow, approval-gated apply, and destroy workflow (tf-027)
