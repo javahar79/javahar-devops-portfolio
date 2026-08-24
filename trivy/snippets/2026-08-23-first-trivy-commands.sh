@@ -1,22 +1,11 @@
+#!/usr/bin/env bash
 # last_verified: 2026-08-23 · Trivy n/a
 
-# Image scan — the most common use case, scans a container image for CVEs
-trivy image nginx:alpine
-
-# Only show HIGH and CRITICAL findings to cut through the noise
+# I started with trivy image because the docs lead with container scanning
 trivy image --severity HIGH,CRITICAL nginx:alpine
 
-# Scan a local directory (the project filesystem) for vulnerabilities
-trivy fs .
+# trivy fs scans the local filesystem for vulnerabilities in project dependencies
+trivy fs --severity HIGH,CRITICAL .
 
-# Scan a directory but only look at OS packages
-trivy fs --vuln-type os .
-
-# Scan a Dockerfile or Kubernetes manifest for misconfigurations
-trivy config ./k8s/
-
-# Combine config scan with severity filter
-trivy config --severity HIGH,CRITICAL ./k8s/
-
-# Save results as JSON for pipeline parsing
-trivy image --format json -o results.json nginx:alpine
+# trivy config checks Infrastructure as Code files for misconfigurations
+trivy config --severity HIGH,CRITICAL ./deploy/
