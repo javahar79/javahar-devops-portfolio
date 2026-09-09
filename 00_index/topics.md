@@ -63,9 +63,9 @@
 - **scripts** (4): [Remote State Management (S3 + DynamoDB)](../terraform/scripts/remote-state-management-s3.sh), [Terraform Lifecycle (2026-07-22)](../terraform/scripts/2026-07-22-terraform-lifecycle.sh), [Terraform Vars and Outputs (2026-07-21)](../terraform/scripts/2026-07-21-terraform-vars-and-outputs.sh)
 - _…and browse `terraform/` for the full collection._
 
-## TF · 18 files
+## TF · 27 files
 
-- **templates** (9): [Multi-Service Deployment Scaffold](../tf/templates/multi-service-deployment/README.md)
+- **templates** (18): [Multi-Service Deployment Scaffold](../tf/templates/multi-service-deployment/README.md), [Terraform Pipeline Scaffold](../tf/templates/tf-027-pipeline-scaffold/README.md)
 - **configs** (3): [VPC Reusable Module — main.tf](../tf/configs/vpc-reusable-module/main.hcl), [VPC Reusable Module — variables.tf](../tf/configs/vpc-reusable-module/variables.hcl), [VPC Reusable Module — outputs.tf](../tf/configs/vpc-reusable-module/outputs.hcl)
 - **notebooks** (2): most recent → [Terraform State, Backends, and Modules](../tf/notebooks/terraform-state-backends-and-modules.ipynb), [Terraform Modules, State, and Workspaces](../tf/notebooks/terraform-modules-state-workspaces.ipynb)
 - **docs** (2): [Terraform + GitHub Actions CI/CD Integration (2026-08-10)](../tf/docs/terraform-github-actions-ci-cd.md), [Remote State Reference: S3 + DynamoDB Isolation (2026-08-21)](../tf/docs/remote-state-reference-s3-dynamodb-state-isolation.md)
@@ -97,17 +97,18 @@
 - **configs** (1): [My First Pulumi Stack Config (2026-08-11)](../pulumi/configs/2026-08-11-my-first-pulumi-stack.yaml)
 - _…and browse `pulumi/` for the full collection._
 
-## Trivy · 3 files
+## Trivy · 5 files
 
 - **primer:** [primer-trivy](../trivy/notes/0000-primer-trivy.md)
-- **notes** (2): [First Trivy Scan (2026-08-10)](../trivy/notes/2026-08-10-first-trivy-scan.md)
-- **snippets** (1): [First Trivy Scan Snippet (2026-08-10)](../trivy/snippets/2026-08-10-first-trivy-scan.sh)
+- **notes** (3): most recent → [Scan First Container Image (2026-08-23)](../trivy/notes/2026-08-23-scan-first-container-image.md), [First Trivy Scan (2026-08-10)](../trivy/notes/2026-08-10-first-trivy-scan.md)
+- **snippets** (2): [First Trivy Commands (2026-08-23)](../trivy/snippets/2026-08-23-first-trivy-commands.sh), [First Trivy Scan Snippet (2026-08-10)](../trivy/snippets/2026-08-10-first-trivy-scan.sh)
 - _…and browse `trivy/` for the full collection._
 
-## Jenkins · 3 files
+## Jenkins · 5 files
 
 - **primer:** [primer-jenkins](../jenkins/notes/0000-primer-jenkins.md)
-- **notes** (2): most recent → [Install Jenkins and Open Web UI (2026-08-06)](../jenkins/notes/2026-08-06-install-jenkins-and-open-web-ui.md), [Jenkins Primer (2026-08-06)](../jenkins/notes/0000-primer-jenkins.md)
+- **notes** (3): most recent → [Followed Jenkins Quickstart (2026-08-23)](../jenkins/notes/2026-08-23-followed-jenkins-quickstart.md), [Install Jenkins and Open Web UI (2026-08-06)](../jenkins/notes/2026-08-06-install-jenkins-and-open-web-ui.md), [Jenkins Primer (2026-08-06)](../jenkins/notes/0000-primer-jenkins.md)
+- **configs** (1): [Minimal Declarative Jenkinsfile (2026-08-23)](../jenkins/configs/2026-08-23-minimal-declarative-jenkinsfile.groovy)
 - **snippets** (1): [Run First Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy)
 - _…and browse `jenkins/` for the full collection._
 
