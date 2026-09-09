@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-09
+
+- Added Jenkins pipeline job creation Groovy script for CLI-driven job provisioning (jenkins-008)
+- Added Helm quick primer covering charts, releases, values, and first install example (helm-001)
+
 ## 2026-08-23
 
 - Added Terraform + GitHub Actions pipeline scaffold template with plan-on-PR workflow, approval-gated apply, and destroy workflow (tf-027)
