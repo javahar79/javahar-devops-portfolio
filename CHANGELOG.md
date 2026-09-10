@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-09
+
+- Added Jenkins pipeline job creation Groovy script for CLI-driven job provisioning (jenkins-008)
+- Added Helm quick primer covering charts, releases, values, and first install example (helm-001)
 ## 2026-08-24
 
 - Added Grafana quick primer covering what Grafana is, key terminology, and a tiny first dashboard example (grafana-001)
