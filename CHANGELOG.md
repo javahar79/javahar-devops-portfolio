@@ -4,6 +4,11 @@
 
 - Added Jenkins pipeline job creation Groovy script for CLI-driven job provisioning (jenkins-008)
 - Added Helm quick primer covering charts, releases, values, and first install example (helm-001)
+## 2026-08-24
+
+- Added Grafana quick primer covering what Grafana is, key terminology, and a tiny first dashboard example (grafana-001)
+- Added ArgoCD install and first login notes covering pinned release manifest, admin password retrieval, port-forwarding, and CLI login (argocd-002)
+- Added ArgoCD quick primer covering GitOps basics, key terminology, and first install steps (argocd-001)
 
 ## 2026-08-23
 
