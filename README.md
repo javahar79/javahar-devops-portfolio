@@ -42,7 +42,10 @@ The five most recently added files:
 | `ansible/` | Ansible primer, install and first-command notes, ping playbook config |
 | `jenkins/` | Jenkins primer, install and web-UI notes, declarative Jenkinsfile config, first pipeline snippet |
 | `trivy/` | Trivy primer, first vulnerability scan notes and snippet, first container image scan snippet |
-| `docs/concepts/` | Cross-cutting concept primers plus runnable scripts and snippets (CI/CD, Cloud Computing, Container Fundamentals, Git, Infrastructure as Code, Linux, Networking, Scripting & Automation) |
+| `argocd/` | ArgoCD primer, install and login notes, first Application sync manifest |
+| `grafana/` | Grafana primer, install and dashboard notes, data-source and starter dashboard config |
+| `helm/` | Helm primer, install notes, first chart config, first CLI commands snippet |
+| `docs/` | Cross-cutting concept primers plus runnable scripts and snippets (CI/CD, Cloud Computing, Container Fundamentals, Git, Infrastructure as Code, Linux, Networking, Scripting & Automation) |
 | `00_index/` | Topic index, quick links, glossary, learning path |
 
 ## Coverage

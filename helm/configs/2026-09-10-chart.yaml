@@ -1,0 +1,7 @@
+# last_verified: 2026-09-10 · Helm n/a
+apiVersion: v2
+name: my-first-chart
+description: A Helm chart for my first app
+type: application
+version: 0.1.0
+appVersion: "1.0"
