@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-10
+
+- Passed ([x]) grafana-001 — Grafana: notes — What is Grafana? — quick primer · Level: L1 · 2026-09-10
+- Passed ([x]) argocd-002 — ArgoCD: notes — Install ArgoCD from the pinned release manifest and log in with the admin account · Level: L1 · 2026-09-10
+- Passed ([x]) jenkins-008 — Jenkins: script — Create a pipeline job from a Groovy DSL script via the Jenkins CLI · Level: L2 · 2026-09-10
+- Passed ([x]) helm-001 — Helm: notes — What is Helm? — quick primer · Level: L1 · 2026-09-10
+- Added ArgoCD Application manifest for sample app sync with automated pruning and self-heal (argocd-003)
+
 ## 2026-09-09
 
 - Added Jenkins pipeline job creation Groovy script for CLI-driven job provisioning (jenkins-008)

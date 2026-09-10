@@ -1,0 +1,26 @@
+# last_verified: 2026-09-10 · ArgoCD v3.5.2
+#
+# Deploy a sample ArgoCD Application that syncs the Kubernetes
+# guestbook app from a public Git repo. Apply with:
+#   kubectl apply -f 2026-09-10-sample-app-sync.yaml -n argocd
+
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: guestbook
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/kubernetes-samples/guestbook.git
+    targetRevision: HEAD
+    path: guestbook
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: guestbook
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
