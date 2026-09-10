@@ -15,6 +15,8 @@
 - [Install Jenkins and Open Web UI](../jenkins/notes/2026-08-06-install-jenkins-and-open-web-ui.md) — Install Jenkins locally and access the web UI
 - [Install Ansible and Run First Command](../ansible/notes/2026-08-05-install-ansible-and-run-first-command.md) — Install Ansible and run your first ad-hoc command
 - [Install OpenTofu](../of/scripts/2026-08-06-install-opentofu.sh) — Install OpenTofu CLI and initialise your first resource
+- [Install ArgoCD and Login](../argocd/notes/2026-08-24-install-argocd-and-login.md) — Install ArgoCD in a cluster and access the UI
+- [Helm Chart Config (2026-09-10)](../helm/configs/2026-09-10-chart.yaml) — First Helm chart metadata (apiVersion v2, app version, and chart dependencies)
 
 ### Understand a tool
 - [Docker Primer](../docker/notes/0000-primer-docker.md) — Containers and images explained
@@ -28,6 +30,8 @@
 - [Jenkins Primer](../jenkins/notes/0000-primer-jenkins.md) — Jenkins primer with first-contact notes and pipeline basics
 - [OpenTofu Primer](../of/notes/0000-primer-opentofu.md) — OpenTofu primer, a Terraform-compatible IaC tool
 - [Trivy Primer](../trivy/notes/0000-primer-trivy.md) — Vulnerability scanning, terminology, and first-scan example
+- [ArgoCD Primer](../argocd/notes/0000-primer-argocd.md) — GitOps with ArgoCD: first-contact notes and Application sync patterns
+- [Helm Primer](../helm/notes/0000-primer-helm.md) — Kubernetes package manager: charts, releases, values, and templating
 - [Terraform State, Backends, and Modules](../tf/notebooks/terraform-state-backends-and-modules.ipynb) — Interactive notebook on Terraform state management, remote backends, and module patterns
 - [Cloud Computing Fundamentals Primer](../docs/concepts/cloud-computing-fundamentals/0000-primer-cloud-computing-fundamentals.md) — IaaS, PaaS, SaaS, and service models explained
 - [Container Fundamentals Primer](../docs/concepts/container-fundamentals/0000-primer-container-fundamentals.md) — Images, registries, and volumes explained
@@ -114,6 +118,9 @@
 - [Terraform Multi-Service Deployment](../tf/templates/multi-service-deployment/main.tf) — Terraform config provisioning a container registry and IAM user for CI/CD image pushes
 - [Terraform + GitHub Actions CI/CD Integration (2026-08-10)](../tf/docs/terraform-github-actions-ci-cd.md) — How Terraform plan/apply workflows integrate with GitHub Actions and cloud credentials
 - [Production Terraform Workspace Manifest (2026-08-10)](../tf/manifests/production-terraform-workspace-remote-state-locking.yaml) — Production workspace config with remote S3 state and DynamoDB locking
+- [Helm Values Config (2026-09-10)](../helm/configs/2026-09-10-values.yaml) — Default values for replica count, image repository/tag, and ClusterIP service
+- [Helm Chart Config (2026-09-10)](../helm/configs/2026-09-10-chart.yaml) — First Helm chart metadata (apiVersion v2, app version, and chart dependencies)
+- [Helm Deployment Template (2026-09-10)](../helm/configs/2026-09-10-deployment-template.yaml) — Templated Kubernetes Deployment with `.Values` placeholders for replicas, image, and ports
 
 ### Deploy on Kubernetes
 - [Minimal Deployment + Service (2026-07-21)](../kubernetes/manifests/2026-07-21-minimal-deployment-service.yaml) — Basic nginx Deployment with ClusterIP Service
@@ -125,6 +132,7 @@
 - [Sample-App ConfigMap](../k8s/templates/project-scaffold-sample-app/configmap.yaml) — Non-sensitive configuration wired into the sample app
 - [Sample-App Ingress](../k8s/templates/project-scaffold-sample-app/ingress.yaml) — Ingress routing for the sample app
 - [Sample-App Namespace](../k8s/templates/project-scaffold-sample-app/namespace.yaml) — Dedicated namespace that scopes the sample app
+- [ArgoCD Sample-App Sync (2026-09-10)](../argocd/manifests/2026-09-10-sample-app-sync.yaml) — ArgoCD Application that syncs the Kubernetes guestbook sample with automated pruning and self-heal
 - [Inspecting Pods, Services, and Events (2026-07-19)](../kubernetes/docs/2026-07-19-inspecting-pods-services-events.md) — `kubectl get`, `describe`, and `logs` patterns for real-world debugging
 - [ConfigMaps, Secrets, and env vars](../kubernetes/docs/configmaps-secrets-env-vars.md) — Wiring configuration and secrets into a K8s Deployment
 - [Service Networking: ClusterIP, NodePort, LoadBalancer, Ingress](../kubernetes/docs/service-networking-clusterip-nodeport-loadbalancer-ingress.md) — Kubernetes service types and ingress routing explained

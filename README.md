@@ -1,5 +1,5 @@
 # javahar-devops-portfolio
-> A working DevOps engineer's reference for Docker, Git, GitHub Actions, Kubernetes, Terraform, OpenTofu, Pulumi, Ansible, Jenkins, Trivy, and the concepts that tie them together.
+> A working DevOps engineer's reference for Docker, Git, GitHub Actions, Kubernetes, Terraform, OpenTofu, Pulumi, Ansible, Jenkins, ArgoCD, Helm, and Trivy — plus the concepts that tie them together.
 
 ![Last commit](https://img.shields.io/github/last-commit/javahar79/javahar-devops-portfolio)
 ![Top language](https://img.shields.io/github/languages/top/javahar79/javahar-devops-portfolio)
@@ -10,27 +10,27 @@
 
 ## Who this is for
 
-A working DevOps engineer's quick-reference: first-contact notes, runnable snippets, and configs for Docker, Git, GitHub Actions, Kubernetes, Terraform, OpenTofu, Pulumi, Ansible, Jenkins, and Trivy. Use it as a shelf you grab from, not a tutorial site. It deliberately does not try to replace each tool's official docs.
+A working DevOps engineer's quick-reference: first-contact notes, runnable snippets, and configs for Docker, Git, GitHub Actions, Kubernetes, Terraform, OpenTofu, Pulumi, Ansible, Jenkins, ArgoCD, Helm, and Trivy. Use it as a shelf you grab from, not a tutorial site. It deliberately does not try to replace each tool's official docs.
 
 ## What's in here
 
-A DevOps reference across tool directories and cross-cutting concept primers. Each tool has a primer, dated CLI walkthrough notes, runnable scripts, Dockerfiles, configs, manifests, and notebooks accumulated through hands-on practice. The concept folders cover CI/CD, cloud computing, container fundamentals, Git, infrastructure as code, Linux, networking, and scripting — including the deployment and branch-strategy patterns that connect them. Recent additions include a Jenkins declarative Jenkinsfile config, a first Trivy commands snippet, and a Jenkins quickstart walkthrough.
+A DevOps reference across tool directories and cross-cutting concept primers. Each tool has a primer, dated CLI walkthrough notes, runnable scripts, Dockerfiles, configs, manifests, and notebooks accumulated through hands-on practice. The concept folders cover CI/CD, cloud computing, container fundamentals, Git, infrastructure as code, Linux, networking, and scripting — including the deployment and branch-strategy patterns that connect them. Recent additions include Helm chart configs and first CLI commands, an ArgoCD sample-app Application manifest, and a Jenkins declarative Jenkinsfile config.
 
 ## Quick links
 
 The five most recently added files:
 
-- [Minimal Declarative Jenkinsfile](jenkins/configs/2026-08-23-minimal-declarative-jenkinsfile.groovy) — Declarative Jenkins pipeline config with build, test, and deploy stages
-- [Followed Jenkins Quickstart](jenkins/notes/2026-08-23-followed-jenkins-quickstart.md) — First-day notes after installing Jenkins and running a pipeline
-- [First Trivy Commands Snippet](trivy/snippets/2026-08-23-first-trivy-commands.sh) — Trivy image scan, severity filter, and JSON export commands
-- [Trivy First Scan — Scan First Container Image](trivy/notes/2026-08-23-scan-first-container-image.md) — First container image scan with Trivy
-- [Trivy Primer](trivy/notes/0000-primer-trivy.md) — Vulnerability scanning, terminology, and first-scan example
+- [Helm Chart Config](helm/configs/2026-09-10-chart.yaml) — First Helm chart metadata (apiVersion v2, app version, and chart dependencies)
+- [Helm Deployment Template](helm/configs/2026-09-10-deployment-template.yaml) — Templated Kubernetes Deployment with `.Values` placeholders for replicas, image, and ports
+- [Helm Values Config](helm/configs/2026-09-10-values.yaml) — Default values for replica count, image repository/tag, and ClusterIP service
+- [First Helm CLI Commands](helm/snippets/2026-09-10-first-helm-cli-commands.sh) — repo add, search, install, and inspect commands for first contact with Helm
+- [ArgoCD Sample-App Sync Manifest](argocd/manifests/2026-09-10-sample-app-sync.yaml) — ArgoCD Application that syncs the Kubernetes guestbook sample with automated pruning and self-heal
 
 ## Layout
 
 | Directory | Contents |
 |-----------|----------|
-| `docker/` | Docker primer, CLI notes, install/port-map scripts, 22 Dockerfiles, compose and daemon configs, integration docs (incl. Docker–Terraform patterns), notebook, two project scaffolds (Compose and Compose+K8s) |
+| `docker/` | Docker primer, CLI notes, install/port-map scripts, 24 Dockerfiles, compose and daemon configs, integration docs (incl. Docker–Terraform patterns), notebook, two project scaffolds (Compose and Compose+K8s) |
 | `git/` | Git primer, CLI notes, undo/branch/merge/reflog/bisect scripts, a fork-sync helper, worktrees & cherry-pick docs, a branching-convention scaffold, two configs (`.gitattributes` and monorepo sparse-checkout), bisect notebook |
 | `github-actions/` | Actions primer, UI walkthrough, CI workflow configs, workflow-log debugging docs, validation & audit scripts, snippets |
 | `kubernetes/` | K8s primer, kubectl notes, minikube first-cluster notes, local cluster install script, manifests, pod/service troubleshooting scripts and docs, service-networking doc, deploy/rollback automation scripts, snippets, notebook |
@@ -40,11 +40,11 @@ The five most recently added files:
 | `of/` | OpenTofu primer, install script, first-resource config, S3 backend/locking config, provisioning snippet, quickstart notes |
 | `pulumi/` | Pulumi primer, first Python program snippet, first stack config |
 | `ansible/` | Ansible primer, install and first-command notes, ping playbook config |
-| `jenkins/` | Jenkins primer, install and web-UI notes, declarative Jenkinsfile config, first pipeline snippet |
-| `trivy/` | Trivy primer, first vulnerability scan notes and snippet, first container image scan snippet |
+| `jenkins/` | Jenkins primer, install and web-UI notes, declarative Jenkinsfile config, first pipeline snippet, pipeline DSL script |
 | `argocd/` | ArgoCD primer, install and login notes, first Application sync manifest |
+| `helm/` | Helm primer, chart configs (Chart.yaml, values.yaml, deployment template), first CLI commands snippet |
 | `grafana/` | Grafana primer, install and dashboard notes, data-source and starter dashboard config |
-| `helm/` | Helm primer, install notes, first chart config, first CLI commands snippet |
+| `trivy/` | Trivy primer, first vulnerability scan notes and snippet, first container image scan snippet |
 | `docs/` | Cross-cutting concept primers plus runnable scripts and snippets (CI/CD, Cloud Computing, Container Fundamentals, Git, Infrastructure as Code, Linux, Networking, Scripting & Automation) |
 | `00_index/` | Topic index, quick links, glossary, learning path |
 
@@ -59,20 +59,23 @@ The five most recently added files:
 | Git | 9 | 8 | 2 | — | — | 2 | 1 | 1 | 4 | 2026-08-17 |
 | GitHub Actions | 5 | 2 | 8 | — | — | 3 | 1 | — | — | 2026-08-18 |
 | Kubernetes | 6 | 7 | — | — | 5 | 4 | 2 | 1 | — | 2026-08-21 |
-| k8s | — | — | — | — | — | — | — | — | 7 | 2026-08-19 |
+| k8s | — | — | — | — | — | — | — | — | 7 | — |
 | Terraform | 10 | 4 | 6 | — | — | 2 | — | — | — | 2026-07-27 |
-| TF | — | — | 3 | 1 | 1 | 2 | — | 2 | 18 | 2026-08-23 |
+| TF | — | — | — | 1 | 1 | 2 | — | 2 | 18 | 2026-08-10 |
 | Ansible | 2 | — | 1 | — | — | — | — | — | — | 2026-08-05 |
+| ArgoCD | 2 | — | — | — | 1 | — | — | — | — | 2026-08-24 |
 | OpenTofu | 3 | 1 | 2 | — | — | — | 1 | — | — | 2026-08-14 |
-| Pulumi | 1 | — | 1 | — | — | — | 1 | — | — | 2026-08-11 |
+| Pulumi | 1 | — | 1 | — | — | — | 1 | — | — | 2026-08-10 |
+| Helm | 1 | — | 3 | — | — | — | 1 | — | — | 2026-09-09 |
 | Jenkins | 3 | — | 1 | — | — | — | 1 | — | — | 2026-08-23 |
 | Trivy | 3 | — | — | — | — | — | 2 | — | — | 2026-08-23 |
+| Grafana | 1 | — | — | — | — | — | — | — | — | 2026-08-24 |
 
 </details>
 
 ## Status
 
-Recent work added a Jenkins declarative Jenkinsfile config, a first Trivy commands snippet, and a Jenkins quickstart walkthrough. The learning path has been updated to reflect the latest content.
+Recent work added Helm chart configs and first CLI commands, an ArgoCD sample-app Application manifest, and a Jenkins declarative Jenkinsfile config. The learning path has been updated to reflect the latest content.
 
 ---
-_Last updated: 2026-08-24_
+_Last updated: 2026-09-10_

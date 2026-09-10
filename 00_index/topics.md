@@ -80,6 +80,13 @@
 - **configs** (1): [First Ping Playbook](../ansible/configs/2026-08-05-first-ping-playbook.yaml)
 - _…and browse `ansible/` for the full collection._
 
+## ArgoCD · 3 files
+
+- **primer:** [primer-argocd](../argocd/notes/0000-primer-argocd.md)
+- **notes** (2): most recent → [Install ArgoCD and Login (2026-08-24)](../argocd/notes/2026-08-24-install-argocd-and-login.md), [ArgoCD Primer (2026-08-05)](../argocd/notes/0000-primer-argocd.md)
+- **manifests** (1): [Sample-App Sync (2026-09-10)](../argocd/manifests/2026-09-10-sample-app-sync.yaml)
+- _…and browse `argocd/` for the full collection._
+
 ## OpenTofu · 7 files
 
 - **primer:** [primer-opentofu](../of/notes/0000-primer-opentofu.md)
@@ -97,6 +104,23 @@
 - **configs** (1): [My First Pulumi Stack Config (2026-08-11)](../pulumi/configs/2026-08-11-my-first-pulumi-stack.yaml)
 - _…and browse `pulumi/` for the full collection._
 
+## Helm · 5 files
+
+- **primer:** [primer-helm](../helm/notes/0000-primer-helm.md)
+- **notes** (1): [Helm Primer (2026-09-09)](../helm/notes/0000-primer-helm.md)
+- **configs** (3): [Chart Config (2026-09-10)](../helm/configs/2026-09-10-chart.yaml), [Deployment Template (2026-09-10)](../helm/configs/2026-09-10-deployment-template.yaml), [Values Config (2026-09-10)](../helm/configs/2026-09-10-values.yaml)
+- **snippets** (1): [First Helm CLI Commands (2026-09-10)](../helm/snippets/2026-09-10-first-helm-cli-commands.sh)
+- _…and browse `helm/` for the full collection._
+
+## Jenkins · 6 files
+
+- **primer:** [primer-jenkins](../jenkins/notes/0000-primer-jenkins.md)
+- **notes** (3): most recent → [Followed Jenkins Quickstart (2026-08-23)](../jenkins/notes/2026-08-23-followed-jenkins-quickstart.md), [Install Jenkins and Open Web UI (2026-08-06)](../jenkins/notes/2026-08-06-install-jenkins-and-open-web-ui.md), [Jenkins Primer (2026-08-06)](../jenkins/notes/0000-primer-jenkins.md)
+- **configs** (1): [Minimal Declarative Jenkinsfile (2026-08-23)](../jenkins/configs/2026-08-23-minimal-declarative-jenkinsfile.groovy)
+- **scripts** (1): [Create Pipeline Job from Groovy DSL (2026-09-09)](../jenkins/scripts/2026-09-09-create-pipeline-job-from-groovy-dsl.groovy)
+- **snippets** (1): [Run First Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy)
+- _…and browse `jenkins/` for the full collection._
+
 ## Trivy · 5 files
 
 - **primer:** [primer-trivy](../trivy/notes/0000-primer-trivy.md)
@@ -104,13 +128,10 @@
 - **snippets** (2): [First Trivy Commands (2026-08-23)](../trivy/snippets/2026-08-23-first-trivy-commands.sh), [First Trivy Scan Snippet (2026-08-10)](../trivy/snippets/2026-08-10-first-trivy-scan.sh)
 - _…and browse `trivy/` for the full collection._
 
-## Jenkins · 5 files
+## Grafana · 1 files
 
-- **primer:** [primer-jenkins](../jenkins/notes/0000-primer-jenkins.md)
-- **notes** (3): most recent → [Followed Jenkins Quickstart (2026-08-23)](../jenkins/notes/2026-08-23-followed-jenkins-quickstart.md), [Install Jenkins and Open Web UI (2026-08-06)](../jenkins/notes/2026-08-06-install-jenkins-and-open-web-ui.md), [Jenkins Primer (2026-08-06)](../jenkins/notes/0000-primer-jenkins.md)
-- **configs** (1): [Minimal Declarative Jenkinsfile (2026-08-23)](../jenkins/configs/2026-08-23-minimal-declarative-jenkinsfile.groovy)
-- **snippets** (1): [Run First Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy)
-- _…and browse `jenkins/` for the full collection._
+- **primer:** [primer-grafana](../grafana/notes/0000-primer-grafana.md)
+- _…and browse `grafana/` for the full collection._
 
 ## Cross-cutting concepts · 42 files
 
