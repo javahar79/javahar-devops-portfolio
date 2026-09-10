@@ -7,6 +7,8 @@
 - Passed ([x]) jenkins-008 — Jenkins: script — Create a pipeline job from a Groovy DSL script via the Jenkins CLI · Level: L2 · 2026-09-10
 - Passed ([x]) helm-001 — Helm: notes — What is Helm? — quick primer · Level: L1 · 2026-09-10
 - Added ArgoCD Application manifest for sample app sync with automated pruning and self-heal (argocd-003)
+- Added Helm chart scaffold config with Chart.yaml, values.yaml, and deployment template (helm-002)
+- Added first Helm CLI commands snippet: repo add, search, install, inspect (helm-003)
 
 ## 2026-09-09
 
