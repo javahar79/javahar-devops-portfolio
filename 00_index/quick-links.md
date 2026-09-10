@@ -79,6 +79,7 @@
 - [Audit Failed Workflow Runs](../github-actions/scripts/audit-failed-workflow-runs.sh) — Audit failed GHA runs and identify root causes
 - [Matrix Builds & Conditional Deploys](../github-actions/docs/matrix-builds-conditional-deploys.md) — Matrix strategies and conditional deployment patterns
 - [Run First Jenkins Pipeline](../jenkins/snippets/2026-08-06-run-first-pipeline.groovy) — Groovy snippet for a minimal Jenkins pipeline
+- [Minimal Declarative Jenkinsfile (2026-08-23)](../jenkins/configs/2026-08-23-minimal-declarative-jenkinsfile.groovy) — Declarative Jenkins pipeline config with build, test, and deploy stages
 - [Automated Release Process (2026-08-14)](../docs/concepts/git-version-control/snippets/automated-release-process.sh) — Tag-based release flow that triggers the deploy pipeline
 
 ### Provision infrastructure
@@ -134,7 +135,9 @@
 
 ### Scan for vulnerabilities
 - [First Trivy Scan (2026-08-10)](../trivy/notes/2026-08-10-first-trivy-scan.md) — First-day notes for running a Trivy vulnerability scan against a container image
+- [Scan First Container Image (2026-08-23)](../trivy/notes/2026-08-23-scan-first-container-image.md) — First container image scan with Trivy
 - [First Trivy Scan Snippet (2026-08-10)](../trivy/snippets/2026-08-10-first-trivy-scan.sh) — Scan an image, filter by severity, and export JSON output
+- [First Trivy Commands (2026-08-23)](../trivy/snippets/2026-08-23-first-trivy-commands.sh) — Trivy image scan, severity filter, and JSON export commands
 
 ### Troubleshoot
 - [Troubleshoot Failing Deployments (2026-07-21)](../kubernetes/scripts/2026-07-21-troubleshoot-failing-deployment.sh) — Diagnose CrashLoopBackOff and ImagePullBackOff
