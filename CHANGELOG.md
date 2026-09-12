@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-12
+
+- Added multi-region deployment snippet with approval gates and rollback triggers (gha-010)
+- Added systemd service automation and log rotation docs covering the systemd service loop and logrotate policy (con-071)
+- Added drift detection and idempotent remediation script for users, groups, services, and file modes (con-072)
+
 ## 2026-09-10
 
 - Passed ([x]) grafana-001 — Grafana: notes — What is Grafana? — quick primer · Level: L1 · 2026-09-10
