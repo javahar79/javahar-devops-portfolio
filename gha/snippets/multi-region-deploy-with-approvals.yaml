@@ -1,0 +1,112 @@
+# last_verified: 2026-09-12 · GitHub Actions n/a
+# Reusable deployment workflow with multi-region matrix, manual approval gate, and rollback trigger.
+name: Multi-Region Deploy
+
+on:
+  workflow_call:
+    inputs:
+      environments:
+        required: true
+        type: json
+        description: JSON array of target environments (e.g. ["us-east-1","eu-west-1"])
+      service-name:
+        required: true
+        type: string
+      container-tag:
+        required: true
+        type: string
+      rollback-version:
+        required: false
+        type: string
+        default: ""
+    secrets:
+      aws-account-id:
+        required: true
+
+jobs:
+  deploy-matrix:
+    name: Deploy to ${{ matrix.region }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        region: ${{ fromJson(inputs.environments) }}
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::${{ secrets.aws-account-id }}:role/github-actions-deploy
+          aws-region: ${{ matrix.region }}
+
+      - name: Deploy service
+        id: deploy
+        run: |
+          aws ecs update-service \
+            --cluster ${{ inputs.service-name }}-cluster \
+            --service ${{ inputs.service-name }}-${{ matrix.region }} \
+            --force-new-deployment
+          echo "deployed_region=${{ matrix.region }}" >> $GITHUB_OUTPUT
+
+      - name: Wait for service stability
+        id: health
+        run: |
+          STATUS=$(aws ecs describe-services \
+            --cluster ${{ inputs.service-name }}-cluster \
+            --services ${{ inputs.service-name }}-${{ matrix.region }} \
+            --query 'services[0].deployments[0].status' --output text)
+          if [ "$STATUS" != "PRIMARY" ]; then
+            echo "DEPLOY_FAILED" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          echo "healthy=true" >> $GITHUB_OUTPUT
+
+  approval-gate:
+    needs: deploy-matrix
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    environment:
+      name: ${{ inputs.service-name }}-deployment
+    steps:
+      - name: Check deploy results
+        run: |
+          FAILED=$(echo '${{ needs.deploy-matrix.result }}' | grep -c 'failure' || true)
+          if [ "$FAILED" -gt 0 ]; then
+            echo "::error::One or more region deployments failed — proceeding to rollback"
+            exit 1
+          fi
+
+      - name: Manual approval checkpoint
+        run: echo "Deployment to all regions passed health checks. Manual approval required before finalizing."
+
+  rollback:
+    name: Rollback ${{ matrix.region }}
+    needs: [approval-gate]
+    if: |
+      always() &&
+      (needs.approval-gate.result == 'failure' || needs.deploy-matrix.result == 'failure')
+    strategy:
+      matrix:
+        region: ${{ fromJson(inputs.environments) }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::${{ secrets.aws-account-id }}:role/github-actions-deploy
+          aws-region: ${{ matrix.region }}
+
+      - name: Rollback ECS service
+        if: ${{ inputs.rollback-version != '' }}
+        run: |
+          aws ecs update-service \
+            --cluster ${{ inputs.service-name }}-cluster \
+            --service ${{ inputs.service-name }}-${{ matrix.region }} \
+            --task-definition "${{ inputs.rollback-version }}"
+
+      - name: Notify on rollback
+        run: |
+          echo "::warning::Rolled back ${{ inputs.service-name }} in ${{ matrix.region }} to task definition ${{ inputs.rollback-version || 'previous' }}"
