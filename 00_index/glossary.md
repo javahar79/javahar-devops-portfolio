@@ -113,6 +113,16 @@
 - **approval gate** — A workflow job that targets a GitHub `environment:` with required reviewers; the job stays pending until a reviewer clicks Approve in the UI, creating a manual gate before production deploy.
 - **reusable workflow** — A GitHub Actions workflow defined in a separate repository or the same repository that can be called from another workflow using `uses:`. Inputs and outputs can be passed between the calling and called workflows, enabling modular pipeline composition.
 
+## Helm
+
+- **Chart** — A Helm package: templates plus metadata. Example: `helm create my-app` scaffolds one.
+- **Release** — A running instance of a chart. Install the same chart twice and you get two releases.
+- **values.yaml** — Default configuration for a chart. Override with `--set` or a custom file.
+- **Template** — Kubernetes YAML with placeholders. Helm renders it with your values before applying.
+- **Repository** — A hosted collection of charts. Bitnami and the official repo are common ones.
+- **Hook** — A manifest that runs at a specific release event, like before install. Handy for migrations.
+- **Rollback** — Revert a release to a previous revision with `helm rollback`.
+
 ## Infrastructure as Code
 
 - **Declarative vs imperative** — Declarative says "I want three load balancers" and the tool figures out how. Imperative says "run this script then that script." Terraform HCL is declarative.

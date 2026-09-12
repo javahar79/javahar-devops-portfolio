@@ -69,6 +69,10 @@ Apply the mental models with hands-on practice. Work through these in order — 
 - [Install minikube and log first cluster interaction (2026-08-10)](../kubernetes/notes/2026-08-10-install-minikube-and-log-my-first-kubernetes-cluster-interaction.md) — Local single-node cluster, first deployment, and addon gotchas.
 - [Install Docker from the Official APT Repo (2026-08-14)](../docker/notes/2026-08-14-install-docker-from-official-apt-repo.md) — Docker Engine from Docker's own repo, plus the docker group so you can skip sudo.
 - [OpenTofu Quickstart — What Tripped Me Up (2026-08-14)](../of/notes/2026-08-14-opentofu-quickstart-trip-ups.md) — plan/apply loop, state-file surprise, and destroy lifecycle in the official quickstart.
+- [Helm Primer](../helm/notes/0000-primer-helm.md) — Kubernetes package manager: charts, releases, values, and templating.
+- [First Helm CLI Commands (2026-09-10)](../helm/snippets/2026-09-10-first-helm-cli-commands.sh) — repo add, search, install, and inspect commands for first contact with Helm.
+- [Helm Chart Config (2026-09-10)](../helm/configs/2026-09-10-chart.yaml) — First Helm chart metadata (apiVersion v2, app version, and chart dependencies).
+- [Helm Values Config (2026-09-10)](../helm/configs/2026-09-10-values.yaml) — Default values for replica count, image repository/tag, and ClusterIP service.
 
 ## Stage 4: Integration
 
@@ -153,6 +157,9 @@ Combine tools to build real infrastructure and pipelines. This is where the sepa
 - [First Trivy Commands (2026-08-23)](../trivy/snippets/2026-08-23-first-trivy-commands.sh) — Trivy image scan, severity filter, and JSON export commands.
 - [Followed Jenkins Quickstart (2026-08-23)](../jenkins/notes/2026-08-23-followed-jenkins-quickstart.md) — First-day notes after installing Jenkins and running a pipeline.
 - [Minimal Declarative Jenkinsfile (2026-08-23)](../jenkins/configs/2026-08-23-minimal-declarative-jenkinsfile.groovy) — Declarative Jenkins pipeline config with build, test, and deploy stages.
+- [Create Pipeline Job from Groovy DSL (2026-09-09)](../jenkins/scripts/2026-09-09-create-pipeline-job-from-groovy-dsl.groovy) — Groovy script that creates a Jenkins pipeline job from DSL definition.
+- [ArgoCD Primer](../argocd/notes/0000-primer-argocd.md) — GitOps with ArgoCD: first-contact notes and Application sync patterns.
+- [ArgoCD Sample-App Sync (2026-09-10)](../argocd/manifests/2026-09-10-sample-app-sync.yaml) — ArgoCD Application that syncs the Kubernetes guestbook sample with automated pruning and self-heal.
 
 ## Stage 5: Mastery
 
