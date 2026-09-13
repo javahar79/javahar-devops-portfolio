@@ -1,0 +1,25 @@
+# last_verified: 2026-09-13 · Kustomize n/a
+# Staging overlay — bumps the image tag and scales up replicas
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - 2026-09-13-base-kustomization.yaml
+
+namePrefix: staging-
+
+patches:
+  - target:
+      kind: Deployment
+      name: my-app
+    patch: |
+      - op: replace
+        path: /spec/replicas
+        value: 3
+  - target:
+      kind: Deployment
+      name: my-app
+    patch: |
+      - op: replace
+        path: /spec/template/spec/containers/0/image
+        value: my-app:1.1.0-rc1

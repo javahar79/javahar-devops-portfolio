@@ -5,6 +5,9 @@
 - Added Dependabot quick primer covering what Dependabot is, key terminology, and a tiny first config example (dependabot-001)
 - Added Dependabot version-update config with weekly schedule and grouped minor/patch bumps (dependabot-002)
 - Added Dependabot security-update config enabling alerts and ignore rules for the repo (dependabot-003)
+- Added Kustomize quick primer covering what Kustomize is, key terminology, overlays, and a first kustomization example (kustomize-001)
+- Added Kustomize base Deployment and staging overlay configs demonstrating patch-based environment customization (kustomize-002)
+- Added Pulumi CLI exploration notes covering stack init, preview, up, and destroy commands (pulumi-008)
 
 - Consolidated duplicate `gha/` folder into the canonical `github-actions/` directory: moved `gha/snippets/multi-region-deploy-with-approvals.yaml` to `github-actions/snippets/multi-region-deploy-with-approvals.yaml` and removed the undocumented duplicate (Repo Auditor: DK anomaly auto-repaired).
 ## 2026-09-12
