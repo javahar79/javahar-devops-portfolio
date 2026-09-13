@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-13
+
+- Added Dependabot quick primer covering what Dependabot is, key terminology, and a tiny first config example (dependabot-001)
+- Added Dependabot version-update config with weekly schedule and grouped minor/patch bumps (dependabot-002)
+- Added Dependabot security-update config enabling alerts and ignore rules for the repo (dependabot-003)
+
+- Consolidated duplicate `gha/` folder into the canonical `github-actions/` directory: moved `gha/snippets/multi-region-deploy-with-approvals.yaml` to `github-actions/snippets/multi-region-deploy-with-approvals.yaml` and removed the undocumented duplicate (Repo Auditor: DK anomaly auto-repaired).
 ## 2026-09-12
 
 - Added multi-region deployment snippet with approval gates and rollback triggers (gha-010)
