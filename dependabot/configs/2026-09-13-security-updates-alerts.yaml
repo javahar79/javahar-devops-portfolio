@@ -1,0 +1,23 @@
+# last_verified: 2026-09-13 · Dependabot n/a
+# Dependabot security-update configuration.
+# Security updates are a separate mode from version updates: Dependabot
+# scans dependencies for known vulnerabilities and opens prioritized pull
+# requests to upgrade to a patched version. The repository's alert feed
+# (Security → Dependabot tab) surfaces the findings.
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    allow:
+      - dependency-type: "all"
+    ignore:
+      - dependency-name: "*"
+        versions: ["<1.0.0"]
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
