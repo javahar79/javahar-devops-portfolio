@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-14
+
+- Added Kustomize quick primer covering template-free Kubernetes customization, key terminology, and a tiny overlay example (kustomize-001 rework)
+
 ## 2026-09-13
 
 - Added Dependabot quick primer covering what Dependabot is, key terminology, and a tiny first config example (dependabot-001)
